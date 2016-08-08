@@ -1,0 +1,73 @@
+.so-twitter-widget__container {
+  @include outer-container();
+  @include u-wvu-container-padding();
+}
+
+.so-twitter-widget {
+  background-color: shade($black, 5%);
+  color: white;
+  a, a:visited {
+    color: white;
+  }
+  h2, h3, h4, h5, h6 {
+    color: white;
+  }
+  img {
+    height: 48px;
+    width: 48px;
+  }
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  li {
+    border-bottom: 1px solid tint($black, 20%);
+    overflow: hidden;
+    padding: 1em 0;
+    text-align: center;
+    @include mq($bp-medium) {
+      border-bottom: 0;
+      border-left: 4px solid tint($black, 20%);
+      @include span-columns(2.4);
+      padding: 0;
+      padding-left: 1em;
+      text-align: left;
+    }
+    img {
+      display: none;
+    }
+    p {
+      margin-top: 0;
+    }
+  }
+  .user,
+  .interact {
+    display: none;
+  }
+  .time-posted {
+
+  }
+}
+
+.so-twitter-widget__postscript {
+  @include so-postscript();
+  font-size: 1.5em;
+  margin-top: 2em;
+  a {
+    text-decoration: none;
+  }
+}
+
+.so-twitter-widget__header {
+  text-align: center;
+  h2 {
+    @include wvu-secondary-pattern-heading();
+  }
+  h3 {
+    @include wvu-secondary-pattern-heading();
+    font-size: 2.4em;
+  }
+  p {
+    margin: 0 auto;
+  }
+}

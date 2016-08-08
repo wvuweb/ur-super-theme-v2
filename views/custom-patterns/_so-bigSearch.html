@@ -1,0 +1,22 @@
+<div class="so-big-search">
+  <div class="so-big-search__container">
+    <div class="so-big-search__header">
+      <r:editable_region name="so-big-search__header">
+        <h2>Find what you&rsquo;re looking for.</h2>
+        <p>Subhead goes here.</p>
+      </r:editable_region>
+    </div>
+    <form id="form-search" class="form-search form-search--<r:page:slug />" action="<r:page:data name="search_action" />" method="get" role="search">
+      <label class="form-search__label form-search__label--<r:page:slug />" for="q">
+        <span class="form-search__label-text form-search__text--majors">Search Majors</span>
+        <input id="q" class="form-search__field form-search__field--<r:page:slug /> " name="cquery" maxlength="256" placeholder="Search..." type="search" />
+      </label>
+      <input class="form-search__submit form-search__submit--<r:page:slug />" name="submit" type="submit" value="Search" />
+    </form>
+    <r:page:if_has_content_for region="so-big-search__postscript" always_show_in_edit_mode="true">
+      <div class="so-big-search__postscript">
+        <p><r:editable_region name="so-big-search__postscript">Put additional info or links here.</r:editable_region></p>
+      </div>
+    </r:page:if_has_content_for>
+  </div>
+</div>

@@ -1,0 +1,67 @@
+.so-video {
+  background-color: $black;
+  color: white;
+  a {
+    color: white;
+  }
+  h2 {
+    font-size: $wvu-shout-font-size;
+    margin: $wvu-shout-margin;
+    text-align: center;
+  }
+  h2, h3, h4, h5, h6 {
+    color: white;
+    margin-top: 0;
+  }
+}
+
+.so-video__header {
+  font-size: 2.5em;
+  @include wvu-lede();
+  h2 {
+    @include wvu-primary-pattern-heading();
+  }
+  h3 {
+    @include wvu-lede();
+  }
+}
+
+.so-video__container {
+  @include outer-container();
+  @include u-wvu-container-padding();
+}
+
+.so-video__video {
+  margin-bottom: 2em;
+  @include mq($bp-medium) {
+    margin-bottom: 0;
+    @include span-columns(7);
+  }
+}
+
+.so-video__description {
+  @include mq($bp-medium) {
+    @include span-columns(4.5);
+    @include shift(.5);
+  }
+}
+
+.so-video__video-and-description {
+  display: table;
+  width: 100%;
+}
+
+.so-video__lede + .so-video__video-and-description {
+  margin-top: 4em;
+}
+
+.so-video__video--wide {
+  @include mq($bp-medium) {
+    @include span-columns(7);
+    @include shift(2.5);
+  }
+}
+
+.so-video__postscript {
+  @include so-postscript();
+}

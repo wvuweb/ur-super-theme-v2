@@ -1,0 +1,43 @@
+<r:set_var name="so_calendar_feed">
+  <r:site:data name="calendar_feed" />
+</r:set_var>
+
+<div class="so-calendar-widget <r:page:content name="so-background-color-class--calendar" /> background">
+  <div class="so-calendar-widget__container">
+
+    <r:page:if_has_content_for region="so-calendar-widget__header" always_show_in_edit_mode="true">
+      <div class="so-calendar-widget__header">
+        <r:editable_region name="so-calendar-widget__header">
+          <h2>Calendar Widget Header</h2>
+          <p>Subhead goes here.</p>
+        </r:editable_region>
+      </div>
+    </r:page:if_has_content_for>
+
+    <ul class="wvu-calendar wvu-calendar--flex">
+
+      <r:if expr="{{ NOT(BLANK(calendar_feed_page)) }}">
+        <script language="javascript" src="<r:page:data name="calendar_feed_page" />"></script>
+      </r:if>
+
+      <r:if expr="{{ BLANK(calendar_feed_page) }}">
+        <script language="javascript" src="<r:site:data name="calendar_feed" />"></script>
+      </r:if>
+
+    </ul>
+
+    <div class="so-calendar-widget__postscript">
+      <r:editable_region name="so-calendar-widget__postscript" scope="site">
+        Put any additional info or links here.
+      </r:editable_region>
+    </div>
+
+  </div>
+</div>
+
+<r:edit_mode_only>
+  <div class="so-instructions">
+    <p><strong>Instructions for Calendar Widget:</strong> In order to use this, you must submit events to the <a href="cal.wvu.edu">WVU Calendar</a>. Then contact <a href="mailto:jay.allen@mail.wvu.edu">Jay Allen</a> and let him know you need a calendar feed for your website. When he gives you the code, enter it into your site settings > custom data in the <strong>calendar_feed</strong> field.</p>
+    <p><strong>Background Color:</strong> <r:editable_region name="so-background-color-class--calendar" /></p>
+  </div>
+</r:edit_mode_only>

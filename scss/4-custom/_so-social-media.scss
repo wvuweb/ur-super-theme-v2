@@ -1,0 +1,68 @@
+.so-social-media {
+  background: shade($black, 20%);
+  color: white;
+}
+
+.so-social-media__container {
+  @include outer-container();
+  @include u-wvu-container-padding();
+}
+
+.so-social-media {
+  h2 {
+    color: white;
+    @include wvu-lede();
+  }
+}
+
+.so-social-media__header {
+  text-align: center;
+  h2 {
+    @include wvu-secondary-pattern-heading();
+  }
+  h3 {
+    @include wvu-secondary-pattern-heading();
+    font-size: 2.4em;
+  }
+  p {
+    margin: 0 auto;
+  }
+}
+
+.so-social-media__postscript {
+  @include so-postscript();
+}
+
+.so-social-media__icons {
+  margin: 2em auto 0 auto;
+  text-align: center;
+}
+
+h2 + .so-social-media__icons {
+  margin-top: 3em;
+}
+
+.so-social-media__icon {
+  display: inline-block;
+  font-size: .8em;
+  margin: 0 .5em;
+  @include mq($bp-large) {
+    font-size: 1em;
+  }
+  a, a:visited {
+    color: white;
+    text-decoration: none;
+  }
+  img {
+    height: 32px;
+    width: 32px;
+    @include mq($bp-large) {
+      font-size: 1em;
+      height: 64px;
+      width: 64px;
+    }
+  }
+  p {
+    margin-top: .5em;
+  }
+}

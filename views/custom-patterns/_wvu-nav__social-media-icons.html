@@ -1,0 +1,29 @@
+<div class="wvu-nav__social-media-icons">
+  <div class="wvu-nav__social-media-icons-container">
+
+    <r:if expr="{{ NOT(BLANK(facebook_url)) }}">
+      <a href="<r:site:data name="facebook_url" />"><img src="https://patterns.wvu.edu/images/social-media-icons/facebook.svg" alt="Facebook icon" /></a>
+    </r:if>
+
+    <r:if expr="{{ NOT(BLANK(instagram_url)) }}">
+      <a href="<r:site:data name="instagram_url" />"><img src="https://patterns.wvu.edu/images/social-media-icons/instagram.svg" alt="Instagram icon" /></a>
+    </r:if>
+
+    <r:if expr="{{ NOT(BLANK(linkedin_url)) }}">
+      <a href="<r:site:data name="linkedin_url" />"><img src="https://patterns.wvu.edu/images/social-media-icons/linkedin.svg" alt="LinkedIn icon" /></a>
+    </r:if>
+
+    <r:if expr="{{ NOT(BLANK(rss_url)) }}">
+      <a href="<r:site:data name="rss_url" />"><img src="https://patterns.wvu.edu/images/social-media-icons/rss.svg" alt="RSS icon" /></a>
+    </r:if>
+
+    <r:if expr="{{ NOT(BLANK(twitter_url)) }}">
+      <a href="<r:site:data name="twitter_url" />"><img src="https://patterns.wvu.edu/images/social-media-icons/twitter.svg" alt="Twitter icon" /></a>
+    </r:if>
+
+    <r:if expr="{{ NOT(BLANK(youtube_url)) }}">
+      <a href="<r:site:data name="youtube_url" />"><img src="https://patterns.wvu.edu/images/social-media-icons/youtube.svg" alt="YouTube icon" /></a>
+    </r:if>
+
+  </div>
+</div>

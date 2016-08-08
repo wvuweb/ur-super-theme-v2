@@ -1,0 +1,34 @@
+---
+layout: default
+custom_data_attributes:
+ - backpage_header_badge
+---
+
+<r:set_var name="backpage_header" value="{$backpage_header}" default="true">
+  <r:page:data name="backpage_header" />
+</r:set_var>
+
+<r:if v1="{$backpage_header}" v2="true" op="=">
+  <r:partial name="custom-patterns/so-backpage-header" />
+</r:if>
+
+<div class="wvu-container">
+
+  <main id="maincontent" class="main <r:page:unless_has_content_for region="wvu-sidebar">main--wide</r:page:unless_has_content_for>  <r:edit_mode_only>main--edit-mode</r:edit_mode_only>">
+    <r:partial name="custom-patterns/so-page-meta" />
+    <r:editable_region name="main" />
+    <r:children:each>
+      <h3><r:page:name /></h3>
+      <div class="so-gallery">
+        <r:partial name="custom-patterns/so-gallery" />
+      </div>
+    </r:children:each>
+  </main>
+
+  <r:partial name="custom-patterns/wvu-sidebar" />
+
+</div> <!-- /.wvu-container -->
+
+<r:content_for name="page_js">
+  <r:partial name="custom-patterns/javascript-gallery" />
+</r:content_for>

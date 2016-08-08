@@ -1,0 +1,44 @@
+---
+layout: default
+custom_data_attributes:
+  - advertisements_id
+  - agenda_id
+  - backpage_has_sidebar
+  - calendar_feed_page
+  - calendar_id
+  - featurettes_id
+  - featurettes_2_id
+  - hero
+  - hero_text_alignment
+  - polyptych_panel_count
+  - profiles_id
+  - show_instructions
+  - staff_directory_id
+  - testimonials_id
+  - search_action
+  - slot_01
+  - slot_02
+  - slot_03
+  - slot_04
+  - slot_05
+  - slot_06
+  - slot_07
+  - slot_07
+  - slot_08
+---
+
+<a href="#" id="maincontent"></a>
+
+<r:set_var name="hero" value="{$hero}" default="true">
+  <r:page:data name="hero" />
+</r:set_var>
+
+<r:if v1="{$hero}" v2="true" op="=">
+  <r:partial name="custom-patterns/so-hero" />
+</r:if>
+
+<r:if v1="{$hero}" v2="admin" op="=">
+  <r:partial name="custom-patterns/so-adminHero" />
+</r:if>
+
+<r:partial name="custom-patterns/so-slots" />

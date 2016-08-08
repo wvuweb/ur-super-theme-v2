@@ -1,0 +1,58 @@
+<div class="so-featurettes so-featurettes--2 <r:page:content name="so-background-color-class--featurettes-2" /> background">
+  <div class="so-featurettes__container">
+
+    <r:page:if_has_content_for region="so-featurettes__header-2" always_show_in_edit_mode="true">
+      <div class="so-featurettes__header">
+        <r:editable_region name="so-featurettes__header-2">
+          <h2>Featurettes Headline</h2>
+          <p>Subhead goes here.</p>
+        </r:editable_region>
+      </div>
+    </r:page:if_has_content_for>
+
+    <r:set_var name="featurettes_id2">
+      <r:page:data name="featurettes_2_id" />
+    </r:set_var>
+
+    <r:get_page id="{$featurettes_id2}">
+
+      <r:children by="name" order="asc" labels="feature" labels_match="any">
+        <div class="so-featurettes__featurettes so-featurettes__featurettes--<r:count />">
+          <r:each>
+            <div class="so-featurettes__featurette">
+
+              <r:set_var name="soFeaturettesInfoWide2" default="nophoto" />
+              <r:page:if_has_content_for region="so-page-meta__thumb">
+                <div class="so-featurettes__photo">
+                  <a href="<r:page:unless_has_content_for region="so-featurettes__url"><r:page:url /></r:page:unless_has_content_for><r:page:if_has_content_for region="so-featurettes__url"><r:page:content name="so-featurettes__url" /></r:page:if_has_content_for>"><r:page:content name="so-page-meta__thumb" /></a>
+                </div>
+                <r:set_var name="soFeaturettesInfoWide2">
+                  hasphoto
+                </r:set_var>
+              </r:page:if_has_content_for>
+
+              <div class="so-featurettes__info so-featurettes__info--<r:var name="soFeaturettesInfoWide2" />">
+                <h3><a href="<r:page:unless_has_content_for region="so-featurettes__url"><r:page:url /></r:page:unless_has_content_for><r:page:if_has_content_for region="so-featurettes__url"><r:page:content name="so-featurettes__url" /></r:page:if_has_content_for>"><r:page:first_non_blank_attr names="alternate_name,name" /></a></h3>
+                <p>
+                  <r:page:content name="so-page-desc" />
+                </p>
+                <p>
+                  <a class="button" href="<r:page:unless_has_content_for region="so-featurettes__url"><r:page:url /></r:page:unless_has_content_for><r:page:if_has_content_for region="so-featurettes__url"><r:page:content name="so-featurettes__url" /></r:page:if_has_content_for>"><r:page:unless_has_content_for region="so-featurettes__link-text">More About <r:page:name /></r:page:unless_has_content_for><r:page:if_has_content_for region="so-featurettes__link-text"><r:page:content name="so-featurettes__link-text" /></r:page:if_has_content_for></a>
+                </p>
+              </div>
+            </div>
+          </r:each>
+        </div>
+      </r:children>
+
+    </r:get_page>
+
+  </div>
+</div>
+
+<r:edit_mode_only>
+  <div class="so-instructions">
+    <strong>Instructions for Featurettes:</strong> This loops through the children of page and pulls content to create sub-features. Enter the parent page&rsquo;s ID in the <strong>featurettes_id</strong> field in the site properties. Each page you wish featured must be labelled "feature".
+    <p><strong>Background Color:</strong> <r:editable_region name="so-background-color-class--featurettes-2" /></p>
+  </div>
+</r:edit_mode_only>

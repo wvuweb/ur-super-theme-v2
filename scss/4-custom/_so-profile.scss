@@ -1,0 +1,11 @@
+.wvu-profile__contact-and-photo {
+  @include mq($bp-medium) {
+    @include span-columns(4);
+  }
+}
+
+.wvu-profile__content {
+  @include mq($bp-medium) {
+    @include span-columns(8);
+  }
+}

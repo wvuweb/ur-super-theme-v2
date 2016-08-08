@@ -1,0 +1,21 @@
+<r:set_var name="so_calendar_feed">
+  <r:site:data name="calendar_feed" />
+</r:set_var>
+
+<div class="so-calendar-widget <r:page:content name="so-background-color-class--calendar" /> background">
+  <div class="so-calendar-widget__container">
+
+    <ul class="wvu-calendar wvu-calendar--flex">
+
+      <r:if expr="{{ NOT(BLANK(calendar_feed_page)) }}">
+        <script language="javascript" src="<r:page:data name="calendar_feed_page" />"></script>
+      </r:if>
+
+      <r:if expr="{{ BLANK(calendar_feed_page) }}">
+        <script language="javascript" src="<r:site:data name="calendar_feed" />"></script>
+      </r:if>
+
+    </ul>
+
+  </div>
+</div>

@@ -1,0 +1,23 @@
+{
+  "name": "brand-patterns",
+  "version": "0.1.0",
+  "description": "WVU Brand Patterns",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://stash.development.wvu.edu/scm/cst/brand-patterns.git"
+  },
+  "author": "May Day <may.day@mail.wvu.edu>",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-sass": "^2.1.1"
+  },
+  "dependencies": {
+    "critical": "^0.7.2"
+  }
+}

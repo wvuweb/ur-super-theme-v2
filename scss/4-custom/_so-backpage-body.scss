@@ -1,0 +1,7 @@
+.main--wide {
+  &.main--edit-mode {
+    @include mq($bp-medium) {
+      @include span-columns(9);
+    }
+  }
+}

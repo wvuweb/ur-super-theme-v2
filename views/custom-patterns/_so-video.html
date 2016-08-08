@@ -1,0 +1,41 @@
+
+<div class="so-video">
+  <div class="so-video__container">
+    <r:page:if_has_content_for region="so-video__header" always_show_in_edit_mode="true">
+      <div class="so-video__header">
+        <r:editable_region name="so-video__header">
+          <h2>Video Headline</h2>
+          <p>Subhead goes here.</p>
+        </r:editable_region>
+      </div>
+    </r:page:if_has_content_for>
+
+    <div class="so-video__video-and-description">
+      <div class="so-video__video <r:page:unless_has_content_for region="so-video__description">so-video__video--wide</r:page:unless_has_content_for>">
+        <div class="u-wvu-embed-container <r:edit_mode_only>u-wvu-embed-container--edit-mode</r:edit_mode_only>">
+          <r:editable_region name="so-video__video">
+            <iframe src="https://www.youtube.com/embed/p8cr9RYEHTA" frameborder="0" allowfullscreen></iframe>
+          </r:editable_region>
+        </div>
+      </div>
+
+      <r:page:if_has_content_for region="so-video__description" always_show_in_edit_mode="true">
+        <div class="so-video__description">
+          <r:page:if_has_content_for region="so-video__description-header" always_show_in_edit_mode="true">
+            <h3><r:editable_region name="so-video__description-header" type="simple">Headline Goes Here</r:editable_region></h3>
+          </r:page:if_has_content_for>
+          <r:editable_region name="so-video__description">
+            Put description of video here.
+          </r:editable_region>
+        </div>
+      </r:page:if_has_content_for>
+    </div>
+
+  </div>
+</div>
+
+<r:edit_mode_only>
+  <div class="so-instructions">
+    <strong>Instructions for Video:</strong> This block allows you to diplay a video. Use the HTML button in the editor bar, then insert your YouTube embed code. Remove the height and width properties of the video. If you don't want to use thise block, simply delete the video that is there. There is an optional field for a description to the right.
+  </div>
+</r:edit_mode_only>

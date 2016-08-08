@@ -1,0 +1,30 @@
+<r:set_var name="bgurl">
+  <r:page:slug />-hero-background
+</r:set_var>
+
+<div class="so-admin-hero" style="background-image: url(<r:files:each labels="{$bgurl}" limit="1" types="image" random="true"><r:file:image_url size="1780x580" /></r:files:each>);">
+  <div class="so-admin-hero__container">
+    <div class="so-admin-hero__copy <r:page:unless_has_content_for region="so-admin-hero__links">so-admin-hero__copy--wide</r:page:unless_has_content_for>">
+      <h1><r:editable_region name="so-admin-hero__h1" type="simple">Header text goes here.</r:editable_region></h1>
+      <p><r:editable_region name="so-admin-hero__p" type="simple">Optional paragraph text goes here.</r:editable_region></p>
+    </div>
+    <r:page:if_has_content_for region="so-admin-hero__links" always_show_in_edit_mode="true">
+      <div class="so-admin-hero__links">
+        <r:editable_region name="so-admin-hero__links">
+          <ul>
+            <li><a href="#">Action 1</a></li>
+            <li><a href="#">Action 2</a></li>
+            <li><a href="#">Action 3</a></li>
+            <li><a href="#">Action 4</a></li>
+          </ul>
+        </r:editable_region>
+      </div>
+    </r:page:if_has_content_for>
+  </div>
+</div>
+
+<r:edit_mode_only>
+  <div class="so-instructions">
+    <strong>Instructions for Admin Hero:</strong> This is meant for an intro paragraph and 3-4 action items to the right.
+  </div>
+</r:edit_mode_only>

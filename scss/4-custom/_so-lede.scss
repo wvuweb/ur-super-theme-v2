@@ -1,0 +1,13 @@
+.so-lede {
+  background-color: tint($black, 97%);
+  color: $black;
+  font-family: $helvetica-neue-light;
+  p {
+    font-size: 2.5em;
+    @include wvu-lede();
+  }
+}
+.so-lede__container {
+  @include outer-container();
+  @include u-wvu-container-padding();
+}

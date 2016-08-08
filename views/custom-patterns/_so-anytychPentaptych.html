@@ -1,0 +1,103 @@
+<r:comment>
+<!-- NOTE: This anytych can be reused over and over. -->
+<!-- You can use this partial multiple times on the same page by setting different... -->
+<!-- ...`regionName__base` variables above each partial.  -->
+<!-- You can also change the `triptychItems` to be more than 4 if you like. -->
+<!-- Always increase by 4. -->
+<!-- Set the scope by defining the `$scope` variable to either `page` or `site`. -->
+</r:comment>
+
+<r:set_var name="soMagicAnytychPhoto__basePentaptych" value="{$soMagicAnytychPhoto__basePentaptych}" default="wvu-magic-anytych__photoPentaptych" />
+<r:set_var name="soMagicAnytychCopy__basePentaptych" value="{$soMagicAnytychCopy__basePentaptych}" default="wvu-magic-anytych__copyPentaptych" />
+<r:set_var name="soMagicAnytychButtonText__basePentaptych" value="{$soMagicAnytychButtonText__basePentaptych}" default="wvu-magic-anytych__button-textPentaptych" />
+<r:set_var name="soMagicAnytychUrl__basePentaptych" value="{$soMagicAnytychUrl__basePentaptych}" default="wvu-magic-anytych__urlPentaptych" />
+<r:set_var name="triptychItemsPentaptych" value="{$anyptychItemsPentaptych}" default="5" />
+<r:set_var name="scopePentaptych" value="{$scopePentaptych}" default="page" />
+
+<div class="so-magic-anytych <r:page:content name="so-background-color-class--anytychPentaptych" /> background <r:page:if_has_content_for region="wvu-magic-anytych__copyPentaptych--2">so-magic-anytych--diptych</r:page:if_has_content_for> <r:page:if_has_content_for region="wvu-magic-anytych__copyPentaptych--3">so-magic-anytych--triptych</r:page:if_has_content_for> <r:page:if_has_content_for region="wvu-magic-anytych__copyPentaptych--4">so-magic-anytych--quadtych</r:page:if_has_content_for> <r:page:if_has_content_for region="wvu-magic-anytych__copyPentaptych--5">so-magic-anytych--pentaptych</r:page:if_has_content_for> <r:edit_mode_only>so-magic-anytych--pentaptych</r:edit_mode_only>">
+  <div class="so-magic-anytych__container">
+
+    <r:page:if_has_content_for region="so-magic-anytych__headerPentaptych" always_show_in_edit_mode="true">
+      <div class="so-magic-anytych__header">
+        <r:editable_region name="so-magic-anytych__headerPentaptych">
+          <h2>Mulitple Panels Headline</h2>
+          <p>Subhead goes here.</p>
+        </r:editable_region>
+      </div>
+    </r:page:if_has_content_for>
+
+    <div class="so-magic-anytych__panels">
+
+      <r:loop:each times="{$triptychItemsPentaptych}">
+
+        <r:set_var name="soMagicAnytychCopyPentaptych"><r:var name="soMagicAnytychCopy__basePentaptych" />--<r:item /></r:set_var>
+
+        <r:page:if_has_content_for region="{$soMagicAnytychCopyPentaptych}" always_show_in_edit_mode="true">
+          <div class="so-magic-anytych__panel">
+
+            <r:set_var name="soMagicAnytychPhotoPentaptych"><r:var name="soMagicAnytychPhoto__basePentaptych" />--<r:item /></r:set_var>
+
+            <r:page:if_has_content_for region="{$soMagicAnytychPhotoPentaptych}" always_show_in_edit_mode="true">
+              <div class="so-magic-anytych__photo">
+                <r:editable_region name="{$soMagicAnytychPhotoPentaptych}">
+                  <img src="http://placehold.it/960x640">
+                </r:editable_region>
+              </div>
+            </r:page:if_has_content_for>
+
+            <div class="so-magic-anytych__copy <r:page:unless_has_content_for region="{$soMagicAnytychPhotoPentaptych}">so-magic-anytych__copy--wide</r:page:unless_has_content_for>">
+
+              <r:editable_region name="{$soMagicAnytychCopyPentaptych}">
+                <h3>Headline Goes Here</h3>
+                <p>Short description goes here. Do not put links here. Only one short paragraph.</p>
+              </r:editable_region>
+
+              <r:set_var name="soMagicAnytychButtonTextPentaptych"><r:var name="soMagicAnytychButtonText__basePentaptych" />--<r:item /></r:set_var>
+              <r:set_var name="soMagicAnytychUrlPentaptych"><r:var name="soMagicAnytychUrl__basePentaptych" />--<r:item /></r:set_var>
+
+              <r:page:if_has_content_for region="{$soMagicAnytychUrlPentaptych}">
+                <a class="button <r:edit_mode_only>button--edit-mode</r:edit_mode_only>" href="<r:page:content name="{$soMagicAnytychUrlPentaptych}" />">
+                  <r:page:content name="{$soMagicAnytychButtonTextPentaptych}" />
+                </a>
+              </r:page:if_has_content_for>
+
+              <r:edit_mode_only>
+                <a class="button">
+                  <r:editable_region name="{$soMagicAnytychButtonTextPentaptych}" type="simple">
+                    Button Text
+                  </r:editable_region>
+                </a>
+                <p>
+                  <r:editable_region name="{$soMagicAnytychUrlPentaptych}" type="simple">
+                    Put URL for Button Here
+                  </r:editable_region>
+                </p>
+              </r:edit_mode_only>
+
+            </div>
+
+          </div> <!-- end so-magic-anytych__panel -->
+        </r:page:if_has_content_for>
+
+      </r:loop:each>
+
+    </div> <!-- end so-magic-anytych__panels -->
+
+    <r:page:if_has_content_for region="so-magic-anytych__postscriptPentaptych">
+      <div class="so-magic-anytych__postscript">
+        <r:editable_region name="so-magic-anytych__postscriptPentaptych">
+          Put any additional info or links here.
+        </r:editable_region>
+      </div>
+    </r:page:if_has_content_for>
+
+  </div> <!-- end so-magic-anytych__container -->
+</div> <!-- end so-magic-anytych -->
+
+
+<r:edit_mode_only>
+  <div class="so-instructions">
+    <p><strong>Instructions for Multiple Panels:</strong> These panels display sub-features or allow you to have multiple columns of content. Try to keep these consistent e.g. if you have a header in one column, use a header in all of them. You can have 1-4 columns. To omit columns, simply leave the description field in each column you wish to omit blank, from right to left.</p>
+    <p><strong>Background Color:</strong> <r:editable_region name="so-background-color-class--anytychPentaptych" /></p>
+  </div>
+</r:edit_mode_only>

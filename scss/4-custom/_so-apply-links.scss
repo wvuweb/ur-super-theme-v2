@@ -1,0 +1,10 @@
+.so-apply-links {
+  background-color: shade($black, 10%);
+  text-align: center;
+  @include mq($bp-medium) {
+    text-align: right;
+  }
+  .button {
+    font-size: .8em;
+  }
+}

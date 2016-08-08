@@ -1,0 +1,15 @@
+.so-page-meta {
+  background-color: tint($pms-warm-gray-3, 50%);
+  border: 1px dotted tint($pms-warm-gray-3, 20%);
+  margin-bottom: 2em;
+  padding: 2em;
+  @include span-columns(12);
+  p {
+    margin-top: 0;
+  }
+}
+.so-page-meta__description, .so-page-meta__thumb {
+  @include mq($bp-medium) {
+    @include span-columns(6);
+  }
+}

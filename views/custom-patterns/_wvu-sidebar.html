@@ -1,0 +1,38 @@
+<r:if v1="{$backpage_has_sidebar}" v2="false" op="!=">
+  <aside class="wvu-sidebar">
+
+    <r:page:if_has_content_for region="wvu-sidebar-content" always_show_in_edit_mode="true">
+
+      <r:edit_mode_only>
+        <h3>Sidebar Content:</h3>
+        <p>(If you do not want the sidebar to show up, set "backpage_has_sidebar" to "false" in the page properties)</p>
+      </r:edit_mode_only>
+
+      <div class="wvu-sub-nav">
+        <r:editable_region name="wvu-sidebar-content" />
+      </div>
+
+    </r:page:if_has_content_for>
+
+    <r:page:if_has_content_for region="wvu-sub-nav__label" always_show_in_edit_mode="true">
+      <r:edit_mode_only>
+        <h3><r:editable_region name="wvu-sub-nav__label" type="simple">Sub-Nav</r:editable_region></h3>
+        <p>(If you do not want the subnav to show, delete the content in this region)</p>
+      </r:edit_mode_only>
+      <div class="wvu-sub-nav">
+        <r:ancestor_menu start_depth="2" max_depth="3" ul_class="nav-secondary" active_class="nav-secondary--current-page" open_class="nav-secondary--open" />
+      </div> <!-- /.wvu-sub-nav -->
+    </r:page:if_has_content_for>
+
+    <r:page:if_has_content_for region="wvu-sidebar-content-2" always_show_in_edit_mode="true">
+
+      <r:edit_mode_only>
+        <h3>More Sidebar Content:</h3>
+      </r:edit_mode_only>
+
+      <r:editable_region name="wvu-sidebar-content-2" />
+
+    </r:page:if_has_content_for>
+
+  </aside>
+</r:if>

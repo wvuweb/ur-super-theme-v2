@@ -1,0 +1,8 @@
+.wvu-navigation {
+  background-color: $black;
+  color: white;
+}
+
+.wvu-navigation__container {
+  @include outer-container();
+}

@@ -1,0 +1,42 @@
+
+<r:page:if_has_content_for region="agenda-title" always_show_in_edit_mode="true">
+  <r:set_var name="agenda_id">
+    <r:page:data name="agenda_id" />
+  </r:set_var>
+
+  <div class="cs-event-agenda">
+    <div class="cs-event-agenda__container">
+      <h2><r:editable_region name="agenda-title" type="simple">Event Agenda Headline</r:editable_region></h2>
+
+      <r:get_page id="{$agenda_id}">
+        <r:children:each>
+
+          <h3><r:page:first_non_blank_attr names="alternate_name,name" /></h3>
+
+          <table>
+
+            <r:children:each>
+              <tr>
+                <td>
+                  <strong><r:page:content name="start-time" /> - <r:page:content name="end-time" /></strong>
+                </td>
+                <td>
+                  <strong><r:page:name /></strong><br>
+                  <r:page:content name="description" />
+                </td>
+              </tr>
+            </r:children:each>
+
+          </table>
+        </r:children:each>
+      </r:get_page>
+
+    </div>
+  </div>
+</r:page:if_has_content_for>
+
+<r:edit_mode_only>
+  <div class="so-instructions">
+    <strong>Instructions for Multiple Panels:</strong> These panels display sub-features or allow you to have multiple columns of content. Try to keep these consistent e.g. if you have a header in one column, use a header in all of them. You can have 1-4 columns. To omit columns, simply leave the description field in each column you wish to omit blank. If you do not wish to display this widget, delete the description in the first panel, marked by two red asterisks.
+  </div>
+</r:edit_mode_only>

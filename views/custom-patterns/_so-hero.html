@@ -1,0 +1,41 @@
+
+
+<r:set_var name="bgurl">
+  <r:page:slug />-hero-background
+</r:set_var>
+
+<div class="so-hero <r:if value1="{$hero_text_alignment}" value2="right" operator="=">so-hero--right</r:if> <r:page:unless_has_content_for region="so-hero__photo">so-hero--big-photo</r:page:unless_has_content_for>" style="background-image: url(<r:files:each labels="{$bgurl}" limit="1" types="image" random="true"><r:file:image_url size="1780x580" /></r:files:each>); <r:page:if_has_content_for region="so-hero__photo">background-image: none;</r:page:if_has_content_for>">
+  <div class="so-hero__container">
+    <div class="so-hero__copy <r:edit_mode_only>so-hero__copy--edit-mode</r:edit_mode_only>">
+      <h1><span><r:editable_region name="so-hero__header" type="simple">Header Goes Here</r:editable_region></span></h1>
+      <p><r:editable_region name="so-hero__text" type="simple">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</r:editable_region></p>
+      <r:page:if_has_content_for region="so-hero__action-item-url">
+        <a href="<r:page:content name="so-hero__action-item-url" />" class="button button--white <r:edit_mode_only>button--edit-mode</r:edit_mode_only>"><r:page:content name="so-hero__action-item-text" /></a>
+      </r:page:if_has_content_for>
+      <r:edit_mode_only>
+        <p class="button"><r:editable_region name="so-hero__action-item-text" type="simple">Action Item Text</r:editable_region></p>
+        <p><r:editable_region name="so-hero__action-item-url" type="simple">URL for action item goes here. If you don't want the hero unit to show up at all, delete the content in this editable region.</r:editable_region></p>
+      </r:edit_mode_only>
+    </div>
+    <r:page:if_has_content_for region="so-hero__photo" always_show_in_edit_mode="true">
+      <div class="so-hero__photo">
+        <r:editable_region name="so-hero__photo">
+          <img src="http://placehold.it/960x640" />
+        </r:editable_region>
+        <r:page:if_has_content_for region="so-hero__photo-caption" always_show_in_edit_mode="true">
+          <div class="so-hero__photo-caption">
+            <r:editable_region name="so-hero__photo-caption">
+              Photo caption goes here.
+            </r:editable_region>
+          </div>
+        </r:page:if_has_content_for>
+      </div>
+    </r:page:if_has_content_for>
+  </div>
+</div>
+
+<r:edit_mode_only>
+  <div class="so-instructions">
+    <strong>Instructions for Hero:</strong> This is where you feature your most important content and user action. It requires marketing copy for a headline and brief description, a call to action, a photo, and an optional photo caption. If you cannot provide all of these items, consider omitting this section. See our <a href="http://brand.wvu.edu/brand-guide/voice">guidelines for marketing copy</a> and <a href="http://brand.wvu.edu/brand-guide/graphic-language/photo">using photos</a>. If you want to use a large background image instead of the default image, delete the default image and upload your own background image. Label the image with the page slug of the page that contains the hero and a &ldquo;-hero-background&rdquo; suffix. For example, if the hero is being used on the Home page, label the photo with &ldquo;home-hero-background&rdquo;.
+  </div>
+</r:edit_mode_only>

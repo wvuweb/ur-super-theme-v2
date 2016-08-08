@@ -1,0 +1,11 @@
+.so-diptych__panel--main {
+  @include mq($bp-medium) {
+    @include span-columns(7);
+  }
+}
+
+.so-diptych__panel--sidebar {
+  @include mq($bp-medium) {
+    @include span-columns(5);
+  }
+}

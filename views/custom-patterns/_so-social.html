@@ -1,0 +1,121 @@
+
+<div class="so-social-media">
+  <div class="so-social-media__container">
+
+    <r:page:if_has_content_for region="so-social-media__header" always_show_in_edit_mode="true">
+      <div class="so-social-media__header">
+        <r:editable_region name="so-social-media__header" scope="site">
+          <h2>Follow Us</h2>
+          <p>Subhead goes here.</p>
+        </r:editable_region>
+      </div>
+    </r:page:if_has_content_for>
+
+    <div class="so-social-media__icons">
+
+      <r:page:if_has_content_for region="so-social-media__facebook-link" always_show_in_edit_mode="true">
+        <div class="so-social-media__icon">
+          <a href="<r:page:content name="so-social-media__facebook-link" />"><img src="https://patterns.wvu.edu/images/social-media-icons/facebook.svg" alt="Facebook icon" /></a>
+          <p>
+            <a href="<r:page:content name="so-social-media__facebook-link" />">Facebook</a>
+          </p>
+          <r:edit_mode_only>
+            <p>
+              <r:editable_region name="so-social-media__facebook-link" type="simple" scope="site">
+                Put Facebook URL here
+              </r:editable_region>
+            </p>
+          </r:edit_mode_only>
+        </div>
+      </r:page:if_has_content_for>
+
+      <r:page:if_has_content_for region="so-social-media__twitter-link" always_show_in_edit_mode="true">
+        <div class="so-social-media__icon">
+          <a href="<r:page:content name="so-social-media__twitter-link" />"><img src="https://patterns.wvu.edu/images/social-media-icons/twitter.svg" alt="Twitter icon" /></a>
+          <p>
+            <a href="<r:page:content name="so-social-media__twitter-link" />">Twitter</a>
+          </p>
+          <r:edit_mode_only>
+            <p>
+              <r:editable_region name="so-social-media__twitter-link" type="simple" scope="site">
+                Put Twitter URL here
+              </r:editable_region>
+            </p>
+          </r:edit_mode_only>
+        </div>
+      </r:page:if_has_content_for>
+
+      <r:page:if_has_content_for region="so-social-media__instagram-link" always_show_in_edit_mode="true">
+        <div class="so-social-media__icon">
+          <a href="<r:page:content name="so-social-media__instagram-link" />"><img src="https://patterns.wvu.edu/images/social-media-icons/instagram.svg" alt="Instagram icon" /></a>
+          <p>
+            <a href="<r:page:content name="so-social-media__instagram-link" />">Instagram</a>
+          </p>
+          <r:edit_mode_only>
+            <p>
+              <r:editable_region name="so-social-media__instagram-link" type="simple" scope="site">
+                Put Instagram URL here
+              </r:editable_region>
+            </p>
+          </r:edit_mode_only>
+        </div>
+      </r:page:if_has_content_for>
+
+      <r:page:if_has_content_for region="so-social-media__linkedin-link" always_show_in_edit_mode="true">
+        <div class="so-social-media__icon">
+          <a href="<r:page:content name="so-social-media__linkedin-link" />"><img src="https://patterns.wvu.edu/images/social-media-icons/linkedin.svg" alt="LinkedIn icon" /></a>
+          <p>
+            <a href="<r:page:content name="so-social-media__linkedin-link" />">LinkedIn</a>
+          </p>
+          <r:edit_mode_only>
+            <p>
+              <r:editable_region name="so-social-media__linkedin-link" type="simple" scope="site">
+                Put LinkedIn URL here
+              </r:editable_region>
+            </p>
+          </r:edit_mode_only>
+        </div>
+      </r:page:if_has_content_for>
+
+      <r:page:if_has_content_for region="so-social-media__rss-link" always_show_in_edit_mode="true">
+        <div class="so-social-media__icon">
+          <a href="<r:page:content name="so-social-media__rss-link" />"><img src="https://patterns.wvu.edu/images/social-media-icons/rss.svg" alt="RSS icon" /></a>
+          <p>
+            <a href="<r:page:content name="so-social-media__rss-link" />">RSS</a>
+          </p>
+          <r:edit_mode_only>
+            <p>
+              <r:editable_region name="so-social-media__rss-link" type="simple" scope="site">
+                Put RSS URL here
+              </r:editable_region>
+            </p>
+          </r:edit_mode_only>
+        </div>
+      </r:page:if_has_content_for>
+
+      <r:page:if_has_content_for region="so-social-media__youtube-link" always_show_in_edit_mode="true">
+        <div class="so-social-media__icon">
+          <a href="<r:page:content name="so-social-media__youtube-link" />"><img src="https://patterns.wvu.edu/images/social-media-icons/youtube.svg" alt="YouTube icon" /></a>
+          <p>
+            <a href="<r:page:content name="so-social-media__youtube-link" />">YouTube</a>
+          </p>
+          <r:edit_mode_only>
+            <p>
+              <r:editable_region name="so-social-media__youtube-link" type="simple" scope="site">
+                Put YouTube URL here
+              </r:editable_region>
+            </p>
+          </r:edit_mode_only>
+        </div>
+      </r:page:if_has_content_for>
+
+    </div>
+
+  </div>
+</div>
+
+<r:edit_mode_only>
+  <div class="so-instructions">
+    <strong>Instructions for Social Media Widget:</strong> Enter the URLs of each social media account you wish to link to. Delete the default content of those you do not wish to link to.
+  </div>
+</r:edit_mode_only>

@@ -1,0 +1,63 @@
+## Basic Theme Info
+name: WVU Brand Patterns
+description: This is the WVU Brand Patterns theme built for CleanSlate. Originally authored by Adam Glenn.
+
+## Attributes, Data and Variables
+custom_site_attributes:
+  # For Google Search Console
+  - show_apply_links
+  - address_line_1
+  - address_line_2
+  - address_line_3
+  - address_line_4
+  - apply_link_1
+  - apply_link_1_url
+  - apply_link_2
+  - apply_link_2_url
+  - apply_link_3
+  - apply_link_3_url
+  - disable_masthead_search
+  - google_site_verification
+  - has_alternate_logo
+  - masthead_college_link_address
+  - masthead_college_link_title
+  - masthead_color
+  - masthead_title
+  - twitter_handle
+  - facebook_url
+  - instagram_url
+  - linkedin_url
+  - twitter_url
+  - rss_url
+  - youtube_url
+  - twitter_widget_id
+  - calendar_feed
+  - give_url
+  - apply_url
+  - visit_url
+  - request_info_url
+  - org_name
+  - org_url
+  - jquery_defer
+  - nav
+  - default_content_01
+  - default_content_02
+  - default_content_03
+  - show_instructions
+
+## Template Config
+# Specify which templates show up by default when creating a page
+default_templates:
+  content: backpage
+  blog: blog_index
+  article: blog_article
+  error: backpage
+
+## Optimizations
+css:
+  # Turn CSS compression on/off.
+  compress: true
+js:
+  # Turn JavaScript compression and mangling on/off
+  compress: true
+  mangle: true

@@ -1,0 +1,17 @@
+<r:page:if_has_content_for region="so-lede" always_show_in_edit_mode="true">
+  <div class="so-lede">
+    <div class="so-lede__container">
+      <p>
+        <r:editable_region name="so-lede" type="simple">
+          This is a lede paragraph. It introduces your content. It should be short and to the point. Delete this text if you don&rsquo;t want it to show up.
+        </r:editable_region>
+      </p>
+    </div>
+  </div>
+</r:page:if_has_content_for>
+
+<r:edit_mode_only>
+  <div class="so-instructions">
+    <strong>Instructions for Multiple Panels:</strong> This is a lede paragraph. It introduces content and should only be 1-2 sentences and no links.
+  </div>
+</r:edit_mode_only>

@@ -1,0 +1,74 @@
+$black: #2C2A29;
+$flying-wv-w-signature: '../images/flying-wv-w-signature.png';
+
+$helvetica-neue-font-stack: 'Helvetica Neue', Helvetica, 'Helvetica LT Std', 'Helvetica CY', Arial, 'Lucida Grande', sans-serif !default;
+$helvetica-neue-light: 'HelveticaNeueW01-45Ligh', $helvetica-neue-font-stack !default;
+$wvu-header-color: $black;
+$wvu-masthead-background: 'blue';
+$wvu-lede-font-size: 2.5em;
+$wvu-lede-line-height: 1.08333333em;
+$wvu-lede-text-align: center;
+$wvu-shout-font-size: 4.5em;
+$wvu-shout-margin: 0 0 .5em;
+$wvu-anytych-header-margin: 0 0 .5em;
+
+@mixin so-vignetting() {
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: radial-gradient(farthest-side at 90% 55%, transparent, #000 131%);
+    opacity: 0.85;
+    z-index: 1;
+  }
+}
+
+@mixin so-gold-slash() {
+  &:before {
+    content: '';
+    height: 500px;
+    position: absolute;
+    right: 0;
+    bottom: -433px;
+    left: -280px;
+    background-image: url(../images/diagonal-gold.svg);
+    background-repeat: no-repeat;
+    background-size: 312px;
+    opacity: 1;
+    z-index: 2;
+  }
+}
+
+@mixin wvu-lede() {
+  font-family: $helvetica-neue-light;
+  font-weight: normal;
+  line-height: $wvu-lede-line-height;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+}
+
+@mixin so-postscript() {
+  clear: both;
+  display: block;
+  margin: 2em auto 0 auto;
+  text-align: center;
+}
+
+@mixin wvu-primary-pattern-heading() {
+  margin: $wvu-shout-margin;
+  text-align: center;
+  text-transform: uppercase;
+  @include wvu-shout();
+  font-size: 2em;
+}
+
+@mixin wvu-secondary-pattern-heading() {
+  @include wvu-lede();
+  -webkit-font-smoothing: antialiased;
+  margin-bottom: .5em;
+  margin-top: 0;
+  text-align: center;
+}

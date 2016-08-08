@@ -1,0 +1,24 @@
+<r:set_var name="bgurl">
+  <r:page:slug />-header-background
+</r:set_var>
+
+<div class="so-backpage-header" style="<r:files:each labels="backpage-background" limit="1" types="image" random="true">background-image: url(<r:file:image_url size="1780x580" />);</r:files:each> <r:files:each labels="{$bgurl}" limit="1" types="image" random="true">background-image: url(<r:file:image_url size="1780x580" />);</r:files:each>">
+  <r:partial name="patterns/wvu-breadcrumbs" />
+  <div class="so-backpage-header__container">
+    <r:if expr="{{ NOT(BLANK(backpage_header_badge)) }}">
+      <div class="so-backpage-header__badge">
+        <r:page:data name="backpage_header_badge" />
+      </div>
+    </r:if>
+    <h1><span><r:page:first_non_blank_attr names="alternate_name, name" /></span></h1>
+    <r:page:if_has_content_for region="wvu-profile__job-title">
+      <p><r:page:content name="wvu-profile__job-title" /></p>
+    </r:page:if_has_content_for>
+  </div>
+</div>
+
+<r:edit_mode_only>
+  <div class="so-instructions">
+    <strong>Instructions for Backpage Header:</strong> This pattern is on all back pages. To change the background image, upload the photo you wish to use, then either label the photo with &ldquo;backpage-background&rdquo; (if you want it to show on all backpages), or label the photo with the page slug and a &ldquo;-header-background&rdquo; suffix. For example, if you want a unique background for a particular page, and the page is called &ldquo;About Us,&rdquo; label the file &ldquo;about-us-header-background.&rdquo;
+  </div>
+</r:edit_mode_only>

@@ -1,0 +1,101 @@
+<r:comment>
+<!-- NOTE: This anytych can be reused over and over. -->
+<!-- You can use this partial multiple times on the same page by setting different... -->
+<!-- ...`regionName__base` variables above each partial.  -->
+<!-- You can also change the `triptychItems` to be more than 4 if you like. -->
+<!-- Always increase by 4. -->
+<!-- Set the scope by defining the `$scope` variable to either `page` or `site`. -->
+</r:comment>
+
+<r:set_var name="soPolyptychPhoto__base" value="{$soPolyptychPhoto__base}" default="wvu-polyptych__photo" />
+<r:set_var name="soPolyptychCopy__base" value="{$soPolyptychCopy__base}" default="wvu-polyptych__copy" />
+<r:set_var name="soPolyptychButtonText__base" value="{$soPolyptychButtonText__base}" default="wvu-polyptych__button-text" />
+<r:set_var name="soPolyptychUrl__base" value="{$soPolyptychUrl__base}" default="wvu-polyptych__url" />
+<r:set_var name="polyptychItems" value="{$polyptych_panel_count}" default="4" />
+<r:set_var name="scope" value="{$scope}" default="page" />
+
+<div class="so-polyptych <r:page:content name="so-background-color-class--polyptych" /> background so-polyptych--<r:page:data name="polyptych_panel_count" />">
+  <div class="so-polyptych__container">
+
+    <r:page:if_has_content_for region="so-polyptych__header" always_show_in_edit_mode="true">
+      <div class="so-polyptych__header">
+        <r:editable_region name="so-polyptych__header">
+          <h2>Mulitple Panels Headline</h2>
+          <p>Subhead goes here.</p>
+        </r:editable_region>
+      </div>
+    </r:page:if_has_content_for>
+
+    <div class="so-polyptych__panels">
+
+      <r:loop:each times="{$polyptychItems}">
+
+        <r:set_var name="soPolyptychCopy"><r:var name="soPolyptychCopy__base" />--<r:item /></r:set_var>
+
+        <r:page:if_has_content_for region="{$soPolyptychCopy}" always_show_in_edit_mode="true">
+          <div class="so-polyptych__panel">
+
+            <r:set_var name="soPolyptychPhoto"><r:var name="soPolyptychPhoto__base" />--<r:item /></r:set_var>
+
+            <r:page:if_has_content_for region="{$soPolyptychPhoto}" always_show_in_edit_mode="true">
+              <div class="so-polyptych__photo">
+                <r:editable_region name="{$soPolyptychPhoto}">
+                  <img src="http://placehold.it/960x640">
+                </r:editable_region>
+              </div>
+            </r:page:if_has_content_for>
+
+            <div class="so-polyptych__copy <r:page:unless_has_content_for region="{$soPolyptychPhoto}">so-polyptych__copy--wide</r:page:unless_has_content_for>">
+
+              <r:editable_region name="{$soPolyptychCopy}">
+                <h3>Headline Goes Here</h3>
+                <p>Short description goes here. Do not put links here. Only one short paragraph.</p>
+              </r:editable_region>
+
+              <r:set_var name="soPolyptychButtonText"><r:var name="soPolyptychButtonText__base" />--<r:item /></r:set_var>
+              <r:set_var name="soPolyptychUrl"><r:var name="soPolyptychUrl__base" />--<r:item /></r:set_var>
+
+              <r:page:if_has_content_for region="{$soPolyptychUrl}">
+                <a class="button <r:edit_mode_only>button--edit-mode</r:edit_mode_only>" href="<r:page:content name="{$soPolyptychUrl}" />">
+                  <r:page:content name="{$soPolyptychButtonText}" />
+                </a>
+              </r:page:if_has_content_for>
+
+              <r:edit_mode_only>
+                <a class="button">
+                  <r:editable_region name="{$soPolyptychButtonText}" type="simple">
+                    Button Text
+                  </r:editable_region>
+                </a>
+                <p>
+                  <r:editable_region name="{$soPolyptychUrl}" type="simple">
+                    Put URL for Button Here
+                  </r:editable_region>
+                </p>
+              </r:edit_mode_only>
+
+            </div>
+
+          </div> <!-- end so-polyptych__panel -->
+        </r:page:if_has_content_for>
+
+      </r:loop:each>
+
+    </div> <!-- end so-polyptych__panels -->
+
+    <div class="so-polyptych__postscript">
+      <r:editable_region name="so-polyptych__postscript">
+        Put any additional info or links here.
+      </r:editable_region>
+    </div>
+
+  </div> <!-- end so-polyptych__container -->
+</div> <!-- end so-polyptych -->
+
+
+<r:edit_mode_only>
+  <div class="so-instructions">
+    <p><strong>Instructions for Multiple Panels:</strong> These panels display sub-features or allow you to have multiple columns of content. Try to keep these consistent e.g. if you have a header in one column, use a header in all of them. You can have 1-4 columns. To omit columns, simply leave the description field in each column you wish to omit blank, from right to left.</p>
+    <p><strong>Background Color:</strong> <r:editable_region name="so-background-color-class--polyptych" /></p>
+  </div>
+</r:edit_mode_only>

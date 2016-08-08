@@ -1,0 +1,70 @@
+<r:set_var name="masthead_color_option">
+  <r:site:data name="masthead_color" />
+</r:set_var>
+
+<r:if v1="{$masthead_color_option}" v2="white" op="=">
+  <r:set_var name="wvu-masthead__classes">
+    wvu-masthead--white
+  </r:set_var>
+</r:if>
+
+<r:if v1="{$masthead_color_option}" v2="gold" op="=">
+  <r:set_var name="wvu-masthead__classes">
+    wvu-masthead--gold
+  </r:set_var>
+</r:if>
+
+<div class="wvu-masthead <r:var name="wvu-masthead__classes" /> wvu-masthead--disable-search--<r:page:data name="disable_masthead_search" /> <r:files:each labels="masthead-logo" limit="1" types="image" random="true">wvu-masthead--blue</r:files:each>">
+  <div class="wvu-masthead__container">
+    <r:partial name="custom-patterns/wvu-masthead__logo" />
+
+    <r:if value1="{$disable_masthead_search}" value2="true" op="!=">
+
+      <r:partial name="custom-patterns/wvu-masthead__college-link" />
+
+      <div class="wvu-masthead__search-slider">
+        <r:partial name="patterns/wvu-masthead__search-bar" />
+      </div>
+
+    </r:if>
+
+    <r:if value1="{$disable_masthead_search}" value2="true" op="=">
+
+      <div class="wvu-masthead__apply-links">
+        <r:if expr="{{ NOT(BLANK(apply_link_1)) }}">
+          <a href="<r:site:data name="apply_link_1_url" />" class="button button--wvu-gold"><r:site:data name="apply_link_1" /></a>
+        </r:if>
+        <r:if expr="{{ NOT(BLANK(apply_link_2)) }}">
+          <a href="<r:site:data name="apply_link_2_url" />" class="button button--pms-629-c"><r:site:data name="apply_link_2" /></a>
+        </r:if>
+        <r:if expr="{{ NOT(BLANK(apply_link_3)) }}">
+          <a href="<r:site:data name="apply_link_3_url" />" class="button button--pms-144-c"><r:site:data name="apply_link_3" /></a>
+        </r:if>
+      </div>
+
+    </r:if>
+
+  </div> <!-- /.wvu-masthead-container -->
+</div> <!-- /.wvu-masthead -->
+
+
+<div class="wvu-nav">
+  <div class="wvu-nav__container">
+
+    <div class="wvu-nav__nav">
+      <button class="wvu-nav__search-toggle inactive-search" onclick="document.getElementsByClassName('wvu-masthead__search-slider')[0].classList.toggle('closed');">Toggle Search</button>
+      <r:site_menu max_depth="3" ul_class="wvu-nav__items nav-collapse" has_children_class="more" />
+    </div>
+
+    <r:if value1="{$show_apply_links}" value2="true" operator="!=">
+      <r:partial name="custom-patterns/wvu-nav__social-media-icons" />
+    </r:if>
+
+    <r:if value1="{$show_apply_links}" value2="true" operator="=">
+      <r:if value1="{$disable_masthead_search}" value2="true" op="!=">
+        <r:partial name="custom-patterns/wvu-nav__apply-links" />
+      </r:if>
+    </r:if>
+
+  </div>
+</div>

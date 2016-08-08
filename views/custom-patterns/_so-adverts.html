@@ -1,0 +1,49 @@
+<r:set_var name="adverts_id">
+  <r:page:data name="advertisements_id" />
+</r:set_var>
+
+<r:set_var name="page_slug">
+  <r:page:slug />
+</r:set_var>
+
+
+<div class="so-adverts <r:page:content name="so-background-color-class--adverts" /> background">
+  <div class="so-adverts__container">
+
+    <r:page:if_has_content_for region="so-adverts__header" always_show_in_edit_mode="true">
+      <div class="so-adverts__header">
+        <r:editable_region name="so-adverts__header">
+          <h2>Advertisements Header</h2>
+          <p>
+            Subhead goes here.
+          </p>
+        </r:editable_region>
+      </div>
+    </r:page:if_has_content_for>
+
+    <r:get_page id="{$adverts_id}">
+
+      <r:children order="asc" labels="{$page_slug}" labels_match="any">
+        <div class="so-adverts__adverts so-adverts__adverts--<r:count />">
+          <r:each>
+            <div class="so-adverts__advertisement so-adverts__advertisement--<r:page:slug />">
+              <div class="so-adverts__ad-text">
+                <a href="<r:page:content name="so-adverts__url" />"><span><r:page:first_non_blank_attr names="alternate_name,name" /></span></a>
+              </div>
+              <a href="<r:page:content name="so-adverts__url" />"><r:page:content name="so-adverts__image" /></a>
+            </div>
+          </r:each>
+        </div>
+      </r:children>
+
+    </r:get_page>
+
+  </div>
+</div>
+
+<r:edit_mode_only>
+  <div class="so-instructions">
+    <p><strong>Instructions for Adverts:</strong> Show a list of advertisements. This loops through the children of a page e.g. &ldquo;Advertisments&rdquo; and pulls a photo and page title to create ads automatically. Enter the ID of the parent page in the <strong>adverts_id</strong> field of the your page properties. Label each ad with a label that corresponds to the page slug of the page you wish the ad to display. For example, if you wan the ad to show on the "About Us" page, you would label the ad "about-us".</p>
+    <p><strong>Background Color:</strong> <r:editable_region name="so-background-color-class--adverts" /></p>
+  </div>
+</r:edit_mode_only>

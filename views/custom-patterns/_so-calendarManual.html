@@ -1,0 +1,60 @@
+
+
+<r:set_var name="so_calendar_feed">
+  <r:site:data name="calendar_feed" />
+</r:set_var>
+
+<div class="so-calendar-widget">
+  <div class="so-calendar-widget__container">
+
+    <r:page:if_has_content_for region="so-calendar-widget__header" always_show_in_edit_mode="true">
+      <div class="so-calendar-widget__header">
+        <r:editable_region name="so-calendar-widget__header">
+          <h2>Calendar Widget Header</h2>
+          <p>Subhead goes here.</p>
+        </r:editable_region>
+      </div>
+    </r:page:if_has_content_for>
+
+    <ul class="wvu-calendar wvu-calendar--flex">
+      <r:set_var name="calendarID">
+        <r:page:data name="calendar_id" />
+      </r:set_var>
+      <r:get_page id="{$calendarID}">
+        <r:children:each limit="6">
+          <li class="calEvent">
+            <span class="eventDate">
+              <span class="eventMonth">
+                <r:page:content name="so-calendar__month" />
+              </span>
+              <span class="eventDay">
+                <r:page:content name="so-calendar__day" />
+              </span>
+            </span>
+            <span class="eventInfo">
+              <span class="eventTime">
+                <a href="<r:page:url />"><strong><r:page:name /></strong></a>
+              </span>
+              <span class="eventName">
+                <a href="<r:page:url />"><r:page:content name="so-calendar__event-subhead" /></a>
+              </span>
+            </span>
+          </li>
+        </r:children:each>
+      </r:get_page>
+    </ul>
+
+    <div class="so-calendar-widget__postscript">
+      <r:editable_region name="so-calendar-widget__postscript" scope="site">
+        Put any additional info or links here.
+      </r:editable_region>
+    </div>
+
+  </div>
+</div>
+
+<r:edit_mode_only>
+  <div class="so-instructions">
+    <strong>Instructions for Calendar Widget:</strong> In order to use this, you must submit events to the <a href="cal.wvu.edu">WVU Calendar</a>. Then contact <a href="mailto:jay.allen@mail.wvu.edu">Jay Allen</a> and let him know you need a calendar feed for your website. When he gives you the code, enter it into your site settings > custom data in the <strong>calendar_feed</strong> field.
+  </div>
+</r:edit_mode_only>

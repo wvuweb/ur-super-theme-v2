@@ -1,0 +1,37 @@
+<div class="so-quicklinks <r:var name="so-quicklinks__classes" />">
+  <div class="so-quicklinks__container">
+
+    <r:page:if_has_content_for region="so-quicklinks__header" always_show_in_edit_mode="true">
+      <div class="so-quicklinks__header">
+        <r:editable_region name="so-quicklinks__header">
+          <h2>Quicklinks Headline</h2>
+          <p>Subhead goes here.</p>
+        </r:editable_region>
+      </div>
+    </r:page:if_has_content_for>
+
+    <div class="so-quicklinks__quicklinks">
+      <r:editable_region name="so-quicklinks__quicklinks">
+        <ul>
+          <li><a href="#">Quicklink</a></li>
+          <li><a href="#">Quicklink</a></li>
+          <li><a href="#">Quicklink</a></li>
+          <li><a href="#">Quicklink</a></li>
+          <li><a href="#">Quicklink</a></li>
+          <li><a href="#">Quicklink</a></li>
+          <li><a href="#">Quicklink</a></li>
+          <li><a href="#">Quicklink</a></li>
+          <li><a href="#">Quicklink</a></li>
+          <li><a href="#">Quicklink</a></li>
+        </ul>
+      </r:editable_region>
+    </div>
+
+  </div>
+</div>
+
+<r:edit_mode_only>
+  <div class="so-instructions">
+    <strong>Instructions for Quicklinks:</strong> Displays a simple list of links.
+  </div>
+</r:edit_mode_only>

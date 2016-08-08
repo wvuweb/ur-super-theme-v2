@@ -1,0 +1,31 @@
+h1, h2, h3, h4, h5, h6 {
+  color: $wvu-header-color;
+}
+
+.so-close-quote {
+  position: relative;
+  left: -.23em;
+}
+
+.so-region-label {
+  color: red;
+  font-size: 12px;
+  &:before {
+    content: '*';
+  }
+}
+.main--wide {
+  @include mq($bp-medium) {
+    @include span-columns(12);
+  }
+}
+
+.u-wvu-lede {
+  @include wvu-lede();
+  text-align: center;
+}
+
+.u-wvu-shout {
+  @include wvu-shout();
+  text-transform: uppercase;
+}

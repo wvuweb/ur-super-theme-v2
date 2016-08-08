@@ -1,0 +1,87 @@
+---
+layout: default
+custom_data_attributes:
+ - backpage_header_badge
+ - slot_04
+ - slot_05
+ - slot_06
+ - slot_07
+---
+
+<r:set_var name="backpage_header" value="{$backpage_header}" default="true">
+  <r:page:data name="backpage_header" />
+</r:set_var>
+
+<r:if v1="{$backpage_header}" v2="true" op="=">
+  <r:partial name="custom-patterns/so-backpage-header" />
+</r:if>
+
+<div class="wvu-container">
+
+  <main id="maincontent" class="main <r:page:unless_has_content_for region="wvu-sidebar">main--wide</r:page:unless_has_content_for> <r:edit_mode_only>main--edit-mode</r:edit_mode_only>">
+
+    <r:partial name="custom-patterns/so-page-meta" />
+
+    <div class="wvu-profile__contact-and-photo">
+      <div class="wvu-profile__photo">
+        <r:editable_region name="wvu-profile__photo">
+          Add a profile photo.
+        </r:editable_region>
+      </div> <!-- /.wvu-profile__photo -->
+      <div class="wvu-profile__meta-info">
+        <p class="wvu-profile__phone-icon">
+         <r:editable_region name="wvu-profile__phone" type="simple">
+           Enter the person's phone number.
+         </r:editable_region>
+        </p>
+        <p class="wvu-profile__email">
+         <r:editable_region name="wvu-profile__email">
+           Enter the person's email address and link it via "Standard Links" option in the Insert Link modal.
+         </r:editable_region>
+        </p>
+      </div> <!-- /.wvu-profile__meta-info -->
+    </div>
+
+    <div class="wvu-profile__content">
+
+      <div class="wvu-profile__meta-info">
+        <h2 class="wvu-profile__job-title wvu-h5">
+          <r:edit_mode_only>
+            <r:editable_region name="wvu-profile__job-title" type="simple">
+             Enter the person's job title or whatever subhead should go under their name.
+            </r:editable_region>
+          </r:edit_mode_only>
+        </h2>
+      </div> <!-- /.wvu-profile__meta-info -->
+
+      <p>
+        <r:editable_region name="wvu-profile__short-description" type="simple">
+          Enter a brief description of the person. This will be pulled into the profile index page(s). Only enter a sentence or two in this region.
+        </r:editable_region>
+      </p>
+
+      <r:edit_mode_only>
+        <p class="wvu-profile__button"><div class="button"><r:editable_region name="wvu-profile__button-text" scope="site">Read Full Bio</r:editable_region></div></p>
+      </r:edit_mode_only>
+
+      <r:page:if_has_content_for region="wvu-profile__quote" always_show_in_edit_mode="true">
+        <p>
+          <r:editable_region name="wvu-profile__quote" type="simple">
+            Enter a quote for the person. This will be pulled into the profile index page(s). Only enter a sentence or two in this region.
+          </r:editable_region>
+        </p>
+      </r:page:if_has_content_for>
+
+      <r:editable_region name="main">
+        <p>Enter the extended description here.</p>
+      </r:editable_region>
+
+    </div>
+
+  </main><!-- /.main -->
+
+  <r:partial name="custom-patterns/wvu-sidebar" />
+
+</div> <!-- /.wvu-container -->
+
+<r:partial name="custom-patterns/so-backpage-partials--bottom" />

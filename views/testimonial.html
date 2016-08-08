@@ -1,0 +1,49 @@
+---
+layout: default
+custom_data_attributes:
+ - backpage_header_badge
+---
+
+<r:set_var name="backpage_header" value="{$backpage_header}" default="true">
+  <r:page:data name="backpage_header" />
+</r:set_var>
+
+<r:if v1="{$backpage_header}" v2="true" op="=">
+  <r:partial name="custom-patterns/so-backpage-header" />
+</r:if>
+
+<div class="so-testimonial">
+  <div class="so-testimonial__container">
+
+    <r:partial name="custom-patterns/so-page-meta" />
+
+    <div class="so-testimonial__testimonial">
+      <div class="so-testimonial__quote">
+        <r:editable_region name="so-testimonial__quote" type="simple">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </r:editable_region>
+      </div>
+      <r:page:if_has_content_for region="so-testimonial__photo" always_show_in_edit_mode="true">
+        <div class="so-testimonial__photo">
+          <r:editable_region name="so-testimonial__photo">
+            <img src="http://placehold.it/500x500">
+          </r:editable_region>
+          <r:edit_mode_only>
+            <p>This photo should be square. If you don't have a square photo, leave this blank/delete the placeholder.</p>
+          </r:edit_mode_only>
+        </div>
+      </r:page:if_has_content_for>
+      <div class="so-testimonial__author">
+        <r:editable_region name="so-testimonial__author" type="simple">
+          First Last
+        </r:editable_region>
+      </div>
+      <div class="so-testimonial__major">
+        <r:editable_region name="so-testimonial__major" type="simple">
+          Major/Dept.
+        </r:editable_region>
+      </div>
+    </div>
+
+  </div>
+</div>

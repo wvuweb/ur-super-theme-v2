@@ -1,0 +1,39 @@
+<r:set_var name="testimonials_id">
+  <r:page:data name="testimonials_id" />
+</r:set_var>
+
+<div class="so-testimonial">
+  <div class="so-testimonial__container">
+    <r:get_page id="{$testimonials_id}">
+      <r:children:each>
+        <div class="so-testimonial__testimonial">
+          <div class="so-testimonial__quote">
+            &ldquo;<span><r:page:content name="so-testimonial__quote" /></span><span class="so-close-quote">&rdquo;</span>
+          </div>
+          <div class="so-testimonial__photo">
+            <r:page:content name="so-testimonial__photo" />
+          </div>
+          <div class="so-testimonial__author">
+            <r:page:content name="so-testimonial__author" />
+          </div>
+          <div class="so-testimonial__major">
+            <r:page:content name="so-testimonial__major" />
+          </div>
+        </div>
+      </r:children:each>
+    </r:get_page>
+
+    <div class="so-testimonial__postscript">
+      <r:editable_region name="so-testimonial__postscript" scope="site">
+        Put any additional info or links here e.g. <a href="#">view all testimonials</a>.
+      </r:editable_region>
+    </div>
+
+  </div>
+</div>
+
+<r:edit_mode_only>
+  <div class="so-instructions">
+    <strong>Instructions for Testimonial:</strong> This grabs content from the first child page of a &ldquo;Testimonials&rdquo; page. Enter the page ID of the Testimonials page in the <strong>testimonials_id</strong> field of your page properties.
+  </div>
+</r:edit_mode_only>

@@ -1,0 +1,59 @@
+---
+layout: default
+custom_data_attributes:
+ - backpage_header_badge
+---
+
+<r:set_var name="backpage_header" value="{$backpage_header}" default="true">
+  <r:page:data name="backpage_header" />
+</r:set_var>
+
+<r:if v1="{$backpage_header}" v2="true" op="=">
+  <r:partial name="custom-patterns/so-backpage-header" />
+</r:if>
+
+<div class="wvu-container">
+
+  <main id="maincontent" class="main <r:page:unless_has_content_for region="wvu-sidebar">main--wide</r:page:unless_has_content_for> <r:edit_mode_only>main--edit-mode</r:edit_mode_only>">
+
+    <r:partial name="custom-patterns/so-page-meta" />
+
+    <r:page:if_has_content_for region="main" always_show_in_edit_mode="true">
+      <div class="so-main">
+        <r:editable_region name="main">
+          Put some content here.
+        </r:editable_region>
+      </div>
+    </r:page:if_has_content_for>
+
+    <div class="so-testimonial-listing">
+      <r:children:each>
+        <div class="so-testimonial-listing__testimonial">
+
+          <div class="so-testimonial-listing__profile">
+            <div class="so-testimonial-listing__photo">
+              <r:page:content name="so-testimonial__photo" />
+            </div>
+
+          </div>
+
+          <div class="so-testimonial-listing__quote">
+            <div class="so-testimonial-listing__quote-text">
+              <r:page:content name="so-testimonial__quote" />
+            </div>
+            <div class="so-testimonial-listing__author">
+              <r:page:content name="so-testimonial__author" />
+            </div>
+            <div class="so-testimonial-listing__major">
+              <r:page:content name="so-testimonial__major" />
+            </div>
+          </div>
+
+        </div>
+      </r:children:each>
+    </div>
+  </main>
+
+  <r:partial name="custom-patterns/wvu-sidebar" />
+
+</div> <!-- /.wvu-container -->

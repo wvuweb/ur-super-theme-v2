@@ -1,0 +1,192 @@
+
+
+.so-polyptych {
+  background-position: 50% 50%;
+  background-size: cover;
+  color: $black;
+  h2 {
+    font-size: $wvu-shout-font-size;
+    margin: $wvu-shout-margin;
+    text-align: center;
+  }
+  h3 {
+    margin-top: 1em;
+    @include mq($bp-medium) {
+      margin-top: 0;
+    }
+  }
+  .so-polyptych__photo {
+    color: $wvu-blue;
+    font-size: 9em;
+    margin-bottom: 20px;
+    @include wvu-shout();
+    @include mq($bp-medium) {
+      @include span-columns(6);
+    }
+  }
+  .so-polyptych__copy {
+    @include mq($bp-medium) {
+      @include span-columns(6);
+    }
+  }
+  .so-polyptych__copy--wide {
+    text-align: center;
+    @include mq($bp-medium) {
+      @include span-columns(12);
+    }
+    p {
+      margin: 1em auto;
+    }
+  }
+}
+
+.so-polyptych__header {
+  font-size: 2.5em;
+  @include wvu-lede();
+  h2 {
+    @include wvu-primary-pattern-heading();
+  }
+  h3 {
+    @include wvu-lede();
+  }
+}
+
+.so-polyptych__panel {
+  margin-bottom: 2em;
+  @include mq($bp-medium) {
+    margin-bottom: 0;
+  }
+}
+
+.so-polyptych__panels {
+  display: table;
+  width: 100%;
+}
+
+.so-polyptych__container {
+  @include outer-container();
+  @include u-wvu-container-padding();
+}
+
+.so-polyptych__postscript {
+  @include so-postscript();
+}
+
+.so-polyptych--2 {
+  .so-polyptych__panel {
+    @include mq($bp-medium) {
+      @include span-columns(6);
+    }
+  }
+  .so-polyptych__photo {
+    @include mq($bp-medium) {
+      @include span-columns(6);
+    }
+  }
+  .so-polyptych__copy {
+    @include mq($bp-medium) {
+      @include span-columns(6);
+    }
+  }
+  .so-polyptych__copy--wide {
+    text-align: left;
+    @include mq($bp-medium) {
+      @include span-columns(12);
+    }
+    p {
+      margin: 1em 0;
+    }
+  }
+}
+
+.so-polyptych--3 {
+  h3 {
+    font-size: 2em;
+  }
+  .so-polyptych__panel {
+    @include mq($bp-medium) {
+      @include span-columns(4);
+    }
+  }
+  .so-polyptych__photo {
+    font-size: 7em;
+    @include mq($bp-medium) {
+      @include span-columns(12);
+    }
+  }
+  .so-polyptych__copy {
+    @include mq($bp-medium) {
+      @include span-columns(12);
+    }
+  }
+  .so-polyptych__copy--wide {
+    text-align: left;
+    p {
+      margin: 1em 0;
+    }
+  }
+}
+
+.so-polyptych--4 {
+  h3 {
+    font-size: 1.5em;
+  }
+  .so-polyptych__panel {
+    @include mq($bp-medium) {
+      @include span-columns(3);
+    }
+  }
+  .so-polyptych__photo {
+    font-size: 5em;
+    @include mq($bp-medium) {
+      @include span-columns(12);
+    }
+  }
+  .so-polyptych__copy {
+    @include mq($bp-medium) {
+      @include span-columns(12);
+    }
+  }
+  .so-polyptych__copy--wide {
+    text-align: left;
+    p {
+      margin: 1em 0;
+    }
+  }
+}
+
+.so-polyptych--5 {
+  h3 {
+    font-size: 1.5em;
+  }
+  .so-polyptych__panel {
+    @include mq($bp-medium) {
+      @include span-columns(2.4);
+    }
+  }
+  .so-polyptych__photo {
+    font-size: 5em;
+    @include mq($bp-medium) {
+      @include span-columns(12);
+    }
+  }
+  .so-polyptych__copy {
+    @include mq($bp-medium) {
+      @include span-columns(12);
+    }
+  }
+  .so-polyptych__copy--wide {
+    text-align: left;
+    p {
+      margin: 1em 0;
+    }
+  }
+}
+
+.u-wvu-blue.background {
+  .so-polyptych {
+    .so-polyptych__photo {
+      color: $wvu-gold;
+    }
+  }
+}
