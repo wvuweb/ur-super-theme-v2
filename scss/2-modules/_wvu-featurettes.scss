@@ -1,4 +1,4 @@
-.so-featurettes {
+.wvu-featurettes {
   h2 {
     font-size: $wvu-shout-font-size;
     margin: $wvu-shout-margin;
@@ -13,12 +13,12 @@
   }
 }
 
-.so-featurettes__container {
+.wvu-featurettes__container {
   @include outer-container();
   @include u-wvu-container-padding();
 }
 
-.so-featurettes__header {
+.wvu-featurettes__header {
   font-size: 2.5em;
   @include wvu-lede();
   h2 {
@@ -36,41 +36,41 @@
   }
 }
 
-.so-featurettes__postscript {
+.wvu-featurettes__postscript {
   @include so-postscript();
 }
 
-.so-featurettes__featurettes--1, .so-featurettes__featurettes--2 {
+.wvu-featurettes__featurettes--1, .wvu-featurettes__featurettes--2 {
   h3 {
     @include mq($bp-medium) {
       margin-top: 0;
     }
   }
-  .so-featurettes__photo {
+  .wvu-featurettes__photo {
     @include mq($bp-medium) {
       @include span-columns(6);
     }
   }
-  .so-featurettes__info--hasphoto {
+  .wvu-featurettes__info--hasphoto {
     @include mq($bp-medium) {
       @include span-columns(6);
     }
   }
 }
 
-.so-featurettes--profiles {
-  .so-featurettes__featurettes--1 {
+.wvu-featurettes--profiles {
+  .wvu-featurettes__featurettes--1 {
     h3 {
       @include mq($bp-medium) {
         margin-top: 0;
       }
     }
-    .so-featurettes__photo {
+    .wvu-featurettes__photo {
       @include mq($bp-medium) {
         @include span-columns(3);
       }
     }
-    .so-featurettes__info--hasphoto {
+    .wvu-featurettes__info--hasphoto {
       @include mq($bp-medium) {
         @include span-columns(9);
       }
@@ -78,7 +78,7 @@
   }
 }
 
-.so-featurettes__featurette {
+.wvu-featurettes__featurette {
   margin-bottom: 2em;
   @include mq($bp-medium) {
     @include span-columns(3);
@@ -87,8 +87,8 @@
   }
 }
 
-.so-featurettes__featurettes--1 {
-  .so-featurettes__featurette {
+.wvu-featurettes__featurettes--1 {
+  .wvu-featurettes__featurette {
     @include mq($bp-medium) {
       @include span-columns(12);
       @include omega-reset(4n);
@@ -96,8 +96,8 @@
   }
 }
 
-.so-featurettes__featurettes--2 {
-  .so-featurettes__featurette {
+.wvu-featurettes__featurettes--2 {
+  .wvu-featurettes__featurette {
     @include mq($bp-medium) {
       @include span-columns(6);
       @include omega-reset(4n);
@@ -105,8 +105,8 @@
   }
 }
 
-.so-featurettes__featurettes--3 {
-  .so-featurettes__featurette {
+.wvu-featurettes__featurettes--3 {
+  .wvu-featurettes__featurette {
     @include mq($bp-medium) {
       @include span-columns(4);
       @include omega-reset(4n);
@@ -114,53 +114,53 @@
   }
 }
 
-.so-featurettes__photo {
+.wvu-featurettes__photo {
   margin-bottom: 1em;
 }
 
-.so-featurettes--profiles {
+.wvu-featurettes--profiles {
   img {
     border-radius: 50%;
   }
-  .so-featurettes__photo {
+  .wvu-featurettes__photo {
     padding: 0 2em;
     text-align: center;
   }
 }
 
 .main, .wvu-sidebar {
-  .so-featurettes__container {
+  .wvu-featurettes__container {
     width: 100%;
   }
 }
 
-.wvu-sidebar, .so-featurettes__featurette, .so-magic-anytych__panel, .main {
-  .so-featurettes__container {
+.wvu-sidebar, .wvu-featurettes__featurette, .so-magic-anytych__panel, .main {
+  .wvu-featurettes__container {
     padding: 1em 0;
   }
-  .so-featurettes__postscript, .so-featurettes__header {
+  .wvu-featurettes__postscript, .wvu-featurettes__header {
     display: none;
   }
-  .so-featurettes__featurette {
+  .wvu-featurettes__featurette {
     @include mq($bp-medium) {
       margin-bottom: 1em;
       @include span-columns(12);
       @include omega-reset(4n);
     }
   }
-  .so-featurettes__featurette--1, .so-featurettes__featurette--2, .so-featurettes__featurette--3 {
-    .so-featurettes__featurette {
+  .wvu-featurettes__featurette--1, .wvu-featurettes__featurette--2, .wvu-featurettes__featurette--3 {
+    .wvu-featurettes__featurette {
       @include mq($bp-medium) {
         @include span-columns(12);
         @include omega-reset(4n);
       }
     }
-    .so-featurettes__photo {
+    .wvu-featurettes__photo {
       @include mq($bp-medium) {
         @include span-columns(12);
       }
     }
-    .so-featurettes__info {
+    .wvu-featurettes__info {
       @include mq($bp-medium) {
         font-size: .8em;
         @include span-columns(12);
@@ -169,28 +169,28 @@
         margin-bottom: 0;
       }
     }
-    .so-featurettes__info--hasphoto {
+    .wvu-featurettes__info--hasphoto {
       @include mq($bp-medium) {
         @include span-columns(12);
       }
     }
   }
-  .so-featurettes--profiles {
-    .so-featurettes__featurettes--1, .so-featurettes__featurettes--2, .so-featurettes__featurettes--3 {
-      .so-featurettes__featurette {
+  .wvu-featurettes--profiles {
+    .wvu-featurettes__featurettes--1, .wvu-featurettes__featurettes--2, .wvu-featurettes__featurettes--3 {
+      .wvu-featurettes__featurette {
         @include mq($bp-small) {
           margin-bottom: 1em;
           @include span-columns(12);
           @include omega-reset(4n);
         }
       }
-      .so-featurettes__photo {
+      .wvu-featurettes__photo {
         @include mq($bp-small) {
           padding: 0;
           @include span-columns(3);
         }
       }
-      .so-featurettes__info {
+      .wvu-featurettes__info {
         @include mq($bp-small) {
           font-size: .8em;
           @include span-columns(12);
@@ -199,7 +199,7 @@
           margin-bottom: 0;
         }
       }
-      .so-featurettes__info--hasphoto {
+      .wvu-featurettes__info--hasphoto {
         @include mq($bp-small) {
           @include span-columns(9);
         }
@@ -209,9 +209,9 @@
 }
 
 .main {
-  .so-featurettes--profiles {
-    .so-featurettes__featurettes--1, .so-featurettes__featurettes--2, .so-featurettes__featurettes--3 {
-      .so-featurettes__info {
+  .wvu-featurettes--profiles {
+    .wvu-featurettes__featurettes--1, .wvu-featurettes__featurettes--2, .wvu-featurettes__featurettes--3 {
+      .wvu-featurettes__info {
         @include mq($bp-small) {
           font-size: 1em;
         }
