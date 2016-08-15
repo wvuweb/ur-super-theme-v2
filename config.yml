@@ -5,7 +5,6 @@ description: This is the WVU Brand Patterns theme built for CleanSlate. Original
 ## Attributes, Data and Variables
 custom_site_attributes:
   # For Google Search Console
-  - show_apply_links
   - address_line_1
   - address_line_2
   - address_line_3
@@ -16,37 +15,38 @@ custom_site_attributes:
   - apply_link_2_url
   - apply_link_3
   - apply_link_3_url
+  - apply_url
+  - calendar_feed
+  - default_content_01
+  - default_content_02
+  - default_content_03
   - disable_masthead_search
+  - facebook_url
+  - give_url
   - google_site_verification
   - has_alternate_logo
-  - slot_00_masthead
-  - slot_00_nav
+  - instagram_url
+  - jquery_defer
+  - linkedin_url
   - masthead_college_link_address
   - masthead_college_link_title
   - masthead_color
   - masthead_title
-  - twitter_handle
-  - facebook_url
-  - instagram_url
-  - linkedin_url
-  - twitter_url
-  - rss_url
-  - youtube_url
-  - twitter_widget_id
-  - calendar_feed
-  - give_url
-  - apply_url
-  - visit_url
-  - request_info_url
+  - nav
   - org_name
   - org_url
-  - jquery_defer
-  - nav
-  - default_content_01
-  - default_content_02
-  - default_content_03
+  - request_info_url
+  - rss_url
   - search_action
+  - show_apply_links
   - show_instructions
+  - slot_00_masthead
+  - slot_00_nav
+  - twitter_handle
+  - twitter_url
+  - twitter_widget_id
+  - visit_url
+  - youtube_url
 
 ## Template Config
 # Specify which templates show up by default when creating a page
