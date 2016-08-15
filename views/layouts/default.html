@@ -41,14 +41,14 @@
 
     <r:if expr="{{ NOT(BLANK(slot_00_masthead)) }}">
       <r:set_var name="patternNameMasthead">
-        patterns/wvu-<r:page:data name="slot_00_masthead" />
+        patterns/wvu-<r:site:data name="slot_00_masthead" />
       </r:set_var>
       <r:partial name="{$patternNameMasthead}" />
     </r:if>
 
     <r:if expr="{{ NOT(BLANK(slot_00_nav)) }}">
       <r:set_var name="patternNameNav">
-        patterns/wvu-<r:page:data name="slot_00_nav" />
+        patterns/wvu-<r:site:data name="slot_00_nav" />
       </r:set_var>
       <r:partial name="{$patternNameNav}" />
     </r:if>

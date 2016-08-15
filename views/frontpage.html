@@ -35,16 +35,4 @@ custom_data_attributes:
 
 <a href="#" id="maincontent"></a>
 
-<r:set_var name="hero" value="{$hero}" default="true">
-  <r:page:data name="hero" />
-</r:set_var>
-
-<r:if v1="{$hero}" v2="true" op="=">
-  <r:partial name="custom-patterns/so-hero" />
-</r:if>
-
-<r:if v1="{$hero}" v2="admin" op="=">
-  <r:partial name="custom-patterns/so-adminHero" />
-</r:if>
-
 <r:partial name="custom-patterns/so-slots" />
