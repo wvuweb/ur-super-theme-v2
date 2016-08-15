@@ -28,7 +28,7 @@
                 <r:set_var name="soFeaturettesInfoWide">
                   hasphoto
                 </r:set_var>
-              </r:page:if>
+              </r:if>
               <div class="wvu-featurettes__info wvu-featurettes__info--<r:var name="soFeaturettesInfoWide" />">
                 <h3><a href="<r:if expr="{{ NOT(BLANK(alternate_url)) }}"><r:page:data name="alternate_url" /></r:if><r:if expr="{{ BLANK(alternate_url) }}"><r:page:url /></r:if>"><r:page:first_non_blank_attr names="alternate_name,name" /></a></h3>
                 <p>
