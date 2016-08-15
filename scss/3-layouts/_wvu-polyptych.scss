@@ -94,3 +94,7 @@
     }
   }
 }
+
+.wvu-polyptych__container {
+  @include outer-container();
+}
