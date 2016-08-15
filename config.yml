@@ -19,6 +19,8 @@ custom_site_attributes:
   - disable_masthead_search
   - google_site_verification
   - has_alternate_logo
+  - slot_00_masthead
+  - slot_00_nav
   - masthead_college_link_address
   - masthead_college_link_title
   - masthead_color
@@ -43,6 +45,7 @@ custom_site_attributes:
   - default_content_01
   - default_content_02
   - default_content_03
+  - search_action
   - show_instructions
 
 ## Template Config

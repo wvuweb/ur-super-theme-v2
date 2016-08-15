@@ -1,4 +1,22 @@
-.wvu-masthead__container { @include outer-container(); }
+.wvu-masthead--buttons {
+  .wvu-masthead__logo {
+    @include mq($bp-medium) {
+      @include span-columns(6);
+    }
+    @include mq($bp-large) {
+      @include span-columns(6);
+    }
+  }
+  .wvu-masthead__apply-links {
+    @include mq($bp-medium) {
+      @include span-columns(6);
+    }
+  }
+}
+
+.wvu-masthead__container {
+  @include outer-container();
+}
 
 .wvu-masthead__logo {
   @include mq($bp-medium) {

@@ -39,16 +39,18 @@
 
     <a class="wvu-skip-nav" href="#maincontent">Skip to main content</a>
 
-    <r:set_var name="nav" value="{$nav}" default="nav">
-      <r:site:data name="nav" />
-    </r:set_var>
-
-    <r:if v1="{$nav}" v2="nav" op="=">
-      <r:partial name="custom-patterns/wvu-masthead-nav-search-toggle" />
+    <r:if expr="{{ NOT(BLANK(slot_00_masthead)) }}">
+      <r:set_var name="patternNameMasthead">
+        patterns/wvu-<r:page:data name="slot_00_masthead" />
+      </r:set_var>
+      <r:partial name="{$patternNameMasthead}" />
     </r:if>
 
-    <r:if v1="{$nav}" v2="nav_dropdowns" op="=">
-      <r:partial name="custom-patterns/wvu-masthead-nav-search-toggle--dropdowns" />
+    <r:if expr="{{ NOT(BLANK(slot_00_nav)) }}">
+      <r:set_var name="patternNameNav">
+        patterns/wvu-<r:page:data name="slot_00_nav" />
+      </r:set_var>
+      <r:partial name="{$patternNameNav}" />
     </r:if>
 
     <r:comment><!-- What are layouts and <r:yield />? http://goo.gl/DFAsPv --></r:comment>

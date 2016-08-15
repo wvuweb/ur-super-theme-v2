@@ -337,3 +337,45 @@ input[type="submit"] {
     font-size: 2em;
   }
 }
+
+.wvu-masthead__apply-links {
+  font-size: .8em;
+  margin-bottom: 1em;
+  text-align: center;
+  @include mq($bp-medium) {
+    font-size: 1em;
+    margin-bottom: 0;
+    padding-top: 3em;
+    text-align: right;
+  }
+}
+
+.wvu-masthead__college-link {
+  a {
+    text-decoration: none;
+    &.edit-mode {
+      display: none;
+    }
+  }
+}
+
+.wvu-masthead__logo--edit-mode {
+  display: none;
+}
+
+.wvu-masthead__logo--alternate {
+  background-position: top left;
+  height: 54px;
+  margin-bottom: 1.25em;
+  margin-top: 1.25em;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.wvu-masthead__org-link {
+  color: white;
+  font-weight: bold;
+  &:visited, &:hover {
+    color: white;
+  }
+}

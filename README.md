@@ -1,9 +1,9 @@
-Super Theme
+Super Theme v2
 ==================
 
-**Theme Name:** Super Theme
+**Theme Name:** Super Theme v2
 
-**Theme Description:** Theme for Super Theme.
+**Theme Description:** Theme for Super Theme v2.
 
 **Developers name(s):** Adam Glenn
 

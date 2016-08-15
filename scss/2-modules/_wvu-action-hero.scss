@@ -1,4 +1,4 @@
-.so-action-hero {
+.wvu-action-hero {
   background-color: $wvu-gold;
   background-image: url(https://admissions.wvu.edu/images/wvu-pattern-background--gold.png);
   background-position: 50% 0;
@@ -11,12 +11,12 @@
   }
 }
 
-.so-action-hero__container {
+.wvu-action-hero__container {
   @include outer-container();
   @include u-wvu-container-padding();
 }
 
-.so-action-hero__header {
+.wvu-action-hero__header {
   font-size: 2.5em;
   @include wvu-lede();
   h2 {
@@ -29,7 +29,7 @@
   }
 }
 
-.so-action-hero__postscript {
+.wvu-action-hero__postscript {
   display: block;
   margin: 0 auto;
 }

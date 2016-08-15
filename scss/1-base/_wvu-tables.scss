@@ -22,3 +22,13 @@ td,
 th {
   vertical-align: middle;
 }
+
+td {
+  border-bottom: tint($black, 50%);
+  font-size: 1em;
+}
+
+th {
+  padding-right: 1em;
+  vertical-align: top;
+}

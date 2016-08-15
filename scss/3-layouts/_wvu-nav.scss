@@ -1,3 +1,23 @@
 .wvu-nav__container {
   @include outer-container();
 }
+
+.wvu-nav--buttons, .wvu-nav--social {
+  .wvu-nav__nav {
+  	@include mq($bp-large) {
+      @include span-columns(8.5);
+    }
+  }
+}
+
+.wvu-nav__apply-links {
+  @include mq($bp-large) {
+    @include span-columns(3.5);
+  }
+}
+
+.wvu-nav__social-media-icons {
+  @include mq($bp-large) {
+    @include span-columns(3.5);
+  }
+}

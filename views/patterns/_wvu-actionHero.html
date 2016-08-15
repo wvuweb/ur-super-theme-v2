@@ -1,0 +1,33 @@
+
+<div class="wvu-action-hero">
+  <div class="wvu-action-hero__container">
+
+    <div class="wvu-action-hero__header">
+      <r:editable_region name="wvu-action-hero__header">
+        <h2>Action Hero Header</h2>
+        <p>
+          Here is where you explain what is going on.
+        </p>
+      </r:editable_region>
+    </div>
+
+    <a href="<r:page:content name="wvu-action-hero__url" />" class="button button--wvu-blue-fill <r:edit_mode_only>button--edit-mode</r:edit_mode_only>"><r:page:content name="wvu-action-hero__button-text" /></a>
+    <r:edit_mode_only>
+      <a class="button"><r:editable_region name="wvu-action-hero__button-text" type="simple">Button Text</r:editable_region></a>
+      <p>
+        <r:editable_region name="wvu-action-hero__url" type="simple">
+          URL for button goes here
+        </r:editable_region>
+      </p>
+    </r:edit_mode_only>
+    <r:page:if_has_content_for region="wvu-action-hero__postscript" always_show_in_edit_mode="true">
+      <p class="wvu-action-hero__postscript"><r:editable_region name="wvu-action-hero__postscript">Have some additional info or secondary link? Enter here.</r:editable_region></p>
+    </r:page:if_has_content_for>
+  </div>
+</div>
+
+<r:edit_mode_only>
+  <div class="so-instructions">
+    <strong>Instructions for Action Hero:</strong> This is meant to direct a user to take an action e.g. register for an event, apply for admission, etc.
+  </div>
+</r:edit_mode_only>

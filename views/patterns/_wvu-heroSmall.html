@@ -1,10 +1,5 @@
 
-
-<r:set_var name="bgurl">
-  <r:page:slug />-hero-background
-</r:set_var>
-
-<div class="wvu-hero <r:if value1="{$hero_text_alignment}" value2="right" operator="=">wvu-hero--right</r:if> <r:page:unless_has_content_for region="wvu-hero__photo">wvu-hero--big-photo</r:page:unless_has_content_for>" style="background-image: url(<r:files:each labels="{$bgurl}" limit="1" types="image" random="true"><r:file:image_url size="1780x580" /></r:files:each>); <r:page:if_has_content_for region="wvu-hero__photo">background-image: none;</r:page:if_has_content_for>">
+<div class="wvu-hero <r:if value1="{$hero_text_alignment}" value2="right" operator="=">wvu-hero--right</r:if>">
   <div class="wvu-hero__container">
     <div class="wvu-hero__copy <r:edit_mode_only>wvu-hero__copy--edit-mode</r:edit_mode_only>">
       <h1><span><r:editable_region name="wvu-hero__header" type="simple">Header Goes Here</r:editable_region></span></h1>
@@ -17,6 +12,20 @@
         <p><r:editable_region name="wvu-hero__action-item-url" type="simple">URL for action item goes here. If you don't want the hero unit to show up at all, delete the content in this editable region.</r:editable_region></p>
       </r:edit_mode_only>
     </div>
+    <r:page:if_has_content_for region="wvu-hero__photo" always_show_in_edit_mode="true">
+      <div class="wvu-hero__photo">
+        <r:editable_region name="wvu-hero__photo">
+          <img src="http://placehold.it/960x640" />
+        </r:editable_region>
+        <r:page:if_has_content_for region="wvu-hero__photo-caption" always_show_in_edit_mode="true">
+          <div class="wvu-hero__photo-caption">
+            <r:editable_region name="wvu-hero__photo-caption">
+              Photo caption goes here.
+            </r:editable_region>
+          </div>
+        </r:page:if_has_content_for>
+      </div>
+    </r:page:if_has_content_for>
   </div>
 </div>
 

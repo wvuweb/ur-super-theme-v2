@@ -1,0 +1,101 @@
+<r:comment>
+<!-- NOTE: This anytych can be reused over and over. -->
+<!-- You can use this partial multiple times on the same page by setting different... -->
+<!-- ...`regionName__base` variables above each partial.  -->
+<!-- You can also change the `triptychItems` to be more than 4 if you like. -->
+<!-- Always increase by 4. -->
+<!-- Set the scope by defining the `$scope` variable to either `page` or `site`. -->
+</r:comment>
+
+<r:set_var name="wvuPolyptychPhoto__base" value="{$wvuPolyptychPhoto__base}" default="wvu-polyptych__photo" />
+<r:set_var name="wvuPolyptychCopy__base" value="{$wvuPolyptychCopy__base}" default="wvu-polyptych__copy" />
+<r:set_var name="wvuPolyptychButtonText__base" value="{$wvuPolyptychButtonText__base}" default="wvu-polyptych__button-text" />
+<r:set_var name="wvuPolyptychUrl__base" value="{$wvuPolyptychUrl__base}" default="wvu-polyptych__url" />
+<r:set_var name="polyptychItems" value="{$polyptych_panel_count}" default="4" />
+<r:set_var name="scope" value="{$scope}" default="page" />
+
+<div class="wvu-polyptych <r:page:content name="so-background-color-class--polyptych" /> background wvu-polyptych--<r:page:data name="polyptych_panel_count" />">
+  <div class="wvu-polyptych__container">
+
+    <r:page:if_has_content_for region="wvu-polyptych__header" always_show_in_edit_mode="true">
+      <div class="wvu-polyptych__header">
+        <r:editable_region name="wvu-polyptych__header">
+          <h2>Mulitple Panels Headline</h2>
+          <p>Subhead goes here.</p>
+        </r:editable_region>
+      </div>
+    </r:page:if_has_content_for>
+
+    <div class="wvu-polyptych__panels">
+
+      <r:loop:each times="{$polyptychItems}">
+
+        <r:set_var name="wvuPolyptychCopy"><r:var name="wvuPolyptychCopy__base" />--<r:item /></r:set_var>
+
+        <r:page:if_has_content_for region="{$wvuPolyptychCopy}" always_show_in_edit_mode="true">
+          <div class="wvu-polyptych__panel">
+
+            <r:set_var name="wvuPolyptychPhoto"><r:var name="wvuPolyptychPhoto__base" />--<r:item /></r:set_var>
+
+            <r:page:if_has_content_for region="{$wvuPolyptychPhoto}" always_show_in_edit_mode="true">
+              <div class="wvu-polyptych__photo">
+                <r:editable_region name="{$wvuPolyptychPhoto}">
+                  <img src="http://placehold.it/960x640">
+                </r:editable_region>
+              </div>
+            </r:page:if_has_content_for>
+
+            <div class="wvu-polyptych__copy <r:page:unless_has_content_for region="{$wvuPolyptychPhoto}">wvu-polyptych__copy--wide</r:page:unless_has_content_for>">
+
+              <r:editable_region name="{$wvuPolyptychCopy}">
+                <h3>Headline Goes Here</h3>
+                <p>Short description goes here. Do not put links here. Only one short paragraph.</p>
+              </r:editable_region>
+
+              <r:set_var name="wvuPolyptychButtonText"><r:var name="wvuPolyptychButtonText__base" />--<r:item /></r:set_var>
+              <r:set_var name="wvuPolyptychUrl"><r:var name="wvuPolyptychUrl__base" />--<r:item /></r:set_var>
+
+              <r:page:if_has_content_for region="{$wvuPolyptychUrl}">
+                <a class="button <r:edit_mode_only>button--edit-mode</r:edit_mode_only>" href="<r:page:content name="{$wvuPolyptychUrl}" />">
+                  <r:page:content name="{$wvuPolyptychButtonText}" />
+                </a>
+              </r:page:if_has_content_for>
+
+              <r:edit_mode_only>
+                <a class="button">
+                  <r:editable_region name="{$wvuPolyptychButtonText}" type="simple">
+                    Button Text
+                  </r:editable_region>
+                </a>
+                <p>
+                  <r:editable_region name="{$wvuPolyptychUrl}" type="simple">
+                    Put URL for Button Here
+                  </r:editable_region>
+                </p>
+              </r:edit_mode_only>
+
+            </div>
+
+          </div> <!-- end wvu-polyptych__panel -->
+        </r:page:if_has_content_for>
+
+      </r:loop:each>
+
+    </div> <!-- end wvu-polyptych__panels -->
+
+    <div class="wvu-polyptych__postscript">
+      <r:editable_region name="wvu-polyptych__postscript">
+        Put any additional info or links here.
+      </r:editable_region>
+    </div>
+
+  </div> <!-- end wvu-polyptych__container -->
+</div> <!-- end wvu-polyptych -->
+
+
+<r:edit_mode_only>
+  <div class="so-instructions">
+    <p><strong>Instructions for Multiple Panels:</strong> These panels display sub-features or allow you to have multiple columns of content. Try to keep these consistent e.g. if you have a header in one column, use a header in all of them. You can have 1-4 columns. To omit columns, simply leave the description field in each column you wish to omit blank, from right to left.</p>
+    <p><strong>Background Color:</strong> <r:editable_region name="so-background-color-class--polyptych" /></p>
+  </div>
+</r:edit_mode_only>

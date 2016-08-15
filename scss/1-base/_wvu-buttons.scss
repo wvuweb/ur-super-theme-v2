@@ -238,3 +238,12 @@ input[type="submit"] {
 .button--pms-115-c-fill { background: $pms-115-c; border: 2px solid $pms-115-c;
   &:hover { background: $black; color: $pms-115-c; border: 2px solid $pms-115-c}
 }
+
+
+.button {
+  white-space: normal;
+}
+
+.button--edit-mode {
+  display: none;
+}

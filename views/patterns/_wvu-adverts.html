@@ -7,12 +7,12 @@
 </r:set_var>
 
 
-<div class="so-adverts <r:page:content name="so-background-color-class--adverts" /> background">
-  <div class="so-adverts__container">
+<div class="wvu-adverts <r:page:content name="so-background-color-class--adverts" /> background">
+  <div class="wvu-adverts__container">
 
-    <r:page:if_has_content_for region="so-adverts__header" always_show_in_edit_mode="true">
-      <div class="so-adverts__header">
-        <r:editable_region name="so-adverts__header">
+    <r:page:if_has_content_for region="wvu-adverts__header" always_show_in_edit_mode="true">
+      <div class="wvu-adverts__header">
+        <r:editable_region name="wvu-adverts__header">
           <h2>Advertisements Header</h2>
           <p>
             Subhead goes here.
@@ -24,13 +24,13 @@
     <r:get_page id="{$adverts_id}">
 
       <r:children order="asc" labels="{$page_slug}" labels_match="any">
-        <div class="so-adverts__adverts so-adverts__adverts--<r:count />">
+        <div class="wvu-adverts__adverts wvu-adverts__adverts--<r:count />">
           <r:each>
-            <div class="so-adverts__advertisement so-adverts__advertisement--<r:page:slug />">
-              <div class="so-adverts__ad-text">
-                <a href="<r:page:content name="so-adverts__url" />"><span><r:page:first_non_blank_attr names="alternate_name,name" /></span></a>
+            <div class="wvu-adverts__advertisement wvu-adverts__advertisement--<r:page:slug />">
+              <div class="wvu-adverts__ad-text">
+                <a href="<r:page:content name="wvu-adverts__url" />"><span><r:page:first_non_blank_attr names="alternate_name,name" /></span></a>
               </div>
-              <a href="<r:page:content name="so-adverts__url" />"><r:page:content name="so-adverts__image" /></a>
+              <a href="<r:page:content name="wvu-adverts__url" />"><r:page:content name="wvu-adverts__image" /></a>
             </div>
           </r:each>
         </div>

@@ -1,10 +1,12 @@
-<div class="wvu-nav">
+<div class="wvu-nav wvu-nav--social">
   <div class="wvu-nav__container">
 
     <div class="wvu-nav__nav">
       <button class="wvu-nav__search-toggle inactive-search" onclick="document.getElementsByClassName('wvu-masthead__search-slider')[0].classList.toggle('closed');">Toggle Search</button>
       <r:site_menu max_depth="3" ul_class="wvu-nav__items nav-collapse" has_children_class="more" />
     </div>
+
+    <r:partial name="patterns/wvu-nav__social-media-icons" />
 
   </div>
 </div>
