@@ -9,6 +9,7 @@
 
 <r:set_var name="pentaptychPhoto__base" value="{$pentaptychPhoto__base}" default="wvu-pentaptych__photo" />
 <r:set_var name="pentaptychCopy__base" value="{$pentaptychCopy__base}" default="wvu-pentaptych__copy" />
+<r:set_var name="pentaptychBackgroundColor__base" value="{$pentaptychBackgroundColor__base}" default="wvu-background-color-class--pentaptych" />
 <r:set_var name="pentaptychItems" value="{$pentaptychItems}" default="5" />
 <r:set_var name="pentaptych" value="{$pentaptychScope}" default="page" />
 
@@ -71,8 +72,8 @@
 </div> <!-- end wvu-pentaptych -->
 
 <r:edit_mode_only>
-  <div class="so-instructions">
+  <div class="wvu-instructions">
     <p><strong>Instructions for Multiple Panels:</strong> These panels display sub-features or allow you to have multiple columns of content. Try to keep these consistent e.g. if you have a header in one column, use a header in all of them. You can have 1-4 columns. To omit columns, simply leave the description field in each column you wish to omit blank, from right to left.</p>
-    <p><strong>Background Color:</strong> <r:editable_region name="so-background-color-class--pentaptych" scope="{$pentaptychScope}" /></p>
+    <p><strong>Background Color:</strong> <r:editable_region name="wvu-background-color-class--pentaptych" scope="{$pentaptychScope}" /></p>
   </div>
 </r:edit_mode_only>

@@ -1,0 +1,79 @@
+<r:comment>
+<!-- NOTE: This polyptych can be reused over and over. -->
+<!-- You can use this partial multiple times on the same page by setting different... -->
+<!-- ...`regionName__base` variables above each partial.  -->
+<!-- You can also change the `diptychItems` to be more than 4 if you like. -->
+<!-- Always increase by 4. -->
+<!-- Set the scope by defining the `$scope` variable to either `page` or `site`. -->
+</r:comment>
+
+<r:set_var name="diptychPhoto__base" value="{$diptychPhoto__base}" default="wvu-diptych__photo" />
+<r:set_var name="diptychCopy__base" value="{$diptychCopy__base}" default="wvu-diptych__copy" />
+<r:set_var name="diptychBackgroundColor__base" value="{$diptychBackgroundColor__base}" default="wvu-background-color-class--diptych" />
+<r:set_var name="diptychItems" value="{$diptychItems}" default="2" />
+<r:set_var name="diptych" value="{$diptychScope}" default="page" />
+
+<div class="wvu-polyptych <r:page:content name="so-background-color-class--diptych" /> background wvu-polyptych--diptych">
+  <div class="wvu-polyptych__container">
+
+    <r:page:if_has_content_for region="wvu-diptych__header" always_show_in_edit_mode="true">
+      <div class="wvu-polyptych__header">
+        <r:editable_region name="wvu-diptych__header" scope="{$diptychScope}">
+          <h2>Mulitple Panels Headline</h2>
+          <p>Subhead goes here.</p>
+        </r:editable_region>
+      </div>
+    </r:page:if_has_content_for>
+
+    <div class="wvu-polyptych__panels">
+
+      <r:loop:each times="{$diptychItems}">
+
+        <r:set_var name="diptychCopy"><r:var name="diptychCopy__base" />--<r:item /></r:set_var>
+
+        <r:page:if_has_content_for region="{$diptychCopy}" always_show_in_edit_mode="true">
+          <div class="wvu-polyptych__panel">
+
+            <r:set_var name="diptychPhoto"><r:var name="diptychPhoto__base" />--<r:item /></r:set_var>
+
+            <r:page:if_has_content_for region="{$diptychPhoto}" always_show_in_edit_mode="true">
+              <div class="wvu-polyptych__photo">
+                <r:editable_region name="{$diptychPhoto}" scope="{$diptychScope}">
+                  <img src="http://placehold.it/960x640">
+                </r:editable_region>
+              </div>
+            </r:page:if_has_content_for>
+
+            <div class="wvu-polyptych__copy <r:page:unless_has_content_for region="{$diptychPhoto}">wvu-polyptych__copy--wide</r:page:unless_has_content_for>">
+
+              <r:editable_region name="{$diptychCopy}" scope="{$diptychScope}">
+                <h3>Headline Goes Here</h3>
+                <p>Short description goes here. Do not put links here. Only one short paragraph.</p>
+              </r:editable_region>
+
+            </div>
+
+          </div> <!-- end wvu-diptych__panel -->
+        </r:page:if_has_content_for>
+
+      </r:loop:each>
+
+    </div> <!-- end wvu-diptych__panels -->
+
+    <r:page:if_has_content_for region="wvu-diptych__postscript">
+      <div class="wvu-polyptych__postscript">
+        <r:editable_region name="wvu-diptych__postscript" scope="{$diptychScope}">
+          Put any additional info or links here.
+        </r:editable_region>
+      </div>
+    </r:page:if_has_content_for>
+
+  </div> <!-- end wvu-diptych__container -->
+</div> <!-- end wvu-diptych -->
+
+<r:edit_mode_only>
+  <div class="wvu-instructions">
+    <p><strong>Instructions for Multiple Panels:</strong> These panels display sub-features or allow you to have multiple columns of content. Try to keep these consistent e.g. if you have a header in one column, use a header in all of them. You can have 1-4 columns. To omit columns, simply leave the description field in each column you wish to omit blank, from right to left.</p>
+    <p><strong>Background Color:</strong> <r:editable_region name="wvu-background-color-class--diptych" scope="{$diptychScope}" /></p>
+  </div>
+</r:edit_mode_only>
