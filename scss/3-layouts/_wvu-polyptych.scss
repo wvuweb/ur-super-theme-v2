@@ -1,0 +1,96 @@
+
+
+.wvu-polyptych {
+  .wvu-polyptych__photo {
+    @include mq($bp-medium) {
+      @include span-columns(6);
+    }
+  }
+  .wvu-polyptych__copy {
+    @include mq($bp-medium) {
+      @include span-columns(6);
+    }
+  }
+  .wvu-polyptych__copy--wide {
+    @include mq($bp-medium) {
+      @include span-columns(12);
+    }
+  }
+}
+
+.wvu-polyptych--2 {
+  .wvu-polyptych__panel {
+    @include mq($bp-medium) {
+      @include span-columns(6);
+    }
+  }
+  .wvu-polyptych__photo {
+    @include mq($bp-medium) {
+      @include span-columns(6);
+    }
+  }
+  .wvu-polyptych__copy {
+    @include mq($bp-medium) {
+      @include span-columns(6);
+    }
+  }
+  .wvu-polyptych__copy--wide {
+    @include mq($bp-medium) {
+      @include span-columns(12);
+    }
+  }
+}
+
+.wvu-polyptych--triptych {
+  .wvu-polyptych__panel {
+    @include mq($bp-medium) {
+      @include span-columns(4);
+    }
+  }
+  .wvu-polyptych__photo {
+    @include mq($bp-medium) {
+      @include span-columns(12);
+    }
+  }
+  .wvu-polyptych__copy {
+    @include mq($bp-medium) {
+      @include span-columns(12);
+    }
+  }
+}
+
+.wvu-polyptych--quadritych {
+  .wvu-polyptych__panel {
+    @include mq($bp-medium) {
+      @include span-columns(3);
+    }
+  }
+  .wvu-polyptych__photo {
+    @include mq($bp-medium) {
+      @include span-columns(12);
+    }
+  }
+  .wvu-polyptych__copy {
+    @include mq($bp-medium) {
+      @include span-columns(12);
+    }
+  }
+}
+
+.wvu-polyptych--pentaptych {
+  .wvu-polyptych__panel {
+    @include mq($bp-medium) {
+      @include span-columns(2.4);
+    }
+  }
+  .wvu-polyptych__photo {
+    @include mq($bp-medium) {
+      @include span-columns(12);
+    }
+  }
+  .wvu-polyptych__copy {
+    @include mq($bp-medium) {
+      @include span-columns(12);
+    }
+  }
+}
