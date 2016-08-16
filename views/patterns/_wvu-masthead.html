@@ -1,6 +1,12 @@
-<div class="wvu-masthead <r:var name="wvu-masthead__classes" />">
+<div class="wvu-masthead <r:files:each labels="masthead-logo" limit="1" types="image" random="true">wvu-masthead--blue</r:files:each>">
   <div class="wvu-masthead__container">
     <r:partial name="patterns/wvu-masthead__logo" />
-    <r:partial name="patterns/wvu-masthead__search-bar" />
+
+    <r:partial name="patterns/wvu-masthead__college-link" />
+
+    <div class="wvu-masthead__search-slider">
+      <r:partial name="patterns/wvu-masthead__search-bar" />
+    </div>
+
   </div> <!-- /.wvu-masthead-container -->
 </div> <!-- /.wvu-masthead -->
