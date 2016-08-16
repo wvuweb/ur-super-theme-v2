@@ -4,7 +4,7 @@
   </r:set_var>
   <r:files:each labels="{$gallerypage}" types="image">
     <li>
-      <a href="<r:file:image_url size="960x640" />"><r:file:image_tag size="240x160" alt="{file:alt_text}" /></a>
+      <a href="<r:file:image_url size="960x640" />" title="<r:file:description />"><r:file:image_tag size="240x160" alt="{file:alt_text}" /></a>
     </li>
   </r:files:each>
 </ul>
