@@ -5,7 +5,7 @@
 </r:set_var>
 
 <div class="wvu-hero <r:if value1="{$hero_text_alignment}" value2="right" operator="=">wvu-hero--right</r:if> <r:page:unless_has_content_for region="wvu-hero__photo">wvu-hero--big-photo</r:page:unless_has_content_for>" style="background-image: url(<r:files:each labels="{$bgurl}" limit="1" types="image" random="true"><r:file:image_url size="1780x580" /></r:files:each>); <r:page:if_has_content_for region="wvu-hero__photo">background-image: none;</r:page:if_has_content_for>">
-  <div class="wvu-hero__container wvu-hero__container--vignetting-<r:page:data name="hero-vignetting" />">
+  <div class="wvu-hero__container wvu-hero__container--vignetting-<r:page:data name="hero_vignetting" />">
     <div class="wvu-hero__copy <r:edit_mode_only>wvu-hero__copy--edit-mode</r:edit_mode_only>">
       <h1><span><r:editable_region name="wvu-hero__header" type="simple">Header Goes Here</r:editable_region></span></h1>
       <p><r:editable_region name="wvu-hero__text" type="simple">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</r:editable_region></p>
