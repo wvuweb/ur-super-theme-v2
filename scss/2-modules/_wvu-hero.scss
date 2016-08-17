@@ -154,12 +154,12 @@
   }
 }
 
-$i: .90;
+$i: 90;
 @while $i > 0 {
   .wvu-hero__container--vignetting-#{$i} {
     &:before {
-      opacity: $i;
+      opacity: $i * .00;
     }
   }
-  $i: $i - .10;
+  $i: $i - 10;
 }
