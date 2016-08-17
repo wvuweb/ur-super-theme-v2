@@ -13,6 +13,13 @@ $pms-warm-gray-11: #6E6259;
 $pms-warm-gray-7: #968C83;
 $pms-warm-gray-3: #BFB8AF;
 
+$wvu-dune: $black;
+$wvu-limed-spruce: $pms-432-c;
+$wvu-gray-chateau: $pms-429-c;
+$wvu-pine-cone: $pms-warm-gray-11;
+$wvu-schooner: $pms-warm-gray-7;
+$wvu-tide: $pms-warm-gray-3;
+
 // Accent
 $pms-286-c: #0033A0;
 $pms-300-c: #005EB8;
@@ -26,6 +33,91 @@ $pms-558-c: #9ABEAA;
 $pms-180-c: #BE3A34;
 $pms-166-c: #E35205;
 $pms-115-c: #FDDA24;
+
+$wvu-smalt: $pms-286-c;
+$wvu-endeavor: $pms-300-c;
+$wvu-morning-glory: $pms-629-c;
+$wvu-judge-gray: $pms-7554-c;
+$wvu-reef-gold: $pms-7557-c;
+$wvu-tangerine: $pms-144-c;
+$wvu-eden: $pms-7476-c;
+$wvu-xanadu: $pms-5625-c;
+$wvu-summer-green: $pms-558-c;
+$wvu-well-read: $pms-180-c;
+$wvu-trinidad: $pms-166-c;
+$wvu-candelight: $pms-115-c;
+
+@each $color, $text-color in (blue, $wvu-blue),
+                             (dune, $wvu-dune),
+                             (limed-spruce, $wvu-limed-spruce),
+                             (pine-cone, $wvu-pine-cone),
+                             (schooner, $wvu-schooner),
+                             (morning-glory, $wvu-morning-glory),
+                             (candelight, $wvu-candelight)  {
+  .wvu-#{$color} {
+    color: $text-color;
+    border-color: $text-color;
+    &.background {
+      color: white;
+      background-color: $text-color;
+      -webkit-font-smoothing: antialiased;
+    }
+  }
+}
+
+@each $color, $text-color in (gold, $wvu-gold),
+                             (gray-chateau, $wvu-gray-chateau),
+                             (tide, $wvu-tide),
+                             (smalt, $wvu-smalt),
+                             (endeavor, $wvu-endeavor),
+                             (judge-gray, $wvu-judge-gray),
+                             (reef-gold, $wvu-reef-gold),
+                             (tangerine, $wvu-tangerine),
+                             (eden, $wvu-eden),
+                             (xanadu, $wvu-xanadu),
+                             (summer-green, $wvu-summer-green),
+                             (well-read, $wvu-well-read),
+                             (trinidad, $wvu-trinidad) {
+  .wvu-#{$color} {
+    color: $text-color;
+    border-color: $text-color;
+    &.background {
+      color: $wvu-dune;
+      background-color: $text-color;
+      -webkit-font-smoothing: antialiased;
+    }
+  }
+}
+
+$i: 100;
+@while $i > 0 {
+  @each $color, $text-color in (gray-chateau, $wvu-gray-chateau),
+                               (tide, $wvu-tide),
+                               (dune, $wvu-dune),
+                               (limed-spruce, $wvu-limed-spruce),
+                               (pine-cone, $wvu-pine-cone),
+                               (schooner, $wvu-schooner) {
+    .wvu-#{$color}-tint-#{$i} {
+      color: tint($text-color, $i);
+      border-color: tint($text-color, $i);
+      &.background {
+        color: $wvu-dune;
+        background-color: tint($text-color, $i);
+        -webkit-font-smoothing: antialiased;
+      }
+    }
+    .wvu-#{$color}-shade-#{$i} {
+      color: shade($text-color, $i);
+      border-color: shade($text-color, $i);
+      &.background {
+        color: white;
+        background-color: shade($text-color, $i);
+        -webkit-font-smoothing: antialiased;
+      }
+    }
+  }
+  $i: $i - 10;
+}
 
 @mixin linear-gradient-background($top-background-color, $bottom-background-color) {
   background: $top-background-color; /* For browsers that do not support gradients */
@@ -111,254 +203,84 @@ $pms-115-c: #FDDA24;
   }
 }
 
-.u-white {
-  border-color: white;
-  color: white;
-  &.background {
-    @include wvu-light-background(white, $black);
-  }
-}
-
 @mixin wvu-white-background {
   @include wvu-light-background(white, $black);
-}
-
-// Primary
-.u-wvu-blue {
-  border-color: $wvu-blue;
-  color: $wvu-blue;
-  &.background {
-    @include wvu-dark-background($wvu-blue, white);
-  }
 }
 
 @mixin wvu-blue-background {
   @include wvu-dark-background($wvu-blue, white);
 }
 
-.u-wvu-gold {
-  border-color: $wvu-gold;
-  color: $wvu-gold;
-  &.background {
-    @include wvu-light-background($wvu-gold, $wvu-blue);
-  }
-}
-
 @mixin wvu-gold-background {
   @include wvu-light-background($wvu-gold, $wvu-blue);
-}
-
-//  Secondary
-.u-black {
-  color: $black;
-  &.background {
-    @include wvu-dark-background($black, white);
-  }
 }
 
 @mixin black-background {
   @include wvu-dark-background($black, white);
 }
 
-.u-pms-432-c {
-  border-color: $pms-432-c;
-  color: $pms-432-c;
-  &.background {
-    @include wvu-dark-background($pms-432-c, white);
-  }
-}
-
 @mixin pms-432-c-background {
   @include wvu-dark-background($pms-432-c, white);
-}
-
-.u-pms-429-c {
-  border-color: $pms-429-c;
-  color: $pms-429-c;
-  &.background {
-    @include wvu-light-background($pms-429-c, $black);
-  }
 }
 
 @mixin pms-429-c-background {
   @include wvu-light-background($pms-429-c, $black);
 }
 
-.u-pms-warm-gray-11 {
-  border-color: $pms-warm-gray-11;
-  color: $pms-warm-gray-11;
-  &.background {
-    @include wvu-dark-background($pms-warm-gray-11, white);
-  }
-}
-
 @mixin pms-warm-gray-11-background {
   @include wvu-dark-background($pms-warm-gray-11, white);
-}
-
-.u-pms-warm-gray-7 {
-  border-color: $pms-warm-gray-7;
-  color: $pms-warm-gray-7;
-  &.background {
-    @include wvu-dark-background($pms-warm-gray-7, $black);
-  }
 }
 
 @mixin pms-warm-gray-7-background {
   @include wvu-dark-background($pms-warm-gray-7, $black);
 }
 
-.u-pms-warm-gray-3 {
-  border-color: $pms-warm-gray-3;
-  color: $pms-warm-gray-3;
-  &.background {
-    @include wvu-light-background($pms-warm-gray-3, $black);
-  }
-}
-
 @mixin pms-warm-gray-3-background {
   @include wvu-light-background($pms-warm-gray-3, $black);
-}
-
-// Tertiary
-.u-pms-286-c { color: $pms-286-c;
-  border-color: $pms-286-c;
-  color: $pms-286-c;
-  &.background {
-    @include wvu-dark-background($pms-286-c, white);
-  }
 }
 
 @mixin pms-286-c-background {
   @include wvu-dark-background($pms-286-c, white);
 }
 
-.u-pms-300-c {
-  border-color: $pms-300-c;
-  color: $pms-300-c;
-  &.background {
-    @include wvu-dark-background($pms-300-c, white);
-  }
-}
-
 @mixin pms-300-c-background {
   @include wvu-dark-background($pms-300-c, white);
-}
-
-.u-pms-629-c {
-  border-color: $pms-629-c;
-  color: $pms-629-c;
-  &.background {
-    @include wvu-light-background($pms-629-c, $wvu-blue);
-  }
 }
 
 @mixin pms-629-c-background {
   @include wvu-light-background($pms-629-c, $pms-629-c);
 }
 
-.u-pms-7554-c {
-  border-color: $pms-7554-c;
-  color: $pms-7554-c;
-  &.background {
-    @include wvu-dark-background($pms-7554-c, white);
-  }
-}
-
 @mixin pms-7554-c-background {
   @include wvu-dark-background($pms-7554-c, white);
-}
-
-.u-pms-7557-c {
-  border-color: $pms-7557-c;
-  color: $pms-7557-c;
-  &.background {
-    @include wvu-dark-background($pms-7557-c, white);
-  }
 }
 
 @mixin pms-7557-c-background {
   @include wvu-dark-background($pms-7557-c, white);
 }
 
-.u-pms-144-c {
-  border-color: $pms-144-c;
-  color: $pms-144-c;
-  &.background {
-    @include wvu-dark-background($pms-144-c, white);
-  }
-}
-
 @mixin pms-144-c-background {
   @include wvu-dark-background($pms-144-c, white);
-}
-
-.u-pms-7476-c {
-  border-color: $pms-7476-c;
-  color: $pms-7476-c;
-  &.background {
-    @include wvu-dark-background($pms-7476-c, white);
-  }
 }
 
 @mixin pms-7476-c-background {
   @include wvu-dark-background($pms-7476-c, white);
 }
 
-.u-pms-5625-c {
-  border-color: $pms-5625-c;
-  color: $pms-5625-c;
-  &.background {
-    @include wvu-dark-background($pms-5625-c, white);
-  }
-}
-
 @mixin pms-5625-c-background {
   @include wvu-dark-background($pms-5625-c, white);
-}
-
-.u-pms-558-c {
-  border-color: $pms-558-c;
-  color: $pms-558-c;
-  &.background {
-    @include wvu-dark-background($pms-166-c, white);
-  }
 }
 
 @mixin pms-558-c-background {
   @include wvu-dark-background($pms-558-c, white);
 }
 
-.u-pms-180-c {
-  border-color: $pms-180-c;
-  color: $pms-180-c;
-  &.background {
-    @include wvu-dark-background($pms-166-c, white);
-  }
-}
-
 @mixin pms-180-c-background {
   @include wvu-dark-background($pms-180-c, white);
 }
 
-.u-pms-166-c {
-  border-color: $pms-166-c;
-  color: $pms-166-c;
-  &.background {
-    @include wvu-dark-background($pms-166-c, white);
-  }
-}
-
 @mixin pms-166-c-background {
   @include wvu-dark-background($pms-166-c, white);
-}
-
-.u-pms-115-c { color: $pms-115-c;
-  border-color: $pms-115-c;
-  color: $pms-115-c;
-  &.background {
-    @include wvu-light-background($pms-115-c, $black);
-  }
 }
 
 @mixin pms-115-c-background {

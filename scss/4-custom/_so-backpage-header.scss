@@ -52,7 +52,7 @@
 
 .so-backpage-header__container {
   @include outer-container();
-  @include so-vignetting();
+  @include so-vignetting($wvu-hero-vignetting-opacity);
   padding-left: 1em;
   padding-right: 1em;
   padding-top: 2.5em;
@@ -64,6 +64,6 @@
 
 .so-backpage-header--big-photo {
   .so-backpage-header__container {
-    @include so-vignetting();
+    @include so-vignetting($wvu-hero-vignetting-opacity);
   }
 }

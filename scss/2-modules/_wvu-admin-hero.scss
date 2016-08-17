@@ -61,7 +61,7 @@
   @include mq($bp-xlarge) {
     padding: 7em 0 7.3em 0;
   }
-  @include so-vignetting();
+  @include so-vignetting($wvu-hero-vignetting-opacity);
 }
 
 .wvu-admin-hero__copy {
