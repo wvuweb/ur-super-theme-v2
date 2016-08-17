@@ -52,9 +52,6 @@
 }
 
 .wvu-hero--big-photo {
-  .wvu-hero__container {
-    @include so-vignetting($wvu-hero-vignetting-opacity);
-  }
   .wvu-hero__copy {
     h1 {
       font-size: 4.5em;
@@ -110,6 +107,7 @@
 .wvu-hero__container {
   @include outer-container();
   @include u-wvu-container-padding();
+  @include so-vignetting($wvu-hero-vignetting-opacity);
 }
 
 .wvu-hero__copy {
