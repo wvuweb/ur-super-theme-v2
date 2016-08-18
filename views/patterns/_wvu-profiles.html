@@ -22,23 +22,22 @@
             <div class="wvu-featurettes__featurette">
 
               <r:set_var name="soFeaturettesInfoProfilesWide" default="nophoto" />
-              <r:page:if_has_content_for region="wvu-profile__photo">
+              <r:if expr="{{ NOT(BLANK(thumbnail_url)) }}">
                 <div class="wvu-featurettes__photo">
-                  <a href="<r:page:unless_has_content_for region="wvu-featurettes__url"><r:page:url /></r:page:unless_has_content_for><r:page:if_has_content_for region="wvu-featurettes__url"><r:page:content name="wvu-featurettes__url" /></r:page:if_has_content_for>"><r:page:content name="wvu-profile__photo" /></a>
+                  <a href="<r:if expr="{{ NOT(BLANK(alternate_url)) }}"><r:page:data name="alternate_url" /></r:if><r:if expr="{{ BLANK(alternate_url) }}"><r:page:url /></r:if>"><img src="<r:page:data name="thumbnail_url" />/381x255.jpg" srcset="<r:page:data name="thumbnail_url" />/960x640.jpg, <r:page:data name="thumbnail_url" />/586x286.jpg, <r:page:data name="thumbnail_url" />/381x255.jpg, <r:page:data name="thumbnail_url" />/286x191.jpg, <r:page:data name="thumbnail_url" />/279x186.jpg, <r:page:data name="thumbnail_url" />/217x145.jpg" sizes="960px, (min-width: 768px) 586px" alt="<r:page:data name="thumbnail_alt" />"></a>
                 </div>
                 <r:set_var name="soFeaturettesInfoProfilesWide">
                   hasphoto
                 </r:set_var>
-              </r:page:if_has_content_for>
+              </r:if>
 
               <div class="wvu-featurettes__info wvu-featurettes__info--<r:var name="soFeaturettesInfoProfilesWide" />">
-                <h3><a href="<r:page:unless_has_content_for region="wvu-featurettes__url"><r:page:url /></r:page:unless_has_content_for><r:page:if_has_content_for region="wvu-featurettes__url"><r:page:content name="wvu-featurettes__url" /></r:page:if_has_content_for>"><r:page:first_non_blank_attr names="alternate_name,name" /></a></h3>
+                <h3><a href="<r:if expr="{{ NOT(BLANK(alternate_url)) }}"><r:page:data name="alternate_url" /></r:if><r:if expr="{{ BLANK(alternate_url) }}"><r:page:url /></r:if>"><r:page:first_non_blank_attr names="alternate_name,name" /></a></h3>
                 <p>
-                  <r:page:content name="so-page-desc" />
+                  <r:page:meta_description />
                 </p>
-                <p>
-                  <a class="button" href="<r:page:unless_has_content_for region="wvu-featurettes__url"><r:page:url /></r:page:unless_has_content_for><r:page:if_has_content_for region="wvu-featurettes__url"><r:page:content name="wvu-featurettes__url" /></r:page:if_has_content_for>"><r:page:unless_has_content_for region="wvu-featurettes__link-text">More About <r:page:name /></r:page:unless_has_content_for><r:page:if_has_content_for region="wvu-featurettes__link-text"><r:page:content name="wvu-featurettes__link-text" /></r:page:if_has_content_for></a>
-                </p>
+
+                <a class="button" href="<r:if expr="{{ NOT(BLANK(alternate_url)) }}"><r:page:data name="alternate_url" /></r:if><r:if expr="{{ BLANK(alternate_url) }}"><r:page:url /></r:if>"><r:if expr="{{ NOT(BLANK(link_text)) }}"><r:page:data name="link_text" /></r:if><r:if expr="{{ BLANK(link_text) }}">More About <r:page:name /></r:if></a>
               </div>
             </div>
           </r:each>
