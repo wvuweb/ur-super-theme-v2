@@ -1,4 +1,4 @@
-.so-lede {
+.wvu-lede {
   background-color: tint($black, 97%);
   color: $black;
   font-family: $helvetica-neue-light;
@@ -7,7 +7,7 @@
     @include wvu-lede();
   }
 }
-.so-lede__container {
-  @include outer-container();
+
+.wvu-lede__container {
   @include u-wvu-container-padding();
 }

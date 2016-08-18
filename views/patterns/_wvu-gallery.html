@@ -1,0 +1,31 @@
+<div class="wvu-gallery">
+
+  <div class="wvu-gallery__container">
+
+    <div class="so-gallery">
+      <ul class="photos">
+        <r:set_var name="gallerypage">
+          <r:page:slug />-gallery
+        </r:set_var>
+        <r:files:each labels="{$gallerypage}" types="image">
+          <li>
+            <a href="<r:file:image_url size="960x640" />" title="<r:file:description />"><r:file:image_tag size="240x160" alt="{file:alt_text}" /></a>
+          </li>
+        </r:files:each>
+      </ul>
+    </div>
+
+  </div>
+
+</div> <!-- /.wvu-container -->
+
+<r:edit_mode_only>
+  <div class="wvu-instructions">
+    <strong>Instructions for Gallery:</strong> This grabs photos labeled with this page&rsquo;s slug + &lsquo;-gallery&rsquo; e.g. &lsquo;back-page-gallery.&rsquo;
+    <p><strong>Background Color:</strong> <r:editable_region name="wvu-background-color-class--featurettes" /></p>
+  </div>
+</r:edit_mode_only>
+
+<r:content_for name="page_js">
+  <r:partial name="patterns/javascript-gallery" />
+</r:content_for>

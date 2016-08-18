@@ -1,0 +1,9 @@
+.wvu-gallery__container {
+  @include outer-container();
+}
+
+.wvu-sidebar, .main {
+  .wvu-gallery__container {
+    width: 100%;
+  }
+}

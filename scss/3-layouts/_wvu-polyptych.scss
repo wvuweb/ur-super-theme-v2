@@ -18,7 +18,7 @@
   }
 }
 
-.wvu-polyptych--2 {
+.wvu-polyptych--diptych {
   .wvu-polyptych__panel {
     @include mq($bp-medium) {
       @include span-columns(6);

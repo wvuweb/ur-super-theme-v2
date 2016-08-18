@@ -10,10 +10,6 @@
       </div>
     </r:page:if_has_content_for>
 
-    <r:set_var name="featurettes_id">
-      <r:page:data name="featurettes_id" />
-    </r:set_var>
-
     <r:get_page id="{$featurettes_id}">
 
       <r:children by="name" order="asc" labels="feature" labels_match="any">

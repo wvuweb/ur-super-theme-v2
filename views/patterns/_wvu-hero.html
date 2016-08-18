@@ -4,7 +4,7 @@
   <r:page:slug />-hero-background
 </r:set_var>
 
-<div class="wvu-hero <r:if value1="{$hero_text_alignment}" value2="right" operator="=">wvu-hero--right</r:if> <r:page:unless_has_content_for region="wvu-hero__photo">wvu-hero--big-photo</r:page:unless_has_content_for>" style="background-image: url(<r:files:each labels="{$bgurl}" limit="1" types="image" random="true"><r:file:image_url size="1780x580" /></r:files:each>); <r:page:if_has_content_for region="wvu-hero__photo">background-image: none;</r:page:if_has_content_for>">
+<div class="wvu-hero <r:if value1="{$hero_text_alignment}" value2="right" operator="=">wvu-hero--right</r:if> wvu-hero--big-photo" style="background-image: url(<r:files:each labels="{$bgurl}" limit="1" types="image" random="true"><r:file:image_url size="1780x580" /></r:files:each>); <r:page:if_has_content_for region="wvu-hero__photo">background-image: none;</r:page:if_has_content_for>">
   <div class="wvu-hero__container wvu-hero__container--vignetting-<r:page:data name="hero_vignetting" />">
     <div class="wvu-hero__copy <r:edit_mode_only>wvu-hero__copy--edit-mode</r:edit_mode_only>">
       <h1><span><r:editable_region name="wvu-hero__header" type="simple">Header Goes Here</r:editable_region></span></h1>
@@ -22,6 +22,6 @@
 
 <r:edit_mode_only>
   <div class="wvu-instructions">
-    <strong>Instructions for Hero:</strong> This is where you feature your most important content and user action. It requires marketing copy for a headline and brief description, a call to action, a photo, and an optional photo caption. If you cannot provide all of these items, consider omitting this section. See our <a href="http://brand.wvu.edu/brand-guide/voice">guidelines for marketing copy</a> and <a href="http://brand.wvu.edu/brand-guide/graphic-language/photo">using photos</a>. If you want to use a large background image instead of the default image, delete the default image and upload your own background image. Label the image with the page slug of the page that contains the hero and a &ldquo;-hero-background&rdquo; suffix. For example, if the hero is being used on the Home page, label the photo with &ldquo;home-hero-background&rdquo;.
+    <p><strong>Instructions for Hero:</strong> This is where you feature your most important content and user action. It requires marketing copy for a headline and brief description, a call to action, a photo, and an optional photo caption. If you cannot provide all of these items, consider omitting this section. See our <a href="http://brand.wvu.edu/brand-guide/voice">guidelines for marketing copy</a> and <a href="http://brand.wvu.edu/brand-guide/graphic-language/photo">using photos</a>. If you want to use a large background image instead of the default image, delete the default image and upload your own background image. Label the image with the page slug of the page that contains the hero and a &ldquo;-hero-background&rdquo; suffix. For example, if the hero is being used on the Home page, label the photo with &ldquo;home-hero-background&rdquo;.</p>
   </div>
 </r:edit_mode_only>
