@@ -1,4 +1,4 @@
-.wvu-lede {
+.wvu-lede-text {
   background-color: tint($black, 97%);
   color: $black;
   font-family: $helvetica-neue-light;
@@ -8,6 +8,6 @@
   }
 }
 
-.wvu-lede__container {
+.wvu-lede-text__container {
   @include u-wvu-container-padding();
 }
