@@ -39,7 +39,48 @@
 
     <a class="wvu-skip-nav" href="#maincontent">Skip to main content</a>
 
-    <r:partial name="patterns/wvu-masthead" />
+    <div class="wvu-masthead">
+      <div class="wvu-masthead__container">
+
+        <a class="wvu-masthead__logo" href="/"><r:site:name /></a>
+
+        <div class="wvu-masthead__college-link">
+          <a href="<r:site:data name="masthead_college_link_address" />"><r:site:data name="masthead_college_link_title" /></a>
+        </div>
+
+        <div class="wvu-masthead__search-slider">
+          <div class="wvu-masthead__search-bar">
+            <div class="wvu-masthead__search-and-submit">
+              <a href="http://wvu.edu" class="wvu-masthead__link">WVU Home</a> | <a class="wvu-masthead__org-link" href="<r:site:data name="org_url" />"><r:site:data name="org_name" /></a>
+              <form class="form-search" action="//search.wvu.edu/search" method="get" role="search">
+
+                <label class="form-search__label" for="q">
+                  <span class="form-search__label-text">Search</span>
+                  <input id="q" class="form-search__field" name="q" maxlength="256" placeholder="Search this site..." type="search" />
+                </label>
+
+                <input id="sort" name="sort" type="hidden" value="date:D:L:d1" />
+                <input id="output" name="output" type="hidden" value="xml_no_dtd" />
+                <input id="ie" name="ie" type="hidden" value="UTF-8" />
+                <input id="oe" name="oe" type="hidden" value="UTF-8" />
+                <input id="proxystylesheet" name="proxystylesheet" type="hidden" value="default_frontend" />
+                <input id="client" name="client" type="hidden" value="default_frontend" />
+                <input class="form-search__submit" name="btnG" type="submit" value="Search" />
+
+                <div class="form-search__search-type">
+                  <input id="form-search__sitesearch" type="radio" name="as_sitesearch" value="<r:site:domain />" checked="true" />
+                  <label for="form-search__sitesearch">Search this site</label>
+                  <input id="form-search__wvusearch" type="radio" name="as_sitesearch" value="wvu.edu" />
+                  <label for="form-search__wvusearch">Search WVU</label>
+                </div>
+
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </div> <!-- /.wvu-masthead-container -->
+    </div> <!-- /.wvu-masthead -->
 
     <r:comment><!-- What are layouts and <r:yield />? http://goo.gl/DFAsPv --></r:comment>
     <r:yield />
@@ -57,23 +98,10 @@
       </div>
     </r:edit_mode_only>
 
-    <r:set_var name="jqueryDefer">
-      <r:site:data name="jquery_defer" />
-    </r:set_var>
-
-    <r:if value1="{$jqueryDefer}" value2="false" operator="=">
-      <script src="https://fast.fonts.net/jsapi/3f7b1335-4c99-4404-92cf-3ba0e32e8f17.js"></script> <r:comment><!-- Helvetica Neue Light & Bold Condensed web font, valid for *.wvu.edu, *.wvutech.edu, & localhost --></r:comment>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-      <script>window.jQuery || document.write('<script src="https://code.wvu.edu/public/vendor/jquery/1.11.1/jquery.min.js"><\/script>')</script>
-      <r:include_javascript name="all" />
-    </r:if>
-
-    <r:if value1="{$jqueryDefer}" value2="false" operator="!=">
-      <script src="https://fast.fonts.net/jsapi/3f7b1335-4c99-4404-92cf-3ba0e32e8f17.js" defer></script> <r:comment><!-- Helvetica Neue Light & Bold Condensed web font, valid for *.wvu.edu, *.wvutech.edu, & localhost --></r:comment>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" defer></script>
-      <script>window.jQuery || document.write('<script src="https://code.wvu.edu/public/vendor/jquery/1.11.1/jquery.min.js" defer><\/script>')</script>
-      <r:include_javascript name="all" defer="true" />
-    </r:if>
+    <script src="https://fast.fonts.net/jsapi/3f7b1335-4c99-4404-92cf-3ba0e32e8f17.js"></script> <r:comment><!-- Helvetica Neue Light & Bold Condensed web font, valid for *.wvu.edu, *.wvutech.edu, & localhost --></r:comment>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="https://code.wvu.edu/public/vendor/jquery/1.11.1/jquery.min.js"><\/script>')</script>
+    <r:include_javascript name="all" />
 
     <r:yield name="page_js">
       <r:content />
