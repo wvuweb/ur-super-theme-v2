@@ -1,0 +1,86 @@
+
+.wvu-adverts__container {
+  @include outer-container();
+}
+
+.wvu-adverts__advertisement {
+  @include span-columns(12);
+
+  @include mq($bp-small) {
+    @include span-columns(3);
+    @include omega(4n);
+  }
+
+}
+
+.wvu-adverts__adverts--2 {
+  .wvu-adverts__advertisement {
+    @include mq($bp-medium) {
+      @include span-columns(6);
+      @include omega(2n)
+    }
+  }
+}
+
+.wvu-adverts__adverts--3, .wvu-adverts__adverts--6 {
+  .wvu-adverts__advertisement {
+    @include mq($bp-medium) {
+      @include span-columns(4);
+      @include omega-reset(4n);
+      @include omega(3n)
+    }
+  }
+}
+
+.wvu-adverts__adverts--4 {
+  .wvu-adverts__advertisement {
+    @include mq($bp-medium) {
+      @include span-columns(3);
+      @include omega-reset(4n);
+      @include omega(4n);
+    }
+  }
+}
+
+.wvu-adverts__adverts--5, .wvu-adverts__adverts--9, .wvu-adverts__adverts--10 {
+  .wvu-adverts__advertisement {
+    @include mq($bp-medium) {
+      @include span-columns(2.4);
+      @include omega-reset(4n);
+      @include omega(5n);
+    }
+  }
+}
+
+.wvu-adverts__links-list { margin-top: 1em;
+  @include mq($bp-medium) {
+    @include span-columns(3);
+  }
+}
+
+.wvu-sidebar {
+  .wvu-adverts__advertisement {
+    @include mq($bp-small) {
+      @include span-columns(12);
+      @include omega-reset(4n);
+    }
+  }
+}
+
+.wvu-adverts__entries--edit-mode {
+  .wvu-adverts__image, .wvu-adverts__copy {
+    @include mq($bp-medium) {
+      @include span-columns(6);
+    }
+  }
+}
+
+.wvu-sidebar {
+  .wvu-adverts__adverts, .wvu-adverts__adverts--two, .wvu-adverts__adverts--three, .wvu-adverts__adverts--four, .wvu-adverts__adverts--five {
+    .wvu-adverts__advertisement {
+      @include mq($bp-small) {
+        @include span-columns(12);
+      }
+    }
+  }
+}
