@@ -18,14 +18,14 @@
 
     <r:root>
 
-      <r:descendants order="asc" labels="feature, {$page_slug}" labels_match="all">
+      <r:descendants order="asc" labels="advert, {$page_slug}" labels_match="any">
         <div class="wvu-adverts__adverts wvu-adverts__adverts--<r:count />">
           <r:each>
             <div class="wvu-adverts__advertisement wvu-adverts__advertisement--<r:page:slug />">
               <div class="wvu-adverts__ad-text">
-                <a href="<r:page:content name="wvu-adverts__url" />"><span><r:page:first_non_blank_attr names="alternate_name,name" /></span></a>
+                <a href="<r:if expr="{{ NOT(BLANK(alternate_url)) }}"><r:page:data name="alternate_url" /></r:if><r:if expr="{{ BLANK(alternate_url) }}"><r:page:url /></r:if>"><span><r:page:first_non_blank_attr names="alternate_name,name" /></span></a>
               </div>
-              <a href="<r:page:content name="wvu-adverts__url" />"><r:page:content name="wvu-adverts__image" /></a>
+              <a href="<r:if expr="{{ NOT(BLANK(alternate_url)) }}"><r:page:data name="alternate_url" /></r:if><r:if expr="{{ BLANK(alternate_url) }}"><r:page:url /></r:if>"><img src="<r:page:data name="thumbnail_url" />" alt="<r:page:data name="thumbnail_alt />" /></a>
             </div>
           </r:each>
         </div>
@@ -37,7 +37,7 @@
 </div>
 
 <r:edit_mode_only>
-  <div class="so-instructions">
+  <div class="wvu-instructions">
     <p><strong>Instructions for Adverts:</strong> Show a list of advertisements. This loops through the children of a page e.g. &ldquo;Advertisments&rdquo; and pulls a photo and page title to create ads automatically. Enter the ID of the parent page in the <strong>adverts_id</strong> field of the your page properties. Label each ad with a label that corresponds to the page slug of the page you wish the ad to display. For example, if you wan the ad to show on the "About Us" page, you would label the ad "about-us".</p>
     <p><strong>Background Color:</strong> <r:editable_region name="so-background-color-class--adverts" /></p>
   </div>
