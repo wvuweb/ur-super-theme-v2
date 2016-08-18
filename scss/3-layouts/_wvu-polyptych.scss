@@ -59,7 +59,7 @@
   }
 }
 
-.wvu-polyptych--quadritych {
+.wvu-polyptych--quadriptych {
   .wvu-polyptych__panel {
     @include mq($bp-medium) {
       @include span-columns(3);
