@@ -2,6 +2,19 @@
   @include outer-container();
 }
 
+.wvu-gallery {
+  ul {
+    &.photos {
+      li {
+        @include mq($bp-medium) {
+          @include span-columns(3);
+          @include omega(4n);
+        }
+      }
+    }
+  }
+}
+
 .wvu-sidebar, .main {
   .wvu-gallery__container {
     width: 100%;

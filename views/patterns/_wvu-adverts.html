@@ -16,9 +16,9 @@
       </div>
     </r:page:if_has_content_for>
 
-    <r:get_page id="{$adverts_id}">
+    <r:root>
 
-      <r:children order="asc" labels="{$page_slug}" labels_match="any">
+      <r:descendants order="asc" labels="feature, {$page_slug}" labels_match="all">
         <div class="wvu-adverts__adverts wvu-adverts__adverts--<r:count />">
           <r:each>
             <div class="wvu-adverts__advertisement wvu-adverts__advertisement--<r:page:slug />">
@@ -29,9 +29,9 @@
             </div>
           </r:each>
         </div>
-      </r:children>
+      </r:descendants>
 
-    </r:get_page>
+    </r:root>
 
   </div>
 </div>

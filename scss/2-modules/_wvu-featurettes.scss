@@ -59,9 +59,6 @@
 
 .wvu-featurettes__featurette {
   margin-bottom: 2em;
-  @include mq($bp-medium) {
-    margin-bottom: 0;
-  }
 }
 
 .wvu-featurettes__photo {
@@ -81,6 +78,14 @@
 .main, .wvu-sidebar {
   .wvu-featurettes__container {
     width: 100%;
+  }
+}
+
+.wvu-featurettes__featurettes--1, .wvu-featurettes__featurettes--2, .wvu-featurettes__featurettes--3, .wvu-featurettes__featurettes--4, .wvu-featurettes__featurettes--5 {
+  .wvu-featurettes__featurette {
+    @include mq($bp-medium) {
+      margin-bottom: 0;
+    }
   }
 }
 

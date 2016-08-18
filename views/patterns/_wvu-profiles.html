@@ -1,0 +1,64 @@
+<r:set_var name="page_slug">
+  <r:page:slug />
+</r:set_var>
+
+<div class="wvu-featurettes wvu-featurettes--profiles <r:page:content name="so-background-color-class--profiles" /> background">
+  <div class="wvu-featurettes__container">
+
+    <r:page:if_has_content_for region="wvu-featurettes--profiles__header" always_show_in_edit_mode="true">
+      <div class="wvu-featurettes__header">
+        <r:editable_region name="wvu-featurettes--profiles__header">
+          <h2>Featurettes Headline</h2>
+          <p>Subhead goes here.</p>
+        </r:editable_region>
+      </div>
+    </r:page:if_has_content_for>
+
+    <r:root>
+
+      <r:descendants order="asc" labels="feature, {$page_slug}" labels_match="any">
+        <div class="wvu-featurettes__featurettes wvu-featurettes__featurettes--<r:count />">
+          <r:each>
+            <div class="wvu-featurettes__featurette">
+
+              <r:set_var name="soFeaturettesInfoProfilesWide" default="nophoto" />
+              <r:page:if_has_content_for region="wvu-profile__photo">
+                <div class="wvu-featurettes__photo">
+                  <a href="<r:page:unless_has_content_for region="wvu-featurettes__url"><r:page:url /></r:page:unless_has_content_for><r:page:if_has_content_for region="wvu-featurettes__url"><r:page:content name="wvu-featurettes__url" /></r:page:if_has_content_for>"><r:page:content name="wvu-profile__photo" /></a>
+                </div>
+                <r:set_var name="soFeaturettesInfoProfilesWide">
+                  hasphoto
+                </r:set_var>
+              </r:page:if_has_content_for>
+
+              <div class="wvu-featurettes__info wvu-featurettes__info--<r:var name="soFeaturettesInfoProfilesWide" />">
+                <h3><a href="<r:page:unless_has_content_for region="wvu-featurettes__url"><r:page:url /></r:page:unless_has_content_for><r:page:if_has_content_for region="wvu-featurettes__url"><r:page:content name="wvu-featurettes__url" /></r:page:if_has_content_for>"><r:page:first_non_blank_attr names="alternate_name,name" /></a></h3>
+                <p>
+                  <r:page:content name="so-page-desc" />
+                </p>
+                <p>
+                  <a class="button" href="<r:page:unless_has_content_for region="wvu-featurettes__url"><r:page:url /></r:page:unless_has_content_for><r:page:if_has_content_for region="wvu-featurettes__url"><r:page:content name="wvu-featurettes__url" /></r:page:if_has_content_for>"><r:page:unless_has_content_for region="wvu-featurettes__link-text">More About <r:page:name /></r:page:unless_has_content_for><r:page:if_has_content_for region="wvu-featurettes__link-text"><r:page:content name="wvu-featurettes__link-text" /></r:page:if_has_content_for></a>
+                </p>
+              </div>
+            </div>
+          </r:each>
+        </div>
+      </r:descendants>
+
+    </r:root>
+
+    <div class="wvu-featurettes__postscript">
+      <r:editable_region name="wvu-featurettes--profiles__postscript" scope="site">
+        Put any additional info or links here.
+      </r:editable_region>
+    </div>
+
+  </div>
+</div>
+
+<r:edit_mode_only>
+  <div class="wvu-instructions">
+    <p><strong>Instructions for Profiles:</strong> This loops through the children of a parent page e.g. &ldquo;Profiles&rdquo; and pulls content to create profile features. Enter the parent page&rsquo;s ID in the <strong>profiles_id</strong> field in the page properties. Each page you wish featured must be labelled "feature".</p>
+    <p><strong>Background Color:</strong> <r:editable_region name="so-background-color-class--profiles" /></p>
+  </div>
+</r:edit_mode_only>
