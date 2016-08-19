@@ -27,8 +27,14 @@
 .wvu-pattern-instructions__dos-and-donts {
   h2, h3 {
     padding-top: .5em;
+  }
+}
+
+.wvu-pattern-instructions__options {
+  h2, h3 {
     a {
       font-size: .5em;
+      font-weight: normal;
       margin-left: 2em;
     }
   }
