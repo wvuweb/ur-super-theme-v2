@@ -1,0 +1,109 @@
+.wvu-admin-hero {
+  background-color: $pms-432-c;
+  color: white;
+  overflow: hidden;
+  position: relative;
+  a {
+    color: $wvu-gold;
+    position: relative;
+    z-index: 3;
+    &.button {
+      color: white;
+    }
+  }
+  h1, h2, h3, p, ul {
+    color: white;
+    position: relative;
+    z-index: 3;
+  }
+  h1 {
+    font-size: 3em;
+    @include so-gold-slash();
+    &:before {
+      background-size: 292px;
+      left: -173px;
+      top: -83px;
+      z-index: -3;
+    }
+  }
+  h1, p, a {
+    text-shadow: 1px 1px 1px #000000;
+  }
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+    li {
+      a {
+        color: white;
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 1em;
+        text-decoration: none;
+        &:hover {
+          color: $wvu-gold;
+        }
+        &:visited {
+          color: white;
+        }
+      }
+    }
+  }
+  p {
+    font-size: 1.5em;
+    margin-top: 0;
+  }
+}
+
+.wvu-admin-hero__container {
+  @include outer-container();
+  @include u-wvu-container-padding();
+  padding: 7em 2em 7.3em 2em;
+  @include mq($bp-xlarge) {
+    padding: 7em 0 7.3em 0;
+  }
+  @include so-vignetting($wvu-hero-vignetting-opacity);
+}
+
+.wvu-admin-hero__copy {
+  @include mq($bp-medium) {
+    @include span-columns(7);
+  }
+}
+
+.wvu-admin-hero__links {
+  @include mq($bp-medium) {
+    @include span-columns(4);
+    @include shift(1);
+  }
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+}
+
+.page--edit-mode {
+  .wvu-admin-hero {
+    h1 {
+      &:before {
+        display: none;
+      }
+    }
+  }
+  .wvu-admin-hero__container {
+    &:before {
+      display: none;
+    }
+  }
+}
+
+$i: 90;
+@while $i > 0 {
+  .wvu-admin-hero__container {
+    &.wvu-admin-hero__container--vignetting-#{$i} {
+      &:before {
+        opacity: $i * .01;
+      }
+    }
+    $i: $i - 10;
+  }
+}

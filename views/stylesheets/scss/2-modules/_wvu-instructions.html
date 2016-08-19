@@ -1,0 +1,32 @@
+.wvu-instructions {
+  background-color: $pms-115-c;
+  color: $black;
+  display: table;
+  font-size: 1.5em;
+  padding: 4em;
+  position: relative;
+  width: 100%;
+  p {
+    max-width: 99999em;
+  }
+  &:before {
+    font-size: 2em;
+    line-height: 2em;
+    position: absolute;
+    z-index: 2;
+    display: block;
+    clear: both;
+    top: 0;
+    left: 50%;
+    content: "❯";
+    -ms-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+  }
+}
+
+.wvu-sidebar, .main, .so-featurettes__featurette, .so-magic-anytych__panel {
+  .so-instructions {
+    display: none;
+  }
+}

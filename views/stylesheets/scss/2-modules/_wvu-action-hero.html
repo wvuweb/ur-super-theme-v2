@@ -1,0 +1,35 @@
+.wvu-action-hero {
+  background-color: $wvu-gold;
+  background-image: url(https://admissions.wvu.edu/images/wvu-pattern-background--gold.png);
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: $wvu-blue;
+  text-align: center;
+  p {
+    margin: 1em auto;
+  }
+}
+
+.wvu-action-hero__container {
+  @include outer-container();
+  @include u-wvu-container-padding();
+}
+
+.wvu-action-hero__header {
+  font-size: 2.5em;
+  @include wvu-lede();
+  h2 {
+    color: $wvu-blue;
+    @include wvu-primary-pattern-heading();
+  }
+  h3 {
+    color: $wvu-blue;
+    @include wvu-lede();
+  }
+}
+
+.wvu-action-hero__postscript {
+  display: block;
+  margin: 0 auto;
+}
