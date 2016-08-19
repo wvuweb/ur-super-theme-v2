@@ -15,7 +15,9 @@
               <r:children:each>
                 <tr>
                   <td class="wvu-directory__name">
-                    <r:page:first_non_blank_attr names="alternate_name,name" /><br />
+                    <strong><r:page:first_non_blank_attr names="alternate_name,name" /></strong>
+                  </td>
+                  <td class="wvu-directory__job-title">
                     <r:page:content name="wvu-profile__job-title" />
                   </td>
                   <td class="wvu-directory__phone"><r:page:content name="wvu-profile__phone" /></td>
@@ -55,7 +57,7 @@
                 </td>
                 <td class="wvu-directory__webpage"><r:page:content name="wvu-profile__phone" />
                   <a href="<r:page:unless_has_content_for region="so-featurettes__url"><r:page:url /></r:page:unless_has_content_for><r:page:if_has_content_for region="so-featurettes__url"><r:page:content name="so-featurettes__url" /></r:page:if_has_content_for>">
-                    Wep Page
+                    Web Page
                   </a>
                 </td>
               </tr>
