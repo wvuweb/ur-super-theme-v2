@@ -1,3 +1,7 @@
+.wvu-pattern-instructions__container {
+  @include outer-container();
+}
+
 .wvu-pattern-instructions__do, .wvu-pattern-instructions__dont, .wvu-pattern-instructions__css, .wvu-pattern-instructions__html {
   @include mq($bp-medium) {
     @include span-columns(6);

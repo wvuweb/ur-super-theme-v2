@@ -1,3 +1,7 @@
+.wvu-pattern-instructions__container {
+  @include u-wvu-container-padding();
+}
+
 .wvu-pattern-instructions__do {
   h2, h3 {
     color: green;
