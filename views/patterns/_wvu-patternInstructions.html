@@ -19,8 +19,10 @@
       <div class="wvu-pattern-instructions__code-example wvu-pattern-instructions__code-example--css">
         <h2>CSS</h2>
 <pre>
-<r:editable_region name="wvu-pattern-instructions__css" />
-<r:partial name="css-examples/wvu-hero" />
+<r:set_var name="cssOutput">
+  stylesheets/<r:page:slug />
+</r:set_var>
+<r:partial name="{$cssOutput}" />
 </pre>
       </div>
       <div class="wvu-pattern-instructions__code-example wvu-pattern-instructions__code-example--ja">
