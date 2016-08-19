@@ -31,6 +31,7 @@ h6, .wvu-h6 {
   }
 }
 
+
 h1, .wvu-h1 { font-size: 3em; line-height: 1.08333333em; width: 100%; margin-top: 0; margin-bottom: .5em; color: $pms-432-c;
   @include mq($bp-large) { font-size: 4em; }
 }
@@ -52,18 +53,7 @@ h1, .wvu-h1 { font-size: 3em; line-height: 1.08333333em; width: 100%; margin-top
 .wvu-shout--wvu-blue { color: $wvu-blue; }
 .wvu-shout--white { color: #fff; }
 
-@mixin wvu-shout {
-  line-height: $wvu-shout-line-height; font-family: $wvu-shout; text-transform: uppercase; font-weight: normal;
-  .fonts-loaded & { font-family: $wvu-shout; }
-}
 
-@mixin wvu-subhead {
-  line-height: $helvetica-neue-bold-line-height; font-weight: bold; text-transform: none;
-}
-
-@mixin wvu-traditional-audience {
-  line-height: $wvu-traditional-audience-line-height; font-family: $wvu-traditional-audience; font-weight: normal; text-transform: none;
-}
 
 h2, .wvu-h2 { font-size: 2.4em; line-height: 1.08333333em; }
 
@@ -100,14 +90,6 @@ blockquote, .wvu-blockquote {
 
 ul, ol { margin-bottom: 18px; }
 
-@mixin wvu-typography-anchor-tag  {
-  a { color: $wvu-base-link-color; text-decoration: underline;
-    &:visited { color: $wvu-visited-link-color; text-decoration: none; }
-    &:active { text-decoration: none; }
-    &:hover { color: $wvu-hover-link-color; text-decoration: underline; }
-  } //a
-} //@wvu-typography-anchor-tag
-
 // This if statement assumes = true, unless variable is explicitly set to `false`.
 @if $wvu-use-typography-anchor {
   @include wvu-typography-anchor-tag;
@@ -127,7 +109,6 @@ em, i, cite, q { font-style: italic; }
 
 ul,
 ol {
-
   &%default-ul {
     list-style-type: disc;
     margin-bottom: $base-spacing / 2;

@@ -1,17 +1,23 @@
-$black: #2C2A29;
-$flying-wv-w-signature: '../images/flying-wv-w-signature.png';
+@mixin wvu-shout {
+  line-height: $wvu-shout-line-height; font-family: $wvu-shout; text-transform: uppercase; font-weight: normal;
+  .fonts-loaded & { font-family: $wvu-shout; }
+}
 
-$helvetica-neue-font-stack: 'Helvetica Neue', Helvetica, 'Helvetica LT Std', 'Helvetica CY', Arial, 'Lucida Grande', sans-serif !default;
-$helvetica-neue-light: 'HelveticaNeueW01-45Ligh', $helvetica-neue-font-stack !default;
-$wvu-header-color: $black;
-$wvu-masthead-background: 'blue';
-$wvu-lede-font-size: 2.5em;
-$wvu-lede-line-height: 1.08333333em;
-$wvu-lede-text-align: center;
-$wvu-shout-font-size: 4.5em;
-$wvu-shout-margin: 0 0 .5em;
-$wvu-anytych-header-margin: 0 0 .5em;
-$wvu-hero-vignetting-opacity: .85 !default;
+@mixin wvu-subhead {
+  line-height: $helvetica-neue-bold-line-height; font-weight: bold; text-transform: none;
+}
+
+@mixin wvu-traditional-audience {
+  line-height: $wvu-traditional-audience-line-height; font-family: $wvu-traditional-audience; font-weight: normal; text-transform: none;
+}
+
+@mixin wvu-typography-anchor-tag  {
+  a { color: $wvu-base-link-color; text-decoration: underline;
+    &:visited { color: $wvu-visited-link-color; text-decoration: none; }
+    &:active { text-decoration: none; }
+    &:hover { color: $wvu-hover-link-color; text-decoration: underline; }
+  } //a
+} //@wvu-typography-anchor-tag
 
 @mixin so-vignetting($vignetting-opacity) {
   &:before {

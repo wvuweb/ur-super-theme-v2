@@ -33,6 +33,55 @@ $wvu-traditional-audience-line-height: 1.16666666667em !default;
 // Line length
 $wvu-typography-line-length: 45em !default;
 
+// WVU Color Pallette
+//==================================================
+
+// Primary
+$wvu-blue: #002855;
+$wvu-gold: #EAAA00;
+
+// Neutral
+$black: #2C2A29;
+$pms-432-c: #333F48;
+$pms-429-c: #A2AAAD;
+$pms-warm-gray-11: #6E6259;
+$pms-warm-gray-7: #968C83;
+$pms-warm-gray-3: #BFB8AF;
+
+$wvu-dune: $black;
+$wvu-limed-spruce: $pms-432-c;
+$wvu-gray-chateau: $pms-429-c;
+$wvu-pine-cone: $pms-warm-gray-11;
+$wvu-schooner: $pms-warm-gray-7;
+$wvu-tide: $pms-warm-gray-3;
+
+// Accent
+$pms-286-c: #0033A0;
+$pms-300-c: #005EB8;
+$pms-629-c: #9BD3DD;
+$pms-7554-c: #4B3D2A;
+$pms-7557-c: #9F7D23;
+$pms-144-c: #ED8B00;
+$pms-7476-c: #0D5257;
+$pms-5625-c: #708573;
+$pms-558-c: #9ABEAA;
+$pms-180-c: #BE3A34;
+$pms-166-c: #E35205;
+$pms-115-c: #FDDA24;
+
+$wvu-smalt: $pms-286-c;
+$wvu-endeavor: $pms-300-c;
+$wvu-morning-glory: $pms-629-c;
+$wvu-judge-gray: $pms-7554-c;
+$wvu-reef-gold: $pms-7557-c;
+$wvu-tangerine: $pms-144-c;
+$wvu-eden: $pms-7476-c;
+$wvu-xanadu: $pms-5625-c;
+$wvu-summer-green: $pms-558-c;
+$wvu-well-read: $pms-180-c;
+$wvu-trinidad: $pms-166-c;
+$wvu-candelight: $pms-115-c;
+
 // Links
 //==================================================
 
@@ -83,6 +132,7 @@ $diagonal-line: $diagonal-line-gold-transparent !default;
 
 $wvu-shout-font-size-medium: 4.5em !default;
 $wvu-shout-font-size-long: 3em !default;
+$wvu-shout-margin: 0 0 .5em !default;
 
 // Hero Typography
 
@@ -92,6 +142,7 @@ $wvu-hero-title-color: white !default;
 // Set vignetting to true if you have a photo that is busy and makes text illegible
 
 $has-vignetting: false !default;
+$wvu-hero-vignetting-opacity: .85 !default;
 
 // Sets the cropping of the WVU grid pattern
 
@@ -127,6 +178,18 @@ $wvu-shout-length: 'short' !default;
 // Layout
 $wvu-container-padding: 4em 0 4.3em 0 !default;
 $wvu-hero-container-padding: 7em 0 !default;
+
+// Lede Text
+// =================================================
+
+$wvu-lede-font-size: 2.5em !default;
+$wvu-lede-line-height: 1.08333333em !default;
+$wvu-lede-text-align: center !default;
+
+// Header
+// ====================================================
+
+$wvu-header-color: $black !default;
 
 // Grid
 //==================================================
