@@ -79,3 +79,37 @@
   margin-top: 0;
   text-align: center;
 }
+
+@mixin omega-reset($nth) {
+  &:nth-child(#{$nth}) { margin-right: flex-gutter(); }
+  &:nth-child(#{$nth}+1) { clear: none }
+}
+
+@mixin u-wvu-embed-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16/9 ratio */
+  padding-top: 30px; /* IE6 workaround*/
+  height: 0;
+  overflow: hidden;
+  iframe, object, video, embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@mixin u-wvu-container-padding {
+  padding: $wvu-container-padding;
+  padding-left: 1em;
+  padding-right: 1em;
+  @include mq($bp-xlarge) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+// http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/
+// Parent elements must have a fixed height (not min-height)
+@mixin u-wvu-vertical-align { position: relative; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); }
