@@ -1,151 +1,98 @@
 
 
-.so-super-nav {
-  h3 {
-    margin-top: 1em;
-  }
-  .so-super-nav__photo {
-    color: $wvu-blue;
-    font-size: 9em;
+.wvu-super-nav {
+  .wvu-super-nav__photo {
     @include wvu-shout();
     @include mq($bp-medium) {
       @include span-columns(6);
     }
   }
-  .so-super-nav__copy {
+  .wvu-super-nav__copy {
     @include mq($bp-medium) {
       @include span-columns(6);
     }
   }
-  ul {
-    list-style-type: none;
-    padding-left: 0;
-  }
 }
 
-.so-super-nav__panel {
-  font-size: .8em;
-  margin-bottom: 2em;
-  @include mq($bp-medium) {
-    margin-bottom: 0;
-  }
-  h3 {
-    font-size: 1.2em;
-  }
-}
-
-.so-super-nav__container {
+.wvu-super-nav__container {
   @include outer-container();
-  @include u-wvu-container-padding();
 }
 
-.so-super-nav__header {
-  text-align: center;
-  h2 {
-    @include wvu-secondary-pattern-heading();
-  }
-  h3 {
-    @include wvu-secondary-pattern-heading();
-    font-size: 2.4em;
-  }
-  p {
-    margin: 0 auto;
-  }
-}
-
-h2 + .so-super-nav__panels {
-  margin-top: 3em;
-}
-
-.so-super-nav--diptych {
-  .so-super-nav__panel {
+.wvu-super-nav--diptych {
+  .wvu-super-nav__panel {
     @include mq($bp-medium) {
       @include span-columns(6);
     }
   }
-  .so-super-nav__photo {
+  .wvu-super-nav__photo {
     @include mq($bp-medium) {
       @include span-columns(12);
     }
   }
-  .so-super-nav__copy {
+  .wvu-super-nav__copy {
     @include mq($bp-medium) {
       @include span-columns(12);
     }
   }
 }
 
-.so-super-nav--triptych {
-  h3 {
-    font-size: 2em;
-  }
-  .so-super-nav__panel {
+.wvu-super-nav--triptych {
+  .wvu-super-nav__panel {
     @include mq($bp-medium) {
       @include span-columns(4);
     }
   }
-  .so-super-nav__photo {
-    font-size: 7em;
+  .wvu-super-nav__photo {
     @include mq($bp-medium) {
       @include span-columns(12);
     }
   }
-  .so-super-nav__copy {
+  .wvu-super-nav__copy {
     @include mq($bp-medium) {
       @include span-columns(12);
     }
   }
 }
 
-.so-super-nav--quadtych {
-  h3 {
-    font-size: 1.5em;
-  }
-  .so-super-nav__panel {
+.wvu-super-nav--quadtych {
+  .wvu-super-nav__panel {
     @include mq($bp-medium) {
       @include span-columns(3);
     }
   }
-  .so-super-nav__photo {
-    font-size: 5em;
+  .wvu-super-nav__photo {
     @include mq($bp-medium) {
       @include span-columns(12);
     }
   }
-  .so-super-nav__copy {
+  .wvu-super-nav__copy {
     @include mq($bp-medium) {
       @include span-columns(12);
     }
   }
 }
 
-.so-super-nav--quintych {
-  h3 {
-    font-size: 1.2em;
-  }
-  .so-super-nav__panel {
+.wvu-super-nav--quintych {
+  .wvu-super-nav__panel {
     @include mq($bp-medium) {
       @include span-columns(2.4);
     }
   }
-  .so-super-nav__photo {
+  .wvu-super-nav__photo {
     font-size: 5em;
     @include mq($bp-medium) {
       @include span-columns(12);
     }
   }
-  .so-super-nav__copy {
+  .wvu-super-nav__copy {
     @include mq($bp-medium) {
       @include span-columns(12);
     }
   }
 }
 
-.so-super-nav--sixtych {
-  h3 {
-    font-size: 1.2em;
-  }
-  .so-super-nav__panel {
+.wvu-super-nav--sixtych {
+  .wvu-super-nav__panel {
     @include mq($bp-medium) {
       @include span-columns(4);
       @include omega(3n);
@@ -155,13 +102,12 @@ h2 + .so-super-nav__panels {
       @include span-columns(2);
     }
   }
-  .so-super-nav__photo {
-    font-size: 5em;
+  .wvu-super-nav__photo {
     @include mq($bp-medium) {
       @include span-columns(12);
     }
   }
-  .so-super-nav__copy {
+  .wvu-super-nav__copy {
     @include mq($bp-medium) {
       @include span-columns(12);
     }

@@ -1,9 +1,85 @@
+
+
 .wvu-super-nav {
-  ul { list-style-type: none; padding-left: 0; }
+  h3 {
+    margin-top: 1em;
+  }
+  .wvu-super-nav__photo {
+    color: $wvu-blue;
+    font-size: 9em;
+    @include wvu-shout();
+  }
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+}
+
+.wvu-super-nav__panel {
+  font-size: .8em;
+  margin-bottom: 2em;
+  @include mq($bp-medium) {
+    margin-bottom: 0;
+  }
+  h3 {
+    font-size: 1.2em;
+  }
+}
+
+.wvu-super-nav__container {
+  @include u-wvu-container-padding();
+}
+
+.wvu-super-nav__header {
+  text-align: center;
   h2 {
+    @include wvu-secondary-pattern-heading();
+  }
+  h3 {
+    @include wvu-secondary-pattern-heading();
+    font-size: 2.4em;
+  }
+  p {
+    margin: 0 auto;
+  }
+}
+
+h2 + .wvu-super-nav__panels {
+  margin-top: 3em;
+}
+
+.wvu-super-nav--triptych {
+  h3 {
+    font-size: 2em;
+  }
+  .wvu-super-nav__photo {
+    font-size: 7em;
+  }
+}
+
+.wvu-super-nav--quadtych {
+  h3 {
     font-size: 1.5em;
   }
-  a { color: $black;
-    &:visited { color: $black; }
+  .wvu-super-nav__photo {
+    font-size: 5em;
+  }
+}
+
+.wvu-super-nav--quintych {
+  h3 {
+    font-size: 1.2em;
+  }
+  .wvu-super-nav__photo {
+    font-size: 5em;
+  }
+}
+
+.wvu-super-nav--sixtych {
+  h3 {
+    font-size: 1.2em;
+  }
+  .wvu-super-nav__photo {
+    font-size: 5em;
   }
 }

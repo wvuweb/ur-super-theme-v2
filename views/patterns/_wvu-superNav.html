@@ -1,0 +1,78 @@
+
+
+<r:comment>
+<!-- NOTE: This anytych can be reused over and over. -->
+<!-- You can use this partial multiple times on the same page by setting different... -->
+<!-- ...`regionName__base` variables above each partial.  -->
+<!-- You can also change the `triptychItems` to be more than 4 if you like. -->
+<!-- Always increase by 4. -->
+<!-- Set the scope by defining the `$scope` variable to either `page` or `site`. -->
+</r:comment>
+
+<r:set_var name="wvuSuperNavHeadline__base" value="{$wvuSuperNavHeadline__base}" default="wvu-super-nav__headline" />
+<r:set_var name="wvuSuperNavBody__base" value="{$wvuSuperNavBody__base}" default="wvu-super-nav__body" />
+<r:set_var name="wvuSuperNavItems" value="{$wvuSuperNavItems}" default="6" />
+<r:set_var name="scope" value="{$scope}" default="site" />
+
+<div class="wvu-super-nav <r:page:content name="so-bg-color-class--super-nav" /> background <r:var name="wvu-super-nav__classes" /> <r:page:if_has_content_for region="wvu-super-nav__body--2">wvu-super-nav--diptych</r:page:if_has_content_for> <r:page:if_has_content_for region="wvu-super-nav__body--3">wvu-super-nav--triptych</r:page:if_has_content_for> <r:page:if_has_content_for region="wvu-super-nav__body__description--4">wvu-super-nav--quadtych</r:page:if_has_content_for> <r:page:if_has_content_for region="wvu-super-nav__body--5">wvu-super-nav--quintych</r:page:if_has_content_for> <r:page:if_has_content_for region="wvu-super-nav__body--6">wvu-super-nav--sixtych</r:page:if_has_content_for> <r:edit_mode_only>wvu-super-nav--sixtych</r:edit_mode_only>">
+  <div class="wvu-super-nav__container">
+
+    <r:page:if_has_content_for region="wvu-super-nav__header" always_show_in_edit_mode="true">
+      <div class="wvu-super-nav__header">
+        <r:editable_region name="so-superNav__header" scope="{$scope}">
+          <h2>Supernav Headline</h2>
+          <p>Subhead goes here.</p>
+        </r:editable_region>
+      </div>
+    </r:page:if_has_content_for>
+
+    <div class="wvu-super-nav__panels">
+
+      <r:loop:each times="{$wvuSuperNavItems}">
+
+        <r:set_var name="wvuSuperNavBody"><r:var name="wvuSuperNavBody__base" />--<r:item /></r:set_var>
+
+        <r:page:if_has_content_for region="{$wvuSuperNavBody}" always_show_in_edit_mode="true">
+          <div class="wvu-super-nav__panel">
+
+            <r:set_var name="wvuSuperNavHeadline"><r:var name="wvuSuperNavHeadline__base" />--<r:item /></r:set_var>
+
+            <h3 class="wvu-super-nav__headline">
+              <r:editable_region name="{$wvuSuperNavHeadline}" type="simple" scope="{$scope}">
+                Headline Goes Here
+              </r:editable_region>
+            </h3>
+
+            <div class="wvu-super-nav__body">
+              <r:editable_region name="{$wvuSuperNavBody}" scope="{$scope}">
+                <ul>
+                  <li><a href="#">Link</a></li>
+                  <li><a href="#">Longer Link</a></li>
+                  <li><a href="#">Longer Link Yet</a></li>
+                  <li><a href="#">Longer Link</a></li>
+                  <li><a href="#">Link</a></li>
+                  <li><a href="#">Longer Link</a></li>
+                  <li><a href="#">Longer Link Yet</a></li>
+                  <li><a href="#">Link</a></li>
+                  <li><a href="#">Longer Link</a></li>
+                </ul>
+              </r:editable_region>
+            </div>
+
+          </div> <!-- end so-magic-anytych__panel -->
+        </r:page:if_has_content_for>
+
+      </r:loop:each>
+
+    </div>
+
+  </div>
+</div>
+
+
+<r:edit_mode_only>
+  <div class="wvu-instructions">
+    <p><strong>Instructions for Super-Nav:</strong> This patterns has up to 7 columns for a super nav. Use unordered lists to list your links. Like the triptych, these panels are all optional. Note this will show up on every page.</p>
+    <p><strong>Background Color:</strong> <r:editable_region name="so-bg-color-class--super-nav" scope="{$scope}" /></p>
+  </div>
+</r:edit_mode_only>

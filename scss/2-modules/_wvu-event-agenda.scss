@@ -1,4 +1,4 @@
-.cs-event-agenda {
+.wvu-event-agenda {
   background-color: $wvu-gold;
   h1, h2, h3, h4, h5, h6 {
     color: $black;
@@ -11,8 +11,7 @@
     margin-bottom: 3em;
   }
 }
-.cs-event-agenda__container {
-  @include outer-container();
+.wvu-event-agenda__container {
   @include u-wvu-container-padding();
 }
 td {

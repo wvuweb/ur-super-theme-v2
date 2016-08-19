@@ -1,4 +1,4 @@
-.so-video {
+.wvu-video {
   background-color: $black;
   color: white;
   a {
@@ -15,7 +15,7 @@
   }
 }
 
-.so-video__header {
+.wvu-video__header {
   font-size: 2.5em;
   @include wvu-lede();
   h2 {
@@ -26,42 +26,26 @@
   }
 }
 
-.so-video__container {
-  @include outer-container();
+.wvu-video__container {
   @include u-wvu-container-padding();
 }
 
-.so-video__video {
+.wvu-video__video {
   margin-bottom: 2em;
   @include mq($bp-medium) {
     margin-bottom: 0;
-    @include span-columns(7);
   }
 }
 
-.so-video__description {
-  @include mq($bp-medium) {
-    @include span-columns(4.5);
-    @include shift(.5);
-  }
-}
-
-.so-video__video-and-description {
+.wvu-video__video-and-description {
   display: table;
   width: 100%;
 }
 
-.so-video__lede + .so-video__video-and-description {
+.wvu-video__lede + .wvu-video__video-and-description {
   margin-top: 4em;
 }
 
-.so-video__video--wide {
-  @include mq($bp-medium) {
-    @include span-columns(7);
-    @include shift(2.5);
-  }
-}
-
-.so-video__postscript {
+.wvu-video__postscript {
   @include so-postscript();
 }
