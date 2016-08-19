@@ -4,13 +4,13 @@
 
 .wvu-pattern-instructions__do {
   h2, h3 {
-    color: green;
+    border-top: 3px solid green;
   }
 }
 
 .wvu-pattern-instructions__dont {
   h2, h3 {
-    color: red;
+    border-top: 3px solid red;
   }
 }
 
@@ -18,4 +18,11 @@
   clear: both;
   display: table;
   width: 100%;
+  h2, h3 {
+    padding-top: .5em;
+    a {
+      font-size: .5em;
+      margin-left: 2em;
+    }
+  }
 }

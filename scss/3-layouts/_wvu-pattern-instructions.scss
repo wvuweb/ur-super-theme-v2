@@ -4,6 +4,21 @@
   }
 }
 
+.wvu-pattern-instructions__code-examples--js {
+  .wvu-pattern-instructions__code-example {
+    @include mq($bp-medium) {
+      @include span-columns(4);
+    }
+  }
+  &.wvu-pattern-instructions__code-examples--edit-mode {
+    .wvu-pattern-instructions__code-example {
+      @include mq($bp-medium) {
+        @include span-columns(3);
+      }
+    }
+  }
+}
+
 .wvu-pattern-instructions__container {
   @include outer-container();
 }

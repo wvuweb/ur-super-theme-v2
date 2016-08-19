@@ -3,7 +3,7 @@
     <div class="wvu-pattern-instructions__intro">
       <r:editable_region name="wvu-pattern-instructions__intro" />
     </div>
-    <div class="wvu-pattern-instructions__code-examples">
+    <div class="wvu-pattern-instructions__code-examples <r:if:has_content_for region="wvu-pattern-instructions__javascript">wvu-pattern-instructions--js</r:if> <r:edit_mode_only>wvu-pattern-instructions__code-examples--edit-mode</r:edit_mode_only>">
       <div class="wvu-pattern-instructions__code-example wvu-pattern-instructions__code-example--html">
         <h2>HTML</h2>
 <pre>
@@ -38,6 +38,57 @@
         <h2>Don&rsquo;t</h2>
         <r:editable_region name="wvu-pattern-instructions__dont" />
       </div>
+    </div>
+    <div class="wvu-pattern-instructions__options">
+      <r:editable_region name="wvu-pattern-instructions__html-options">
+        <h2>Options for Brand HTML</h2>
+        <table>
+          <tbody>
+            <tr>
+              <th>Option</th>
+              <th>Result</th>
+            </tr>
+            <tr>
+              <td><code>.wvu-hero--big-photo</code></td>
+              <td>Makes background photo full bleed.</td>
+            </tr>
+          </tbody>
+        </table>
+        <h2>Options for building a CleanSlate template <a href="https://cleanslatecms.wvu.edu">What&rsquo;s this?</a></h2>
+        <table>
+          <tbody>
+            <tr>
+              <th>Partial</th>
+              <th>Module</th>
+              <th>Layout</th>
+              <th>Javascript</th>
+            </tr>
+            <tr>
+              <td><code>&lt;partial name="wvu-hero" /&gt;</code></td>
+              <td><code>@import 'wvu-hero';<code></td>
+              <td><code>@import 'wvu-hero';</code></td>
+              <td>None</td>
+            </tr>
+          </tbody>
+        </table>
+        <h2>Options for configuring the Super Theme <a href="https://github.com/wvuweb/ur-super-theme">What&rsquo;s this</a></h2>
+        <table>
+          <tbody>
+            <tr>
+              <th>Data Field</th>
+              <th>Location</th>
+              <th>Option</th>
+              <th>Result</th>
+            </tr>
+            <tr>
+              <td><code>hero</code></td>
+              <td>Site Properties > Data</td>
+              <td><code>false</code></td>
+              <td>Removes hero from any page using the Frontpage template.</td>
+            </tr>
+          </tbody>
+        </table>
+      </r:editable_region>
     </div>
   </div>
 </div>
