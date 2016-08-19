@@ -15,9 +15,6 @@
 }
 
 .wvu-pattern-instructions__dos-and-donts {
-  clear: both;
-  display: table;
-  width: 100%;
   h2, h3 {
     padding-top: .5em;
     a {
@@ -28,5 +25,8 @@
 }
 
 .wvu-pattern-instructions__options, .wvu-pattern-instructions__dos-and-donts, .wvu-pattern-instructions__code {
+  clear: both;
+  display: table;
+  width: 100%;
   margin-top: 5em;
 }
