@@ -39,32 +39,34 @@
         </r:children:each>
       </r:if>
       <r:if value1="{$directory_has_children}" value2="true" op="!=">
-      <r:children>
-        <table cellspacing="0" cellpadding="0" class="fin-staff-directory">
-          <tbody>
-            <r:each>
-              <tr>
-                <td class="wvu-directory__name">
-                  <r:page:first_non_blank_attr names="alternate_name,name" /><br />
-                  <r:page:content name="wvu-profile__job-title" />
-                </td>
-                <td class="wvu-directory__phone"><r:page:content name="wvu-profile__phone" /></td>
-                <td class="wvu-directory__email">
-                  <r:set_var name="email_address"><r:page:content name="wvu-profile__email" /></r:set_var>
-                  <r:if v1="{{BLANK(email_address)}}" v2="false" operator="=" type="boolean">
-                    <a href="mailto:<r:page:content name="wvu-profile__email" />"><img src="<r:image_url name="email.png" />" alt="Email Icon" /></a>
-                  </r:if>
-                </td>
-                <td class="wvu-directory__webpage"><r:page:content name="wvu-profile__phone" />
-                  <a href="<r:page:unless_has_content_for region="so-featurettes__url"><r:page:url /></r:page:unless_has_content_for><r:page:if_has_content_for region="so-featurettes__url"><r:page:content name="so-featurettes__url" /></r:page:if_has_content_for>">
-                    Web Page
-                  </a>
-                </td>
-              </tr>
-            </r:each>
-          </tbody>
-        </table>
-      </r:children>
+        <r:children>
+          <table cellspacing="0" cellpadding="0" class="fin-staff-directory">
+            <tbody>
+              <r:each>
+                <tr>
+                  <td class="wvu-directory__name">
+                    <r:page:first_non_blank_attr names="alternate_name,name" />
+                  </td>
+                  <td class="wvu-directory__job-title">
+                    <r:page:content name="wvu-profile__job-title" />
+                  </td>
+                  <td class="wvu-directory__phone"><r:page:content name="wvu-profile__phone" /></td>
+                  <td class="wvu-directory__email">
+                    <r:set_var name="email_address"><r:page:content name="wvu-profile__email" /></r:set_var>
+                    <r:if v1="{{BLANK(email_address)}}" v2="false" operator="=" type="boolean">
+                      <a href="mailto:<r:page:content name="wvu-profile__email" />"><img src="<r:image_url name="email.png" />" alt="Email Icon" /></a>
+                    </r:if>
+                  </td>
+                  <td class="wvu-directory__webpage"><r:page:content name="wvu-profile__phone" />
+                    <a href="<r:page:unless_has_content_for region="so-featurettes__url"><r:page:url /></r:page:unless_has_content_for><r:page:if_has_content_for region="so-featurettes__url"><r:page:content name="so-featurettes__url" /></r:page:if_has_content_for>">
+                      Web Page
+                    </a>
+                  </td>
+                </tr>
+              </r:each>
+            </tbody>
+          </table>
+        </r:children>
       </r:if>
     </r:get_page>
   </div>
