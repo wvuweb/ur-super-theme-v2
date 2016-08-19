@@ -21,6 +21,16 @@ h6, .wvu-h6 {
   margin-bottom: 1em;
 }
 
+.main {
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 3em;
+  }
+}
+
 h1, .wvu-h1 { font-size: 3em; line-height: 1.08333333em; width: 100%; margin-top: 0; margin-bottom: .5em; color: $pms-432-c;
   @include mq($bp-large) { font-size: 4em; }
 }
