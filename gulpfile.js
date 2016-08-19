@@ -9,7 +9,7 @@ var concat        = require('gulp-concat');
 gulp.task('sass', function () {
   gulp.src(['./scss/*.scss','!./scss/_*.scss'])
     .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
-    .pipe(gulp.dest('./stylesheets'));
+    .pipe(gulp.dest('./views/css-examples'));
 });
 
 gulp.task('default',['sass'], function(){
