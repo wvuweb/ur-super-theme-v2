@@ -3,7 +3,7 @@
     <div class="wvu-pattern-instructions__intro">
       <r:editable_region name="wvu-pattern-instructions__intro" />
     </div>
-    <div class="wvu-pattern-instructions__code-examples <r:if:has_content_for region="wvu-pattern-instructions__javascript">wvu-pattern-instructions--js</r:if> <r:edit_mode_only>wvu-pattern-instructions__code-examples--edit-mode</r:edit_mode_only>">
+    <div class="wvu-pattern-instructions__code-examples <r:page:if_has_content_for region="wvu-pattern-instructions__javascript">wvu-pattern-instructions--js</r:page:if_has_content_for> <r:edit_mode_only>wvu-pattern-instructions__code-examples--edit-mode</r:edit_mode_only>">
       <div class="wvu-pattern-instructions__code-example wvu-pattern-instructions__code-example--html">
         <h2>HTML</h2>
 <pre>
