@@ -1,0 +1,10 @@
+.wvu-directory__container {
+  @include outer-container();
+}
+
+.main {
+  .wvu-directory__container {
+    margin: auto;
+    width: 100%;
+  }
+}
