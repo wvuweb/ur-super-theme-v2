@@ -8,7 +8,7 @@ var concat        = require('gulp-concat');
 // Compile Our Sass from the "scss" directory
 gulp.task('sass', function () {
   gulp.src(['./scss/*.scss','!./scss/_*.scss'])
-    .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+    .pipe(sass({outputStyle: 'compressed', sourceComments: 'map'}).on('error', sass.logError))
     .pipe(gulp.dest('./stylesheets'));
 });
 
