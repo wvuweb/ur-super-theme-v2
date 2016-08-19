@@ -13,7 +13,7 @@ gulp.task('sass', function () {
 });
 
 gulp.task('rename', function () {
-  gulp.src("./stylesheets/code/*.css", { base: process.cwd() })
+  gulp.src("./stylesheets/*.css", { base: process.cwd() })
     .pipe(rename({
       prefix: "_",
       extname: ".html"
