@@ -14,8 +14,3 @@
 .wvu-event-agenda__container {
   @include u-wvu-container-padding();
 }
-td {
-  border-bottom: 1px solid shade($wvu-gold, 10%);
-  color: $black;
-  font-size: 1.5em;
-}
