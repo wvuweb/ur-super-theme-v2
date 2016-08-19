@@ -12,16 +12,19 @@
       </div>
       <div class="wvu-pattern-instructions__code-example wvu-pattern-instructions__code-example--sass">
         <h2>Sass</h2>
+        <r:set_var name="sassOutput">
+          stylesheets/scss/2-modules/<r:page:slug />
+        </r:set_var>
 <pre>
-<r:editable_region name="wvu-pattern-instructions__sass" />
+<r:editable_region name="{$sassOutput}" />
 </pre>
       </div>
       <div class="wvu-pattern-instructions__code-example wvu-pattern-instructions__code-example--css">
         <h2>CSS</h2>
+        <r:set_var name="cssOutput">
+          stylesheets/<r:page:slug />
+        </r:set_var>
 <pre>
-<r:set_var name="cssOutput">
-  stylesheets/<r:page:slug />
-</r:set_var>
 <r:partial name="{$cssOutput}" />
 </pre>
       </div>

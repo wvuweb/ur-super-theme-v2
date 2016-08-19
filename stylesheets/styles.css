@@ -6155,7 +6155,7 @@ img.mfp-img {
 .wvu-pattern-instructions pre {
   box-sizing: border-box;
   max-height: 500px;
-  overflow: hidden;
+  overflow: scroll;
   padding: 2em;
 }
 

@@ -19,6 +19,11 @@ gulp.task('rename', function () {
       extname: ".html"
     }))
     .pipe(gulp.dest("./views")); // ./dist/main/text/ciao/bonjour-aloha-hola.md
+  gulp.src("./scss/2-modules/*.scss", { base: process.cwd() })
+    .pipe(rename({
+      extname: ".html"
+    }))
+    .pipe(gulp.dest("./views/stylesheets")); // ./dist/main/text/ciao/bonjour-aloha-hola.md
 });
 
 gulp.task('default',['sass'], function(){
