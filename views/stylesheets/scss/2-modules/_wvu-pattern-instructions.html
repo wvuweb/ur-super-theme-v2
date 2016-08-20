@@ -51,3 +51,40 @@
   display: table;
   width: 100%;
 }
+
+// Layout
+// =====================================
+
+.wvu-pattern-instructions__code-example {
+  @include mq($bp-medium) {
+    @include span-columns(4);
+    @include omega(3n);
+  }
+}
+
+.wvu-pattern-instructions__code-examples--js {
+  .wvu-pattern-instructions__code-example {
+    @include mq($bp-medium) {
+      @include omega-reset(3n);
+      @include span-columns(3);
+    }
+  }
+  &.wvu-pattern-instructions__code-examples--edit-mode {
+    .wvu-pattern-instructions__code-example {
+      @include mq($bp-medium) {
+        @include omega-reset(3n);
+        @include span-columns(3);
+      }
+    }
+  }
+}
+
+.wvu-pattern-instructions__container {
+  @include outer-container();
+}
+
+.wvu-pattern-instructions__do, .wvu-pattern-instructions__dont {
+  @include mq($bp-medium) {
+    @include span-columns(6);
+  }
+}

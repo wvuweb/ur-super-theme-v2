@@ -26,3 +26,18 @@
 .wvu-tabs__content { float: left; width: 100%;
   img { min-width: 100%; }
 }
+
+// Layout
+// =================================
+
+.wvu-tabs__tabs {
+  @include mq($bp-large) {
+    @include span-columns(3);
+  }
+}
+
+.wvu-tabs__content {
+  @include mq($bp-large) {
+    @include span-columns(9);
+  }
+}

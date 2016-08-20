@@ -146,3 +146,140 @@
     }
   }
 }
+
+// Layout
+// ======================================
+
+.wvu-featurettes__container {
+  @include outer-container();
+
+}
+
+.wvu-featurettes__featurettes--1, .wvu-featurettes__featurettes--2 {
+  .wvu-featurettes__photo {
+    @include mq($bp-medium) {
+      @include span-columns(6);
+    }
+  }
+  .wvu-featurettes__info--hasphoto {
+    @include mq($bp-medium) {
+      @include span-columns(6);
+    }
+  }
+}
+
+.wvu-featurettes--profiles {
+  .wvu-featurettes__featurettes--1 {
+    .wvu-featurettes__photo {
+      @include mq($bp-medium) {
+        @include span-columns(3);
+      }
+    }
+    .wvu-featurettes__info--hasphoto {
+      @include mq($bp-medium) {
+        @include span-columns(9);
+      }
+    }
+  }
+}
+
+.wvu-featurettes__featurette {
+  @include mq($bp-medium) {
+    @include span-columns(3);
+    @include omega(4n);
+  }
+}
+
+.wvu-featurettes__featurettes--1 {
+  .wvu-featurettes__featurette {
+    @include mq($bp-medium) {
+      @include span-columns(12);
+      @include omega-reset(4n);
+    }
+  }
+}
+
+.wvu-featurettes__featurettes--2 {
+  .wvu-featurettes__featurette {
+    @include mq($bp-medium) {
+      @include span-columns(6);
+      @include omega-reset(4n);
+    }
+  }
+}
+
+.wvu-featurettes__featurettes--3 {
+  .wvu-featurettes__featurette {
+    @include mq($bp-medium) {
+      @include span-columns(4);
+      @include omega-reset(4n);
+    }
+  }
+}
+
+.wvu-featurettes__featurettes--5 {
+  .wvu-featurettes__featurette {
+    @include mq($bp-medium) {
+      @include span-columns(2.4);
+      @include omega-reset(4n);
+    }
+  }
+}
+
+.wvu-sidebar, .wvu-featurettes__featurette, .so-magic-anytych__panel, .main {
+  .wvu-featurettes__featurette {
+    @include mq($bp-medium) {
+      @include span-columns(12);
+      @include omega-reset(4n);
+    }
+  }
+  .wvu-featurettes__featurette--1, .wvu-featurettes__featurette--2, .wvu-featurettes__featurette--3, .wvu-featurettes__featurette--5 {
+    .wvu-featurettes__featurette {
+      @include mq($bp-medium) {
+        @include span-columns(12);
+        @include omega-reset(4n);
+      }
+    }
+    .wvu-featurettes__photo {
+      @include mq($bp-medium) {
+        @include span-columns(12);
+      }
+    }
+    .wvu-featurettes__info {
+      @include mq($bp-medium) {
+        @include span-columns(12);
+      }
+    }
+    .wvu-featurettes__info--hasphoto {
+      @include mq($bp-medium) {
+        @include span-columns(12);
+      }
+    }
+  }
+  .wvu-featurettes--profiles {
+    .wvu-featurettes__featurettes--1, .wvu-featurettes__featurettes--2, .wvu-featurettes__featurettes--3, .wvu-featurettes__featurette--5 {
+      .wvu-featurettes__featurette {
+        @include mq($bp-small) {
+          @include span-columns(12);
+          @include omega-reset(4n);
+        }
+      }
+      .wvu-featurettes__photo {
+        @include mq($bp-small) {
+          @include span-columns(3);
+        }
+      }
+      .wvu-featurettes__info {
+        @include mq($bp-small) {
+          font-size: .8em;
+          @include span-columns(12);
+        }
+      }
+      .wvu-featurettes__info--hasphoto {
+        @include mq($bp-small) {
+          @include span-columns(9);
+        }
+      }
+    }
+  }
+}

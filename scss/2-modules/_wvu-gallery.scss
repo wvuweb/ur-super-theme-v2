@@ -413,3 +413,30 @@ img.mfp-img {
   top: 0;
   right: 0;
   padding-top: 0; }
+
+
+// Layout
+// =================================
+
+.wvu-gallery__container {
+  @include outer-container();
+}
+
+.wvu-gallery {
+  ul {
+    &.photos {
+      li {
+        @include mq($bp-medium) {
+          @include span-columns(3);
+          @include omega(4n);
+        }
+      }
+    }
+  }
+}
+
+.wvu-sidebar, .main {
+  .wvu-gallery__container {
+    width: 100%;
+  }
+}

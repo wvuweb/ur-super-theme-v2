@@ -1,0 +1,6 @@
+// Layout
+// ===============================
+
+.main {
+  @include mq($bp-medium) { @include span-columns(9); }
+}

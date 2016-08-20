@@ -1,0 +1,49 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+/*
+  Options for WVU Hero Title typeface:
+  $wvu-shout (Helvetica Neue Black Condensed)
+  $subhead (Helvetica Bold)
+  $wvu-traditional-audience (Iowan Old Style)
+  $narrow-audience (Iowan Old Style Italic)
+*/
+/*
+  Options for WVU Hero Title typeface:
+  short
+  medium
+  long
+*/
+.wvu-event-agenda {
+  background-color: #EAAA00;
+}
+
+.wvu-event-agenda h1, .wvu-event-agenda h2, .wvu-event-agenda h3, .wvu-event-agenda h4, .wvu-event-agenda h5, .wvu-event-agenda h6 {
+  color: #2C2A29;
+  font-family: "HelveticaNeueW01-45Ligh", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
+  font-weight: normal;
+  margin-top: 0;
+  text-align: center;
+}
+
+.wvu-event-agenda table {
+  margin-bottom: 3em;
+}
+
+.wvu-event-agenda__container {
+  padding: 4em 0 4.3em 0;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+@media (min-width: 75em) {
+  .wvu-event-agenda__container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

@@ -1,0 +1,48 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+/*
+  Options for WVU Hero Title typeface:
+  $wvu-shout (Helvetica Neue Black Condensed)
+  $subhead (Helvetica Bold)
+  $wvu-traditional-audience (Iowan Old Style)
+  $narrow-audience (Iowan Old Style Italic)
+*/
+/*
+  Options for WVU Hero Title typeface:
+  short
+  medium
+  long
+*/
+.wvu-lede-text {
+  background-color: #f9f9f9;
+  color: #2C2A29;
+  font-family: "HelveticaNeueW01-45Ligh", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
+}
+
+.wvu-lede-text p {
+  font-size: 2.5em;
+  font-family: "HelveticaNeueW01-45Ligh", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
+  font-weight: normal;
+  line-height: 1.08333em;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wvu-lede-text__container {
+  padding: 4em 0 4.3em 0;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+@media (min-width: 75em) {
+  .wvu-lede-text__container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

@@ -51,7 +51,6 @@
 }
 
 .wvu-backpage-header__container {
-  @include outer-container();
   @include so-vignetting($wvu-hero-vignetting-opacity);
   padding-left: 1em;
   padding-right: 1em;
@@ -66,4 +65,11 @@
   .wvu-backpage-header__container {
     @include so-vignetting($wvu-hero-vignetting-opacity);
   }
+}
+
+// Layout
+// ==================================
+
+.wvu-backpage-header__container {
+  @include outer-container();
 }

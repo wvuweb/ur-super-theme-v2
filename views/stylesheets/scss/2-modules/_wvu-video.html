@@ -26,10 +26,6 @@
   }
 }
 
-.wvu-video__container {
-  @include u-wvu-container-padding();
-}
-
 .wvu-video__video {
   margin-bottom: 2em;
   @include mq($bp-medium) {
@@ -48,4 +44,31 @@
 
 .wvu-video__postscript {
   @include so-postscript();
+}
+
+// Layout
+// ===============================
+
+.wvu-video__container {
+  @include outer-container();
+}
+
+.wvu-video__video {
+  @include mq($bp-medium) {
+    @include span-columns(7);
+  }
+}
+
+.wvu-video__description {
+  @include mq($bp-medium) {
+    @include span-columns(4.5);
+    @include shift(.5);
+  }
+}
+
+.wvu-video__video--wide {
+  @include mq($bp-medium) {
+    @include span-columns(7);
+    @include shift(2.5);
+  }
 }

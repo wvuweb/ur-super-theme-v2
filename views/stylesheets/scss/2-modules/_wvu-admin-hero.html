@@ -55,7 +55,6 @@
 }
 
 .wvu-admin-hero__container {
-  @include outer-container();
   @include u-wvu-container-padding();
   padding: 7em 2em 7.3em 2em;
   @include mq($bp-xlarge) {
@@ -64,17 +63,7 @@
   @include so-vignetting($wvu-hero-vignetting-opacity);
 }
 
-.wvu-admin-hero__copy {
-  @include mq($bp-medium) {
-    @include span-columns(7);
-  }
-}
-
 .wvu-admin-hero__links {
-  @include mq($bp-medium) {
-    @include span-columns(4);
-    @include shift(1);
-  }
   ul {
     list-style-type: none;
     padding-left: 0;
@@ -105,5 +94,26 @@ $i: 90;
       }
     }
     $i: $i - 10;
+  }
+}
+
+
+// Layout
+// =====================================
+
+.wvu-admin-hero__container {
+  @include outer-container();
+}
+
+.wvu-admin-hero__copy {
+  @include mq($bp-medium) {
+    @include span-columns(7);
+  }
+}
+
+.wvu-admin-hero__links {
+  @include mq($bp-medium) {
+    @include span-columns(4);
+    @include shift(1);
   }
 }

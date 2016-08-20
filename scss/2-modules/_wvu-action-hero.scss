@@ -32,3 +32,10 @@
   display: block;
   margin: 0 auto;
 }
+
+// Layout
+// ==================================
+
+.wvu-action-hero__container {
+  @include outer-container();
+}
