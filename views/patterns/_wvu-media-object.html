@@ -1,0 +1,79 @@
+<r:comment>
+<!-- NOTE: This polyptych can be reused over and over. -->
+<!-- You can use this partial multiple times on the same page by setting different... -->
+<!-- ...`regionName__base` variables above each partial.  -->
+<!-- You can also change the `mediaObjectItems` to be more than 4 if you like. -->
+<!-- Always increase by 4. -->
+<!-- Set the scope by defining the `$scope` variable to either `page` or `site`. -->
+</r:comment>
+
+<r:set_var name="mediaObjectPhoto__base" value="{$mediaObjectPhoto__base}" default="wvu-media-object__photo" />
+<r:set_var name="mediaObjectCopy__base" value="{$mediaObjectCopy__base}" default="wvu-media-object__copy" />
+<r:set_var name="mediaObjectBackgroundColor__base" value="{$mediaObjectBackgroundColor__base}" default="wvu-background-color-class--mediaObject" />
+<r:set_var name="mediaObjectItems" value="{$mediaObjectItems}" default="2" />
+<r:set_var name="mediaObject" value="{$mediaObjectScope}" default="page" />
+
+<div class="wvu-polyptych <r:page:content name="so-background-color-class--mediaObject" /> background wvu-polyptych--mediaObject">
+  <div class="wvu-polyptych__container">
+
+    <r:page:if_has_content_for region="wvu-media-object__header" always_show_in_edit_mode="true">
+      <div class="wvu-polyptych__header">
+        <r:editable_region name="wvu-media-object__header" scope="{$mediaObjectScope}">
+          <h2>Diptych Headline</h2>
+          <p>Subhead goes here.</p>
+        </r:editable_region>
+      </div>
+    </r:page:if_has_content_for>
+
+    <div class="wvu-polyptych__panels">
+
+      <r:loop:each times="{$mediaObjectItems}">
+
+        <r:set_var name="mediaObjectCopy"><r:var name="mediaObjectCopy__base" />--<r:item /></r:set_var>
+
+        <r:page:if_has_content_for region="{$mediaObjectCopy}" always_show_in_edit_mode="true">
+          <div class="wvu-polyptych__panel">
+
+            <r:set_var name="mediaObjectPhoto"><r:var name="mediaObjectPhoto__base" />--<r:item /></r:set_var>
+
+            <r:page:if_has_content_for region="{$mediaObjectPhoto}" always_show_in_edit_mode="true">
+              <div class="wvu-polyptych__photo">
+                <r:editable_region name="{$mediaObjectPhoto}" scope="{$mediaObjectScope}">
+                  <img src="http://placehold.it/960x640">
+                </r:editable_region>
+              </div>
+            </r:page:if_has_content_for>
+
+            <div class="wvu-polyptych__copy <r:page:unless_has_content_for region="{$mediaObjectPhoto}">wvu-polyptych__copy--wide</r:page:unless_has_content_for>">
+
+              <r:editable_region name="{$mediaObjectCopy}" scope="{$mediaObjectScope}">
+                <h3>Headline Goes Here</h3>
+                <p>Short description goes here. Do not put links here. Only one short paragraph.</p>
+              </r:editable_region>
+
+            </div>
+
+          </div> <!-- end wvu-media-object__panel -->
+        </r:page:if_has_content_for>
+
+      </r:loop:each>
+
+    </div> <!-- end wvu-media-object__panels -->
+
+    <r:page:if_has_content_for region="wvu-media-object__postscript">
+      <div class="wvu-polyptych__postscript">
+        <r:editable_region name="wvu-media-object__postscript" scope="{$mediaObjectScope}">
+          Put any additional info or links here.
+        </r:editable_region>
+      </div>
+    </r:page:if_has_content_for>
+
+  </div> <!-- end wvu-media-object__container -->
+</div> <!-- end wvu-media-object -->
+
+<r:edit_mode_only>
+  <div class="wvu-instructions">
+    <p><strong>Instructions for Media Ojbect:</strong> These panels display sub-features or allow you to have multiple columns of content. Try to keep these consistent e.g. if you have a header in one column, use a header in all of them. You can have 1-4 columns. To omit columns, simply leave the description field in each column you wish to omit blank, from right to left.</p>
+    <p><strong>Background Color:</strong> <r:editable_region name="wvu-background-color-class--mediaObject" scope="{$mediaObjectScope}" /></p>
+  </div>
+</r:edit_mode_only>
