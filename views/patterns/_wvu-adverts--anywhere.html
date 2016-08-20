@@ -5,9 +5,9 @@
 <div class="wvu-adverts <r:page:content name="so-background-color-class--advertsAnywhere" /> background">
   <div class="wvu-adverts__container">
 
-    <r:get_page id="{$adverts_id}">
+    <r:root>
 
-      <r:children order="asc" labels="{$page_slug}" labels_match="any">
+      <r:descendants order="asc" labels="{$page_slug}" labels_match="any">
         <div class="wvu-adverts__adverts so-averts__adverts--<r:count />">
           <r:each>
             <div class="wvu-adverts__advertisement wvu-adverts__advertisement--<r:page:slug />">
@@ -18,9 +18,9 @@
             </div>
           </r:each>
         </div>
-      </r:children>
+      </r:descendants>
 
-    </r:get_page>
+    </r:root>
 
   </div>
 </div>

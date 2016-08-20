@@ -1,0 +1,22 @@
+<div class="wvu-gallery">
+
+  <div class="wvu-gallery__container">
+
+    <ul class="photos">
+      <r:set_var name="gallerypage">
+        <r:page:slug />-gallery
+      </r:set_var>
+      <r:files:each labels="{$gallerypage}" types="image">
+        <li>
+          <a href="<r:file:image_url size="960x640" />" title="<r:file:description />"><r:file:image_tag size="279x186" alt="{file:alt_text}" /></a>
+        </li>
+      </r:files:each>
+    </ul>
+
+  </div>
+
+</div> <!-- /.wvu-container -->
+
+<r:content_for name="page_js">
+  <r:partial name="patterns/javascript-gallery" />
+</r:content_for>
