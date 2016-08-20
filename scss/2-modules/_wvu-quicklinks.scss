@@ -55,6 +55,10 @@
   }
 }
 
+.wvu-quicklinks__container {
+  @include u-wvu-container-padding();
+}
+
 // Layout
 // ================================
 

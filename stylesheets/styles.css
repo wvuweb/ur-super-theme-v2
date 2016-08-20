@@ -7654,6 +7654,19 @@ img.mfp-img {
   }
 }
 
+.wvu-quicklinks__container {
+  padding: 4em 0 4.3em 0;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+@media (min-width: 75em) {
+  .wvu-quicklinks__container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 @media (min-width: 48em) {
   .wvu-sidebar {
     float: left;
