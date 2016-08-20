@@ -1,17 +1,14 @@
 <div class="wvu-calendar-widget <r:page:content name="so-background-color-class--calendar" /> background">
   <div class="wvu-calendar-widget__container">
 
-    <ul class="wvu-calendar wvu-calendar--flex">
-
-      <r:if expr="{{ NOT(BLANK(calendar_feed_page)) }}">
-        <script language="javascript" src="<r:page:data name="calendar_feed_page" />"></script>
-      </r:if>
-
-      <r:if expr="{{ BLANK(calendar_feed_page) }}">
-        <script language="javascript" src="<r:site:data name="calendar_feed" />"></script>
-      </r:if>
+    <ul id="cal" class="wvu-calendar wvu-calendar--flex">
 
     </ul>
 
   </div>
 </div>
+
+<r:content_for name="page_js">
+  <script type="text/javascript" src="https://calendar.wvu.edu/Scripts/core.js"></script>
+  <r:if expr="{{ NOT(BLANK(calendar_feed_page)) }}"><r:page:data name="calendar_feed_page" /></r:if><r:if expr="{{ BLANK(calendar_feed_page) }}"><r:site:data name="calendar_feed" /></r:if>
+</r:content_for>
