@@ -12,8 +12,6 @@
 
     <ul id="cal" class="wvu-calendar wvu-calendar--flex">
 
-      <div id="<r:if expr="{{ NOT(BLANK(calendar_feed_page)) }}"><r:page:data name="calendar_feed_page" /></r:if><r:if expr="{{ BLANK(calendar_feed_page) }}"><r:site:data name="calendar_feed" /></r:if>"></div>
-
     </ul>
 
     <div class="wvu-calendar-widget__postscript">
@@ -34,10 +32,5 @@
 
 <r:content_for name="page_js">
   <script type="text/javascript" src="https://calendar.wvu.edu/Scripts/core.js"></script>
-  <script type="text/javascript">
-	    ActiveData.Events(
-	        "https://calendar.wvu.edu/handlers/query.ashx?id=5d1eb30a58034b129320e36e1ec5f97c&tenant=&site=universityrelations",
-	        function (response) {$("#cal").append(response.data);}
-	    );
-	</script>
+  <r:if expr="{{ NOT(BLANK(calendar_feed_page)) }}"><r:page:data name="calendar_feed_page" /></r:if><r:if expr="{{ BLANK(calendar_feed_page) }}"><r:site:data name="calendar_feed" /></r:if>
 </r:content_for>
