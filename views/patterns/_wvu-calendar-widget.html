@@ -37,7 +37,7 @@
   <script type="text/javascript">
 	    ActiveData.Events(
 	        "https://calendar.wvu.edu/handlers/query.ashx?id=5d1eb30a58034b129320e36e1ec5f97c&tenant=&site=universityrelations",
-	        function (response) {$("#<r:if expr="{{ NOT(BLANK(calendar_feed_page)) }}"><r:page:data name="calendar_feed_page" /></r:if><r:if expr="{{ BLANK(calendar_feed_page) }}"><r:site:data name="calendar_feed" /></r:if>").append(response.data);}
+	        function (response) {$("#cal").append(response.data);}
 	    );
 	</script>
 </r:content_for>
