@@ -108,6 +108,22 @@
           </r:edit_mode_only>
         </div>
       </r:page:if_has_content_for>
+      
+      <r:page:if_has_content_for region="wvu-social-media__github-link" always_show_in_edit_mode="true">
+        <div class="wvu-social-media__icon">
+          <a href="<r:page:content name="wvu-social-media__github-link" />"><img src="https://patterns.wvu.edu/images/social-media-icons/github.svg" alt="YouTube icon" /></a>
+          <p>
+            <a href="<r:page:content name="wvu-social-media__github-link" />">GitHub</a>
+          </p>
+          <r:edit_mode_only>
+            <p>
+              <r:editable_region name="wvu-social-media__github-link" type="simple" scope="site">
+                Put GitHub URL here
+              </r:editable_region>
+            </p>
+          </r:edit_mode_only>
+        </div>
+      </r:page:if_has_content_for>
 
     </div>
 

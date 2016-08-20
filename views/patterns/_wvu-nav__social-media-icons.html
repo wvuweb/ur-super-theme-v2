@@ -4,6 +4,10 @@
     <r:if expr="{{ NOT(BLANK(facebook_url)) }}">
       <a href="<r:site:data name="facebook_url" />"><img src="https://patterns.wvu.edu/images/social-media-icons/facebook.svg" alt="Facebook icon" /></a>
     </r:if>
+    
+    <r:if expr="{{ NOT(BLANK(github_url)) }}">
+      <a href="<r:site:data name="youtube_url" />"><img src="https://patterns.wvu.edu/images/social-media-icons/github.svg" alt="GitHub icon" /></a>
+    </r:if>
 
     <r:if expr="{{ NOT(BLANK(instagram_url)) }}">
       <a href="<r:site:data name="instagram_url" />"><img src="https://patterns.wvu.edu/images/social-media-icons/instagram.svg" alt="Instagram icon" /></a>

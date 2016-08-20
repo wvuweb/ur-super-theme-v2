@@ -22,6 +22,7 @@ custom_site_attributes:
   - default_content_03
   - disable_masthead_search
   - facebook_url
+  - github_url
   - give_url
   - google_site_verification
   - has_alternate_logo
