@@ -4508,13 +4508,12 @@ th {
 td {
   border-bottom: 1px solid #ccc;
   padding: 0.75em 0;
-  vertical-align: top;
 }
 
 tr,
 td,
 th {
-  vertical-align: middle;
+  vertical-align: top;
 }
 
 .wvu-action-hero {
@@ -7139,7 +7138,9 @@ img.mfp-img {
 .wvu-pattern-instructions h4,
 .wvu-pattern-instructions h5,
 .wvu-pattern-instructions h6 {
+  border-top: 1px solid #eee;
   margin-top: 3em;
+  padding-top: .5em;
 }
 
 .wvu-pattern-instructions pre {

@@ -15,11 +15,10 @@ th {
 td {
   border-bottom: $base-border;
   padding: ($base-spacing / 2) 0;
-  vertical-align: top;
 }
 
 tr,
 td,
 th {
-  vertical-align: middle;
+  vertical-align: top;
 }
