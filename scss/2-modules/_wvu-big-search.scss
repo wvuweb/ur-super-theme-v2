@@ -1,4 +1,4 @@
-.so-big-search {
+.wvu-big-search {
   background-color: $wvu-gold;
   background-image: url(https://admissions.wvu.edu/images/wvu-pattern-background--gold.png);
   background-position: 50% 0;
@@ -19,14 +19,6 @@
     float: left;
     @include mq($bp-medium) {
       width: 83%;
-    }
-  }
-
-  .form-search {
-    @include outer-container;
-    @include mq($bp-medium) {
-      @include span-columns(8);
-      @include shift(2);
     }
   }
 
@@ -75,12 +67,11 @@
   }
 }
 
-.so-big-search__container {
-  @include outer-container();
+.wvu-big-search__container {
   @include u-wvu-container-padding();
 }
 
-.so-big-search__header {
+.wvu-big-search__header {
   font-size: 2.5em;
   @include wvu-lede();
   h2 {
@@ -93,7 +84,7 @@
   }
 }
 
-.so-big-search__postscript {
+.wvu-big-search__postscript {
   clear: both;
   display: table;
   margin: 0 auto;
@@ -101,5 +92,22 @@
   p {
     margin: 1em 0;
     max-width: 9999em;
+  }
+}
+
+// Layout
+// ===============================
+
+.wvu-big-search__container {
+  @include outer-container();
+}
+
+.wvu-big-search {
+  .form-search {
+    @include outer-container;
+    @include mq($bp-medium) {
+      @include span-columns(8);
+      @include shift(2);
+    }
   }
 }

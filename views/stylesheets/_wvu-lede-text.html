@@ -6,19 +6,6 @@ html {
   box-sizing: inherit;
 }
 
-/*
-  Options for WVU Hero Title typeface:
-  $wvu-shout (Helvetica Neue Black Condensed)
-  $subhead (Helvetica Bold)
-  $wvu-traditional-audience (Iowan Old Style)
-  $narrow-audience (Iowan Old Style Italic)
-*/
-/*
-  Options for WVU Hero Title typeface:
-  short
-  medium
-  long
-*/
 .wvu-lede-text {
   background-color: #f9f9f9;
   color: #2C2A29;
@@ -45,4 +32,16 @@ html {
     padding-left: 0;
     padding-right: 0;
   }
+}
+
+.wvu-lede-text__container {
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wvu-lede-text__container::after {
+  clear: both;
+  content: "";
+  display: table;
 }

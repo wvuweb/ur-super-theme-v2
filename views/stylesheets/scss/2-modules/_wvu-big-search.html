@@ -1,0 +1,113 @@
+.wvu-big-search {
+  background-color: $wvu-gold;
+  background-image: url(https://admissions.wvu.edu/images/wvu-pattern-background--gold.png);
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: $wvu-blue;
+  text-align: center;
+  @include mq($bp-large) {
+    background-size: auto;
+  }
+  p {
+    margin: 1em auto;
+  }
+
+  .form-search__label {
+    width: 80%;
+    margin: 0;
+    float: left;
+    @include mq($bp-medium) {
+      width: 83%;
+    }
+  }
+
+  input[type="search"].form-search__field {
+    color: #2C2A29;
+    height: 60px;
+    border: none;
+    border-radius: 3px 0 0 3px;
+    padding-left: 18px;
+    font-size: 1.2rem;
+    font-weight: normal;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    @include mq($bp-medium) {
+      height: 72px;
+      font-size: 1.5rem;
+    }
+    @include mq($bp-medium) {
+      height: 86px;
+    }
+  }
+
+  input[type="submit"].form-search__submit {
+    width: 20%;
+    margin: 0;
+    height: 60px;
+    float: left;
+    background-color: $wvu-blue;
+    border: none;
+    border-radius: 0 3px 3px 0;
+    background-size: 21px;
+    background-position: 50% 21px;
+    @include mq($bp-medium) {
+      width: 17%;
+      height: 72px;
+    }
+    @include mq($bp-medium) {
+      height: 86px;
+      background-size: 32px;
+      background-position: 50% 27px;
+    }
+    &:hover {
+      background-color: $black;
+      border-color: $wvu-blue;
+    }
+  }
+}
+
+.wvu-big-search__container {
+  @include u-wvu-container-padding();
+}
+
+.wvu-big-search__header {
+  font-size: 2.5em;
+  @include wvu-lede();
+  h2 {
+    color: $wvu-blue;
+    @include wvu-primary-pattern-heading();
+  }
+  h3 {
+    color: $wvu-blue;
+    @include wvu-lede();
+  }
+}
+
+.wvu-big-search__postscript {
+  clear: both;
+  display: table;
+  margin: 0 auto;
+  width: 100%;
+  p {
+    margin: 1em 0;
+    max-width: 9999em;
+  }
+}
+
+// Layout
+// ===============================
+
+.wvu-big-search__container {
+  @include outer-container();
+}
+
+.wvu-big-search {
+  .form-search {
+    @include outer-container;
+    @include mq($bp-medium) {
+      @include span-columns(8);
+      @include shift(2);
+    }
+  }
+}
