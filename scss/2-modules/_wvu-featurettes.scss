@@ -118,7 +118,7 @@
     }
   }
   .wvu-featurettes--profiles {
-    .wvu-featurettes__featurettes--1, .wvu-featurettes__featurettes--2, .wvu-featurettes__featurettes--3 {
+    .wvu-featurettes__featurettes {
       .wvu-featurettes__featurette {
         @include mq($bp-small) {
           margin-bottom: 1em;
