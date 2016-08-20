@@ -1,4 +1,6 @@
-
+.wvu-container {
+  @include u-wvu-container-padding();
+}
 
 // Layout
 // ========================================
