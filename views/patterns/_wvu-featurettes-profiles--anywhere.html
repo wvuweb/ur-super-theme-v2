@@ -9,7 +9,7 @@
 
       <r:descendants>
         <div class="wvu-featurettes__featurettes wvu-featurettes__featurettes--<r:count />">
-          <r:each order="asc" labels="profile, {$page_slug}" labels_match="all">
+          <r:each order="asc" labels="{$page_slug}" labels_match="any">
             <div class="wvu-featurettes__featurette">
 
               <r:set_var name="soFeaturettesInfoProfilesWideAnywhere" default="nophoto" />
