@@ -16,7 +16,7 @@
 
     <r:root>
 
-      <r:descendants order="asc" labels="profile, {$page_slug}" labels_match="any">
+      <r:descendants order="asc" labels="testimonial, {$page_slug}" labels_match="any">
         <div class="wvu-featurettes__featurettes wvu-featurettes__featurettes--<r:count />">
           <r:each>
             <div class="wvu-featurettes__featurette">
@@ -34,7 +34,8 @@
               <div class="wvu-featurettes__info wvu-featurettes__info--<r:var name="soFeaturettesInfoProfilesWide" />">
                 <h3><a href="<r:if expr="{{ NOT(BLANK(alternate_url)) }}"><r:page:data name="alternate_url" /></r:if><r:if expr="{{ BLANK(alternate_url) }}"><r:page:url /></r:if>"><r:page:first_non_blank_attr names="alternate_name,name" /></a></h3>
                 <p class="wvu-featurettes__quote">
-                  <r:page:data name="profile_quote" />
+                  &ldquo;<r:page:data name="profile_quote" />&rdquo;
+                  <span><r:page:data name="profile_quote_author" /></span>
                 </p>
 
                 <a class="button" href="<r:if expr="{{ NOT(BLANK(alternate_url)) }}"><r:page:data name="alternate_url" /></r:if><r:if expr="{{ BLANK(alternate_url) }}"><r:page:url /></r:if>"><r:if expr="{{ NOT(BLANK(link_text)) }}"><r:page:data name="link_text" /></r:if><r:if expr="{{ BLANK(link_text) }}">More About <r:page:name /></r:if></a>
