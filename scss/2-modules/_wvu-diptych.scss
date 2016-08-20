@@ -1,0 +1,108 @@
+
+
+.wvu-diptych {
+  background-position: 50% 50%;
+  background-size: cover;
+  color: $black;
+  h2 {
+    font-size: $wvu-shout-font-size;
+    margin: $wvu-shout-margin;
+    text-align: center;
+  }
+  h3 {
+    margin-top: 1em;
+    @include mq($bp-medium) {
+      margin-top: 0;
+    }
+  }
+  .wvu-diptych__photo {
+    color: $wvu-blue;
+    font-size: 9em;
+    margin-bottom: 20px;
+    @include wvu-shout();
+  }
+  .wvu-diptych__copy--wide {
+    text-align: center;
+    p {
+      margin: 1em auto;
+    }
+  }
+}
+
+.wvu-diptych__container {
+  @include u-wvu-container-padding();
+}
+
+.wvu-diptych__header {
+  font-size: 2.5em;
+  @include wvu-lede();
+  h2 {
+    @include wvu-primary-pattern-heading();
+  }
+  h3 {
+    @include wvu-lede();
+  }
+}
+
+.wvu-diptych__panel {
+  margin-bottom: 2em;
+  @include mq($bp-medium) {
+    margin-bottom: 0;
+  }
+}
+
+.wvu-diptych__panels {
+  display: table;
+  width: 100%;
+}
+
+.wvu-diptych__postscript {
+  @include so-postscript();
+}
+
+.wvu-diptych--2 {
+  .wvu-diptych__copy--wide {
+    text-align: left;
+    p {
+      margin: 1em 0;
+    }
+  }
+}
+
+.u-wvu-blue.background {
+  .wvu-diptych {
+    .wvu-diptych__photo {
+      color: $wvu-gold;
+    }
+  }
+}
+
+// Layout
+// =====================================
+
+.wvu-diptych {
+  .wvu-diptych__panel {
+    @include mq($bp-medium) {
+      @include span-columns(6);
+    }
+  }
+  .wvu-diptych__photo {
+    @include mq($bp-medium) {
+      @include span-columns(6);
+    }
+  }
+  .wvu-diptych__copy {
+    @include mq($bp-medium) {
+      @include span-columns(6);
+    }
+  }
+  .wvu-diptych__copy--wide {
+    @include mq($bp-medium) {
+      @include span-columns(12);
+    }
+  }
+}
+
+.wvu-diptych__container {
+  @include outer-container();
+}

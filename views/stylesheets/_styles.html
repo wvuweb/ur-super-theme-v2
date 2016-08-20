@@ -4508,13 +4508,12 @@ th {
 td {
   border-bottom: 1px solid #ccc;
   padding: 0.75em 0;
-  vertical-align: top;
 }
 
 tr,
 td,
 th {
-  vertical-align: middle;
+  vertical-align: top;
 }
 
 .wvu-action-hero {
@@ -5641,12 +5640,208 @@ h2 + .wvu-adverts__adverts {
 }
 
 .wvu-container {
+  padding: 4em 0 4.3em 0;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+@media (min-width: 75em) {
+  .wvu-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.wvu-container {
   max-width: 75em;
   margin-left: auto;
   margin-right: auto;
 }
 
 .wvu-container::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.wvu-diptych {
+  background-position: 50% 50%;
+  background-size: cover;
+  color: #2C2A29;
+}
+
+.wvu-diptych h2 {
+  font-size: 8.2em;
+  margin: 0 0 0.5em;
+  text-align: center;
+}
+
+.wvu-diptych h3 {
+  margin-top: 1em;
+}
+
+@media (min-width: 48em) {
+  .wvu-diptych h3 {
+    margin-top: 0;
+  }
+}
+
+.wvu-diptych .wvu-diptych__photo {
+  color: #002855;
+  font-size: 9em;
+  margin-bottom: 20px;
+  line-height: 0.80487em;
+  font-family: "HelveticaNeueW01-97Blac", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.fonts-loaded .wvu-diptych .wvu-diptych__photo {
+  font-family: "HelveticaNeueW01-97Blac", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
+}
+
+.wvu-diptych .wvu-diptych__copy--wide {
+  text-align: center;
+}
+
+.wvu-diptych .wvu-diptych__copy--wide p {
+  margin: 1em auto;
+}
+
+.wvu-diptych__container {
+  padding: 4em 0 4.3em 0;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+@media (min-width: 75em) {
+  .wvu-diptych__container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.wvu-diptych__header {
+  font-size: 2.5em;
+  font-family: "HelveticaNeueW01-45Ligh", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
+  font-weight: normal;
+  line-height: 1.08333em;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wvu-diptych__header h2 {
+  margin: 0 0 0.5em;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 0.80487em;
+  font-family: "HelveticaNeueW01-97Blac", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 2em;
+}
+
+.fonts-loaded .wvu-diptych__header h2 {
+  font-family: "HelveticaNeueW01-97Blac", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
+}
+
+.wvu-diptych__header h3 {
+  font-family: "HelveticaNeueW01-45Ligh", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
+  font-weight: normal;
+  line-height: 1.08333em;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wvu-diptych__panel {
+  margin-bottom: 2em;
+}
+
+@media (min-width: 48em) {
+  .wvu-diptych__panel {
+    margin-bottom: 0;
+  }
+}
+
+.wvu-diptych__panels {
+  display: table;
+  width: 100%;
+}
+
+.wvu-diptych__postscript {
+  clear: both;
+  display: block;
+  margin: 2em auto 0 auto;
+  text-align: center;
+}
+
+.wvu-diptych--2 .wvu-diptych__copy--wide {
+  text-align: left;
+}
+
+.wvu-diptych--2 .wvu-diptych__copy--wide p {
+  margin: 1em 0;
+}
+
+.u-wvu-blue.background .wvu-diptych .wvu-diptych__photo {
+  color: #EAAA00;
+}
+
+@media (min-width: 48em) {
+  .wvu-diptych .wvu-diptych__panel {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+  }
+  .wvu-diptych .wvu-diptych__panel:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 48em) {
+  .wvu-diptych .wvu-diptych__photo {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+  }
+  .wvu-diptych .wvu-diptych__photo:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 48em) {
+  .wvu-diptych .wvu-diptych__copy {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+  }
+  .wvu-diptych .wvu-diptych__copy:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 48em) {
+  .wvu-diptych .wvu-diptych__copy--wide {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  .wvu-diptych .wvu-diptych__copy--wide:last-child {
+    margin-right: 0;
+  }
+}
+
+.wvu-diptych__container {
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wvu-diptych__container::after {
   clear: both;
   content: "";
   display: table;
@@ -5802,6 +5997,10 @@ h2 + .wvu-adverts__adverts {
   text-align: center;
 }
 
+.wvu-featurettes__quote:before {
+  content: '';
+}
+
 .main .wvu-featurettes__container, .wvu-sidebar .wvu-featurettes__container {
   width: 100%;
 }
@@ -5837,24 +6036,24 @@ h2 + .wvu-adverts__adverts {
 }
 
 @media (min-width: 35.625em) {
-  .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurettes--1 .wvu-featurettes__featurette, .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurettes--2 .wvu-featurettes__featurette, .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurettes--3 .wvu-featurettes__featurette, .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurettes--1 .wvu-featurettes__featurette, .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurettes--2 .wvu-featurettes__featurette, .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurettes--3 .wvu-featurettes__featurette, .so-magic-anytych__panel .wvu-featurettes--profiles .wvu-featurettes__featurettes--1 .wvu-featurettes__featurette, .so-magic-anytych__panel .wvu-featurettes--profiles .wvu-featurettes__featurettes--2 .wvu-featurettes__featurette, .so-magic-anytych__panel .wvu-featurettes--profiles .wvu-featurettes__featurettes--3 .wvu-featurettes__featurette, .main .wvu-featurettes--profiles .wvu-featurettes__featurettes--1 .wvu-featurettes__featurette, .main .wvu-featurettes--profiles .wvu-featurettes__featurettes--2 .wvu-featurettes__featurette, .main .wvu-featurettes--profiles .wvu-featurettes__featurettes--3 .wvu-featurettes__featurette {
+  .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__featurette, .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__featurette, .so-magic-anytych__panel .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__featurette, .main .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__featurette {
     margin-bottom: 1em;
   }
 }
 
 @media (min-width: 35.625em) {
-  .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurettes--1 .wvu-featurettes__photo, .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurettes--2 .wvu-featurettes__photo, .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurettes--3 .wvu-featurettes__photo, .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurettes--1 .wvu-featurettes__photo, .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurettes--2 .wvu-featurettes__photo, .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurettes--3 .wvu-featurettes__photo, .so-magic-anytych__panel .wvu-featurettes--profiles .wvu-featurettes__featurettes--1 .wvu-featurettes__photo, .so-magic-anytych__panel .wvu-featurettes--profiles .wvu-featurettes__featurettes--2 .wvu-featurettes__photo, .so-magic-anytych__panel .wvu-featurettes--profiles .wvu-featurettes__featurettes--3 .wvu-featurettes__photo, .main .wvu-featurettes--profiles .wvu-featurettes__featurettes--1 .wvu-featurettes__photo, .main .wvu-featurettes--profiles .wvu-featurettes__featurettes--2 .wvu-featurettes__photo, .main .wvu-featurettes--profiles .wvu-featurettes__featurettes--3 .wvu-featurettes__photo {
+  .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__photo, .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__photo, .so-magic-anytych__panel .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__photo, .main .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__photo {
     padding: 0;
   }
 }
 
 @media (min-width: 35.625em) {
-  .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurettes--1 .wvu-featurettes__info, .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurettes--2 .wvu-featurettes__info, .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurettes--3 .wvu-featurettes__info, .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurettes--1 .wvu-featurettes__info, .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurettes--2 .wvu-featurettes__info, .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurettes--3 .wvu-featurettes__info, .so-magic-anytych__panel .wvu-featurettes--profiles .wvu-featurettes__featurettes--1 .wvu-featurettes__info, .so-magic-anytych__panel .wvu-featurettes--profiles .wvu-featurettes__featurettes--2 .wvu-featurettes__info, .so-magic-anytych__panel .wvu-featurettes--profiles .wvu-featurettes__featurettes--3 .wvu-featurettes__info, .main .wvu-featurettes--profiles .wvu-featurettes__featurettes--1 .wvu-featurettes__info, .main .wvu-featurettes--profiles .wvu-featurettes__featurettes--2 .wvu-featurettes__info, .main .wvu-featurettes--profiles .wvu-featurettes__featurettes--3 .wvu-featurettes__info {
+  .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__info, .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__info, .so-magic-anytych__panel .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__info, .main .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__info {
     font-size: .8em;
   }
 }
 
-.wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurettes--1 .wvu-featurettes__info h3, .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurettes--2 .wvu-featurettes__info h3, .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurettes--3 .wvu-featurettes__info h3, .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurettes--1 .wvu-featurettes__info h3, .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurettes--2 .wvu-featurettes__info h3, .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurettes--3 .wvu-featurettes__info h3, .so-magic-anytych__panel .wvu-featurettes--profiles .wvu-featurettes__featurettes--1 .wvu-featurettes__info h3, .so-magic-anytych__panel .wvu-featurettes--profiles .wvu-featurettes__featurettes--2 .wvu-featurettes__info h3, .so-magic-anytych__panel .wvu-featurettes--profiles .wvu-featurettes__featurettes--3 .wvu-featurettes__info h3, .main .wvu-featurettes--profiles .wvu-featurettes__featurettes--1 .wvu-featurettes__info h3, .main .wvu-featurettes--profiles .wvu-featurettes__featurettes--2 .wvu-featurettes__info h3, .main .wvu-featurettes--profiles .wvu-featurettes__featurettes--3 .wvu-featurettes__info h3 {
+.wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__info h3, .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__info h3, .so-magic-anytych__panel .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__info h3, .main .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__info h3 {
   margin-bottom: 0;
 }
 
@@ -6015,128 +6214,128 @@ h2 + .wvu-adverts__adverts {
 }
 
 @media (min-width: 48em) {
-  .wvu-sidebar .wvu-featurettes__featurette, .wvu-featurettes__featurette .wvu-featurettes__featurette, .so-magic-anytych__panel .wvu-featurettes__featurette, .main .wvu-featurettes__featurette {
+  .wvu-sidebar .wvu-featurettes__featurette, .wvu-featurettes__featurette .wvu-featurettes__featurette, .wvu-polyptych__panel .wvu-featurettes__featurette {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 100%;
   }
-  .wvu-sidebar .wvu-featurettes__featurette:last-child, .wvu-featurettes__featurette .wvu-featurettes__featurette:last-child, .so-magic-anytych__panel .wvu-featurettes__featurette:last-child, .main .wvu-featurettes__featurette:last-child {
+  .wvu-sidebar .wvu-featurettes__featurette:last-child, .wvu-featurettes__featurette .wvu-featurettes__featurette:last-child, .wvu-polyptych__panel .wvu-featurettes__featurette:last-child {
     margin-right: 0;
   }
-  .wvu-sidebar .wvu-featurettes__featurette:nth-child(4n), .wvu-featurettes__featurette .wvu-featurettes__featurette:nth-child(4n), .so-magic-anytych__panel .wvu-featurettes__featurette:nth-child(4n), .main .wvu-featurettes__featurette:nth-child(4n) {
+  .wvu-sidebar .wvu-featurettes__featurette:nth-child(4n), .wvu-featurettes__featurette .wvu-featurettes__featurette:nth-child(4n), .wvu-polyptych__panel .wvu-featurettes__featurette:nth-child(4n) {
     margin-right: 2.35765%;
   }
-  .wvu-sidebar .wvu-featurettes__featurette:nth-child(4n+1), .wvu-featurettes__featurette .wvu-featurettes__featurette:nth-child(4n+1), .so-magic-anytych__panel .wvu-featurettes__featurette:nth-child(4n+1), .main .wvu-featurettes__featurette:nth-child(4n+1) {
+  .wvu-sidebar .wvu-featurettes__featurette:nth-child(4n+1), .wvu-featurettes__featurette .wvu-featurettes__featurette:nth-child(4n+1), .wvu-polyptych__panel .wvu-featurettes__featurette:nth-child(4n+1) {
     clear: none;
   }
 }
 
 @media (min-width: 48em) {
-  .wvu-sidebar .wvu-featurettes__featurette--1 .wvu-featurettes__featurette, .wvu-sidebar .wvu-featurettes__featurette--2 .wvu-featurettes__featurette, .wvu-sidebar .wvu-featurettes__featurette--3 .wvu-featurettes__featurette, .wvu-sidebar .wvu-featurettes__featurette--5 .wvu-featurettes__featurette, .wvu-featurettes__featurette .wvu-featurettes__featurette--1 .wvu-featurettes__featurette, .wvu-featurettes__featurette .wvu-featurettes__featurette--2 .wvu-featurettes__featurette, .wvu-featurettes__featurette .wvu-featurettes__featurette--3 .wvu-featurettes__featurette, .wvu-featurettes__featurette .wvu-featurettes__featurette--5 .wvu-featurettes__featurette, .so-magic-anytych__panel .wvu-featurettes__featurette--1 .wvu-featurettes__featurette, .so-magic-anytych__panel .wvu-featurettes__featurette--2 .wvu-featurettes__featurette, .so-magic-anytych__panel .wvu-featurettes__featurette--3 .wvu-featurettes__featurette, .so-magic-anytych__panel .wvu-featurettes__featurette--5 .wvu-featurettes__featurette, .main .wvu-featurettes__featurette--1 .wvu-featurettes__featurette, .main .wvu-featurettes__featurette--2 .wvu-featurettes__featurette, .main .wvu-featurettes__featurette--3 .wvu-featurettes__featurette, .main .wvu-featurettes__featurette--5 .wvu-featurettes__featurette {
+  .wvu-sidebar .wvu-featurettes__featurette--1 .wvu-featurettes__featurette, .wvu-sidebar .wvu-featurettes__featurette--2 .wvu-featurettes__featurette, .wvu-sidebar .wvu-featurettes__featurette--3 .wvu-featurettes__featurette, .wvu-sidebar .wvu-featurettes__featurette--5 .wvu-featurettes__featurette, .wvu-featurettes__featurette .wvu-featurettes__featurette--1 .wvu-featurettes__featurette, .wvu-featurettes__featurette .wvu-featurettes__featurette--2 .wvu-featurettes__featurette, .wvu-featurettes__featurette .wvu-featurettes__featurette--3 .wvu-featurettes__featurette, .wvu-featurettes__featurette .wvu-featurettes__featurette--5 .wvu-featurettes__featurette, .wvu-polyptych__panel .wvu-featurettes__featurette--1 .wvu-featurettes__featurette, .wvu-polyptych__panel .wvu-featurettes__featurette--2 .wvu-featurettes__featurette, .wvu-polyptych__panel .wvu-featurettes__featurette--3 .wvu-featurettes__featurette, .wvu-polyptych__panel .wvu-featurettes__featurette--5 .wvu-featurettes__featurette {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 100%;
   }
-  .wvu-sidebar .wvu-featurettes__featurette--1 .wvu-featurettes__featurette:last-child, .wvu-sidebar .wvu-featurettes__featurette--2 .wvu-featurettes__featurette:last-child, .wvu-sidebar .wvu-featurettes__featurette--3 .wvu-featurettes__featurette:last-child, .wvu-sidebar .wvu-featurettes__featurette--5 .wvu-featurettes__featurette:last-child, .wvu-featurettes__featurette .wvu-featurettes__featurette--1 .wvu-featurettes__featurette:last-child, .wvu-featurettes__featurette .wvu-featurettes__featurette--2 .wvu-featurettes__featurette:last-child, .wvu-featurettes__featurette .wvu-featurettes__featurette--3 .wvu-featurettes__featurette:last-child, .wvu-featurettes__featurette .wvu-featurettes__featurette--5 .wvu-featurettes__featurette:last-child, .so-magic-anytych__panel .wvu-featurettes__featurette--1 .wvu-featurettes__featurette:last-child, .so-magic-anytych__panel .wvu-featurettes__featurette--2 .wvu-featurettes__featurette:last-child, .so-magic-anytych__panel .wvu-featurettes__featurette--3 .wvu-featurettes__featurette:last-child, .so-magic-anytych__panel .wvu-featurettes__featurette--5 .wvu-featurettes__featurette:last-child, .main .wvu-featurettes__featurette--1 .wvu-featurettes__featurette:last-child, .main .wvu-featurettes__featurette--2 .wvu-featurettes__featurette:last-child, .main .wvu-featurettes__featurette--3 .wvu-featurettes__featurette:last-child, .main .wvu-featurettes__featurette--5 .wvu-featurettes__featurette:last-child {
+  .wvu-sidebar .wvu-featurettes__featurette--1 .wvu-featurettes__featurette:last-child, .wvu-sidebar .wvu-featurettes__featurette--2 .wvu-featurettes__featurette:last-child, .wvu-sidebar .wvu-featurettes__featurette--3 .wvu-featurettes__featurette:last-child, .wvu-sidebar .wvu-featurettes__featurette--5 .wvu-featurettes__featurette:last-child, .wvu-featurettes__featurette .wvu-featurettes__featurette--1 .wvu-featurettes__featurette:last-child, .wvu-featurettes__featurette .wvu-featurettes__featurette--2 .wvu-featurettes__featurette:last-child, .wvu-featurettes__featurette .wvu-featurettes__featurette--3 .wvu-featurettes__featurette:last-child, .wvu-featurettes__featurette .wvu-featurettes__featurette--5 .wvu-featurettes__featurette:last-child, .wvu-polyptych__panel .wvu-featurettes__featurette--1 .wvu-featurettes__featurette:last-child, .wvu-polyptych__panel .wvu-featurettes__featurette--2 .wvu-featurettes__featurette:last-child, .wvu-polyptych__panel .wvu-featurettes__featurette--3 .wvu-featurettes__featurette:last-child, .wvu-polyptych__panel .wvu-featurettes__featurette--5 .wvu-featurettes__featurette:last-child {
     margin-right: 0;
   }
-  .wvu-sidebar .wvu-featurettes__featurette--1 .wvu-featurettes__featurette:nth-child(4n), .wvu-sidebar .wvu-featurettes__featurette--2 .wvu-featurettes__featurette:nth-child(4n), .wvu-sidebar .wvu-featurettes__featurette--3 .wvu-featurettes__featurette:nth-child(4n), .wvu-sidebar .wvu-featurettes__featurette--5 .wvu-featurettes__featurette:nth-child(4n), .wvu-featurettes__featurette .wvu-featurettes__featurette--1 .wvu-featurettes__featurette:nth-child(4n), .wvu-featurettes__featurette .wvu-featurettes__featurette--2 .wvu-featurettes__featurette:nth-child(4n), .wvu-featurettes__featurette .wvu-featurettes__featurette--3 .wvu-featurettes__featurette:nth-child(4n), .wvu-featurettes__featurette .wvu-featurettes__featurette--5 .wvu-featurettes__featurette:nth-child(4n), .so-magic-anytych__panel .wvu-featurettes__featurette--1 .wvu-featurettes__featurette:nth-child(4n), .so-magic-anytych__panel .wvu-featurettes__featurette--2 .wvu-featurettes__featurette:nth-child(4n), .so-magic-anytych__panel .wvu-featurettes__featurette--3 .wvu-featurettes__featurette:nth-child(4n), .so-magic-anytych__panel .wvu-featurettes__featurette--5 .wvu-featurettes__featurette:nth-child(4n), .main .wvu-featurettes__featurette--1 .wvu-featurettes__featurette:nth-child(4n), .main .wvu-featurettes__featurette--2 .wvu-featurettes__featurette:nth-child(4n), .main .wvu-featurettes__featurette--3 .wvu-featurettes__featurette:nth-child(4n), .main .wvu-featurettes__featurette--5 .wvu-featurettes__featurette:nth-child(4n) {
+  .wvu-sidebar .wvu-featurettes__featurette--1 .wvu-featurettes__featurette:nth-child(4n), .wvu-sidebar .wvu-featurettes__featurette--2 .wvu-featurettes__featurette:nth-child(4n), .wvu-sidebar .wvu-featurettes__featurette--3 .wvu-featurettes__featurette:nth-child(4n), .wvu-sidebar .wvu-featurettes__featurette--5 .wvu-featurettes__featurette:nth-child(4n), .wvu-featurettes__featurette .wvu-featurettes__featurette--1 .wvu-featurettes__featurette:nth-child(4n), .wvu-featurettes__featurette .wvu-featurettes__featurette--2 .wvu-featurettes__featurette:nth-child(4n), .wvu-featurettes__featurette .wvu-featurettes__featurette--3 .wvu-featurettes__featurette:nth-child(4n), .wvu-featurettes__featurette .wvu-featurettes__featurette--5 .wvu-featurettes__featurette:nth-child(4n), .wvu-polyptych__panel .wvu-featurettes__featurette--1 .wvu-featurettes__featurette:nth-child(4n), .wvu-polyptych__panel .wvu-featurettes__featurette--2 .wvu-featurettes__featurette:nth-child(4n), .wvu-polyptych__panel .wvu-featurettes__featurette--3 .wvu-featurettes__featurette:nth-child(4n), .wvu-polyptych__panel .wvu-featurettes__featurette--5 .wvu-featurettes__featurette:nth-child(4n) {
     margin-right: 2.35765%;
   }
-  .wvu-sidebar .wvu-featurettes__featurette--1 .wvu-featurettes__featurette:nth-child(4n+1), .wvu-sidebar .wvu-featurettes__featurette--2 .wvu-featurettes__featurette:nth-child(4n+1), .wvu-sidebar .wvu-featurettes__featurette--3 .wvu-featurettes__featurette:nth-child(4n+1), .wvu-sidebar .wvu-featurettes__featurette--5 .wvu-featurettes__featurette:nth-child(4n+1), .wvu-featurettes__featurette .wvu-featurettes__featurette--1 .wvu-featurettes__featurette:nth-child(4n+1), .wvu-featurettes__featurette .wvu-featurettes__featurette--2 .wvu-featurettes__featurette:nth-child(4n+1), .wvu-featurettes__featurette .wvu-featurettes__featurette--3 .wvu-featurettes__featurette:nth-child(4n+1), .wvu-featurettes__featurette .wvu-featurettes__featurette--5 .wvu-featurettes__featurette:nth-child(4n+1), .so-magic-anytych__panel .wvu-featurettes__featurette--1 .wvu-featurettes__featurette:nth-child(4n+1), .so-magic-anytych__panel .wvu-featurettes__featurette--2 .wvu-featurettes__featurette:nth-child(4n+1), .so-magic-anytych__panel .wvu-featurettes__featurette--3 .wvu-featurettes__featurette:nth-child(4n+1), .so-magic-anytych__panel .wvu-featurettes__featurette--5 .wvu-featurettes__featurette:nth-child(4n+1), .main .wvu-featurettes__featurette--1 .wvu-featurettes__featurette:nth-child(4n+1), .main .wvu-featurettes__featurette--2 .wvu-featurettes__featurette:nth-child(4n+1), .main .wvu-featurettes__featurette--3 .wvu-featurettes__featurette:nth-child(4n+1), .main .wvu-featurettes__featurette--5 .wvu-featurettes__featurette:nth-child(4n+1) {
+  .wvu-sidebar .wvu-featurettes__featurette--1 .wvu-featurettes__featurette:nth-child(4n+1), .wvu-sidebar .wvu-featurettes__featurette--2 .wvu-featurettes__featurette:nth-child(4n+1), .wvu-sidebar .wvu-featurettes__featurette--3 .wvu-featurettes__featurette:nth-child(4n+1), .wvu-sidebar .wvu-featurettes__featurette--5 .wvu-featurettes__featurette:nth-child(4n+1), .wvu-featurettes__featurette .wvu-featurettes__featurette--1 .wvu-featurettes__featurette:nth-child(4n+1), .wvu-featurettes__featurette .wvu-featurettes__featurette--2 .wvu-featurettes__featurette:nth-child(4n+1), .wvu-featurettes__featurette .wvu-featurettes__featurette--3 .wvu-featurettes__featurette:nth-child(4n+1), .wvu-featurettes__featurette .wvu-featurettes__featurette--5 .wvu-featurettes__featurette:nth-child(4n+1), .wvu-polyptych__panel .wvu-featurettes__featurette--1 .wvu-featurettes__featurette:nth-child(4n+1), .wvu-polyptych__panel .wvu-featurettes__featurette--2 .wvu-featurettes__featurette:nth-child(4n+1), .wvu-polyptych__panel .wvu-featurettes__featurette--3 .wvu-featurettes__featurette:nth-child(4n+1), .wvu-polyptych__panel .wvu-featurettes__featurette--5 .wvu-featurettes__featurette:nth-child(4n+1) {
     clear: none;
   }
 }
 
 @media (min-width: 48em) {
-  .wvu-sidebar .wvu-featurettes__featurette--1 .wvu-featurettes__photo, .wvu-sidebar .wvu-featurettes__featurette--2 .wvu-featurettes__photo, .wvu-sidebar .wvu-featurettes__featurette--3 .wvu-featurettes__photo, .wvu-sidebar .wvu-featurettes__featurette--5 .wvu-featurettes__photo, .wvu-featurettes__featurette .wvu-featurettes__featurette--1 .wvu-featurettes__photo, .wvu-featurettes__featurette .wvu-featurettes__featurette--2 .wvu-featurettes__photo, .wvu-featurettes__featurette .wvu-featurettes__featurette--3 .wvu-featurettes__photo, .wvu-featurettes__featurette .wvu-featurettes__featurette--5 .wvu-featurettes__photo, .so-magic-anytych__panel .wvu-featurettes__featurette--1 .wvu-featurettes__photo, .so-magic-anytych__panel .wvu-featurettes__featurette--2 .wvu-featurettes__photo, .so-magic-anytych__panel .wvu-featurettes__featurette--3 .wvu-featurettes__photo, .so-magic-anytych__panel .wvu-featurettes__featurette--5 .wvu-featurettes__photo, .main .wvu-featurettes__featurette--1 .wvu-featurettes__photo, .main .wvu-featurettes__featurette--2 .wvu-featurettes__photo, .main .wvu-featurettes__featurette--3 .wvu-featurettes__photo, .main .wvu-featurettes__featurette--5 .wvu-featurettes__photo {
+  .wvu-sidebar .wvu-featurettes__featurette--1 .wvu-featurettes__photo, .wvu-sidebar .wvu-featurettes__featurette--2 .wvu-featurettes__photo, .wvu-sidebar .wvu-featurettes__featurette--3 .wvu-featurettes__photo, .wvu-sidebar .wvu-featurettes__featurette--5 .wvu-featurettes__photo, .wvu-featurettes__featurette .wvu-featurettes__featurette--1 .wvu-featurettes__photo, .wvu-featurettes__featurette .wvu-featurettes__featurette--2 .wvu-featurettes__photo, .wvu-featurettes__featurette .wvu-featurettes__featurette--3 .wvu-featurettes__photo, .wvu-featurettes__featurette .wvu-featurettes__featurette--5 .wvu-featurettes__photo, .wvu-polyptych__panel .wvu-featurettes__featurette--1 .wvu-featurettes__photo, .wvu-polyptych__panel .wvu-featurettes__featurette--2 .wvu-featurettes__photo, .wvu-polyptych__panel .wvu-featurettes__featurette--3 .wvu-featurettes__photo, .wvu-polyptych__panel .wvu-featurettes__featurette--5 .wvu-featurettes__photo {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 100%;
   }
-  .wvu-sidebar .wvu-featurettes__featurette--1 .wvu-featurettes__photo:last-child, .wvu-sidebar .wvu-featurettes__featurette--2 .wvu-featurettes__photo:last-child, .wvu-sidebar .wvu-featurettes__featurette--3 .wvu-featurettes__photo:last-child, .wvu-sidebar .wvu-featurettes__featurette--5 .wvu-featurettes__photo:last-child, .wvu-featurettes__featurette .wvu-featurettes__featurette--1 .wvu-featurettes__photo:last-child, .wvu-featurettes__featurette .wvu-featurettes__featurette--2 .wvu-featurettes__photo:last-child, .wvu-featurettes__featurette .wvu-featurettes__featurette--3 .wvu-featurettes__photo:last-child, .wvu-featurettes__featurette .wvu-featurettes__featurette--5 .wvu-featurettes__photo:last-child, .so-magic-anytych__panel .wvu-featurettes__featurette--1 .wvu-featurettes__photo:last-child, .so-magic-anytych__panel .wvu-featurettes__featurette--2 .wvu-featurettes__photo:last-child, .so-magic-anytych__panel .wvu-featurettes__featurette--3 .wvu-featurettes__photo:last-child, .so-magic-anytych__panel .wvu-featurettes__featurette--5 .wvu-featurettes__photo:last-child, .main .wvu-featurettes__featurette--1 .wvu-featurettes__photo:last-child, .main .wvu-featurettes__featurette--2 .wvu-featurettes__photo:last-child, .main .wvu-featurettes__featurette--3 .wvu-featurettes__photo:last-child, .main .wvu-featurettes__featurette--5 .wvu-featurettes__photo:last-child {
+  .wvu-sidebar .wvu-featurettes__featurette--1 .wvu-featurettes__photo:last-child, .wvu-sidebar .wvu-featurettes__featurette--2 .wvu-featurettes__photo:last-child, .wvu-sidebar .wvu-featurettes__featurette--3 .wvu-featurettes__photo:last-child, .wvu-sidebar .wvu-featurettes__featurette--5 .wvu-featurettes__photo:last-child, .wvu-featurettes__featurette .wvu-featurettes__featurette--1 .wvu-featurettes__photo:last-child, .wvu-featurettes__featurette .wvu-featurettes__featurette--2 .wvu-featurettes__photo:last-child, .wvu-featurettes__featurette .wvu-featurettes__featurette--3 .wvu-featurettes__photo:last-child, .wvu-featurettes__featurette .wvu-featurettes__featurette--5 .wvu-featurettes__photo:last-child, .wvu-polyptych__panel .wvu-featurettes__featurette--1 .wvu-featurettes__photo:last-child, .wvu-polyptych__panel .wvu-featurettes__featurette--2 .wvu-featurettes__photo:last-child, .wvu-polyptych__panel .wvu-featurettes__featurette--3 .wvu-featurettes__photo:last-child, .wvu-polyptych__panel .wvu-featurettes__featurette--5 .wvu-featurettes__photo:last-child {
     margin-right: 0;
   }
 }
 
 @media (min-width: 48em) {
-  .wvu-sidebar .wvu-featurettes__featurette--1 .wvu-featurettes__info, .wvu-sidebar .wvu-featurettes__featurette--2 .wvu-featurettes__info, .wvu-sidebar .wvu-featurettes__featurette--3 .wvu-featurettes__info, .wvu-sidebar .wvu-featurettes__featurette--5 .wvu-featurettes__info, .wvu-featurettes__featurette .wvu-featurettes__featurette--1 .wvu-featurettes__info, .wvu-featurettes__featurette .wvu-featurettes__featurette--2 .wvu-featurettes__info, .wvu-featurettes__featurette .wvu-featurettes__featurette--3 .wvu-featurettes__info, .wvu-featurettes__featurette .wvu-featurettes__featurette--5 .wvu-featurettes__info, .so-magic-anytych__panel .wvu-featurettes__featurette--1 .wvu-featurettes__info, .so-magic-anytych__panel .wvu-featurettes__featurette--2 .wvu-featurettes__info, .so-magic-anytych__panel .wvu-featurettes__featurette--3 .wvu-featurettes__info, .so-magic-anytych__panel .wvu-featurettes__featurette--5 .wvu-featurettes__info, .main .wvu-featurettes__featurette--1 .wvu-featurettes__info, .main .wvu-featurettes__featurette--2 .wvu-featurettes__info, .main .wvu-featurettes__featurette--3 .wvu-featurettes__info, .main .wvu-featurettes__featurette--5 .wvu-featurettes__info {
+  .wvu-sidebar .wvu-featurettes__featurette--1 .wvu-featurettes__info, .wvu-sidebar .wvu-featurettes__featurette--2 .wvu-featurettes__info, .wvu-sidebar .wvu-featurettes__featurette--3 .wvu-featurettes__info, .wvu-sidebar .wvu-featurettes__featurette--5 .wvu-featurettes__info, .wvu-featurettes__featurette .wvu-featurettes__featurette--1 .wvu-featurettes__info, .wvu-featurettes__featurette .wvu-featurettes__featurette--2 .wvu-featurettes__info, .wvu-featurettes__featurette .wvu-featurettes__featurette--3 .wvu-featurettes__info, .wvu-featurettes__featurette .wvu-featurettes__featurette--5 .wvu-featurettes__info, .wvu-polyptych__panel .wvu-featurettes__featurette--1 .wvu-featurettes__info, .wvu-polyptych__panel .wvu-featurettes__featurette--2 .wvu-featurettes__info, .wvu-polyptych__panel .wvu-featurettes__featurette--3 .wvu-featurettes__info, .wvu-polyptych__panel .wvu-featurettes__featurette--5 .wvu-featurettes__info {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 100%;
   }
-  .wvu-sidebar .wvu-featurettes__featurette--1 .wvu-featurettes__info:last-child, .wvu-sidebar .wvu-featurettes__featurette--2 .wvu-featurettes__info:last-child, .wvu-sidebar .wvu-featurettes__featurette--3 .wvu-featurettes__info:last-child, .wvu-sidebar .wvu-featurettes__featurette--5 .wvu-featurettes__info:last-child, .wvu-featurettes__featurette .wvu-featurettes__featurette--1 .wvu-featurettes__info:last-child, .wvu-featurettes__featurette .wvu-featurettes__featurette--2 .wvu-featurettes__info:last-child, .wvu-featurettes__featurette .wvu-featurettes__featurette--3 .wvu-featurettes__info:last-child, .wvu-featurettes__featurette .wvu-featurettes__featurette--5 .wvu-featurettes__info:last-child, .so-magic-anytych__panel .wvu-featurettes__featurette--1 .wvu-featurettes__info:last-child, .so-magic-anytych__panel .wvu-featurettes__featurette--2 .wvu-featurettes__info:last-child, .so-magic-anytych__panel .wvu-featurettes__featurette--3 .wvu-featurettes__info:last-child, .so-magic-anytych__panel .wvu-featurettes__featurette--5 .wvu-featurettes__info:last-child, .main .wvu-featurettes__featurette--1 .wvu-featurettes__info:last-child, .main .wvu-featurettes__featurette--2 .wvu-featurettes__info:last-child, .main .wvu-featurettes__featurette--3 .wvu-featurettes__info:last-child, .main .wvu-featurettes__featurette--5 .wvu-featurettes__info:last-child {
+  .wvu-sidebar .wvu-featurettes__featurette--1 .wvu-featurettes__info:last-child, .wvu-sidebar .wvu-featurettes__featurette--2 .wvu-featurettes__info:last-child, .wvu-sidebar .wvu-featurettes__featurette--3 .wvu-featurettes__info:last-child, .wvu-sidebar .wvu-featurettes__featurette--5 .wvu-featurettes__info:last-child, .wvu-featurettes__featurette .wvu-featurettes__featurette--1 .wvu-featurettes__info:last-child, .wvu-featurettes__featurette .wvu-featurettes__featurette--2 .wvu-featurettes__info:last-child, .wvu-featurettes__featurette .wvu-featurettes__featurette--3 .wvu-featurettes__info:last-child, .wvu-featurettes__featurette .wvu-featurettes__featurette--5 .wvu-featurettes__info:last-child, .wvu-polyptych__panel .wvu-featurettes__featurette--1 .wvu-featurettes__info:last-child, .wvu-polyptych__panel .wvu-featurettes__featurette--2 .wvu-featurettes__info:last-child, .wvu-polyptych__panel .wvu-featurettes__featurette--3 .wvu-featurettes__info:last-child, .wvu-polyptych__panel .wvu-featurettes__featurette--5 .wvu-featurettes__info:last-child {
     margin-right: 0;
   }
 }
 
 @media (min-width: 48em) {
-  .wvu-sidebar .wvu-featurettes__featurette--1 .wvu-featurettes__info--hasphoto, .wvu-sidebar .wvu-featurettes__featurette--2 .wvu-featurettes__info--hasphoto, .wvu-sidebar .wvu-featurettes__featurette--3 .wvu-featurettes__info--hasphoto, .wvu-sidebar .wvu-featurettes__featurette--5 .wvu-featurettes__info--hasphoto, .wvu-featurettes__featurette .wvu-featurettes__featurette--1 .wvu-featurettes__info--hasphoto, .wvu-featurettes__featurette .wvu-featurettes__featurette--2 .wvu-featurettes__info--hasphoto, .wvu-featurettes__featurette .wvu-featurettes__featurette--3 .wvu-featurettes__info--hasphoto, .wvu-featurettes__featurette .wvu-featurettes__featurette--5 .wvu-featurettes__info--hasphoto, .so-magic-anytych__panel .wvu-featurettes__featurette--1 .wvu-featurettes__info--hasphoto, .so-magic-anytych__panel .wvu-featurettes__featurette--2 .wvu-featurettes__info--hasphoto, .so-magic-anytych__panel .wvu-featurettes__featurette--3 .wvu-featurettes__info--hasphoto, .so-magic-anytych__panel .wvu-featurettes__featurette--5 .wvu-featurettes__info--hasphoto, .main .wvu-featurettes__featurette--1 .wvu-featurettes__info--hasphoto, .main .wvu-featurettes__featurette--2 .wvu-featurettes__info--hasphoto, .main .wvu-featurettes__featurette--3 .wvu-featurettes__info--hasphoto, .main .wvu-featurettes__featurette--5 .wvu-featurettes__info--hasphoto {
+  .wvu-sidebar .wvu-featurettes__featurette--1 .wvu-featurettes__info--hasphoto, .wvu-sidebar .wvu-featurettes__featurette--2 .wvu-featurettes__info--hasphoto, .wvu-sidebar .wvu-featurettes__featurette--3 .wvu-featurettes__info--hasphoto, .wvu-sidebar .wvu-featurettes__featurette--5 .wvu-featurettes__info--hasphoto, .wvu-featurettes__featurette .wvu-featurettes__featurette--1 .wvu-featurettes__info--hasphoto, .wvu-featurettes__featurette .wvu-featurettes__featurette--2 .wvu-featurettes__info--hasphoto, .wvu-featurettes__featurette .wvu-featurettes__featurette--3 .wvu-featurettes__info--hasphoto, .wvu-featurettes__featurette .wvu-featurettes__featurette--5 .wvu-featurettes__info--hasphoto, .wvu-polyptych__panel .wvu-featurettes__featurette--1 .wvu-featurettes__info--hasphoto, .wvu-polyptych__panel .wvu-featurettes__featurette--2 .wvu-featurettes__info--hasphoto, .wvu-polyptych__panel .wvu-featurettes__featurette--3 .wvu-featurettes__info--hasphoto, .wvu-polyptych__panel .wvu-featurettes__featurette--5 .wvu-featurettes__info--hasphoto {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 100%;
   }
-  .wvu-sidebar .wvu-featurettes__featurette--1 .wvu-featurettes__info--hasphoto:last-child, .wvu-sidebar .wvu-featurettes__featurette--2 .wvu-featurettes__info--hasphoto:last-child, .wvu-sidebar .wvu-featurettes__featurette--3 .wvu-featurettes__info--hasphoto:last-child, .wvu-sidebar .wvu-featurettes__featurette--5 .wvu-featurettes__info--hasphoto:last-child, .wvu-featurettes__featurette .wvu-featurettes__featurette--1 .wvu-featurettes__info--hasphoto:last-child, .wvu-featurettes__featurette .wvu-featurettes__featurette--2 .wvu-featurettes__info--hasphoto:last-child, .wvu-featurettes__featurette .wvu-featurettes__featurette--3 .wvu-featurettes__info--hasphoto:last-child, .wvu-featurettes__featurette .wvu-featurettes__featurette--5 .wvu-featurettes__info--hasphoto:last-child, .so-magic-anytych__panel .wvu-featurettes__featurette--1 .wvu-featurettes__info--hasphoto:last-child, .so-magic-anytych__panel .wvu-featurettes__featurette--2 .wvu-featurettes__info--hasphoto:last-child, .so-magic-anytych__panel .wvu-featurettes__featurette--3 .wvu-featurettes__info--hasphoto:last-child, .so-magic-anytych__panel .wvu-featurettes__featurette--5 .wvu-featurettes__info--hasphoto:last-child, .main .wvu-featurettes__featurette--1 .wvu-featurettes__info--hasphoto:last-child, .main .wvu-featurettes__featurette--2 .wvu-featurettes__info--hasphoto:last-child, .main .wvu-featurettes__featurette--3 .wvu-featurettes__info--hasphoto:last-child, .main .wvu-featurettes__featurette--5 .wvu-featurettes__info--hasphoto:last-child {
+  .wvu-sidebar .wvu-featurettes__featurette--1 .wvu-featurettes__info--hasphoto:last-child, .wvu-sidebar .wvu-featurettes__featurette--2 .wvu-featurettes__info--hasphoto:last-child, .wvu-sidebar .wvu-featurettes__featurette--3 .wvu-featurettes__info--hasphoto:last-child, .wvu-sidebar .wvu-featurettes__featurette--5 .wvu-featurettes__info--hasphoto:last-child, .wvu-featurettes__featurette .wvu-featurettes__featurette--1 .wvu-featurettes__info--hasphoto:last-child, .wvu-featurettes__featurette .wvu-featurettes__featurette--2 .wvu-featurettes__info--hasphoto:last-child, .wvu-featurettes__featurette .wvu-featurettes__featurette--3 .wvu-featurettes__info--hasphoto:last-child, .wvu-featurettes__featurette .wvu-featurettes__featurette--5 .wvu-featurettes__info--hasphoto:last-child, .wvu-polyptych__panel .wvu-featurettes__featurette--1 .wvu-featurettes__info--hasphoto:last-child, .wvu-polyptych__panel .wvu-featurettes__featurette--2 .wvu-featurettes__info--hasphoto:last-child, .wvu-polyptych__panel .wvu-featurettes__featurette--3 .wvu-featurettes__info--hasphoto:last-child, .wvu-polyptych__panel .wvu-featurettes__featurette--5 .wvu-featurettes__info--hasphoto:last-child {
     margin-right: 0;
   }
 }
 
 @media (min-width: 35.625em) {
-  .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurettes--1 .wvu-featurettes__featurette, .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurettes--2 .wvu-featurettes__featurette, .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurettes--3 .wvu-featurettes__featurette, .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurette--5 .wvu-featurettes__featurette, .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurettes--1 .wvu-featurettes__featurette, .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurettes--2 .wvu-featurettes__featurette, .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurettes--3 .wvu-featurettes__featurette, .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurette--5 .wvu-featurettes__featurette, .so-magic-anytych__panel .wvu-featurettes--profiles .wvu-featurettes__featurettes--1 .wvu-featurettes__featurette, .so-magic-anytych__panel .wvu-featurettes--profiles .wvu-featurettes__featurettes--2 .wvu-featurettes__featurette, .so-magic-anytych__panel .wvu-featurettes--profiles .wvu-featurettes__featurettes--3 .wvu-featurettes__featurette, .so-magic-anytych__panel .wvu-featurettes--profiles .wvu-featurettes__featurette--5 .wvu-featurettes__featurette, .main .wvu-featurettes--profiles .wvu-featurettes__featurettes--1 .wvu-featurettes__featurette, .main .wvu-featurettes--profiles .wvu-featurettes__featurettes--2 .wvu-featurettes__featurette, .main .wvu-featurettes--profiles .wvu-featurettes__featurettes--3 .wvu-featurettes__featurette, .main .wvu-featurettes--profiles .wvu-featurettes__featurette--5 .wvu-featurettes__featurette {
+  .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__featurette, .wvu-sidebar .wvu-featurettes--quote .wvu-featurettes__featurettes .wvu-featurettes__featurette, .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__featurette, .wvu-featurettes__featurette .wvu-featurettes--quote .wvu-featurettes__featurettes .wvu-featurettes__featurette, .wvu-polyptych__panel .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__featurette, .wvu-polyptych__panel .wvu-featurettes--quote .wvu-featurettes__featurettes .wvu-featurettes__featurette {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 100%;
   }
-  .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurettes--1 .wvu-featurettes__featurette:last-child, .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurettes--2 .wvu-featurettes__featurette:last-child, .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurettes--3 .wvu-featurettes__featurette:last-child, .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurette--5 .wvu-featurettes__featurette:last-child, .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurettes--1 .wvu-featurettes__featurette:last-child, .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurettes--2 .wvu-featurettes__featurette:last-child, .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurettes--3 .wvu-featurettes__featurette:last-child, .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurette--5 .wvu-featurettes__featurette:last-child, .so-magic-anytych__panel .wvu-featurettes--profiles .wvu-featurettes__featurettes--1 .wvu-featurettes__featurette:last-child, .so-magic-anytych__panel .wvu-featurettes--profiles .wvu-featurettes__featurettes--2 .wvu-featurettes__featurette:last-child, .so-magic-anytych__panel .wvu-featurettes--profiles .wvu-featurettes__featurettes--3 .wvu-featurettes__featurette:last-child, .so-magic-anytych__panel .wvu-featurettes--profiles .wvu-featurettes__featurette--5 .wvu-featurettes__featurette:last-child, .main .wvu-featurettes--profiles .wvu-featurettes__featurettes--1 .wvu-featurettes__featurette:last-child, .main .wvu-featurettes--profiles .wvu-featurettes__featurettes--2 .wvu-featurettes__featurette:last-child, .main .wvu-featurettes--profiles .wvu-featurettes__featurettes--3 .wvu-featurettes__featurette:last-child, .main .wvu-featurettes--profiles .wvu-featurettes__featurette--5 .wvu-featurettes__featurette:last-child {
+  .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__featurette:last-child, .wvu-sidebar .wvu-featurettes--quote .wvu-featurettes__featurettes .wvu-featurettes__featurette:last-child, .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__featurette:last-child, .wvu-featurettes__featurette .wvu-featurettes--quote .wvu-featurettes__featurettes .wvu-featurettes__featurette:last-child, .wvu-polyptych__panel .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__featurette:last-child, .wvu-polyptych__panel .wvu-featurettes--quote .wvu-featurettes__featurettes .wvu-featurettes__featurette:last-child {
     margin-right: 0;
   }
-  .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurettes--1 .wvu-featurettes__featurette:nth-child(4n), .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurettes--2 .wvu-featurettes__featurette:nth-child(4n), .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurettes--3 .wvu-featurettes__featurette:nth-child(4n), .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurette--5 .wvu-featurettes__featurette:nth-child(4n), .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurettes--1 .wvu-featurettes__featurette:nth-child(4n), .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurettes--2 .wvu-featurettes__featurette:nth-child(4n), .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurettes--3 .wvu-featurettes__featurette:nth-child(4n), .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurette--5 .wvu-featurettes__featurette:nth-child(4n), .so-magic-anytych__panel .wvu-featurettes--profiles .wvu-featurettes__featurettes--1 .wvu-featurettes__featurette:nth-child(4n), .so-magic-anytych__panel .wvu-featurettes--profiles .wvu-featurettes__featurettes--2 .wvu-featurettes__featurette:nth-child(4n), .so-magic-anytych__panel .wvu-featurettes--profiles .wvu-featurettes__featurettes--3 .wvu-featurettes__featurette:nth-child(4n), .so-magic-anytych__panel .wvu-featurettes--profiles .wvu-featurettes__featurette--5 .wvu-featurettes__featurette:nth-child(4n), .main .wvu-featurettes--profiles .wvu-featurettes__featurettes--1 .wvu-featurettes__featurette:nth-child(4n), .main .wvu-featurettes--profiles .wvu-featurettes__featurettes--2 .wvu-featurettes__featurette:nth-child(4n), .main .wvu-featurettes--profiles .wvu-featurettes__featurettes--3 .wvu-featurettes__featurette:nth-child(4n), .main .wvu-featurettes--profiles .wvu-featurettes__featurette--5 .wvu-featurettes__featurette:nth-child(4n) {
+  .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__featurette:nth-child(4n), .wvu-sidebar .wvu-featurettes--quote .wvu-featurettes__featurettes .wvu-featurettes__featurette:nth-child(4n), .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__featurette:nth-child(4n), .wvu-featurettes__featurette .wvu-featurettes--quote .wvu-featurettes__featurettes .wvu-featurettes__featurette:nth-child(4n), .wvu-polyptych__panel .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__featurette:nth-child(4n), .wvu-polyptych__panel .wvu-featurettes--quote .wvu-featurettes__featurettes .wvu-featurettes__featurette:nth-child(4n) {
     margin-right: 2.35765%;
   }
-  .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurettes--1 .wvu-featurettes__featurette:nth-child(4n+1), .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurettes--2 .wvu-featurettes__featurette:nth-child(4n+1), .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurettes--3 .wvu-featurettes__featurette:nth-child(4n+1), .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurette--5 .wvu-featurettes__featurette:nth-child(4n+1), .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurettes--1 .wvu-featurettes__featurette:nth-child(4n+1), .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurettes--2 .wvu-featurettes__featurette:nth-child(4n+1), .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurettes--3 .wvu-featurettes__featurette:nth-child(4n+1), .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurette--5 .wvu-featurettes__featurette:nth-child(4n+1), .so-magic-anytych__panel .wvu-featurettes--profiles .wvu-featurettes__featurettes--1 .wvu-featurettes__featurette:nth-child(4n+1), .so-magic-anytych__panel .wvu-featurettes--profiles .wvu-featurettes__featurettes--2 .wvu-featurettes__featurette:nth-child(4n+1), .so-magic-anytych__panel .wvu-featurettes--profiles .wvu-featurettes__featurettes--3 .wvu-featurettes__featurette:nth-child(4n+1), .so-magic-anytych__panel .wvu-featurettes--profiles .wvu-featurettes__featurette--5 .wvu-featurettes__featurette:nth-child(4n+1), .main .wvu-featurettes--profiles .wvu-featurettes__featurettes--1 .wvu-featurettes__featurette:nth-child(4n+1), .main .wvu-featurettes--profiles .wvu-featurettes__featurettes--2 .wvu-featurettes__featurette:nth-child(4n+1), .main .wvu-featurettes--profiles .wvu-featurettes__featurettes--3 .wvu-featurettes__featurette:nth-child(4n+1), .main .wvu-featurettes--profiles .wvu-featurettes__featurette--5 .wvu-featurettes__featurette:nth-child(4n+1) {
+  .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__featurette:nth-child(4n+1), .wvu-sidebar .wvu-featurettes--quote .wvu-featurettes__featurettes .wvu-featurettes__featurette:nth-child(4n+1), .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__featurette:nth-child(4n+1), .wvu-featurettes__featurette .wvu-featurettes--quote .wvu-featurettes__featurettes .wvu-featurettes__featurette:nth-child(4n+1), .wvu-polyptych__panel .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__featurette:nth-child(4n+1), .wvu-polyptych__panel .wvu-featurettes--quote .wvu-featurettes__featurettes .wvu-featurettes__featurette:nth-child(4n+1) {
     clear: none;
   }
 }
 
 @media (min-width: 35.625em) {
-  .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurettes--1 .wvu-featurettes__photo, .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurettes--2 .wvu-featurettes__photo, .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurettes--3 .wvu-featurettes__photo, .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurette--5 .wvu-featurettes__photo, .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurettes--1 .wvu-featurettes__photo, .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurettes--2 .wvu-featurettes__photo, .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurettes--3 .wvu-featurettes__photo, .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurette--5 .wvu-featurettes__photo, .so-magic-anytych__panel .wvu-featurettes--profiles .wvu-featurettes__featurettes--1 .wvu-featurettes__photo, .so-magic-anytych__panel .wvu-featurettes--profiles .wvu-featurettes__featurettes--2 .wvu-featurettes__photo, .so-magic-anytych__panel .wvu-featurettes--profiles .wvu-featurettes__featurettes--3 .wvu-featurettes__photo, .so-magic-anytych__panel .wvu-featurettes--profiles .wvu-featurettes__featurette--5 .wvu-featurettes__photo, .main .wvu-featurettes--profiles .wvu-featurettes__featurettes--1 .wvu-featurettes__photo, .main .wvu-featurettes--profiles .wvu-featurettes__featurettes--2 .wvu-featurettes__photo, .main .wvu-featurettes--profiles .wvu-featurettes__featurettes--3 .wvu-featurettes__photo, .main .wvu-featurettes--profiles .wvu-featurettes__featurette--5 .wvu-featurettes__photo {
+  .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__photo, .wvu-sidebar .wvu-featurettes--quote .wvu-featurettes__featurettes .wvu-featurettes__photo, .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__photo, .wvu-featurettes__featurette .wvu-featurettes--quote .wvu-featurettes__featurettes .wvu-featurettes__photo, .wvu-polyptych__panel .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__photo, .wvu-polyptych__panel .wvu-featurettes--quote .wvu-featurettes__featurettes .wvu-featurettes__photo {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 23.23176%;
   }
-  .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurettes--1 .wvu-featurettes__photo:last-child, .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurettes--2 .wvu-featurettes__photo:last-child, .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurettes--3 .wvu-featurettes__photo:last-child, .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurette--5 .wvu-featurettes__photo:last-child, .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurettes--1 .wvu-featurettes__photo:last-child, .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurettes--2 .wvu-featurettes__photo:last-child, .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurettes--3 .wvu-featurettes__photo:last-child, .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurette--5 .wvu-featurettes__photo:last-child, .so-magic-anytych__panel .wvu-featurettes--profiles .wvu-featurettes__featurettes--1 .wvu-featurettes__photo:last-child, .so-magic-anytych__panel .wvu-featurettes--profiles .wvu-featurettes__featurettes--2 .wvu-featurettes__photo:last-child, .so-magic-anytych__panel .wvu-featurettes--profiles .wvu-featurettes__featurettes--3 .wvu-featurettes__photo:last-child, .so-magic-anytych__panel .wvu-featurettes--profiles .wvu-featurettes__featurette--5 .wvu-featurettes__photo:last-child, .main .wvu-featurettes--profiles .wvu-featurettes__featurettes--1 .wvu-featurettes__photo:last-child, .main .wvu-featurettes--profiles .wvu-featurettes__featurettes--2 .wvu-featurettes__photo:last-child, .main .wvu-featurettes--profiles .wvu-featurettes__featurettes--3 .wvu-featurettes__photo:last-child, .main .wvu-featurettes--profiles .wvu-featurettes__featurette--5 .wvu-featurettes__photo:last-child {
+  .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__photo:last-child, .wvu-sidebar .wvu-featurettes--quote .wvu-featurettes__featurettes .wvu-featurettes__photo:last-child, .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__photo:last-child, .wvu-featurettes__featurette .wvu-featurettes--quote .wvu-featurettes__featurettes .wvu-featurettes__photo:last-child, .wvu-polyptych__panel .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__photo:last-child, .wvu-polyptych__panel .wvu-featurettes--quote .wvu-featurettes__featurettes .wvu-featurettes__photo:last-child {
     margin-right: 0;
   }
 }
 
 @media (min-width: 35.625em) {
-  .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurettes--1 .wvu-featurettes__info, .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurettes--2 .wvu-featurettes__info, .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurettes--3 .wvu-featurettes__info, .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurette--5 .wvu-featurettes__info, .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurettes--1 .wvu-featurettes__info, .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurettes--2 .wvu-featurettes__info, .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurettes--3 .wvu-featurettes__info, .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurette--5 .wvu-featurettes__info, .so-magic-anytych__panel .wvu-featurettes--profiles .wvu-featurettes__featurettes--1 .wvu-featurettes__info, .so-magic-anytych__panel .wvu-featurettes--profiles .wvu-featurettes__featurettes--2 .wvu-featurettes__info, .so-magic-anytych__panel .wvu-featurettes--profiles .wvu-featurettes__featurettes--3 .wvu-featurettes__info, .so-magic-anytych__panel .wvu-featurettes--profiles .wvu-featurettes__featurette--5 .wvu-featurettes__info, .main .wvu-featurettes--profiles .wvu-featurettes__featurettes--1 .wvu-featurettes__info, .main .wvu-featurettes--profiles .wvu-featurettes__featurettes--2 .wvu-featurettes__info, .main .wvu-featurettes--profiles .wvu-featurettes__featurettes--3 .wvu-featurettes__info, .main .wvu-featurettes--profiles .wvu-featurettes__featurette--5 .wvu-featurettes__info {
+  .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__info, .wvu-sidebar .wvu-featurettes--quote .wvu-featurettes__featurettes .wvu-featurettes__info, .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__info, .wvu-featurettes__featurette .wvu-featurettes--quote .wvu-featurettes__featurettes .wvu-featurettes__info, .wvu-polyptych__panel .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__info, .wvu-polyptych__panel .wvu-featurettes--quote .wvu-featurettes__featurettes .wvu-featurettes__info {
     font-size: .8em;
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 100%;
   }
-  .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurettes--1 .wvu-featurettes__info:last-child, .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurettes--2 .wvu-featurettes__info:last-child, .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurettes--3 .wvu-featurettes__info:last-child, .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurette--5 .wvu-featurettes__info:last-child, .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurettes--1 .wvu-featurettes__info:last-child, .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurettes--2 .wvu-featurettes__info:last-child, .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurettes--3 .wvu-featurettes__info:last-child, .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurette--5 .wvu-featurettes__info:last-child, .so-magic-anytych__panel .wvu-featurettes--profiles .wvu-featurettes__featurettes--1 .wvu-featurettes__info:last-child, .so-magic-anytych__panel .wvu-featurettes--profiles .wvu-featurettes__featurettes--2 .wvu-featurettes__info:last-child, .so-magic-anytych__panel .wvu-featurettes--profiles .wvu-featurettes__featurettes--3 .wvu-featurettes__info:last-child, .so-magic-anytych__panel .wvu-featurettes--profiles .wvu-featurettes__featurette--5 .wvu-featurettes__info:last-child, .main .wvu-featurettes--profiles .wvu-featurettes__featurettes--1 .wvu-featurettes__info:last-child, .main .wvu-featurettes--profiles .wvu-featurettes__featurettes--2 .wvu-featurettes__info:last-child, .main .wvu-featurettes--profiles .wvu-featurettes__featurettes--3 .wvu-featurettes__info:last-child, .main .wvu-featurettes--profiles .wvu-featurettes__featurette--5 .wvu-featurettes__info:last-child {
+  .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__info:last-child, .wvu-sidebar .wvu-featurettes--quote .wvu-featurettes__featurettes .wvu-featurettes__info:last-child, .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__info:last-child, .wvu-featurettes__featurette .wvu-featurettes--quote .wvu-featurettes__featurettes .wvu-featurettes__info:last-child, .wvu-polyptych__panel .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__info:last-child, .wvu-polyptych__panel .wvu-featurettes--quote .wvu-featurettes__featurettes .wvu-featurettes__info:last-child {
     margin-right: 0;
   }
 }
 
 @media (min-width: 35.625em) {
-  .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurettes--1 .wvu-featurettes__info--hasphoto, .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurettes--2 .wvu-featurettes__info--hasphoto, .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurettes--3 .wvu-featurettes__info--hasphoto, .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurette--5 .wvu-featurettes__info--hasphoto, .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurettes--1 .wvu-featurettes__info--hasphoto, .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurettes--2 .wvu-featurettes__info--hasphoto, .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurettes--3 .wvu-featurettes__info--hasphoto, .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurette--5 .wvu-featurettes__info--hasphoto, .so-magic-anytych__panel .wvu-featurettes--profiles .wvu-featurettes__featurettes--1 .wvu-featurettes__info--hasphoto, .so-magic-anytych__panel .wvu-featurettes--profiles .wvu-featurettes__featurettes--2 .wvu-featurettes__info--hasphoto, .so-magic-anytych__panel .wvu-featurettes--profiles .wvu-featurettes__featurettes--3 .wvu-featurettes__info--hasphoto, .so-magic-anytych__panel .wvu-featurettes--profiles .wvu-featurettes__featurette--5 .wvu-featurettes__info--hasphoto, .main .wvu-featurettes--profiles .wvu-featurettes__featurettes--1 .wvu-featurettes__info--hasphoto, .main .wvu-featurettes--profiles .wvu-featurettes__featurettes--2 .wvu-featurettes__info--hasphoto, .main .wvu-featurettes--profiles .wvu-featurettes__featurettes--3 .wvu-featurettes__info--hasphoto, .main .wvu-featurettes--profiles .wvu-featurettes__featurette--5 .wvu-featurettes__info--hasphoto {
+  .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__info--hasphoto, .wvu-sidebar .wvu-featurettes--quote .wvu-featurettes__featurettes .wvu-featurettes__info--hasphoto, .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__info--hasphoto, .wvu-featurettes__featurette .wvu-featurettes--quote .wvu-featurettes__featurettes .wvu-featurettes__info--hasphoto, .wvu-polyptych__panel .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__info--hasphoto, .wvu-polyptych__panel .wvu-featurettes--quote .wvu-featurettes__featurettes .wvu-featurettes__info--hasphoto {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 74.41059%;
   }
-  .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurettes--1 .wvu-featurettes__info--hasphoto:last-child, .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurettes--2 .wvu-featurettes__info--hasphoto:last-child, .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurettes--3 .wvu-featurettes__info--hasphoto:last-child, .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurette--5 .wvu-featurettes__info--hasphoto:last-child, .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurettes--1 .wvu-featurettes__info--hasphoto:last-child, .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurettes--2 .wvu-featurettes__info--hasphoto:last-child, .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurettes--3 .wvu-featurettes__info--hasphoto:last-child, .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurette--5 .wvu-featurettes__info--hasphoto:last-child, .so-magic-anytych__panel .wvu-featurettes--profiles .wvu-featurettes__featurettes--1 .wvu-featurettes__info--hasphoto:last-child, .so-magic-anytych__panel .wvu-featurettes--profiles .wvu-featurettes__featurettes--2 .wvu-featurettes__info--hasphoto:last-child, .so-magic-anytych__panel .wvu-featurettes--profiles .wvu-featurettes__featurettes--3 .wvu-featurettes__info--hasphoto:last-child, .so-magic-anytych__panel .wvu-featurettes--profiles .wvu-featurettes__featurette--5 .wvu-featurettes__info--hasphoto:last-child, .main .wvu-featurettes--profiles .wvu-featurettes__featurettes--1 .wvu-featurettes__info--hasphoto:last-child, .main .wvu-featurettes--profiles .wvu-featurettes__featurettes--2 .wvu-featurettes__info--hasphoto:last-child, .main .wvu-featurettes--profiles .wvu-featurettes__featurettes--3 .wvu-featurettes__info--hasphoto:last-child, .main .wvu-featurettes--profiles .wvu-featurettes__featurette--5 .wvu-featurettes__info--hasphoto:last-child {
+  .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__info--hasphoto:last-child, .wvu-sidebar .wvu-featurettes--quote .wvu-featurettes__featurettes .wvu-featurettes__info--hasphoto:last-child, .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__info--hasphoto:last-child, .wvu-featurettes__featurette .wvu-featurettes--quote .wvu-featurettes__featurettes .wvu-featurettes__info--hasphoto:last-child, .wvu-polyptych__panel .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__info--hasphoto:last-child, .wvu-polyptych__panel .wvu-featurettes--quote .wvu-featurettes__featurettes .wvu-featurettes__info--hasphoto:last-child {
     margin-right: 0;
   }
 }
@@ -7117,12 +7316,185 @@ img.mfp-img {
   }
 }
 
+.wvu-media-object {
+  background-position: 50% 50%;
+  background-size: cover;
+  color: #2C2A29;
+}
+
+.wvu-media-object h2 {
+  font-size: 8.2em;
+  margin: 0 0 0.5em;
+  text-align: center;
+}
+
+.wvu-media-object h3 {
+  margin-top: 1em;
+}
+
+@media (min-width: 48em) {
+  .wvu-media-object h3 {
+    margin-top: 0;
+  }
+}
+
+.wvu-media-object .wvu-media-object__photo {
+  color: #002855;
+  font-size: 9em;
+  margin-bottom: 20px;
+  line-height: 0.80487em;
+  font-family: "HelveticaNeueW01-97Blac", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.fonts-loaded .wvu-media-object .wvu-media-object__photo {
+  font-family: "HelveticaNeueW01-97Blac", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
+}
+
+.wvu-media-object .wvu-media-object__copy--wide {
+  text-align: center;
+}
+
+.wvu-media-object .wvu-media-object__copy--wide p {
+  margin: 1em auto;
+}
+
+.wvu-media-object__container {
+  padding: 4em 0 4.3em 0;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+@media (min-width: 75em) {
+  .wvu-media-object__container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.wvu-media-object__header {
+  font-size: 2.5em;
+  font-family: "HelveticaNeueW01-45Ligh", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
+  font-weight: normal;
+  line-height: 1.08333em;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wvu-media-object__header h2 {
+  margin: 0 0 0.5em;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 0.80487em;
+  font-family: "HelveticaNeueW01-97Blac", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 2em;
+}
+
+.fonts-loaded .wvu-media-object__header h2 {
+  font-family: "HelveticaNeueW01-97Blac", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
+}
+
+.wvu-media-object__header h3 {
+  font-family: "HelveticaNeueW01-45Ligh", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
+  font-weight: normal;
+  line-height: 1.08333em;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wvu-media-object__panel {
+  margin-bottom: 2em;
+}
+
+@media (min-width: 48em) {
+  .wvu-media-object__panel {
+    margin-bottom: 0;
+  }
+}
+
+.wvu-media-object__panels {
+  display: table;
+  width: 100%;
+}
+
+.wvu-media-object__postscript {
+  clear: both;
+  display: block;
+  margin: 2em auto 0 auto;
+  text-align: center;
+}
+
+.wvu-media-object--2 .wvu-media-object__copy--wide {
+  text-align: left;
+}
+
+.wvu-media-object--2 .wvu-media-object__copy--wide p {
+  margin: 1em 0;
+}
+
+.u-wvu-blue.background .wvu-media-object .wvu-media-object__photo {
+  color: #EAAA00;
+}
+
+@media (min-width: 48em) {
+  .wvu-media-object .wvu-media-object__photo {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+  }
+  .wvu-media-object .wvu-media-object__photo:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 48em) {
+  .wvu-media-object .wvu-media-object__copy {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+  }
+  .wvu-media-object .wvu-media-object__copy:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 48em) {
+  .wvu-media-object .wvu-media-object__copy--wide {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  .wvu-media-object .wvu-media-object__copy--wide:last-child {
+    margin-right: 0;
+  }
+}
+
+.wvu-media-object__container {
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wvu-media-object__container::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
 .wvu-pattern-instructions h2,
 .wvu-pattern-instructions h3,
 .wvu-pattern-instructions h4,
 .wvu-pattern-instructions h5,
 .wvu-pattern-instructions h6 {
+  border-top: 1px solid #eee;
   margin-top: 3em;
+  padding-top: .5em;
 }
 
 .wvu-pattern-instructions pre {
