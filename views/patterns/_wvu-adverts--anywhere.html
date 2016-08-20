@@ -7,7 +7,7 @@
 
     <r:root>
 
-      <r:descendants order="asc" labels="advert, {$page_slug}" labels_match="any">
+      <r:descendants labels="advert,{$page_slug}" labels_match="all" by="title" order="asc">
         <div class="wvu-adverts__adverts so-averts__adverts--<r:count />">
           <r:each>
             <div class="wvu-adverts__advertisement wvu-adverts__advertisement--<r:page:slug />">

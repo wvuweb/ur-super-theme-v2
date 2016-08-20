@@ -16,7 +16,7 @@
 
     <r:root>
 
-      <r:descendants order="asc" labels="testimonial, {$page_slug}" labels_match="any">
+      <r:descendants labels="testimonial,{$page_slug}" labels_match="all" by="title" order="asc">
         <div class="wvu-featurettes__featurettes wvu-featurettes__featurettes--<r:count />">
           <r:each>
             <div class="wvu-featurettes__featurette">
