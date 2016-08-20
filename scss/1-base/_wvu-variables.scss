@@ -152,14 +152,6 @@ $grid-zoom-3: cover !default;
 $wvu-pattern-grid-zoom: $grid-zoom-2 !default;
 $is-shout-bottom-gold: true !default;
 
-/*
-  Options for WVU Hero Title typeface:
-  $wvu-shout (Helvetica Neue Black Condensed)
-  $subhead (Helvetica Bold)
-  $wvu-traditional-audience (Iowan Old Style)
-  $narrow-audience (Iowan Old Style Italic)
-*/
-
 // Pick one -- Can only have one or the other (diagonal or grid)
 
 $has-diagonal-line: false !default;
@@ -167,13 +159,6 @@ $has-wvu-pattern-grid: false !default;
 
 $has-small-photo: false !default;
 $wvu-shout-length: 'short' !default;
-
-/*
-  Options for WVU Hero Title typeface:
-  short
-  medium
-  long
-*/
 
 // Layout
 $wvu-container-padding: 4em 0 4.3em 0 !default;
@@ -196,7 +181,6 @@ $wvu-header-color: $black !default;
 
 $gutter: golden-ratio(5em, 1) !default; // Gutter between each two columns
 $max-width: em(1200) !default; // Max-width of the outer container
-
 
 // AJ's Grid
 //==================================================

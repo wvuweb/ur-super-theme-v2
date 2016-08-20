@@ -6,19 +6,6 @@ html {
   box-sizing: inherit;
 }
 
-/*
-  Options for WVU Hero Title typeface:
-  $wvu-shout (Helvetica Neue Black Condensed)
-  $subhead (Helvetica Bold)
-  $wvu-traditional-audience (Iowan Old Style)
-  $narrow-audience (Iowan Old Style Italic)
-*/
-/*
-  Options for WVU Hero Title typeface:
-  short
-  medium
-  long
-*/
 .wvu-landing-page-header {
   padding: 4em 1em;
   background-image: url("https://patterns.wvu.edu/images/dance-header.jpg");
