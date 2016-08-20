@@ -1,4 +1,4 @@
-<r:set_var name="labels">
+<r:set_var name="adverts_labels">
   <r:page:slug />,advert
 </r:set_var>
 
@@ -18,7 +18,7 @@
 
     <r:root>
 
-      <r:descendants labels="{$labels}" labels_match="all" by="title" order="asc">
+      <r:descendants labels="{$adverts_labels}" labels_match="all" by="title" order="asc">
         <div class="wvu-adverts__adverts wvu-adverts__adverts--<r:count />">
           <r:each>
             <div class="wvu-adverts__advertisement wvu-adverts__advertisement--<r:page:slug />">

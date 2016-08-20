@@ -1,5 +1,5 @@
-<r:set_var name="page_slug">
-  <r:page:slug />
+<r:set_var name="testimonials_labels">
+  <r:page:slug />,testimonial
 </r:set_var>
 
 <div class="wvu-featurettes wvu-featurettes--testimonials <r:page:content name="so-background-color-class--profiles" /> background">
@@ -16,7 +16,7 @@
 
     <r:root>
 
-      <r:descendants labels="testimonial,{$page_slug}" labels_match="all" by="title" order="asc">
+      <r:descendants labels="{$testimonials_labels}" labels_match="all" by="title" order="asc">
         <div class="wvu-featurettes__featurettes wvu-featurettes__featurettes--<r:count />">
           <r:each>
             <div class="wvu-featurettes__featurette">
