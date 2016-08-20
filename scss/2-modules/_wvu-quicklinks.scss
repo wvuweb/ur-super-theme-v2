@@ -63,5 +63,5 @@
 // ================================
 
 .wvu-quicklinks__container {
-  @include u-wvu-container-padding();
+  @include outer-container();
 }

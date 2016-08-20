@@ -8,9 +8,13 @@
   }
 }
 
+.wvu-lede-text__container {
+  @include u-wvu-container-padding();
+}
+
 // Layout
 // =================================
 
 .wvu-lede-text__container {
-  @include u-wvu-container-padding();
+  @include outer-container();
 }

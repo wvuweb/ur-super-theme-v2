@@ -170,14 +170,13 @@ html {
 }
 
 .wvu-quicklinks__container {
-  padding: 4em 0 4.3em 0;
-  padding-left: 1em;
-  padding-right: 1em;
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-@media (min-width: 75em) {
-  .wvu-quicklinks__container {
-    padding-left: 0;
-    padding-right: 0;
-  }
+.wvu-quicklinks__container::after {
+  clear: both;
+  content: "";
+  display: table;
 }
