@@ -10,15 +10,9 @@
       </div>
     </r:page:if_has_content_for>
 
-    <ul class="wvu-calendar wvu-calendar--flex">
+    <ul id="cal" class="wvu-calendar wvu-calendar--flex">
 
-      <r:if expr="{{ NOT(BLANK(calendar_feed_page)) }}">
-        <script language="javascript" src="<r:page:data name="calendar_feed_page" />"></script>
-      </r:if>
-
-      <r:if expr="{{ BLANK(calendar_feed_page) }}">
-        <script language="javascript" src="<r:site:data name="calendar_feed" />"></script>
-      </r:if>
+      <div id="<r:if expr="{{ NOT(BLANK(calendar_feed_page)) }}"><r:page:data name="calendar_feed_page" /></r:if><r:if expr="{{ BLANK(calendar_feed_page) }}"><r:site:data name="calendar_feed" /></r:if>"></div>
 
     </ul>
 
@@ -37,3 +31,13 @@
     <p><strong>Background Color:</strong> <r:editable_region name="so-background-color-class--calendar" /></p>
   </div>
 </r:edit_mode_only>
+
+<r:content_for name="page_js">
+  <script type="text/javascript" src="https://calendar.wvu.edu/Scripts/core.js"></script>
+  <script type="text/javascript">
+	    ActiveData.Events(
+	        "https://calendar.wvu.edu/handlers/query.ashx?id=5d1eb30a58034b129320e36e1ec5f97c&tenant=&site=universityrelations",
+	        function (response) {$("#<r:if expr="{{ NOT(BLANK(calendar_feed_page)) }}"><r:page:data name="calendar_feed_page" /></r:if><r:if expr="{{ BLANK(calendar_feed_page) }}"><r:site:data name="calendar_feed" /></r:if>").append(response.data);}
+	    );
+	</script>
+</r:content_for>
