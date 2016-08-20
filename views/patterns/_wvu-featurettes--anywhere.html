@@ -2,17 +2,8 @@
   <r:page:slug />
 </r:set_var>
 
-<div class="wvu-featurettes wvu-featurettes--1 <r:page:content name="wvu-background-color-class--featurettes" /> background">
+<div class="wvu-featurettes wvu-featurettes--1 <r:page:content name="wvu-background-color-class--featurettes-anywhere" /> background">
   <div class="wvu-featurettes__container">
-
-    <r:page:if_has_content_for region="wvu-featurettes__header" always_show_in_edit_mode="true">
-      <div class="wvu-featurettes__header">
-        <r:editable_region name="wvu-featurettes__header">
-          <h2>Featurettes Headline</h2>
-          <p>Subhead goes here.</p>
-        </r:editable_region>
-      </div>
-    </r:page:if_has_content_for>
 
     <r:root>
 
@@ -20,16 +11,16 @@
         <div class="wvu-featurettes__featurettes wvu-featurettes__featurettes--<r:count />">
           <r:each>
             <div class="wvu-featurettes__featurette">
-              <r:set_var name="soFeaturettesInfoWide" default="nophoto" />
+              <r:set_var name="soFeaturettesInfoWideAnywhere" default="nophoto" />
               <r:if expr="{{ NOT(BLANK(thumbnail_url)) }}">
                 <div class="wvu-featurettes__photo">
                   <a href="<r:if expr="{{ NOT(BLANK(alternate_url)) }}"><r:page:data name="alternate_url" /></r:if><r:if expr="{{ BLANK(alternate_url) }}"><r:page:url /></r:if>"><img src="<r:page:data name="thumbnail_url" />/381x255.jpg" srcset="<r:page:data name="thumbnail_url" />/960x640.jpg, <r:page:data name="thumbnail_url" />/586x286.jpg, <r:page:data name="thumbnail_url" />/381x255.jpg, <r:page:data name="thumbnail_url" />/286x191.jpg, <r:page:data name="thumbnail_url" />/279x186.jpg, <r:page:data name="thumbnail_url" />/217x145.jpg" sizes="960px, (min-width: 768px) 586px" alt="<r:page:data name="thumbnail_alt" />"></a>
                 </div>
-                <r:set_var name="soFeaturettesInfoWide">
+                <r:set_var name="soFeaturettesInfoWideAnywhere">
                   hasphoto
                 </r:set_var>
               </r:if>
-              <div class="wvu-featurettes__info wvu-featurettes__info--<r:var name="soFeaturettesInfoWide" />">
+              <div class="wvu-featurettes__info wvu-featurettes__info--<r:var name="soFeaturettesInfoWideAnywhere" />">
                 <h3><a href="<r:if expr="{{ NOT(BLANK(alternate_url)) }}"><r:page:data name="alternate_url" /></r:if><r:if expr="{{ BLANK(alternate_url) }}"><r:page:url /></r:if>"><r:page:first_non_blank_attr names="alternate_name,name" /></a></h3>
                 <p>
                   <r:page:meta_description />
@@ -47,10 +38,3 @@
 
   </div>
 </div>
-
-<r:edit_mode_only>
-  <div class="wvu-instructions">
-    <strong>Instructions for Featurettes:</strong> This loops through the children of page and pulls content to create sub-features. Enter the parent page&rsquo;s ID in the <strong>featurettes_id</strong> field in the site properties. Each page you wish featured must be labelled "feature".
-    <p><strong>Background Color:</strong> <r:editable_region name="wvu-background-color-class--featurettes" /></p>
-  </div>
-</r:edit_mode_only>
