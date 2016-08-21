@@ -17,7 +17,6 @@
     <!-- Check to see if page has a featurettes_id. If so, find page with that ID and its display children that are labeled 'feature'. -->
 
     <r:if expr="{{ NOT(BLANK(slot_01)) }}">
-      poop
       <r:get_page id="{$featurettes_id}">
         <r:children labels="feature" labels_match="any" by="title" order="asc">
           <div class="wvu-featurettes__featurettes wvu-featurettes__featurettes--<r:count />">
