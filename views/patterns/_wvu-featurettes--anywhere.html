@@ -9,7 +9,7 @@
 
     <r:if expr="{{ NOT(BLANK(featurettes_id)) }}">
       <r:get_page id="{$featurettes_id}">
-        <r:children labels="feature" labels_match="any" by="title" order="asc">
+        <r:children labels="feature" labels_match="any" by="name" order="asc">
           <div class="wvu-featurettes__featurettes wvu-featurettes__featurettes--<r:count />">
             <r:each>
               <r:partial name="patterns/wvu-featurettes__featurette" />
@@ -23,7 +23,7 @@
 
     <r:if expr="{{ BLANK(featurettes_id) }}">
       <r:root>
-        <r:descendants labels="{$featurettes_labels}" labels_match="all" by="title" order="asc">
+        <r:descendants labels="{$featurettes_labels}" labels_match="all" by="name" order="asc">
           <div class="wvu-featurettes__featurettes wvu-featurettes__featurettes--<r:count />">
             <r:each>
               <r:partial name="patterns/wvu-featurettes__featurette" />
