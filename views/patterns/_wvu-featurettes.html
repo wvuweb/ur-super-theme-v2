@@ -13,10 +13,12 @@
         </r:editable_region>
       </div>
     </r:page:if_has_content_for>
+    
+    <!-- Check to see if page has a featurettes_id. If so, display children that are labeled 'feature'. -->
 
     <r:if expr="{{ NOT(BLANK(featurettes_id)) }}">
       <r:get_page id="{$featurettes_id}">
-        <r:children>
+        <r:children labels="feature" labels_match="any" by="title" order="asc">
           <div class="wvu-featurettes__featurettes wvu-featurettes__featurettes--<r:count />">
             <r:each>
               <r:partial name="patterns/wvu-featurettes__featurette" />
@@ -25,6 +27,8 @@
         </r:children>
       </r:get_page>
     </r:if>
+    
+    <!-- If no featurettes_id, find any pages labeled with 'featurette' and the page slug -->
 
     <r:if expr="{{ BLANK(featurettes_id) }}">
       <r:root>
