@@ -210,6 +210,19 @@ ul.show-menu {
   }
 }
 
+// If no nav depth indicated, do not display dropdown indicators
+
+.wvu-nav__nav--depth- {
+  .wvu-nav__items li a {
+    &:after {
+      display: none;
+    }
+  }
+  .wvu-nav__items li.more > a {
+    padding-right: .8em;
+  }
+}
+
 // If nav has only one level, do not display dropdown indicators
 
 .wvu-nav__nav--depth-1 {
