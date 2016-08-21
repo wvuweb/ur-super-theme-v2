@@ -7520,6 +7520,30 @@ img.mfp-img {
   }
 }
 
+@media (min-width: 48em) {
+  .main--wide {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  .main--wide:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 48em) {
+  .main--wide.main--edit-mode {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 74.41059%;
+  }
+  .main--wide.main--edit-mode:last-child {
+    margin-right: 0;
+  }
+}
+
 .wvu-media-object {
   background-position: 50% 50%;
   background-size: cover;
@@ -9794,238 +9818,6 @@ h2 + .wvu-super-nav__panels {
 .wvu-masthead--white {
   background-color: white !important;
   color: #002855 !important;
-}
-
-.so-background-colors__swatches {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-.so-background-colors__swatches li {
-  float: left;
-}
-
-.so-background-colors__swatches li:before {
-  display: inline-block;
-  height: 24px;
-  margin-right: 10px;
-  width: 24px;
-}
-
-.so-background-colors__swatch--wvu-blue:before {
-  background-color: #002855;
-}
-
-.so-background-colors__swatch--wvu-gold:before {
-  background-color: #EAAA00;
-}
-
-@media (min-width: 48em) {
-  .main--wide.main--edit-mode {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 74.41059%;
-  }
-  .main--wide.main--edit-mode:last-child {
-    margin-right: 0;
-  }
-}
-
-.so-backpage-header {
-  background-color: #333F48;
-  background-position: 50% 50%;
-  background-size: cover;
-  color: white;
-  display: table;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-}
-
-.so-backpage-header a {
-  color: white;
-}
-
-.so-backpage-header h1, .so-backpage-header h2, .so-backpage-header h3, .so-backpage-header h4, .so-backpage-header h5, .so-backpage-header h6 {
-  color: white;
-}
-
-.so-backpage-header h1 {
-  clear: both;
-  margin-top: 10px;
-  position: relative;
-}
-
-.so-backpage-header h1:before {
-  content: '';
-  height: 500px;
-  position: absolute;
-  right: 0;
-  bottom: -433px;
-  left: -280px;
-  background-image: url(../images/diagonal-gold.svg);
-  background-repeat: no-repeat;
-  background-size: 312px;
-  opacity: 1;
-  z-index: 2;
-}
-
-.so-backpage-header h1 span {
-  position: relative;
-  z-index: 3;
-}
-
-.so-backpage-header p {
-  font-size: 1.5em;
-  margin-bottom: 2em;
-  position: relative;
-  z-index: 3;
-}
-
-.so-backpage-header h1, .so-backpage-header p, .so-backpage-header a {
-  text-shadow: 1px 1px 1px #000000;
-}
-
-.so-backpage-header__badge {
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.7+0,0.7+100 */
-  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3000000', endColorstr='#b3000000',GradientType=0 );
-  /* IE6-9 */
-  border-radius: 2px;
-  clear: both;
-  color: white;
-  display: inline-block;
-  padding: .5em .7em;
-  position: relative;
-  text-transform: uppercase;
-  z-index: 3;
-}
-
-.so-backpage-header__container {
-  max-width: 75em;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1em;
-  padding-right: 1em;
-  padding-top: 2.5em;
-}
-
-.so-backpage-header__container::after {
-  clear: both;
-  content: "";
-  display: table;
-}
-
-.so-backpage-header__container:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: radial-gradient(farthest-side at 90% 55%, transparent, #000 131%);
-  opacity: 0.85;
-  z-index: 1;
-}
-
-@media (min-width: 75em) {
-  .so-backpage-header__container {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-.so-backpage-header--big-photo .so-backpage-header__container:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: radial-gradient(farthest-side at 90% 55%, transparent, #000 131%);
-  opacity: 0.85;
-  z-index: 1;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  color: #2C2A29;
-}
-
-.so-close-quote {
-  position: relative;
-  left: -.23em;
-}
-
-.so-region-label {
-  color: red;
-  font-size: 12px;
-}
-
-.so-region-label:before {
-  content: '*';
-}
-
-@media (min-width: 48em) {
-  .main--wide {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 100%;
-  }
-  .main--wide:last-child {
-    margin-right: 0;
-  }
-}
-
-.u-wvu-lede {
-  font-family: "HelveticaNeueW01-45Ligh", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
-  font-weight: normal;
-  line-height: 1.08333em;
-  text-align: center;
-  -webkit-font-smoothing: antialiased;
-  text-align: center;
-}
-
-.u-wvu-shout {
-  line-height: 0.80487em;
-  font-family: "HelveticaNeueW01-97Blac", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
-  text-transform: uppercase;
-  font-weight: normal;
-  text-transform: uppercase;
-}
-
-.fonts-loaded .u-wvu-shout {
-  font-family: "HelveticaNeueW01-97Blac", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
-}
-
-@media (min-width: 48em) {
-  .so-diptych__panel--main {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 57.35098%;
-  }
-  .so-diptych__panel--main:last-child {
-    margin-right: 0;
-  }
-}
-
-@media (min-width: 48em) {
-  .so-diptych__panel--sidebar {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 40.29137%;
-  }
-  .so-diptych__panel--sidebar:last-child {
-    margin-right: 0;
-  }
 }
 
 .so-footer__container {

@@ -1,0 +1,53 @@
+<r:set_var name="featurettes_2_labels">
+  <r:page:slug />,featurette-2
+</r:set_var>
+
+<div class="wvu-featurettes wvu-featurettes--2 <r:page:content name="wvu-background-color-class--featurettes2" /> background">
+  <div class="wvu-featurettes__container">
+
+    <r:page:if_has_content_for region="wvu-featurettes__header2" always_show_in_edit_mode="true">
+      <div class="wvu-featurettes__header">
+        <r:editable_region name="wvu-featurettes__header2">
+          <h2>Featurettes Headline</h2>
+          <p>Subhead goes here.</p>
+        </r:editable_region>
+      </div>
+    </r:page:if_has_content_for>
+    
+    <!-- Check to see if page has a featurettes_id. If so, find page with that ID and its display children that are labeled 'feature'. -->
+
+    <r:if expr="{{ NOT(BLANK(featurettes_2_id)) }}">
+      <r:get_page id="{$featurettes_2_id}">
+        <r:children labels="feature" labels_match="any" by="title" order="asc">
+          <div class="wvu-featurettes__featurettes wvu-featurettes__featurettes--<r:count />">
+            <r:each>
+              <r:partial name="patterns/wvu-featurettes__featurette" />
+            </r:each>
+          </div>
+        </r:children>
+      </r:get_page>
+    </r:if>
+    
+    <!-- If no featurettes_id, find any pages labeled with 'featurette' and the page slug -->
+
+    <r:if expr="{{ BLANK(featurettes__2_id) }}">
+      <r:root>
+        <r:descendants labels="{$featurettes_2_labels}" labels_match="all" by="title" order="asc">
+          <div class="wvu-featurettes__featurettes wvu-featurettes__featurettes--<r:count />">
+            <r:each>
+              <r:partial name="patterns/wvu-featurettes__featurette" />
+            </r:each>
+          </div>
+        </r:descendants>
+      </r:root>
+    </r:if>
+
+  </div>
+</div>
+
+<r:edit_mode_only>
+  <div class="wvu-instructions">
+    <strong>Instructions for Featurettes:</strong> This finds pages labeled with <code>featurette</code> and this page&rsquo;s slug, and pulls in content to create sub-features. Enter the parent page&rsquo;s ID in the <strong>featurettes_id</strong> field in the site properties. Each page you wish featured must be labelled "feature".
+    <p><strong>Background Color:</strong> <r:editable_region name="wvu-background-color-class--featurettes2" /></p>
+  </div>
+</r:edit_mode_only>
