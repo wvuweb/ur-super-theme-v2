@@ -210,6 +210,17 @@ ul.show-menu {
   }
 }
 
+// If nav has only one level, do not display dropdown indicators
+
+.wvu-nav__nav--depth-1 {
+  .wvu-nav__items li a {
+    display: none;
+  }
+  .wvu-nav__items li.more > a {
+    padding-right: .8em;
+  }
+}
+
 .wvu-nav__social-media-icons {
   width: 100%;
   float: left;

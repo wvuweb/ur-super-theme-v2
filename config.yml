@@ -34,6 +34,7 @@ custom_site_attributes:
   - masthead_color
   - masthead_title
   - nav
+  - nav_depth
   - org_name
   - org_url
   - request_info_url
