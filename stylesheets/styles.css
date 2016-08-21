@@ -709,7 +709,7 @@ ul.show-menu ul {
   }
 }
 
-.wvu-nav__nav--depth-1 .wvu-nav__items li a {
+.wvu-nav__nav--depth-1 .wvu-nav__items li a:after {
   display: none;
 }
 
