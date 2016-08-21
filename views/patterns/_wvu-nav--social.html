@@ -4,7 +4,7 @@
     <div class="wvu-nav__nav">
       <button class="wvu-nav__search-toggle inactive-search" onclick="document.getElementsByClassName('wvu-masthead__search-slider')[0].classList.toggle('closed');">Toggle Search</button>
       <r:if value1="{$nav}" value2="nav_dropdowns" op="=">
-        <r:site_menu max_depth="1" ul_class="wvu-nav__items nav-collapse" has_children_class="more" />
+        <r:site_menu max_depth="0" ul_class="wvu-nav__items nav-collapse" has_children_class="more" />
       </r:if>
       <r:if value1="{$nav}" value2="nav_dropdowns" op="!=">
         <r:site_menu ul_class="wvu-nav__items nav-collapse" />
