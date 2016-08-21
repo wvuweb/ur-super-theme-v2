@@ -1,0 +1,79 @@
+<r:comment>
+<!-- NOTE: This polyptych can be reused over and over. -->
+<!-- You can use this partial multiple times on the same page by setting different... -->
+<!-- ...`regionName__base` variables above each partial.  -->
+<!-- You can also change the `triptychItems` to be more than 4 if you like. -->
+<!-- Always increase by 4. -->
+<!-- Set the scope by defining the `$scope` variable to either `page` or `site`. -->
+</r:comment>
+
+<r:set_var name="triptychPhoto__base3" value="{$triptychPhoto__base3}" default="wvu-triptych__photo3" />
+<r:set_var name="triptychCopy__base3" value="{$triptychCopy__base3}" default="wvu-triptych__copy3" />
+<r:set_var name="triptychBackgroundColor__base3" value="{$triptychBackgroundColor__base3}" default="wvu-background-color-class--triptych3" />
+<r:set_var name="triptychItems3" value="{$triptychItems3}" default="3" />
+<r:set_var name="triptych3" value="{$triptychScope3}" default="page" />
+
+<div class="wvu-polyptych <r:page:content name="so-background-color-class--triptych3" /> background wvu-polyptych--triptych">
+  <div class="wvu-polyptych__container">
+
+    <r:page:if_has_content_for region="wvu-triptych__header3" always_show_in_edit_mode="true">
+      <div class="wvu-polyptych__header">
+        <r:editable_region name="wvu-triptych__header3" scope="{$triptychScope3}">
+          <h2>Triptych Headline</h2>
+          <p>Subhead goes here.</p>
+        </r:editable_region>
+      </div>
+    </r:page:if_has_content_for>
+
+    <div class="wvu-polyptych__panels">
+
+      <r:loop:each times="{$triptychItems3}">
+
+        <r:set_var name="triptychCopy3"><r:var name="triptychCopy__base3" />--<r:item /></r:set_var>
+
+        <r:page:if_has_content_for region="{$triptychCopy3}" always_show_in_edit_mode="true">
+          <div class="wvu-polyptych__panel">
+
+            <r:set_var name="triptychPhoto3"><r:var name="triptychPhoto__base3" />--<r:item /></r:set_var>
+
+            <r:page:if_has_content_for region="{$triptychPhoto3}" always_show_in_edit_mode="true">
+              <div class="wvu-polyptych__photo">
+                <r:editable_region name="{$triptychPhoto3}" scope="{$triptychScope3}">
+                  <img src="http://placehold.it/960x640">
+                </r:editable_region>
+              </div>
+            </r:page:if_has_content_for>
+
+            <div class="wvu-polyptych__copy <r:page:unless_has_content_for region="{$triptychPhoto3}">wvu-polyptych__copy--wide</r:page:unless_has_content_for>">
+
+              <r:editable_region name="{$triptychCopy3}" scope="{$triptychScope3}">
+                <h3>Headline Goes Here</h3>
+                <p>Short description goes here. Do not put links here. Only one short paragraph.</p>
+              </r:editable_region>
+
+            </div>
+
+          </div> <!-- end wvu-triptych__panel -->
+        </r:page:if_has_content_for>
+
+      </r:loop:each>
+
+    </div> <!-- end wvu-triptych__panels -->
+
+    <r:page:if_has_content_for region="wvu-triptych__postscript3">
+      <div class="wvu-polyptych__postscript">
+        <r:editable_region name="wvu-triptych__postscript3" scope="{$triptychScope3}">
+          Put any additional info or links here.
+        </r:editable_region>
+      </div>
+    </r:page:if_has_content_for>
+
+  </div> <!-- end wvu-triptych__container -->
+</div> <!-- end wvu-triptych -->
+
+<r:edit_mode_only>
+  <div class="wvu-instructions">
+    <p><strong>Instructions for Multiple Panels:</strong> These panels display sub-features or allow you to have multiple columns of content. Try to keep these consistent e.g. if you have a header in one column, use a header in all of them. You can have 1-4 columns. To omit columns, simply leave the description field in each column you wish to omit blank, from right to left.</p>
+    <p><strong>Background Color:</strong> <r:editable_region name="wvu-background-color-class--triptych3" scope="{$triptychScope3}" /></p>
+  </div>
+</r:edit_mode_only>

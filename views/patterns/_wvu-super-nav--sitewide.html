@@ -1,14 +1,3 @@
-
-
-<r:comment>
-<!-- NOTE: This anytych can be reused over and over. -->
-<!-- You can use this partial multiple times on the same page by setting different... -->
-<!-- ...`regionName__base` variables above each partial.  -->
-<!-- You can also change the `triptychItems` to be more than 4 if you like. -->
-<!-- Always increase by 4. -->
-<!-- Set the scope by defining the `$scope` variable to either `page` or `site`. -->
-</r:comment>
-
 <r:set_var name="wvuSuperNavHeadline__base" value="{$wvuSuperNavHeadline__base}" default="wvu-super-nav__headline" />
 <r:set_var name="wvuSuperNavBody__base" value="{$wvuSuperNavBody__base}" default="wvu-super-nav__body" />
 <r:set_var name="wvuSuperNavItems" value="{$wvuSuperNavItems}" default="6" />
@@ -59,7 +48,7 @@
               </r:editable_region>
             </div>
 
-          </div> <!-- end so-magic-anytych__panel -->
+          </div> <!-- end wvu-super-nav__panel -->
         </r:page:if_has_content_for>
 
       </r:loop:each>
