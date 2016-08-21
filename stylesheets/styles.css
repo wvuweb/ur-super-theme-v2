@@ -721,16 +721,8 @@ ul.show-menu ul {
   display: none;
 }
 
-.wvu-nav__nav--depth-2 .wvu-nav__items li li.more > a {
-  padding-right: .8em;
-}
-
 .wvu-nav__nav--depth-3 .wvu-nav__items li li li a:after {
   display: none;
-}
-
-.wvu-nav__nav--depth-3 .wvu-nav__items li li li.more > a {
-  padding-right: .8em;
 }
 
 .wvu-nav__social-media-icons {

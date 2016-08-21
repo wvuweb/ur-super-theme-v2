@@ -231,9 +231,6 @@ ul.show-menu {
       display: none;
     }
   }
-  .wvu-nav__items li li.more > a {
-    padding-right: .8em;
-  }
 }
 
 // If nav has three levels, do not display flyout indicators for fourth level
@@ -243,9 +240,6 @@ ul.show-menu {
     &:after {
       display: none;
     }
-  }
-  .wvu-nav__items li li li.more > a {
-    padding-right: .8em;
   }
 }
 
