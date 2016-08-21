@@ -1,9 +1,8 @@
-.so-twitter-widget__container {
-  @include outer-container();
+.wvu-twitter-widget__container {
   @include u-wvu-container-padding();
 }
 
-.so-twitter-widget {
+.wvu-twitter-widget {
   background-color: shade($black, 5%);
   color: white;
   a, a:visited {
@@ -49,7 +48,7 @@
   }
 }
 
-.so-twitter-widget__postscript {
+.wvu-twitter-widget__postscript {
   @include so-postscript();
   font-size: 1.5em;
   margin-top: 2em;
@@ -58,7 +57,7 @@
   }
 }
 
-.so-twitter-widget__header {
+.wvu-twitter-widget__header {
   text-align: center;
   h2 {
     @include wvu-secondary-pattern-heading();
@@ -70,4 +69,11 @@
   p {
     margin: 0 auto;
   }
+}
+
+// Layout
+// ============================================
+
+.wvu-twitter-widget__container {
+  @include outer-container();
 }

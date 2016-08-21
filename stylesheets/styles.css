@@ -8948,6 +8948,137 @@ h2 + .wvu-super-nav__panels {
   }
 }
 
+.wvu-twitter-widget__container {
+  padding: 4em 0 4.3em 0;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+@media (min-width: 75em) {
+  .wvu-twitter-widget__container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.wvu-twitter-widget {
+  background-color: #2a2827;
+  color: white;
+}
+
+.wvu-twitter-widget a, .wvu-twitter-widget a:visited {
+  color: white;
+}
+
+.wvu-twitter-widget h2, .wvu-twitter-widget h3, .wvu-twitter-widget h4, .wvu-twitter-widget h5, .wvu-twitter-widget h6 {
+  color: white;
+}
+
+.wvu-twitter-widget img {
+  height: 48px;
+  width: 48px;
+}
+
+.wvu-twitter-widget ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.wvu-twitter-widget li {
+  border-bottom: 1px solid #565554;
+  overflow: hidden;
+  padding: 1em 0;
+  text-align: center;
+}
+
+@media (min-width: 48em) {
+  .wvu-twitter-widget li {
+    border-bottom: 0;
+    border-left: 4px solid #565554;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 18.11388%;
+    padding: 0;
+    padding-left: 1em;
+    text-align: left;
+  }
+  .wvu-twitter-widget li:last-child {
+    margin-right: 0;
+  }
+}
+
+.wvu-twitter-widget li img {
+  display: none;
+}
+
+.wvu-twitter-widget li p {
+  margin-top: 0;
+}
+
+.wvu-twitter-widget .user,
+.wvu-twitter-widget .interact {
+  display: none;
+}
+
+.wvu-twitter-widget__postscript {
+  clear: both;
+  display: block;
+  margin: 2em auto 0 auto;
+  text-align: center;
+  font-size: 1.5em;
+  margin-top: 2em;
+}
+
+.wvu-twitter-widget__postscript a {
+  text-decoration: none;
+}
+
+.wvu-twitter-widget__header {
+  text-align: center;
+}
+
+.wvu-twitter-widget__header h2 {
+  font-family: "HelveticaNeueW01-45Ligh", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
+  font-weight: normal;
+  line-height: 1.08333em;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  margin-bottom: .5em;
+  margin-top: 0;
+  text-align: center;
+}
+
+.wvu-twitter-widget__header h3 {
+  font-family: "HelveticaNeueW01-45Ligh", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
+  font-weight: normal;
+  line-height: 1.08333em;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  margin-bottom: .5em;
+  margin-top: 0;
+  text-align: center;
+  font-size: 2.4em;
+}
+
+.wvu-twitter-widget__header p {
+  margin: 0 auto;
+}
+
+.wvu-twitter-widget__container {
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wvu-twitter-widget__container::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
 .wvu-video {
   background-color: #2C2A29;
   color: white;
@@ -10397,125 +10528,6 @@ img.mfp-img {
   padding-top: 0;
 }
 
-.so-social-media {
-  background: #232221;
-  color: white;
-}
-
-.so-social-media__container {
-  max-width: 75em;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 4em 0 4.3em 0;
-  padding-left: 1em;
-  padding-right: 1em;
-}
-
-.so-social-media__container::after {
-  clear: both;
-  content: "";
-  display: table;
-}
-
-@media (min-width: 75em) {
-  .so-social-media__container {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-.so-social-media h2 {
-  color: white;
-  font-family: "HelveticaNeueW01-45Ligh", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
-  font-weight: normal;
-  line-height: 1.08333em;
-  text-align: center;
-  -webkit-font-smoothing: antialiased;
-}
-
-.so-social-media__header {
-  text-align: center;
-}
-
-.so-social-media__header h2 {
-  font-family: "HelveticaNeueW01-45Ligh", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
-  font-weight: normal;
-  line-height: 1.08333em;
-  text-align: center;
-  -webkit-font-smoothing: antialiased;
-  -webkit-font-smoothing: antialiased;
-  margin-bottom: .5em;
-  margin-top: 0;
-  text-align: center;
-}
-
-.so-social-media__header h3 {
-  font-family: "HelveticaNeueW01-45Ligh", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
-  font-weight: normal;
-  line-height: 1.08333em;
-  text-align: center;
-  -webkit-font-smoothing: antialiased;
-  -webkit-font-smoothing: antialiased;
-  margin-bottom: .5em;
-  margin-top: 0;
-  text-align: center;
-  font-size: 2.4em;
-}
-
-.so-social-media__header p {
-  margin: 0 auto;
-}
-
-.so-social-media__postscript {
-  clear: both;
-  display: block;
-  margin: 2em auto 0 auto;
-  text-align: center;
-}
-
-.so-social-media__icons {
-  margin: 2em auto 0 auto;
-  text-align: center;
-}
-
-h2 + .so-social-media__icons {
-  margin-top: 3em;
-}
-
-.so-social-media__icon {
-  display: inline-block;
-  font-size: .8em;
-  margin: 0 .5em;
-}
-
-@media (min-width: 60em) {
-  .so-social-media__icon {
-    font-size: 1em;
-  }
-}
-
-.so-social-media__icon a, .so-social-media__icon a:visited {
-  color: white;
-  text-decoration: none;
-}
-
-.so-social-media__icon img {
-  height: 32px;
-  width: 32px;
-}
-
-@media (min-width: 60em) {
-  .so-social-media__icon img {
-    font-size: 1em;
-    height: 64px;
-    width: 64px;
-  }
-}
-
-.so-social-media__icon p {
-  margin-top: .5em;
-}
-
 .so-testimonial {
   overflow: hidden;
   text-align: center;
@@ -10701,132 +10713,4 @@ h2 + .so-social-media__icons {
   font-family: "IowanOldStyleW01-Roman", Georgia, Times, serif;
   font-size: 2em;
   margin-bottom: 1em;
-}
-
-.so-twitter-widget__container {
-  max-width: 75em;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 4em 0 4.3em 0;
-  padding-left: 1em;
-  padding-right: 1em;
-}
-
-.so-twitter-widget__container::after {
-  clear: both;
-  content: "";
-  display: table;
-}
-
-@media (min-width: 75em) {
-  .so-twitter-widget__container {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-.so-twitter-widget {
-  background-color: #2a2827;
-  color: white;
-}
-
-.so-twitter-widget a, .so-twitter-widget a:visited {
-  color: white;
-}
-
-.so-twitter-widget h2, .so-twitter-widget h3, .so-twitter-widget h4, .so-twitter-widget h5, .so-twitter-widget h6 {
-  color: white;
-}
-
-.so-twitter-widget img {
-  height: 48px;
-  width: 48px;
-}
-
-.so-twitter-widget ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-.so-twitter-widget li {
-  border-bottom: 1px solid #565554;
-  overflow: hidden;
-  padding: 1em 0;
-  text-align: center;
-}
-
-@media (min-width: 48em) {
-  .so-twitter-widget li {
-    border-bottom: 0;
-    border-left: 4px solid #565554;
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 18.11388%;
-    padding: 0;
-    padding-left: 1em;
-    text-align: left;
-  }
-  .so-twitter-widget li:last-child {
-    margin-right: 0;
-  }
-}
-
-.so-twitter-widget li img {
-  display: none;
-}
-
-.so-twitter-widget li p {
-  margin-top: 0;
-}
-
-.so-twitter-widget .user,
-.so-twitter-widget .interact {
-  display: none;
-}
-
-.so-twitter-widget__postscript {
-  clear: both;
-  display: block;
-  margin: 2em auto 0 auto;
-  text-align: center;
-  font-size: 1.5em;
-  margin-top: 2em;
-}
-
-.so-twitter-widget__postscript a {
-  text-decoration: none;
-}
-
-.so-twitter-widget__header {
-  text-align: center;
-}
-
-.so-twitter-widget__header h2 {
-  font-family: "HelveticaNeueW01-45Ligh", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
-  font-weight: normal;
-  line-height: 1.08333em;
-  text-align: center;
-  -webkit-font-smoothing: antialiased;
-  -webkit-font-smoothing: antialiased;
-  margin-bottom: .5em;
-  margin-top: 0;
-  text-align: center;
-}
-
-.so-twitter-widget__header h3 {
-  font-family: "HelveticaNeueW01-45Ligh", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
-  font-weight: normal;
-  line-height: 1.08333em;
-  text-align: center;
-  -webkit-font-smoothing: antialiased;
-  -webkit-font-smoothing: antialiased;
-  margin-bottom: .5em;
-  margin-top: 0;
-  text-align: center;
-  font-size: 2.4em;
-}
-
-.so-twitter-widget__header p {
-  margin: 0 auto;
 }
