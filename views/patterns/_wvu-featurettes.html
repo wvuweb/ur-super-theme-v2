@@ -14,43 +14,36 @@
       </div>
     </r:page:if_has_content_for>
 
-    <r:root>
+    <r:if expr="{{ NOT(BLANK(featurettes_id)) }}">
+      <r:get_page id="{$featurettes_id}">
+        <r:children>
+          <div class="wvu-featurettes__featurettes wvu-featurettes__featurettes--<r:count />">
+            <r:each>
+              <r:partial name="patterns/wvu-featurettes__featurette" />
+            </r:each>
+          </div>
+        </r:children>
+      </r:get_page>
+    </r:if>
 
-      <r:descendants labels="{$featurettes_labels}" labels_match="all" by="title" order="asc">
-        <div class="wvu-featurettes__featurettes wvu-featurettes__featurettes--<r:count />">
-          <r:each>
-            <div class="wvu-featurettes__featurette">
-              <r:set_var name="soFeaturettesInfoWide" default="nophoto" />
-              <r:if expr="{{ NOT(BLANK(thumbnail_url)) }}">
-                <div class="wvu-featurettes__photo">
-                  <a href="<r:if expr="{{ NOT(BLANK(alternate_url)) }}"><r:page:data name="alternate_url" /></r:if><r:if expr="{{ BLANK(alternate_url) }}"><r:page:url /></r:if>"><img src="<r:page:data name="thumbnail_url" />/381x255.jpg" srcset="<r:page:data name="thumbnail_url" />/960x640.jpg, <r:page:data name="thumbnail_url" />/586x286.jpg, <r:page:data name="thumbnail_url" />/381x255.jpg, <r:page:data name="thumbnail_url" />/286x191.jpg, <r:page:data name="thumbnail_url" />/279x186.jpg, <r:page:data name="thumbnail_url" />/217x145.jpg" sizes="960px, (min-width: 768px) 586px" alt="<r:page:data name="thumbnail_alt" />"></a>
-                </div>
-                <r:set_var name="soFeaturettesInfoWide">
-                  hasphoto
-                </r:set_var>
-              </r:if>
-              <div class="wvu-featurettes__info wvu-featurettes__info--<r:var name="soFeaturettesInfoWide" />">
-                <h3><a href="<r:if expr="{{ NOT(BLANK(alternate_url)) }}"><r:page:data name="alternate_url" /></r:if><r:if expr="{{ BLANK(alternate_url) }}"><r:page:url /></r:if>"><r:page:first_non_blank_attr names="alternate_name,name" /></a></h3>
-                <p>
-                  <r:page:meta_description />
-                </p>
-
-                <a class="button" href="<r:if expr="{{ NOT(BLANK(alternate_url)) }}"><r:page:data name="alternate_url" /></r:if><r:if expr="{{ BLANK(alternate_url) }}"><r:page:url /></r:if>"><r:if expr="{{ NOT(BLANK(link_text)) }}"><r:page:data name="link_text" /></r:if><r:if expr="{{ BLANK(link_text) }}">More About <r:page:name /></r:if></a>
-
-              </div>
-            </div>
-          </r:each>
-        </div>
-      </r:descendants>
-
-    </r:root>
+    <r:if expr="{{ BLANK(featurettes_id) }}">
+      <r:root>
+        <r:descendants labels="{$featurettes_labels}" labels_match="all" by="title" order="asc">
+          <div class="wvu-featurettes__featurettes wvu-featurettes__featurettes--<r:count />">
+            <r:each>
+              <r:partial name="patterns/wvu-featurettes__featurette" />
+            </r:each>
+          </div>
+        </r:descendants>
+      </r:root>
+    </r:if>
 
   </div>
 </div>
 
 <r:edit_mode_only>
   <div class="wvu-instructions">
-    <strong>Instructions for Featurettes:</strong> This loops through the children of page and pulls content to create sub-features. Enter the parent page&rsquo;s ID in the <strong>featurettes_id</strong> field in the site properties. Each page you wish featured must be labelled "feature".
+    <strong>Instructions for Featurettes:</strong> This finds pages labeled with <code>featurette</code> and this page&rsquo;s slug, and pulls in content to create sub-features. Enter the parent page&rsquo;s ID in the <strong>featurettes_id</strong> field in the site properties. Each page you wish featured must be labelled "feature".
     <p><strong>Background Color:</strong> <r:editable_region name="wvu-background-color-class--featurettes" /></p>
   </div>
 </r:edit_mode_only>
