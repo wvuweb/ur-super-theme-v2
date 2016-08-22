@@ -709,6 +709,30 @@ ul.show-menu ul {
   }
 }
 
+.wvu-nav__nav--depth- .wvu-nav__items li a:after {
+  display: none;
+}
+
+.wvu-nav__nav--depth- .wvu-nav__items li.more > a {
+  padding-right: .8em;
+}
+
+.wvu-nav__nav--depth-1 .wvu-nav__items li a:after {
+  display: none;
+}
+
+.wvu-nav__nav--depth-1 .wvu-nav__items li.more > a {
+  padding-right: .8em;
+}
+
+.wvu-nav__nav--depth-2 .wvu-nav__items li li a:after {
+  display: none;
+}
+
+.wvu-nav__nav--depth-3 .wvu-nav__items li li li a:after {
+  display: none;
+}
+
 .wvu-nav__social-media-icons {
   width: 100%;
   float: left;
@@ -3509,9 +3533,31 @@ input[type="submit"] {
   display: none;
 }
 
-.wvu-footer {
+.wvu-footer footer {
   float: left;
   font-size: .8em;
+}
+
+.wvu-footer__container {
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 4em 0 4.3em 0;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.wvu-footer__container::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+@media (min-width: 75em) {
+  .wvu-footer__container {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .wvu-contact {
@@ -5575,17 +5621,137 @@ h2 + .wvu-adverts__adverts {
   }
 }
 
-.wvu-calendar {
+.cs-rss-snippet {
+  padding: 1em 0;
+}
+
+.wvu-calendar-widget__container {
+  padding: 4em 0 4.3em 0;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+@media (min-width: 75em) {
+  .wvu-calendar-widget__container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.wvu-calendar-widget__header {
+  text-align: center;
+}
+
+.wvu-calendar-widget__header h2 {
+  font-family: "HelveticaNeueW01-45Ligh", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
+  font-weight: normal;
+  line-height: 1.08333em;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  margin-bottom: .5em;
+  margin-top: 0;
+  text-align: center;
+}
+
+.wvu-calendar-widget__header h3 {
+  font-family: "HelveticaNeueW01-45Ligh", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
+  font-weight: normal;
+  line-height: 1.08333em;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  margin-bottom: .5em;
+  margin-top: 0;
+  text-align: center;
+  font-size: 2.4em;
+}
+
+.wvu-calendar-widget__header p {
+  margin: 0 auto;
+}
+
+.wvu-calendar-widget__postscript {
+  clear: both;
+  display: block;
+  margin: 2em auto 0 auto;
+  text-align: center;
+}
+
+.wvu-calendar-widget__postscript p {
+  max-width: 99999em;
+}
+
+.wvu-calendar li .eventDate {
+  float: none;
+  font-weight: bold;
+}
+
+.wvu-calendar--flex {
+  font-size: 1em;
+}
+
+.ua-calendar-widget a {
+  text-decoration: none;
+}
+
+.ua-calendar-widget h1, .ua-calendar-widget h2, .ua-calendar-widget h3, .ua-calendar-widget h4, .ua-calendar-widget h5, .ua-calendar-widget h6 {
+  margin-top: 0;
+}
+
+.wvu-calendar-widget__date {
+  border: 1px solid #969594;
+  border-radius: 3px;
+  line-height: 1.2em;
+  padding: .5em 0;
+  text-align: center;
+}
+
+.wvu-calendar-widget__item {
+  margin-bottom: 1em;
+}
+
+.wvu-calendar-widget__day {
+  font-size: 1.5em;
+}
+
+.wvu-sidebar .wvu-calendar-widget__postscript, .wvu-sidebar .wvu-calendar-widget__header, .so-featurettes__featurette .wvu-calendar-widget__postscript, .so-featurettes__featurette .wvu-calendar-widget__header, .so-magic-anytych__panel .wvu-calendar-widget__postscript, .so-magic-anytych__panel .wvu-calendar-widget__header {
+  display: none;
+}
+
+.wvu-sidebar .wvu-calendar-widget__container, .so-featurettes__featurette .wvu-calendar-widget__container, .so-magic-anytych__panel .wvu-calendar-widget__container {
+  padding: 0;
+}
+
+.wvu-sidebar .wvu-calendar--flex, .so-featurettes__featurette .wvu-calendar--flex, .so-magic-anytych__panel .wvu-calendar--flex {
   padding-left: 0;
 }
 
-.wvu-calendar li {
+.wvu-sidebar .wvu-calendar--flex li, .so-featurettes__featurette .wvu-calendar--flex li, .so-magic-anytych__panel .wvu-calendar--flex li {
+  padding-right: 1em;
+}
+
+@media (min-width: 48em) {
+  .wvu-sidebar .wvu-calendar--flex, .so-featurettes__featurette .wvu-calendar--flex, .so-magic-anytych__panel .wvu-calendar--flex {
+    display: block;
+  }
+  .wvu-sidebar .wvu-calendar--flex li, .so-featurettes__featurette .wvu-calendar--flex li, .so-magic-anytych__panel .wvu-calendar--flex li {
+    width: 100%;
+    padding: 0 0 1em 0;
+  }
+}
+
+.wvu-calendar-widget {
+  padding-left: 0;
+}
+
+.wvu-calendar-widget li {
   margin-bottom: 0.5em;
   display: inline-block;
   width: 100%;
 }
 
-.wvu-calendar li .eventDate {
+.wvu-calendar-widget li .eventDate {
   float: left;
   margin-right: 4%;
   width: 10%;
@@ -5594,48 +5760,95 @@ h2 + .wvu-adverts__adverts {
   border-radius: 6px;
 }
 
-.wvu-calendar li .calEventMonth {
+.wvu-calendar-widget li .calEventMonth {
   font-size: .8em;
   text-transform: uppercase;
 }
 
-.wvu-calendar li .calEventDay {
+.wvu-calendar-widget li .calEventDay {
   display: block;
   font-size: 1.5em;
   line-height: .8em;
   clear: both;
 }
 
-.wvu-calendar li .eventInfo {
+.wvu-calendar-widget li .eventInfo {
   float: left;
   width: 86%;
 }
 
-.wvu-calendar li .eventTime {
+.wvu-calendar-widget li .eventTime {
   font-weight: bold;
 }
 
-.wvu-calendar li .eventName {
+.wvu-calendar-widget li .eventName {
   display: block;
 }
 
-.wvu-calendar--flex {
+.wvu-calendar-widget--flex {
   padding-left: 0;
 }
 
-.wvu-calendar--flex li {
+.wvu-calendar-widget--flex li {
   padding-right: 1em;
 }
 
 @media (min-width: 48em) {
-  .wvu-calendar--flex {
+  .wvu-calendar-widget--flex {
     display: flex;
     align-items: stretch;
     flex-flow: row wrap;
   }
-  .wvu-calendar--flex li {
+  .wvu-calendar-widget--flex li {
     width: 33%;
     padding: 0 0 1em 0;
+  }
+}
+
+.wvu-calendar-widget__container {
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wvu-calendar-widget__container::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+@media (min-width: 48em) {
+  .wvu-calendar-widget__date {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%;
+  }
+  .wvu-calendar-widget__date:last-child {
+    margin-right: 0;
+  }
+}
+
+.wvu-calendar-widget__item {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+}
+
+.wvu-calendar-widget__item:last-child {
+  margin-right: 0;
+}
+
+@media (min-width: 48em) {
+  .wvu-calendar-widget__details {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 82.94039%;
+  }
+  .wvu-calendar-widget__details:last-child {
+    margin-right: 0;
   }
 }
 
@@ -5845,6 +6058,19 @@ h2 + .wvu-adverts__adverts {
   clear: both;
   content: "";
   display: table;
+}
+
+.wvu-directory__container {
+  padding: 4em 0 4.3em 0;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+@media (min-width: 75em) {
+  .wvu-directory__container {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .wvu-directory__container {
@@ -6895,10 +7121,10 @@ img.mfp-img {
 }
 
 .wvu-hero h1 {
-  font-size: 8.2em;
+  font-size: 4.5em;
   line-height: 1.25;
   margin-bottom: 0;
-  margin-top: 1em;
+  margin-top: 0;
   max-width: 8em;
   position: relative;
   line-height: 0.80487em;
@@ -6924,6 +7150,12 @@ img.mfp-img {
   background-size: 312px;
   opacity: 1;
   z-index: 2;
+}
+
+@media (min-width: 60em) {
+  .wvu-hero h1 {
+    margin-top: 1em;
+  }
 }
 
 .wvu-hero h1:before {
@@ -6955,7 +7187,6 @@ img.mfp-img {
 }
 
 .wvu-hero--big-photo .wvu-hero__copy h1 {
-  font-size: 4.5em;
   margin-top: .8em;
 }
 
@@ -7023,18 +7254,9 @@ img.mfp-img {
 }
 
 .wvu-hero__container {
-  max-width: 75em;
-  margin-left: auto;
-  margin-right: auto;
   padding: 4em 0 4.3em 0;
   padding-left: 1em;
   padding-right: 1em;
-}
-
-.wvu-hero__container::after {
-  clear: both;
-  content: "";
-  display: table;
 }
 
 @media (min-width: 75em) {
@@ -7312,6 +7534,30 @@ img.mfp-img {
     width: 74.41059%;
   }
   .main:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 48em) {
+  .main--wide {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  .main--wide:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 48em) {
+  .main--wide.main--edit-mode {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 74.41059%;
+  }
+  .main--wide.main--edit-mode:last-child {
     margin-right: 0;
   }
 }
@@ -8768,6 +9014,137 @@ h2 + .wvu-super-nav__panels {
   }
 }
 
+.wvu-twitter-widget__container {
+  padding: 4em 0 4.3em 0;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+@media (min-width: 75em) {
+  .wvu-twitter-widget__container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.wvu-twitter-widget {
+  background-color: #2a2827;
+  color: white;
+}
+
+.wvu-twitter-widget a, .wvu-twitter-widget a:visited {
+  color: white;
+}
+
+.wvu-twitter-widget h2, .wvu-twitter-widget h3, .wvu-twitter-widget h4, .wvu-twitter-widget h5, .wvu-twitter-widget h6 {
+  color: white;
+}
+
+.wvu-twitter-widget img {
+  height: 48px;
+  width: 48px;
+}
+
+.wvu-twitter-widget ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.wvu-twitter-widget li {
+  border-bottom: 1px solid #565554;
+  overflow: hidden;
+  padding: 1em 0;
+  text-align: center;
+}
+
+@media (min-width: 48em) {
+  .wvu-twitter-widget li {
+    border-bottom: 0;
+    border-left: 4px solid #565554;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 18.11388%;
+    padding: 0;
+    padding-left: 1em;
+    text-align: left;
+  }
+  .wvu-twitter-widget li:last-child {
+    margin-right: 0;
+  }
+}
+
+.wvu-twitter-widget li img {
+  display: none;
+}
+
+.wvu-twitter-widget li p {
+  margin-top: 0;
+}
+
+.wvu-twitter-widget .user,
+.wvu-twitter-widget .interact {
+  display: none;
+}
+
+.wvu-twitter-widget__postscript {
+  clear: both;
+  display: block;
+  margin: 2em auto 0 auto;
+  text-align: center;
+  font-size: 1.5em;
+  margin-top: 2em;
+}
+
+.wvu-twitter-widget__postscript a {
+  text-decoration: none;
+}
+
+.wvu-twitter-widget__header {
+  text-align: center;
+}
+
+.wvu-twitter-widget__header h2 {
+  font-family: "HelveticaNeueW01-45Ligh", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
+  font-weight: normal;
+  line-height: 1.08333em;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  margin-bottom: .5em;
+  margin-top: 0;
+  text-align: center;
+}
+
+.wvu-twitter-widget__header h3 {
+  font-family: "HelveticaNeueW01-45Ligh", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
+  font-weight: normal;
+  line-height: 1.08333em;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  margin-bottom: .5em;
+  margin-top: 0;
+  text-align: center;
+  font-size: 2.4em;
+}
+
+.wvu-twitter-widget__header p {
+  margin: 0 auto;
+}
+
+.wvu-twitter-widget__container {
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wvu-twitter-widget__container::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
 .wvu-video {
   background-color: #2C2A29;
   color: white;
@@ -9459,1355 +9836,4 @@ h2 + .wvu-super-nav__panels {
 .wvu-masthead--white {
   background-color: white !important;
   color: #002855 !important;
-}
-
-.so-background-colors__swatches {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-.so-background-colors__swatches li {
-  float: left;
-}
-
-.so-background-colors__swatches li:before {
-  display: inline-block;
-  height: 24px;
-  margin-right: 10px;
-  width: 24px;
-}
-
-.so-background-colors__swatch--wvu-blue:before {
-  background-color: #002855;
-}
-
-.so-background-colors__swatch--wvu-gold:before {
-  background-color: #EAAA00;
-}
-
-@media (min-width: 48em) {
-  .main--wide.main--edit-mode {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 74.41059%;
-  }
-  .main--wide.main--edit-mode:last-child {
-    margin-right: 0;
-  }
-}
-
-.so-backpage-header {
-  background-color: #333F48;
-  background-position: 50% 50%;
-  background-size: cover;
-  color: white;
-  display: table;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-}
-
-.so-backpage-header a {
-  color: white;
-}
-
-.so-backpage-header h1, .so-backpage-header h2, .so-backpage-header h3, .so-backpage-header h4, .so-backpage-header h5, .so-backpage-header h6 {
-  color: white;
-}
-
-.so-backpage-header h1 {
-  clear: both;
-  margin-top: 10px;
-  position: relative;
-}
-
-.so-backpage-header h1:before {
-  content: '';
-  height: 500px;
-  position: absolute;
-  right: 0;
-  bottom: -433px;
-  left: -280px;
-  background-image: url(../images/diagonal-gold.svg);
-  background-repeat: no-repeat;
-  background-size: 312px;
-  opacity: 1;
-  z-index: 2;
-}
-
-.so-backpage-header h1 span {
-  position: relative;
-  z-index: 3;
-}
-
-.so-backpage-header p {
-  font-size: 1.5em;
-  margin-bottom: 2em;
-  position: relative;
-  z-index: 3;
-}
-
-.so-backpage-header h1, .so-backpage-header p, .so-backpage-header a {
-  text-shadow: 1px 1px 1px #000000;
-}
-
-.so-backpage-header__badge {
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.7+0,0.7+100 */
-  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3000000', endColorstr='#b3000000',GradientType=0 );
-  /* IE6-9 */
-  border-radius: 2px;
-  clear: both;
-  color: white;
-  display: inline-block;
-  padding: .5em .7em;
-  position: relative;
-  text-transform: uppercase;
-  z-index: 3;
-}
-
-.so-backpage-header__container {
-  max-width: 75em;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1em;
-  padding-right: 1em;
-  padding-top: 2.5em;
-}
-
-.so-backpage-header__container::after {
-  clear: both;
-  content: "";
-  display: table;
-}
-
-.so-backpage-header__container:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: radial-gradient(farthest-side at 90% 55%, transparent, #000 131%);
-  opacity: 0.85;
-  z-index: 1;
-}
-
-@media (min-width: 75em) {
-  .so-backpage-header__container {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-.so-backpage-header--big-photo .so-backpage-header__container:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: radial-gradient(farthest-side at 90% 55%, transparent, #000 131%);
-  opacity: 0.85;
-  z-index: 1;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  color: #2C2A29;
-}
-
-.so-close-quote {
-  position: relative;
-  left: -.23em;
-}
-
-.so-region-label {
-  color: red;
-  font-size: 12px;
-}
-
-.so-region-label:before {
-  content: '*';
-}
-
-@media (min-width: 48em) {
-  .main--wide {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 100%;
-  }
-  .main--wide:last-child {
-    margin-right: 0;
-  }
-}
-
-.u-wvu-lede {
-  font-family: "HelveticaNeueW01-45Ligh", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
-  font-weight: normal;
-  line-height: 1.08333em;
-  text-align: center;
-  -webkit-font-smoothing: antialiased;
-  text-align: center;
-}
-
-.u-wvu-shout {
-  line-height: 0.80487em;
-  font-family: "HelveticaNeueW01-97Blac", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
-  text-transform: uppercase;
-  font-weight: normal;
-  text-transform: uppercase;
-}
-
-.fonts-loaded .u-wvu-shout {
-  font-family: "HelveticaNeueW01-97Blac", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
-}
-
-.cs-rss-snippet {
-  padding: 1em 0;
-}
-
-.so-calendar-widget__container {
-  max-width: 75em;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 4em 0 4.3em 0;
-  padding-left: 1em;
-  padding-right: 1em;
-}
-
-.so-calendar-widget__container::after {
-  clear: both;
-  content: "";
-  display: table;
-}
-
-@media (min-width: 75em) {
-  .so-calendar-widget__container {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-.so-calendar-widget__header {
-  text-align: center;
-}
-
-.so-calendar-widget__header h2 {
-  font-family: "HelveticaNeueW01-45Ligh", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
-  font-weight: normal;
-  line-height: 1.08333em;
-  text-align: center;
-  -webkit-font-smoothing: antialiased;
-  -webkit-font-smoothing: antialiased;
-  margin-bottom: .5em;
-  margin-top: 0;
-  text-align: center;
-}
-
-.so-calendar-widget__header h3 {
-  font-family: "HelveticaNeueW01-45Ligh", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
-  font-weight: normal;
-  line-height: 1.08333em;
-  text-align: center;
-  -webkit-font-smoothing: antialiased;
-  -webkit-font-smoothing: antialiased;
-  margin-bottom: .5em;
-  margin-top: 0;
-  text-align: center;
-  font-size: 2.4em;
-}
-
-.so-calendar-widget__header p {
-  margin: 0 auto;
-}
-
-.so-calendar-widget__postscript {
-  clear: both;
-  display: block;
-  margin: 2em auto 0 auto;
-  text-align: center;
-}
-
-.so-calendar-widget__postscript p {
-  max-width: 99999em;
-}
-
-.wvu-calendar li .eventDate {
-  float: none;
-  font-weight: bold;
-}
-
-.wvu-calendar--flex {
-  font-size: 1em;
-}
-
-.ua-calendar-widget a {
-  text-decoration: none;
-}
-
-.ua-calendar-widget h1, .ua-calendar-widget h2, .ua-calendar-widget h3, .ua-calendar-widget h4, .ua-calendar-widget h5, .ua-calendar-widget h6 {
-  margin-top: 0;
-}
-
-.so-calendar-widget__date {
-  border: 1px solid #969594;
-  border-radius: 3px;
-  line-height: 1.2em;
-  padding: .5em 0;
-  text-align: center;
-}
-
-@media (min-width: 48em) {
-  .so-calendar-widget__date {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 14.70196%;
-  }
-  .so-calendar-widget__date:last-child {
-    margin-right: 0;
-  }
-}
-
-.so-calendar-widget__item {
-  margin-bottom: 1em;
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 100%;
-}
-
-.so-calendar-widget__item:last-child {
-  margin-right: 0;
-}
-
-.so-calendar-widget__day {
-  font-size: 1.5em;
-}
-
-@media (min-width: 48em) {
-  .so-calendar-widget__details {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 82.94039%;
-  }
-  .so-calendar-widget__details:last-child {
-    margin-right: 0;
-  }
-}
-
-.wvu-sidebar .so-calendar-widget__postscript, .wvu-sidebar .so-calendar-widget__header, .so-featurettes__featurette .so-calendar-widget__postscript, .so-featurettes__featurette .so-calendar-widget__header, .so-magic-anytych__panel .so-calendar-widget__postscript, .so-magic-anytych__panel .so-calendar-widget__header {
-  display: none;
-}
-
-.wvu-sidebar .so-calendar-widget__container, .so-featurettes__featurette .so-calendar-widget__container, .so-magic-anytych__panel .so-calendar-widget__container {
-  padding: 0;
-}
-
-.wvu-sidebar .wvu-calendar--flex, .so-featurettes__featurette .wvu-calendar--flex, .so-magic-anytych__panel .wvu-calendar--flex {
-  padding-left: 0;
-}
-
-.wvu-sidebar .wvu-calendar--flex li, .so-featurettes__featurette .wvu-calendar--flex li, .so-magic-anytych__panel .wvu-calendar--flex li {
-  padding-right: 1em;
-}
-
-@media (min-width: 48em) {
-  .wvu-sidebar .wvu-calendar--flex, .so-featurettes__featurette .wvu-calendar--flex, .so-magic-anytych__panel .wvu-calendar--flex {
-    display: block;
-  }
-  .wvu-sidebar .wvu-calendar--flex li, .so-featurettes__featurette .wvu-calendar--flex li, .so-magic-anytych__panel .wvu-calendar--flex li {
-    width: 100%;
-    padding: 0 0 1em 0;
-  }
-}
-
-@media (min-width: 48em) {
-  .so-diptych__panel--main {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 57.35098%;
-  }
-  .so-diptych__panel--main:last-child {
-    margin-right: 0;
-  }
-}
-
-@media (min-width: 48em) {
-  .so-diptych__panel--sidebar {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 40.29137%;
-  }
-  .so-diptych__panel--sidebar:last-child {
-    margin-right: 0;
-  }
-}
-
-.so-footer__container {
-  max-width: 75em;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 4em 0 4.3em 0;
-  padding-left: 1em;
-  padding-right: 1em;
-}
-
-.so-footer__container::after {
-  clear: both;
-  content: "";
-  display: table;
-}
-
-@media (min-width: 75em) {
-  .so-footer__container {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-.so-gallery ul.photos {
-  list-style-type: none;
-  padding-left: 0;
-  display: table;
-  width: 100%;
-}
-
-.so-gallery ul.photos li {
-  margin-bottom: 2em;
-}
-
-@media (min-width: 48em) {
-  .so-gallery ul.photos li {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 23.23176%;
-  }
-  .so-gallery ul.photos li:last-child {
-    margin-right: 0;
-  }
-  .so-gallery ul.photos li:nth-child(4n) {
-    margin-right: 0;
-  }
-  .so-gallery ul.photos li:nth-child(4n+1) {
-    clear: left;
-  }
-}
-
-/* Magnific Popup CSS */
-.mfp-bg {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1042;
-  overflow: hidden;
-  position: fixed;
-  background: #0b0b0b;
-  opacity: 0.8;
-  filter: alpha(opacity=80);
-}
-
-.mfp-wrap {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1043;
-  position: fixed;
-  outline: none !important;
-  -webkit-backface-visibility: hidden;
-}
-
-.mfp-container {
-  text-align: center;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  padding: 0 8px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-.mfp-container:before {
-  content: '';
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
-}
-
-.mfp-align-top .mfp-container:before {
-  display: none;
-}
-
-.mfp-content {
-  position: relative;
-  display: inline-block;
-  vertical-align: middle;
-  margin: 0 auto;
-  text-align: left;
-  z-index: 1045;
-}
-
-.mfp-inline-holder .mfp-content,
-.mfp-ajax-holder .mfp-content {
-  width: 100%;
-  cursor: auto;
-}
-
-.mfp-ajax-cur {
-  cursor: progress;
-}
-
-.mfp-zoom-out-cur,
-.mfp-zoom-out-cur .mfp-image-holder .mfp-close {
-  cursor: -moz-zoom-out;
-  cursor: -webkit-zoom-out;
-  cursor: zoom-out;
-}
-
-.mfp-zoom {
-  cursor: pointer;
-  cursor: -webkit-zoom-in;
-  cursor: -moz-zoom-in;
-  cursor: zoom-in;
-}
-
-.mfp-auto-cursor .mfp-content {
-  cursor: auto;
-}
-
-.mfp-close,
-.mfp-arrow,
-.mfp-preloader,
-.mfp-counter {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-}
-
-.mfp-loading.mfp-figure {
-  display: none;
-}
-
-.mfp-hide {
-  display: none !important;
-}
-
-.mfp-preloader {
-  color: #cccccc;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  text-align: center;
-  margin-top: -0.8em;
-  left: 8px;
-  right: 8px;
-  z-index: 1044;
-}
-
-.mfp-preloader a {
-  color: #cccccc;
-}
-
-.mfp-preloader a:hover {
-  color: white;
-}
-
-.mfp-s-ready .mfp-preloader {
-  display: none;
-}
-
-.mfp-s-error .mfp-content {
-  display: none;
-}
-
-button.mfp-close,
-button.mfp-arrow {
-  overflow: visible;
-  cursor: pointer;
-  background: transparent;
-  border: 0;
-  -webkit-appearance: none;
-  display: block;
-  padding: 0;
-  z-index: 1046;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-
-button::-moz-focus-inner {
-  padding: 0;
-  border: 0;
-}
-
-.mfp-close {
-  width: 44px;
-  height: 44px;
-  line-height: 44px;
-  position: absolute;
-  right: 0;
-  top: 0;
-  text-decoration: none;
-  text-align: center;
-  opacity: 0.65;
-  padding: 0 0 18px 10px;
-  color: white;
-  font-style: normal;
-  font-size: 28px;
-  font-family: Arial, Baskerville, monospace;
-}
-
-.mfp-close:hover, .mfp-close:focus {
-  opacity: 1;
-}
-
-.mfp-close:active {
-  top: 1px;
-}
-
-.mfp-close-btn-in .mfp-close {
-  color: #333333;
-}
-
-.mfp-image-holder .mfp-close,
-.mfp-iframe-holder .mfp-close {
-  color: white;
-  right: -6px;
-  text-align: right;
-  padding-right: 6px;
-  width: 100%;
-}
-
-.mfp-counter {
-  position: absolute;
-  top: 0;
-  right: 0;
-  color: #cccccc;
-  font-size: 12px;
-  line-height: 18px;
-  width: 100px;
-}
-
-.mfp-arrow {
-  position: absolute;
-  opacity: 0.65;
-  margin: 0;
-  top: 50%;
-  margin-top: -55px;
-  padding: 0;
-  width: 90px;
-  height: 110px;
-  -webkit-tap-highlight-color: transparent;
-}
-
-.mfp-arrow:active {
-  margin-top: -54px;
-}
-
-.mfp-arrow:hover,
-.mfp-arrow:focus {
-  opacity: 1;
-}
-
-.mfp-arrow:before, .mfp-arrow:after,
-.mfp-arrow .mfp-b,
-.mfp-arrow .mfp-a {
-  content: '';
-  display: block;
-  width: 0;
-  height: 0;
-  position: absolute;
-  left: 0;
-  top: 0;
-  margin-top: 35px;
-  margin-left: 35px;
-  border: medium inset transparent;
-}
-
-.mfp-arrow:after,
-.mfp-arrow .mfp-a {
-  border-top-width: 13px;
-  border-bottom-width: 13px;
-  top: 8px;
-}
-
-.mfp-arrow:before,
-.mfp-arrow .mfp-b {
-  border-top-width: 21px;
-  border-bottom-width: 21px;
-}
-
-.mfp-arrow-left {
-  left: 0;
-}
-
-.mfp-arrow-left:after,
-.mfp-arrow-left .mfp-a {
-  border-right: 17px solid white;
-  margin-left: 31px;
-}
-
-.mfp-arrow-left:before,
-.mfp-arrow-left .mfp-b {
-  margin-left: 25px;
-  border-right: 27px solid #3f3f3f;
-}
-
-.mfp-arrow-right {
-  right: 0;
-}
-
-.mfp-arrow-right:after,
-.mfp-arrow-right .mfp-a {
-  border-left: 17px solid white;
-  margin-left: 39px;
-}
-
-.mfp-arrow-right:before,
-.mfp-arrow-right .mfp-b {
-  border-left: 27px solid #3f3f3f;
-}
-
-.mfp-iframe-holder {
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
-.mfp-iframe-holder .mfp-content {
-  line-height: 0;
-  width: 100%;
-  max-width: 900px;
-}
-
-.mfp-iframe-scaler {
-  width: 100%;
-  height: 0;
-  overflow: hidden;
-  padding-top: 56.25%;
-}
-
-.mfp-iframe-scaler iframe {
-  position: absolute;
-  display: block;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
-  background: black;
-}
-
-.mfp-iframe-holder .mfp-close {
-  top: -40px;
-}
-
-/* Main image in popup */
-img.mfp-img {
-  width: auto;
-  max-width: 100%;
-  height: auto;
-  display: block;
-  line-height: 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 40px 0 40px;
-  margin: 0 auto;
-}
-
-/* The shadow behind the image */
-.mfp-figure:after {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 40px;
-  bottom: 40px;
-  display: block;
-  right: 0;
-  width: auto;
-  height: auto;
-  z-index: -1;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
-  background: #444444;
-}
-
-.mfp-figure {
-  line-height: 0;
-}
-
-.mfp-bottom-bar {
-  margin-top: -36px;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  cursor: auto;
-}
-
-.mfp-title {
-  text-align: left;
-  line-height: 18px;
-  color: #f3f3f3;
-  word-wrap: break-word;
-  padding-right: 36px;
-}
-
-.mfp-figure small {
-  color: #bdbdbd;
-  display: block;
-  font-size: 12px;
-  line-height: 14px;
-}
-
-.mfp-image-holder .mfp-content {
-  max-width: 100%;
-}
-
-.mfp-gallery .mfp-image-holder .mfp-figure {
-  cursor: pointer;
-}
-
-@media screen and (max-width: 800px) and (orientation: landscape), screen and (max-height: 300px) {
-  /**
-   * Remove all paddings around the image on small screen
-   */
-  .mfp-img-mobile .mfp-image-holder {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .mfp-img-mobile img.mfp-img {
-    padding: 0;
-  }
-  /* The shadow behind the image */
-  .mfp-img-mobile .mfp-figure:after {
-    top: 0;
-    bottom: 0;
-  }
-  .mfp-img-mobile .mfp-bottom-bar {
-    background: rgba(0, 0, 0, 0.6);
-    bottom: 0;
-    margin: 0;
-    top: auto;
-    padding: 3px 5px;
-    position: fixed;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-  }
-  .mfp-img-mobile .mfp-bottom-bar:empty {
-    padding: 0;
-  }
-  .mfp-img-mobile .mfp-counter {
-    right: 5px;
-    top: 3px;
-  }
-  .mfp-img-mobile .mfp-close {
-    top: 0;
-    right: 0;
-    width: 35px;
-    height: 35px;
-    line-height: 35px;
-    background: rgba(0, 0, 0, 0.6);
-    position: fixed;
-    text-align: center;
-    padding: 0;
-  }
-  .mfp-img-mobile .mfp-figure small {
-    display: inline;
-    margin-left: 5px;
-  }
-}
-
-@media all and (max-width: 900px) {
-  .mfp-arrow {
-    -webkit-transform: scale(0.75);
-    transform: scale(0.75);
-  }
-  .mfp-arrow-left {
-    -webkit-transform-origin: 0;
-    transform-origin: 0;
-  }
-  .mfp-arrow-right {
-    -webkit-transform-origin: 100%;
-    transform-origin: 100%;
-  }
-  .mfp-container {
-    padding-left: 6px;
-    padding-right: 6px;
-  }
-}
-
-.mfp-ie7 .mfp-img {
-  padding: 0;
-}
-
-.mfp-ie7 .mfp-bottom-bar {
-  width: 600px;
-  left: 50%;
-  margin-left: -300px;
-  margin-top: 5px;
-  padding-bottom: 5px;
-}
-
-.mfp-ie7 .mfp-container {
-  padding: 0;
-}
-
-.mfp-ie7 .mfp-content {
-  padding-top: 44px;
-}
-
-.mfp-ie7 .mfp-close {
-  top: 0;
-  right: 0;
-  padding-top: 0;
-}
-
-.so-social-media {
-  background: #232221;
-  color: white;
-}
-
-.so-social-media__container {
-  max-width: 75em;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 4em 0 4.3em 0;
-  padding-left: 1em;
-  padding-right: 1em;
-}
-
-.so-social-media__container::after {
-  clear: both;
-  content: "";
-  display: table;
-}
-
-@media (min-width: 75em) {
-  .so-social-media__container {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-.so-social-media h2 {
-  color: white;
-  font-family: "HelveticaNeueW01-45Ligh", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
-  font-weight: normal;
-  line-height: 1.08333em;
-  text-align: center;
-  -webkit-font-smoothing: antialiased;
-}
-
-.so-social-media__header {
-  text-align: center;
-}
-
-.so-social-media__header h2 {
-  font-family: "HelveticaNeueW01-45Ligh", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
-  font-weight: normal;
-  line-height: 1.08333em;
-  text-align: center;
-  -webkit-font-smoothing: antialiased;
-  -webkit-font-smoothing: antialiased;
-  margin-bottom: .5em;
-  margin-top: 0;
-  text-align: center;
-}
-
-.so-social-media__header h3 {
-  font-family: "HelveticaNeueW01-45Ligh", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
-  font-weight: normal;
-  line-height: 1.08333em;
-  text-align: center;
-  -webkit-font-smoothing: antialiased;
-  -webkit-font-smoothing: antialiased;
-  margin-bottom: .5em;
-  margin-top: 0;
-  text-align: center;
-  font-size: 2.4em;
-}
-
-.so-social-media__header p {
-  margin: 0 auto;
-}
-
-.so-social-media__postscript {
-  clear: both;
-  display: block;
-  margin: 2em auto 0 auto;
-  text-align: center;
-}
-
-.so-social-media__icons {
-  margin: 2em auto 0 auto;
-  text-align: center;
-}
-
-h2 + .so-social-media__icons {
-  margin-top: 3em;
-}
-
-.so-social-media__icon {
-  display: inline-block;
-  font-size: .8em;
-  margin: 0 .5em;
-}
-
-@media (min-width: 60em) {
-  .so-social-media__icon {
-    font-size: 1em;
-  }
-}
-
-.so-social-media__icon a, .so-social-media__icon a:visited {
-  color: white;
-  text-decoration: none;
-}
-
-.so-social-media__icon img {
-  height: 32px;
-  width: 32px;
-}
-
-@media (min-width: 60em) {
-  .so-social-media__icon img {
-    font-size: 1em;
-    height: 64px;
-    width: 64px;
-  }
-}
-
-.so-social-media__icon p {
-  margin-top: .5em;
-}
-
-.so-testimonial {
-  overflow: hidden;
-  text-align: center;
-  background-color: #708573;
-  color: white;
-  -webkit-font-smoothing: antialiased;
-  background: #708573;
-  /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(#708573, #738776);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#708573, #738776);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#708573, #738776);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#708573, #738776);
-  /* Standard syntax */
-}
-
-.so-testimonial h1, .so-testimonial h2, .so-testimonial h3, .so-testimonial h4, .so-testimonial h5, .so-testimonial h6 {
-  color: white;
-}
-
-.so-testimonial h1 a, .so-testimonial h2 a, .so-testimonial h3 a, .so-testimonial h4 a, .so-testimonial h5 a, .so-testimonial h6 a {
-  color: white;
-  text-decoration: none;
-}
-
-.so-testimonial h1 a:hover, .so-testimonial h2 a:hover, .so-testimonial h3 a:hover, .so-testimonial h4 a:hover, .so-testimonial h5 a:hover, .so-testimonial h6 a:hover {
-  color: #f1f3f1;
-}
-
-.so-testimonial h3 a {
-  color: white;
-  text-decoration: none;
-}
-
-.so-testimonial h3 a:hover {
-  color: #f1f3f1;
-}
-
-.so-testimonial a {
-  color: white;
-  text-decoration: underline;
-}
-
-.so-testimonial a:hover {
-  color: #f1f3f1;
-}
-
-.so-testimonial a.button {
-  border-color: white;
-  text-decoration: none;
-}
-
-.so-testimonial a.button:visited {
-  color: white;
-}
-
-.so-testimonial a.button:hover {
-  background-color: white;
-  color: #708573;
-}
-
-.so-testimonial--backpage {
-  background-color: white;
-}
-
-.so-testimonial__container {
-  max-width: 75em;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 4em 0 4.3em 0;
-  padding-left: 1em;
-  padding-right: 1em;
-  padding-top: 12em;
-}
-
-.so-testimonial__container::after {
-  clear: both;
-  content: "";
-  display: table;
-}
-
-@media (min-width: 75em) {
-  .so-testimonial__container {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-.so-testimonial__quote {
-  font-family: "IowanOldStyleW01-Roman", Georgia, Times, serif;
-  font-size: 2em;
-  margin: 0 auto 1em auto;
-  max-width: 15em;
-  position: relative;
-}
-
-.so-testimonial__quote:before {
-  content: '';
-  height: 500px;
-  position: absolute;
-  right: 0;
-  bottom: -433px;
-  left: -280px;
-  background-image: url(../images/diagonal-gold.svg);
-  background-repeat: no-repeat;
-  background-size: 312px;
-  opacity: 1;
-  z-index: 2;
-}
-
-.so-testimonial__quote:before {
-  background-size: 400px;
-  left: 24%;
-  top: -9em;
-  z-index: 0;
-}
-
-.so-testimonial__quote span {
-  position: relative;
-  z-index: 3;
-}
-
-.so-testimonial__author {
-  font-weight: bold;
-}
-
-.so-testimonial__photo {
-  width: 100%;
-}
-
-.so-testimonial__photo img {
-  border-radius: 50%;
-  height: 150px;
-  width: 150px;
-}
-
-.so-testimonial__postscript {
-  clear: both;
-  display: block;
-  margin: 2em auto 0 auto;
-  text-align: center;
-}
-
-.so-testimonial-listing__testimonial {
-  margin-bottom: 3em;
-}
-
-@media (min-width: 48em) {
-  .so-testimonial-listing__profile {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 31.76157%;
-  }
-  .so-testimonial-listing__profile:last-child {
-    margin-right: 0;
-  }
-}
-
-.so-testimonial-listing__photo {
-  margin-bottom: 2em;
-}
-
-.so-testimonial-listing__photo img {
-  border-radius: 50%;
-}
-
-@media (min-width: 48em) {
-  .so-testimonial-listing__quote {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 65.88078%;
-  }
-  .so-testimonial-listing__quote:last-child {
-    margin-right: 0;
-  }
-}
-
-.so-testimonial-listing__quote-text {
-  font-family: "IowanOldStyleW01-Roman", Georgia, Times, serif;
-  font-size: 2em;
-  margin-bottom: 1em;
-}
-
-.so-twitter-widget__container {
-  max-width: 75em;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 4em 0 4.3em 0;
-  padding-left: 1em;
-  padding-right: 1em;
-}
-
-.so-twitter-widget__container::after {
-  clear: both;
-  content: "";
-  display: table;
-}
-
-@media (min-width: 75em) {
-  .so-twitter-widget__container {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-.so-twitter-widget {
-  background-color: #2a2827;
-  color: white;
-}
-
-.so-twitter-widget a, .so-twitter-widget a:visited {
-  color: white;
-}
-
-.so-twitter-widget h2, .so-twitter-widget h3, .so-twitter-widget h4, .so-twitter-widget h5, .so-twitter-widget h6 {
-  color: white;
-}
-
-.so-twitter-widget img {
-  height: 48px;
-  width: 48px;
-}
-
-.so-twitter-widget ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-.so-twitter-widget li {
-  border-bottom: 1px solid #565554;
-  overflow: hidden;
-  padding: 1em 0;
-  text-align: center;
-}
-
-@media (min-width: 48em) {
-  .so-twitter-widget li {
-    border-bottom: 0;
-    border-left: 4px solid #565554;
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 18.11388%;
-    padding: 0;
-    padding-left: 1em;
-    text-align: left;
-  }
-  .so-twitter-widget li:last-child {
-    margin-right: 0;
-  }
-}
-
-.so-twitter-widget li img {
-  display: none;
-}
-
-.so-twitter-widget li p {
-  margin-top: 0;
-}
-
-.so-twitter-widget .user,
-.so-twitter-widget .interact {
-  display: none;
-}
-
-.so-twitter-widget__postscript {
-  clear: both;
-  display: block;
-  margin: 2em auto 0 auto;
-  text-align: center;
-  font-size: 1.5em;
-  margin-top: 2em;
-}
-
-.so-twitter-widget__postscript a {
-  text-decoration: none;
-}
-
-.so-twitter-widget__header {
-  text-align: center;
-}
-
-.so-twitter-widget__header h2 {
-  font-family: "HelveticaNeueW01-45Ligh", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
-  font-weight: normal;
-  line-height: 1.08333em;
-  text-align: center;
-  -webkit-font-smoothing: antialiased;
-  -webkit-font-smoothing: antialiased;
-  margin-bottom: .5em;
-  margin-top: 0;
-  text-align: center;
-}
-
-.so-twitter-widget__header h3 {
-  font-family: "HelveticaNeueW01-45Ligh", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
-  font-weight: normal;
-  line-height: 1.08333em;
-  text-align: center;
-  -webkit-font-smoothing: antialiased;
-  -webkit-font-smoothing: antialiased;
-  margin-bottom: .5em;
-  margin-top: 0;
-  text-align: center;
-  font-size: 2.4em;
-}
-
-.so-twitter-widget__header p {
-  margin: 0 auto;
 }

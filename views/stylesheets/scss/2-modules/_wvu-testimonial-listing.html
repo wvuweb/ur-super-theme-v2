@@ -1,0 +1,28 @@
+.wvu-testimonial-listing__testimonial {
+  margin-bottom: 3em;
+}
+
+.wvu-testimonial-listing__profile {
+  @include mq($bp-medium) {
+    @include span-columns(4);
+  }
+}
+
+.wvu-testimonial-listing__photo {
+  margin-bottom: 2em;
+  img {
+    border-radius: 50%;
+  }
+}
+
+.wvu-testimonial-listing__quote {
+  @include mq($bp-medium) {
+    @include span-columns(8);
+  }
+}
+
+.wvu-testimonial-listing__quote-text {
+  font-family: $iowan-old-style;
+  font-size: 2em;
+  margin-bottom: 1em;
+}

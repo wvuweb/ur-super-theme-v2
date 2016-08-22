@@ -16,15 +16,18 @@
     z-index: 3;
   }
   h1 {
-    font-size: $wvu-shout-font-size;
+    font-size: 4.5em;
     line-height: $header-line-height;
     margin-bottom: 0;
-    margin-top: 1em;
+    margin-top: 0;
     max-width: 8em;
     position: relative;
     @include wvu-shout();
     text-transform: uppercase;
     @include so-gold-slash();
+    @include mq($bp-large) {
+      margin-top: 1em;
+    }
     &:before {
       background-size: 292px;
       left: -173px;
@@ -54,7 +57,6 @@
 .wvu-hero--big-photo {
   .wvu-hero__copy {
     h1 {
-      font-size: 4.5em;
       margin-top: .8em;
       @include mq($bp-large) {
         font-size: 6.2em;
@@ -105,7 +107,6 @@
 }
 
 .wvu-hero__container {
-  @include outer-container();
   @include u-wvu-container-padding();
   @include so-vignetting($wvu-hero-vignetting-opacity);
 }
