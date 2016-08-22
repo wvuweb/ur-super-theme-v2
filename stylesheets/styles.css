@@ -2506,7 +2506,7 @@ h1, .wvu-h1 {
 }
 
 .wvu-shout {
-  font-size: 4.5em;
+  font-size: 3em;
   line-height: 0.80487em;
   font-family: Impact, Charcoal, "Arial Black", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
   text-transform: uppercase;
@@ -2519,7 +2519,7 @@ h1, .wvu-h1 {
 
 @media (min-width: 60em) {
   .wvu-shout {
-    font-size: 6.2em;
+    font-size: 8.2em;
   }
 }
 

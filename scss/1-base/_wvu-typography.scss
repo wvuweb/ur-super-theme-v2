@@ -36,9 +36,9 @@ h1, .wvu-h1 { font-size: 3em; line-height: 1.08333333em; width: 100%; margin-top
   @include mq($bp-large) { font-size: 4em; }
 }
 
-.wvu-shout { font-size: 4.5em; line-height: $wvu-shout-line-height; font-family: $wvu-shout-fallback; text-transform: uppercase; font-weight: normal;
+.wvu-shout { font-size: 3em; line-height: $wvu-shout-line-height; font-family: $wvu-shout-fallback; text-transform: uppercase; font-weight: normal;
   .fonts-loaded & { font-family: $wvu-shout; }
-  @include mq($bp-large) { font-size: 6.2em; }
+  @include mq($bp-large) { font-size: 8.2em; }
 }
 
 .wvu-shout--medium-shout {
