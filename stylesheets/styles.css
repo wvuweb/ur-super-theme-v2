@@ -7130,13 +7130,6 @@ img.mfp-img {
   z-index: 2;
 }
 
-@media (min-width: 60em) {
-  .wvu-hero h1 {
-    font-size: 6.2em;
-    max-width: 6em;
-  }
-}
-
 .wvu-hero h1:before {
   background-size: 292px;
   left: -173px;
@@ -7167,6 +7160,13 @@ img.mfp-img {
 
 .wvu-hero--big-photo .wvu-hero__copy h1 {
   margin-top: .8em;
+}
+
+@media (min-width: 60em) {
+  .wvu-hero--big-photo .wvu-hero__copy h1 {
+    font-size: 6.2em;
+    max-width: 6em;
+  }
 }
 
 .wvu-hero--big-photo .wvu-hero__copy h1:before {
