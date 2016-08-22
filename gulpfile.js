@@ -10,10 +10,13 @@ gulp.task('sass', function () {
   gulp.src(['./scss/*.scss','!./scss/_*.scss'])
     .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
     .pipe(gulp.dest('./stylesheets'));
+  gulp.src(['./scss/5-css-output/_*.scss'])
+    .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
+    .pipe(gulp.dest('./stylesheets/css-output'));
 });
 
 gulp.task('rename', function () {
-  gulp.src("./stylesheets/*.css", { base: process.cwd() })
+  gulp.src("./stylesheets/css-output/*.css", { base: process.cwd() })
     .pipe(rename({
       prefix: "_",
       extname: ".html"
