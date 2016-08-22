@@ -1,20 +1,20 @@
-.so-testimonial {
+.wvu-testimonial {
   overflow: hidden;
   text-align: center;
   @include pms-5625-c-background();
 }
 
-.so-testimonial--backpage {
+.wvu-testimonial--backpage {
   background-color: white;
 }
 
-.so-testimonial__container {
+.wvu-testimonial__container {
   @include outer-container();
   @include u-wvu-container-padding();
   padding-top: 12em;
 }
 
-.so-testimonial__quote {
+.wvu-testimonial__quote {
   font-family: $wvu-traditional-audience;
   font-size: 2em;
   margin: 0 auto 1em auto;
@@ -33,11 +33,11 @@
   }
 }
 
-.so-testimonial__author {
+.wvu-testimonial__author {
   font-weight: bold;
 }
 
-.so-testimonial__photo {
+.wvu-testimonial__photo {
   width: 100%;
   img {
     border-radius: 50%;
@@ -46,6 +46,6 @@
   }
 }
 
-.so-testimonial__postscript {
+.wvu-testimonial__postscript {
   @include so-postscript();
 }

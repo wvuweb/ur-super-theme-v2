@@ -1,5 +1,15 @@
 // Footer styles
-.wvu-footer { float: left; font-size: .8em; }
+.wvu-footer { 
+  footer {
+    float: left; 
+    font-size: .8em; 
+  }
+}
+
+.wvu-footer__container {
+  @include outer-container();
+  @include u-wvu-container-padding();
+}
 
 .wvu-contact { margin-bottom: 18px;
   p { margin-top: 0; margin-bottom: 0; }
