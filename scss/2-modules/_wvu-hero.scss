@@ -19,12 +19,15 @@
     font-size: 4.5em;
     line-height: $header-line-height;
     margin-bottom: 0;
-    margin-top: 1em;
+    margin-top: 0;
     max-width: 8em;
     position: relative;
     @include wvu-shout();
     text-transform: uppercase;
     @include so-gold-slash();
+    @include mq($bp-large) {
+      margin-top: 1em;
+    }
     &:before {
       background-size: 292px;
       left: -173px;
