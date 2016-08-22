@@ -10,7 +10,7 @@ gulp.task('sass', function () {
   gulp.src(['./scss/*.scss','!./scss/_*.scss'])
     .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
     .pipe(gulp.dest('./stylesheets'));
-  gulp.src(['./scss/5-css-output/_*.scss'])
+  gulp.src(['./scss/5-css-output/*.scss'])
     .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
     .pipe(gulp.dest('./stylesheets/css-output'));
 });

@@ -1,0 +1,37 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+.wvu-directory__container {
+  padding: 4em 0 4.3em 0;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+@media (min-width: 75em) {
+  .wvu-directory__container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.wvu-directory__container {
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wvu-directory__container::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.main .wvu-directory__container {
+  margin: auto;
+  width: 100%;
+}

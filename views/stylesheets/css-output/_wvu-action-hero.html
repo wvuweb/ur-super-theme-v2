@@ -1,0 +1,85 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+.wvu-action-hero {
+  background-color: #EAAA00;
+  background-image: url(https://admissions.wvu.edu/images/wvu-pattern-background--gold.png);
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #002855;
+  text-align: center;
+}
+
+.wvu-action-hero p {
+  margin: 1em auto;
+}
+
+.wvu-action-hero__container {
+  padding: 4em 0 4.3em 0;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+@media (min-width: 75em) {
+  .wvu-action-hero__container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.wvu-action-hero__header {
+  font-size: 2.5em;
+  font-family: "HelveticaNeueW01-45Ligh", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
+  font-weight: normal;
+  line-height: 1.08333em;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wvu-action-hero__header h2 {
+  color: #002855;
+  margin: 0 0 0.5em;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 0.80487em;
+  font-family: "HelveticaNeueW01-97Blac", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 2em;
+}
+
+.fonts-loaded .wvu-action-hero__header h2 {
+  font-family: "HelveticaNeueW01-97Blac", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
+}
+
+.wvu-action-hero__header h3 {
+  color: #002855;
+  font-family: "HelveticaNeueW01-45Ligh", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
+  font-weight: normal;
+  line-height: 1.08333em;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wvu-action-hero__postscript {
+  display: block;
+  margin: 0 auto;
+}
+
+.wvu-action-hero__container {
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wvu-action-hero__container::after {
+  clear: both;
+  content: "";
+  display: table;
+}

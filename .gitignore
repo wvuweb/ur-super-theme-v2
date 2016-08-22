@@ -132,6 +132,10 @@ dwsync.xml
 ### Bower ###
 bower_components
 
+### CSS output files ###
+scss/5-css-output
+stylesheets/css-output
+
 ### CodeKit ###
 # General CodeKit files to ignore
 /min

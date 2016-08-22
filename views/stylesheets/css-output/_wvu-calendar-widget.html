@@ -1,0 +1,238 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+.cs-rss-snippet {
+  padding: 1em 0;
+}
+
+.wvu-calendar-widget__container {
+  padding: 4em 0 4.3em 0;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+@media (min-width: 75em) {
+  .wvu-calendar-widget__container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.wvu-calendar-widget__header {
+  text-align: center;
+}
+
+.wvu-calendar-widget__header h2 {
+  font-family: "HelveticaNeueW01-45Ligh", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
+  font-weight: normal;
+  line-height: 1.08333em;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  margin-bottom: .5em;
+  margin-top: 0;
+  text-align: center;
+}
+
+.wvu-calendar-widget__header h3 {
+  font-family: "HelveticaNeueW01-45Ligh", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
+  font-weight: normal;
+  line-height: 1.08333em;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  margin-bottom: .5em;
+  margin-top: 0;
+  text-align: center;
+  font-size: 2.4em;
+}
+
+.wvu-calendar-widget__header p {
+  margin: 0 auto;
+}
+
+.wvu-calendar-widget__postscript {
+  clear: both;
+  display: block;
+  margin: 2em auto 0 auto;
+  text-align: center;
+}
+
+.wvu-calendar-widget__postscript p {
+  max-width: 99999em;
+}
+
+.wvu-calendar li .eventDate {
+  float: none;
+  font-weight: bold;
+}
+
+.wvu-calendar--flex {
+  font-size: 1em;
+}
+
+.ua-calendar-widget a {
+  text-decoration: none;
+}
+
+.ua-calendar-widget h1, .ua-calendar-widget h2, .ua-calendar-widget h3, .ua-calendar-widget h4, .ua-calendar-widget h5, .ua-calendar-widget h6 {
+  margin-top: 0;
+}
+
+.wvu-calendar-widget__date {
+  border: 1px solid #969594;
+  border-radius: 3px;
+  line-height: 1.2em;
+  padding: .5em 0;
+  text-align: center;
+}
+
+.wvu-calendar-widget__item {
+  margin-bottom: 1em;
+}
+
+.wvu-calendar-widget__day {
+  font-size: 1.5em;
+}
+
+.wvu-sidebar .wvu-calendar-widget__postscript, .wvu-sidebar .wvu-calendar-widget__header, .so-featurettes__featurette .wvu-calendar-widget__postscript, .so-featurettes__featurette .wvu-calendar-widget__header, .so-magic-anytych__panel .wvu-calendar-widget__postscript, .so-magic-anytych__panel .wvu-calendar-widget__header {
+  display: none;
+}
+
+.wvu-sidebar .wvu-calendar-widget__container, .so-featurettes__featurette .wvu-calendar-widget__container, .so-magic-anytych__panel .wvu-calendar-widget__container {
+  padding: 0;
+}
+
+.wvu-sidebar .wvu-calendar--flex, .so-featurettes__featurette .wvu-calendar--flex, .so-magic-anytych__panel .wvu-calendar--flex {
+  padding-left: 0;
+}
+
+.wvu-sidebar .wvu-calendar--flex li, .so-featurettes__featurette .wvu-calendar--flex li, .so-magic-anytych__panel .wvu-calendar--flex li {
+  padding-right: 1em;
+}
+
+@media (min-width: 48em) {
+  .wvu-sidebar .wvu-calendar--flex, .so-featurettes__featurette .wvu-calendar--flex, .so-magic-anytych__panel .wvu-calendar--flex {
+    display: block;
+  }
+  .wvu-sidebar .wvu-calendar--flex li, .so-featurettes__featurette .wvu-calendar--flex li, .so-magic-anytych__panel .wvu-calendar--flex li {
+    width: 100%;
+    padding: 0 0 1em 0;
+  }
+}
+
+.wvu-calendar-widget {
+  padding-left: 0;
+}
+
+.wvu-calendar-widget li {
+  margin-bottom: 0.5em;
+  display: inline-block;
+  width: 100%;
+}
+
+.wvu-calendar-widget li .eventDate {
+  float: left;
+  margin-right: 4%;
+  width: 10%;
+  text-align: center;
+  padding-bottom: 6px;
+  border-radius: 6px;
+}
+
+.wvu-calendar-widget li .calEventMonth {
+  font-size: .8em;
+  text-transform: uppercase;
+}
+
+.wvu-calendar-widget li .calEventDay {
+  display: block;
+  font-size: 1.5em;
+  line-height: .8em;
+  clear: both;
+}
+
+.wvu-calendar-widget li .eventInfo {
+  float: left;
+  width: 86%;
+}
+
+.wvu-calendar-widget li .eventTime {
+  font-weight: bold;
+}
+
+.wvu-calendar-widget li .eventName {
+  display: block;
+}
+
+.wvu-calendar-widget--flex {
+  padding-left: 0;
+}
+
+.wvu-calendar-widget--flex li {
+  padding-right: 1em;
+}
+
+@media (min-width: 48em) {
+  .wvu-calendar-widget--flex {
+    display: flex;
+    align-items: stretch;
+    flex-flow: row wrap;
+  }
+  .wvu-calendar-widget--flex li {
+    width: 33%;
+    padding: 0 0 1em 0;
+  }
+}
+
+.wvu-calendar-widget__container {
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wvu-calendar-widget__container::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+@media (min-width: 48em) {
+  .wvu-calendar-widget__date {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%;
+  }
+  .wvu-calendar-widget__date:last-child {
+    margin-right: 0;
+  }
+}
+
+.wvu-calendar-widget__item {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+}
+
+.wvu-calendar-widget__item:last-child {
+  margin-right: 0;
+}
+
+@media (min-width: 48em) {
+  .wvu-calendar-widget__details {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 82.94039%;
+  }
+  .wvu-calendar-widget__details:last-child {
+    margin-right: 0;
+  }
+}

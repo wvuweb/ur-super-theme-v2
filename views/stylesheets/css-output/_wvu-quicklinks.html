@@ -1,0 +1,182 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+.wvu-quicklinks__header {
+  text-align: center;
+}
+
+.wvu-quicklinks__header h2 {
+  font-family: "HelveticaNeueW01-45Ligh", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
+  font-weight: normal;
+  line-height: 1.08333em;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  margin-bottom: .5em;
+  margin-top: 0;
+  text-align: center;
+}
+
+.wvu-quicklinks__header h3 {
+  font-family: "HelveticaNeueW01-45Ligh", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
+  font-weight: normal;
+  line-height: 1.08333em;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  margin-bottom: .5em;
+  margin-top: 0;
+  text-align: center;
+  font-size: 2.4em;
+}
+
+.wvu-quicklinks__header p {
+  margin: 0 auto;
+}
+
+.wvu-quicklinks {
+  width: 100%;
+  background-color: #333F48;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  background: #333F48;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#333F48, #37434c);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#333F48, #37434c);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#333F48, #37434c);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#333F48, #37434c);
+  /* Standard syntax */
+}
+
+.wvu-quicklinks h1, .wvu-quicklinks h2, .wvu-quicklinks h3, .wvu-quicklinks h4, .wvu-quicklinks h5, .wvu-quicklinks h6 {
+  color: white;
+}
+
+.wvu-quicklinks h1 a, .wvu-quicklinks h2 a, .wvu-quicklinks h3 a, .wvu-quicklinks h4 a, .wvu-quicklinks h5 a, .wvu-quicklinks h6 a {
+  color: white;
+  text-decoration: none;
+}
+
+.wvu-quicklinks h1 a:hover, .wvu-quicklinks h2 a:hover, .wvu-quicklinks h3 a:hover, .wvu-quicklinks h4 a:hover, .wvu-quicklinks h5 a:hover, .wvu-quicklinks h6 a:hover {
+  color: #ebeced;
+}
+
+.wvu-quicklinks h3 a {
+  color: white;
+  text-decoration: none;
+}
+
+.wvu-quicklinks h3 a:hover {
+  color: #ebeced;
+}
+
+.wvu-quicklinks a {
+  color: white;
+  text-decoration: underline;
+}
+
+.wvu-quicklinks a:hover {
+  color: #ebeced;
+}
+
+.wvu-quicklinks a.button {
+  border-color: white;
+  text-decoration: none;
+}
+
+.wvu-quicklinks a.button:visited {
+  color: white;
+}
+
+.wvu-quicklinks a.button:hover {
+  background-color: white;
+  color: #333F48;
+}
+
+.wvu-quicklinks ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.wvu-quicklinks li {
+  padding-left: 1em;
+  background: url(https://patterns.wvu.edu/images/diagonal-gold.svg) no-repeat 0 0px;
+  background-size: 20px;
+  margin-left: 0;
+}
+
+.wvu-quicklinks a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.wvu-quicklinks {
+  width: 100%;
+}
+
+.wvu-quicklinks ul {
+  list-style-type: none;
+}
+
+@media (min-width: 48em) {
+  .wvu-quicklinks ul {
+    display: flex;
+    align-items: stretch;
+    flex-flow: row wrap;
+  }
+}
+
+.wvu-quicklinks ul li {
+  padding-left: 1.5em;
+  padding-right: 2em;
+  background: url(https://patterns.wvu.edu/images/diagonal-gold.svg) no-repeat 0 0px;
+  margin-left: 0;
+  font-size: 1em;
+  box-sizing: border-box;
+  background-size: 20px;
+}
+
+@media (min-width: 48em) {
+  .wvu-quicklinks ul li {
+    width: 25%;
+    float: left;
+  }
+}
+
+.wvu-quicklinks ul li a {
+  color: white;
+  display: block;
+}
+
+.wvu-quicklinks__container {
+  padding: 4em 0 4.3em 0;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+@media (min-width: 75em) {
+  .wvu-quicklinks__container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.wvu-quicklinks__container {
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wvu-quicklinks__container::after {
+  clear: both;
+  content: "";
+  display: table;
+}

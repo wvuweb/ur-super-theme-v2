@@ -1,0 +1,382 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+.wvu-polyptych {
+  background-position: 50% 50%;
+  background-size: cover;
+  color: #2C2A29;
+}
+
+.wvu-polyptych h2 {
+  font-size: 8.2em;
+  margin: 0 0 0.5em;
+  text-align: center;
+}
+
+.wvu-polyptych h3 {
+  margin-top: 1em;
+}
+
+@media (min-width: 48em) {
+  .wvu-polyptych h3 {
+    margin-top: 0;
+  }
+}
+
+.wvu-polyptych .wvu-polyptych__photo {
+  color: #002855;
+  font-size: 9em;
+  margin-bottom: 20px;
+  line-height: 0.80487em;
+  font-family: "HelveticaNeueW01-97Blac", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.fonts-loaded .wvu-polyptych .wvu-polyptych__photo {
+  font-family: "HelveticaNeueW01-97Blac", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
+}
+
+.wvu-polyptych .wvu-polyptych__copy--wide {
+  text-align: center;
+}
+
+.wvu-polyptych .wvu-polyptych__copy--wide p {
+  margin: 1em auto;
+}
+
+.wvu-polyptych__container {
+  padding: 4em 0 4.3em 0;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+@media (min-width: 75em) {
+  .wvu-polyptych__container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.wvu-polyptych__header {
+  font-size: 2.5em;
+  font-family: "HelveticaNeueW01-45Ligh", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
+  font-weight: normal;
+  line-height: 1.08333em;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wvu-polyptych__header h2 {
+  margin: 0 0 0.5em;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 0.80487em;
+  font-family: "HelveticaNeueW01-97Blac", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 2em;
+}
+
+.fonts-loaded .wvu-polyptych__header h2 {
+  font-family: "HelveticaNeueW01-97Blac", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
+}
+
+.wvu-polyptych__header h3 {
+  font-family: "HelveticaNeueW01-45Ligh", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
+  font-weight: normal;
+  line-height: 1.08333em;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wvu-polyptych__panel {
+  margin-bottom: 2em;
+}
+
+@media (min-width: 48em) {
+  .wvu-polyptych__panel {
+    margin-bottom: 0;
+  }
+}
+
+.wvu-polyptych__panels {
+  display: table;
+  width: 100%;
+}
+
+.wvu-polyptych__postscript {
+  clear: both;
+  display: block;
+  margin: 2em auto 0 auto;
+  text-align: center;
+}
+
+.wvu-polyptych--2 .wvu-polyptych__copy--wide {
+  text-align: left;
+}
+
+.wvu-polyptych--2 .wvu-polyptych__copy--wide p {
+  margin: 1em 0;
+}
+
+.wvu-polyptych--triptych h3 {
+  font-size: 2em;
+}
+
+.wvu-polyptych--triptych .wvu-polyptych__photo {
+  font-size: 7em;
+}
+
+.wvu-polyptych--triptych .wvu-polyptych__copy--wide {
+  text-align: left;
+}
+
+.wvu-polyptych--triptych .wvu-polyptych__copy--wide p {
+  margin: 1em 0;
+}
+
+.wvu-polyptych--quadritych h3 {
+  font-size: 1.5em;
+}
+
+.wvu-polyptych--quadritych .wvu-polyptych__photo {
+  font-size: 5em;
+}
+
+.wvu-polyptych--quadritych .wvu-polyptych__copy--wide {
+  text-align: left;
+}
+
+.wvu-polyptych--quadritych .wvu-polyptych__copy--wide p {
+  margin: 1em 0;
+}
+
+.wvu-polyptych--pentaptych h3 {
+  font-size: 1.5em;
+}
+
+.wvu-polyptych--pentaptych .wvu-polyptych__photo {
+  font-size: 5em;
+}
+
+.wvu-polyptych--pentaptych .wvu-polyptych__copy--wide {
+  text-align: left;
+}
+
+.wvu-polyptych--pentaptych .wvu-polyptych__copy--wide p {
+  margin: 1em 0;
+}
+
+.u-wvu-blue.background .wvu-polyptych .wvu-polyptych__photo {
+  color: #EAAA00;
+}
+
+@media (min-width: 48em) {
+  .wvu-polyptych .wvu-polyptych__photo {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+  }
+  .wvu-polyptych .wvu-polyptych__photo:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 48em) {
+  .wvu-polyptych .wvu-polyptych__copy {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+  }
+  .wvu-polyptych .wvu-polyptych__copy:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 48em) {
+  .wvu-polyptych .wvu-polyptych__copy--wide {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  .wvu-polyptych .wvu-polyptych__copy--wide:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 48em) {
+  .wvu-polyptych--diptych .wvu-polyptych__panel {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+  }
+  .wvu-polyptych--diptych .wvu-polyptych__panel:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 48em) {
+  .wvu-polyptych--diptych .wvu-polyptych__photo {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+  }
+  .wvu-polyptych--diptych .wvu-polyptych__photo:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 48em) {
+  .wvu-polyptych--diptych .wvu-polyptych__copy {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+  }
+  .wvu-polyptych--diptych .wvu-polyptych__copy:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 48em) {
+  .wvu-polyptych--diptych .wvu-polyptych__copy--wide {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  .wvu-polyptych--diptych .wvu-polyptych__copy--wide:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 48em) {
+  .wvu-polyptych--triptych .wvu-polyptych__panel {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+  }
+  .wvu-polyptych--triptych .wvu-polyptych__panel:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 48em) {
+  .wvu-polyptych--triptych .wvu-polyptych__photo {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  .wvu-polyptych--triptych .wvu-polyptych__photo:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 48em) {
+  .wvu-polyptych--triptych .wvu-polyptych__copy {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  .wvu-polyptych--triptych .wvu-polyptych__copy:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 48em) {
+  .wvu-polyptych--quadriptych .wvu-polyptych__panel {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%;
+  }
+  .wvu-polyptych--quadriptych .wvu-polyptych__panel:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 48em) {
+  .wvu-polyptych--quadriptych .wvu-polyptych__photo {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  .wvu-polyptych--quadriptych .wvu-polyptych__photo:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 48em) {
+  .wvu-polyptych--quadriptych .wvu-polyptych__copy {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  .wvu-polyptych--quadriptych .wvu-polyptych__copy:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 48em) {
+  .wvu-polyptych--pentaptych .wvu-polyptych__panel {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 18.11388%;
+  }
+  .wvu-polyptych--pentaptych .wvu-polyptych__panel:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 48em) {
+  .wvu-polyptych--pentaptych .wvu-polyptych__photo {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  .wvu-polyptych--pentaptych .wvu-polyptych__photo:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 48em) {
+  .wvu-polyptych--pentaptych .wvu-polyptych__copy {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  .wvu-polyptych--pentaptych .wvu-polyptych__copy:last-child {
+    margin-right: 0;
+  }
+}
+
+.wvu-polyptych__container {
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wvu-polyptych__container::after {
+  clear: both;
+  content: "";
+  display: table;
+}

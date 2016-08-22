@@ -1,0 +1,131 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+.wvu-backpage-header {
+  background-color: #333F48;
+  background-position: 50% 50%;
+  background-size: cover;
+  color: white;
+  display: table;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.wvu-backpage-header a {
+  color: white;
+}
+
+.wvu-backpage-header h1, .wvu-backpage-header h2, .wvu-backpage-header h3, .wvu-backpage-header h4, .wvu-backpage-header h5, .wvu-backpage-header h6 {
+  color: white;
+}
+
+.wvu-backpage-header h1 {
+  clear: both;
+  margin-top: 10px;
+  position: relative;
+}
+
+.wvu-backpage-header h1:before {
+  content: '';
+  height: 500px;
+  position: absolute;
+  right: 0;
+  bottom: -433px;
+  left: -280px;
+  background-image: url(../images/diagonal-gold.svg);
+  background-repeat: no-repeat;
+  background-size: 312px;
+  opacity: 1;
+  z-index: 2;
+}
+
+.wvu-backpage-header h1 span {
+  position: relative;
+  z-index: 3;
+}
+
+.wvu-backpage-header p {
+  font-size: 1.5em;
+  margin-bottom: 2em;
+  position: relative;
+  z-index: 3;
+}
+
+.wvu-backpage-header h1, .wvu-backpage-header p, .wvu-backpage-header a {
+  text-shadow: 1px 1px 1px #000000;
+}
+
+.wvu-backpage-header__badge {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.7+0,0.7+100 */
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3000000', endColorstr='#b3000000',GradientType=0 );
+  /* IE6-9 */
+  border-radius: 2px;
+  clear: both;
+  color: white;
+  display: inline-block;
+  padding: .5em .7em;
+  position: relative;
+  text-transform: uppercase;
+  z-index: 3;
+}
+
+.wvu-backpage-header__container {
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 2.5em;
+}
+
+.wvu-backpage-header__container:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: radial-gradient(farthest-side at 90% 55%, transparent, #000 131%);
+  opacity: 0.85;
+  z-index: 1;
+}
+
+@media (min-width: 75em) {
+  .wvu-backpage-header__container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.wvu-backpage-header--big-photo .wvu-backpage-header__container:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: radial-gradient(farthest-side at 90% 55%, transparent, #000 131%);
+  opacity: 0.85;
+  z-index: 1;
+}
+
+.wvu-backpage-header__container {
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wvu-backpage-header__container::after {
+  clear: both;
+  content: "";
+  display: table;
+}

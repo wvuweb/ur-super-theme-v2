@@ -1,0 +1,431 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+.wvu-adverts__container {
+  padding: 4em 0 4.3em 0;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+@media (min-width: 75em) {
+  .wvu-adverts__container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.wvu-adverts__advertisement {
+  border: 1px solid #2C2A29;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 1em;
+  min-height: 79px;
+}
+
+.wvu-adverts__advertisement a {
+  line-height: 0.80487em;
+  font-family: "HelveticaNeueW01-97Blac", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
+  text-transform: uppercase;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+}
+
+.fonts-loaded .wvu-adverts__advertisement a {
+  font-family: "HelveticaNeueW01-97Blac", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
+}
+
+.wvu-adverts__advertisement a:hover {
+  background: transparent;
+}
+
+.wvu-adverts__advertisement h2 {
+  margin-top: 0;
+}
+
+.wvu-adverts__adverts {
+  display: table;
+  width: 100%;
+  margin-top: 2em;
+}
+
+h2 + .wvu-adverts__adverts {
+  margin-top: 3em;
+}
+
+@media (min-width: 48em) {
+  .wvu-adverts__adverts--5 .wvu-adverts__ad-text, .wvu-adverts__adverts--9 .wvu-adverts__ad-text, .wvu-adverts__adverts--10 .wvu-adverts__ad-text {
+    font-size: 1.2em;
+  }
+}
+
+.wvu-adverts__ad-text {
+  position: absolute;
+  font-size: 1.5em;
+  line-height: 0.80487em;
+  font-weight: bold;
+  width: 100%;
+  bottom: -1px;
+  color: white;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&amp;0.7+0,0.7+100 */
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.7)), color-stop(100%, rgba(0, 0, 0, 0.7)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3000000', endColorstr='#b3000000',GradientType=0 );
+  /* IE6-9 */
+}
+
+@media (min-width: 35.625em) {
+  .wvu-adverts__ad-text {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 75em) {
+  .wvu-adverts__ad-text {
+    font-size: 1.5em;
+  }
+}
+
+.wvu-adverts__ad-text a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 0.5em;
+  z-index: 3;
+}
+
+.wvu-adverts__ad-text a:before {
+  content: '';
+  height: 500px;
+  position: absolute;
+  right: 0;
+  bottom: -433px;
+  left: -280px;
+  background-image: url(../images/diagonal-gold.svg);
+  background-repeat: no-repeat;
+  background-size: 312px;
+  opacity: 1;
+  z-index: 2;
+}
+
+.wvu-adverts__ad-text a:before {
+  background-size: 50px;
+  height: 50px;
+  left: -15px;
+  top: -11px;
+}
+
+.wvu-adverts__ad-text a:hover {
+  color: white;
+}
+
+.wvu-adverts__ad-text a:visited {
+  color: white;
+}
+
+.wvu-adverts__ad-text a span {
+  color: white;
+  position: relative;
+  text-decoration: none;
+  z-index: 3;
+}
+
+.wvu-adverts__links-list {
+  margin-top: 1em;
+}
+
+.wvu-adverts__links-list ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.wvu-adverts__links-list ul li a:hover {
+  color: white;
+}
+
+.wvu-adverts__header {
+  text-align: center;
+}
+
+.wvu-adverts__header h2 {
+  font-family: "HelveticaNeueW01-45Ligh", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
+  font-weight: normal;
+  line-height: 1.08333em;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  margin-bottom: .5em;
+  margin-top: 0;
+  text-align: center;
+}
+
+.wvu-adverts__header h3 {
+  font-family: "HelveticaNeueW01-45Ligh", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
+  font-weight: normal;
+  line-height: 1.08333em;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  margin-bottom: .5em;
+  margin-top: 0;
+  text-align: center;
+  font-size: 2.4em;
+}
+
+.wvu-adverts__header p {
+  margin: 1em auto 2em auto;
+}
+
+.wvu-adverts__postscript {
+  clear: both;
+  display: block;
+  margin: 2em auto 0 auto;
+  text-align: center;
+}
+
+.wvu-sidebar .wvu-adverts__advertisement {
+  text-align: left;
+}
+
+.wvu-sidebar .wvu-adverts__advertisement .wvu-adverts__headline, .wvu-sidebar .wvu-adverts__advertisement .wvu-adverts__lede, .wvu-sidebar .wvu-adverts__advertisement .wvu-adverts__postscript {
+  text-align: left;
+}
+
+.wvu-adverts__entries--edit-mode .wvu-adverts__image, .wvu-adverts__entries--edit-mode .wvu-adverts__copy {
+  color: #2C2A29;
+}
+
+.wvu-adverts__entries--edit-mode .wvu-adverts__image h2, .wvu-adverts__entries--edit-mode .wvu-adverts__copy h2 {
+  color: #2C2A29;
+}
+
+.wvu-sidebar .wvu-adverts__adverts .wvu-adverts__advertisement, .wvu-sidebar .wvu-adverts__adverts--two .wvu-adverts__advertisement, .wvu-sidebar .wvu-adverts__adverts--three .wvu-adverts__advertisement, .wvu-sidebar .wvu-adverts__adverts--four .wvu-adverts__advertisement, .wvu-sidebar .wvu-adverts__adverts--five .wvu-adverts__advertisement {
+  margin-bottom: 1em;
+}
+
+.wvu-sidebar .wvu-adverts__container {
+  width: 100%;
+  padding: 0;
+}
+
+.wvu-sidebar .wvu-adverts__header {
+  display: none;
+}
+
+@media (min-width: 75em) {
+  .main .wvu-adverts__ad-text {
+    font-size: 1.2em;
+  }
+}
+
+.main .wvu-adverts__header {
+  display: none;
+}
+
+.wvu-adverts__container {
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wvu-adverts__container::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.wvu-adverts__advertisement {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+}
+
+.wvu-adverts__advertisement:last-child {
+  margin-right: 0;
+}
+
+@media (min-width: 35.625em) {
+  .wvu-adverts__advertisement {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%;
+  }
+  .wvu-adverts__advertisement:last-child {
+    margin-right: 0;
+  }
+  .wvu-adverts__advertisement:nth-child(4n) {
+    margin-right: 0;
+  }
+  .wvu-adverts__advertisement:nth-child(4n+1) {
+    clear: left;
+  }
+}
+
+@media (min-width: 48em) {
+  .wvu-adverts__adverts--2 .wvu-adverts__advertisement {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+  }
+  .wvu-adverts__adverts--2 .wvu-adverts__advertisement:last-child {
+    margin-right: 0;
+  }
+  .wvu-adverts__adverts--2 .wvu-adverts__advertisement:nth-child(2n) {
+    margin-right: 0;
+  }
+  .wvu-adverts__adverts--2 .wvu-adverts__advertisement:nth-child(2n+1) {
+    clear: left;
+  }
+}
+
+@media (min-width: 48em) {
+  .wvu-adverts__adverts--3 .wvu-adverts__advertisement, .wvu-adverts__adverts--6 .wvu-adverts__advertisement {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+  }
+  .wvu-adverts__adverts--3 .wvu-adverts__advertisement:last-child, .wvu-adverts__adverts--6 .wvu-adverts__advertisement:last-child {
+    margin-right: 0;
+  }
+  .wvu-adverts__adverts--3 .wvu-adverts__advertisement:nth-child(4n), .wvu-adverts__adverts--6 .wvu-adverts__advertisement:nth-child(4n) {
+    margin-right: 2.35765%;
+  }
+  .wvu-adverts__adverts--3 .wvu-adverts__advertisement:nth-child(4n+1), .wvu-adverts__adverts--6 .wvu-adverts__advertisement:nth-child(4n+1) {
+    clear: none;
+  }
+  .wvu-adverts__adverts--3 .wvu-adverts__advertisement:nth-child(3n), .wvu-adverts__adverts--6 .wvu-adverts__advertisement:nth-child(3n) {
+    margin-right: 0;
+  }
+  .wvu-adverts__adverts--3 .wvu-adverts__advertisement:nth-child(3n+1), .wvu-adverts__adverts--6 .wvu-adverts__advertisement:nth-child(3n+1) {
+    clear: left;
+  }
+}
+
+@media (min-width: 48em) {
+  .wvu-adverts__adverts--4 .wvu-adverts__advertisement {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%;
+  }
+  .wvu-adverts__adverts--4 .wvu-adverts__advertisement:last-child {
+    margin-right: 0;
+  }
+  .wvu-adverts__adverts--4 .wvu-adverts__advertisement:nth-child(4n) {
+    margin-right: 2.35765%;
+  }
+  .wvu-adverts__adverts--4 .wvu-adverts__advertisement:nth-child(4n+1) {
+    clear: none;
+  }
+  .wvu-adverts__adverts--4 .wvu-adverts__advertisement:nth-child(4n) {
+    margin-right: 0;
+  }
+  .wvu-adverts__adverts--4 .wvu-adverts__advertisement:nth-child(4n+1) {
+    clear: left;
+  }
+}
+
+@media (min-width: 48em) {
+  .wvu-adverts__adverts--5 .wvu-adverts__advertisement, .wvu-adverts__adverts--9 .wvu-adverts__advertisement, .wvu-adverts__adverts--10 .wvu-adverts__advertisement {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 18.11388%;
+  }
+  .wvu-adverts__adverts--5 .wvu-adverts__advertisement:last-child, .wvu-adverts__adverts--9 .wvu-adverts__advertisement:last-child, .wvu-adverts__adverts--10 .wvu-adverts__advertisement:last-child {
+    margin-right: 0;
+  }
+  .wvu-adverts__adverts--5 .wvu-adverts__advertisement:nth-child(4n), .wvu-adverts__adverts--9 .wvu-adverts__advertisement:nth-child(4n), .wvu-adverts__adverts--10 .wvu-adverts__advertisement:nth-child(4n) {
+    margin-right: 2.35765%;
+  }
+  .wvu-adverts__adverts--5 .wvu-adverts__advertisement:nth-child(4n+1), .wvu-adverts__adverts--9 .wvu-adverts__advertisement:nth-child(4n+1), .wvu-adverts__adverts--10 .wvu-adverts__advertisement:nth-child(4n+1) {
+    clear: none;
+  }
+  .wvu-adverts__adverts--5 .wvu-adverts__advertisement:nth-child(5n), .wvu-adverts__adverts--9 .wvu-adverts__advertisement:nth-child(5n), .wvu-adverts__adverts--10 .wvu-adverts__advertisement:nth-child(5n) {
+    margin-right: 0;
+  }
+  .wvu-adverts__adverts--5 .wvu-adverts__advertisement:nth-child(5n+1), .wvu-adverts__adverts--9 .wvu-adverts__advertisement:nth-child(5n+1), .wvu-adverts__adverts--10 .wvu-adverts__advertisement:nth-child(5n+1) {
+    clear: left;
+  }
+}
+
+.wvu-adverts__links-list {
+  margin-top: 1em;
+}
+
+@media (min-width: 48em) {
+  .wvu-adverts__links-list {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%;
+  }
+  .wvu-adverts__links-list:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 35.625em) {
+  .wvu-sidebar .wvu-adverts__advertisement {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  .wvu-sidebar .wvu-adverts__advertisement:last-child {
+    margin-right: 0;
+  }
+  .wvu-sidebar .wvu-adverts__advertisement:nth-child(4n) {
+    margin-right: 2.35765%;
+  }
+  .wvu-sidebar .wvu-adverts__advertisement:nth-child(4n+1) {
+    clear: none;
+  }
+}
+
+@media (min-width: 48em) {
+  .wvu-adverts__entries--edit-mode .wvu-adverts__image, .wvu-adverts__entries--edit-mode .wvu-adverts__copy {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+  }
+  .wvu-adverts__entries--edit-mode .wvu-adverts__image:last-child, .wvu-adverts__entries--edit-mode .wvu-adverts__copy:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 35.625em) {
+  .wvu-sidebar .wvu-adverts__adverts .wvu-adverts__advertisement, .wvu-sidebar .wvu-adverts__adverts--two .wvu-adverts__advertisement, .wvu-sidebar .wvu-adverts__adverts--three .wvu-adverts__advertisement, .wvu-sidebar .wvu-adverts__adverts--four .wvu-adverts__advertisement, .wvu-sidebar .wvu-adverts__adverts--five .wvu-adverts__advertisement {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  .wvu-sidebar .wvu-adverts__adverts .wvu-adverts__advertisement:last-child, .wvu-sidebar .wvu-adverts__adverts--two .wvu-adverts__advertisement:last-child, .wvu-sidebar .wvu-adverts__adverts--three .wvu-adverts__advertisement:last-child, .wvu-sidebar .wvu-adverts__adverts--four .wvu-adverts__advertisement:last-child, .wvu-sidebar .wvu-adverts__adverts--five .wvu-adverts__advertisement:last-child {
+    margin-right: 0;
+  }
+}
+
+.main .wvu-adverts__container {
+  width: 100%;
+  padding: 0;
+}

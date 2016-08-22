@@ -1,0 +1,455 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+.wvu-featurettes h2 {
+  font-size: 8.2em;
+  margin: 0 0 0.5em;
+  text-align: center;
+}
+
+.wvu-featurettes h3 {
+  margin-top: 0;
+}
+
+.wvu-featurettes h3 a {
+  color: #2C2A29;
+  text-decoration: none;
+}
+
+.wvu-featurettes__container {
+  padding: 4em 0 4.3em 0;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+@media (min-width: 75em) {
+  .wvu-featurettes__container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.wvu-featurettes__header {
+  font-size: 2.5em;
+  font-family: "HelveticaNeueW01-45Ligh", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
+  font-weight: normal;
+  line-height: 1.08333em;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wvu-featurettes__header h2 {
+  margin: 0 0 0.5em;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 0.80487em;
+  font-family: "HelveticaNeueW01-97Blac", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 2em;
+}
+
+.fonts-loaded .wvu-featurettes__header h2 {
+  font-family: "HelveticaNeueW01-97Blac", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
+}
+
+.wvu-featurettes__header h3 {
+  font-family: "HelveticaNeueW01-45Ligh", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
+  font-weight: normal;
+  line-height: 1.08333em;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1em;
+}
+
+.wvu-featurettes__header p {
+  margin-top: 0;
+}
+
+.wvu-featurettes__header h2 + p {
+  margin-top: 1em;
+}
+
+.wvu-featurettes__postscript {
+  clear: both;
+  display: block;
+  margin: 2em auto 0 auto;
+  text-align: center;
+}
+
+@media (min-width: 48em) {
+  .wvu-featurettes__featurettes--1 h3, .wvu-featurettes__featurettes--2 h3 {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 48em) {
+  .wvu-featurettes--profiles .wvu-featurettes__featurettes--1 h3 {
+    margin-top: 0;
+  }
+}
+
+.wvu-featurettes__featurette {
+  margin-bottom: 2em;
+}
+
+.wvu-featurettes__photo {
+  margin-bottom: 1em;
+}
+
+.wvu-featurettes--profiles img {
+  border-radius: 50%;
+}
+
+.wvu-featurettes--profiles .wvu-featurettes__photo {
+  padding: 0 2em;
+  text-align: center;
+}
+
+.wvu-featurettes__quote:before {
+  content: '';
+}
+
+.main .wvu-featurettes__container, .wvu-sidebar .wvu-featurettes__container {
+  width: 100%;
+}
+
+@media (min-width: 48em) {
+  .wvu-featurettes__featurettes--1 .wvu-featurettes__featurette, .wvu-featurettes__featurettes--2 .wvu-featurettes__featurette, .wvu-featurettes__featurettes--3 .wvu-featurettes__featurette, .wvu-featurettes__featurettes--4 .wvu-featurettes__featurette, .wvu-featurettes__featurettes--5 .wvu-featurettes__featurette {
+    margin-bottom: 0;
+  }
+}
+
+.wvu-sidebar .wvu-featurettes__container, .wvu-featurettes__featurette .wvu-featurettes__container, .so-magic-anytych__panel .wvu-featurettes__container, .main .wvu-featurettes__container {
+  padding: 1em 0;
+}
+
+.wvu-sidebar .wvu-featurettes__postscript, .wvu-sidebar .wvu-featurettes__header, .wvu-featurettes__featurette .wvu-featurettes__postscript, .wvu-featurettes__featurette .wvu-featurettes__header, .so-magic-anytych__panel .wvu-featurettes__postscript, .so-magic-anytych__panel .wvu-featurettes__header, .main .wvu-featurettes__postscript, .main .wvu-featurettes__header {
+  display: none;
+}
+
+@media (min-width: 48em) {
+  .wvu-sidebar .wvu-featurettes__featurette, .wvu-featurettes__featurette .wvu-featurettes__featurette, .so-magic-anytych__panel .wvu-featurettes__featurette, .main .wvu-featurettes__featurette {
+    margin-bottom: 1em;
+  }
+}
+
+@media (min-width: 48em) {
+  .wvu-sidebar .wvu-featurettes__featurette--1 .wvu-featurettes__info, .wvu-sidebar .wvu-featurettes__featurette--2 .wvu-featurettes__info, .wvu-sidebar .wvu-featurettes__featurette--3 .wvu-featurettes__info, .wvu-featurettes__featurette .wvu-featurettes__featurette--1 .wvu-featurettes__info, .wvu-featurettes__featurette .wvu-featurettes__featurette--2 .wvu-featurettes__info, .wvu-featurettes__featurette .wvu-featurettes__featurette--3 .wvu-featurettes__info, .so-magic-anytych__panel .wvu-featurettes__featurette--1 .wvu-featurettes__info, .so-magic-anytych__panel .wvu-featurettes__featurette--2 .wvu-featurettes__info, .so-magic-anytych__panel .wvu-featurettes__featurette--3 .wvu-featurettes__info, .main .wvu-featurettes__featurette--1 .wvu-featurettes__info, .main .wvu-featurettes__featurette--2 .wvu-featurettes__info, .main .wvu-featurettes__featurette--3 .wvu-featurettes__info {
+    font-size: .8em;
+  }
+}
+
+.wvu-sidebar .wvu-featurettes__featurette--1 .wvu-featurettes__info h3, .wvu-sidebar .wvu-featurettes__featurette--2 .wvu-featurettes__info h3, .wvu-sidebar .wvu-featurettes__featurette--3 .wvu-featurettes__info h3, .wvu-featurettes__featurette .wvu-featurettes__featurette--1 .wvu-featurettes__info h3, .wvu-featurettes__featurette .wvu-featurettes__featurette--2 .wvu-featurettes__info h3, .wvu-featurettes__featurette .wvu-featurettes__featurette--3 .wvu-featurettes__info h3, .so-magic-anytych__panel .wvu-featurettes__featurette--1 .wvu-featurettes__info h3, .so-magic-anytych__panel .wvu-featurettes__featurette--2 .wvu-featurettes__info h3, .so-magic-anytych__panel .wvu-featurettes__featurette--3 .wvu-featurettes__info h3, .main .wvu-featurettes__featurette--1 .wvu-featurettes__info h3, .main .wvu-featurettes__featurette--2 .wvu-featurettes__info h3, .main .wvu-featurettes__featurette--3 .wvu-featurettes__info h3 {
+  margin-bottom: 0;
+}
+
+@media (min-width: 35.625em) {
+  .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__featurette, .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__featurette, .so-magic-anytych__panel .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__featurette, .main .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__featurette {
+    margin-bottom: 1em;
+  }
+}
+
+@media (min-width: 35.625em) {
+  .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__photo, .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__photo, .so-magic-anytych__panel .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__photo, .main .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__photo {
+    padding: 0;
+  }
+}
+
+@media (min-width: 35.625em) {
+  .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__info, .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__info, .so-magic-anytych__panel .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__info, .main .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__info {
+    font-size: .8em;
+  }
+}
+
+.wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__info h3, .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__info h3, .so-magic-anytych__panel .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__info h3, .main .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__info h3 {
+  margin-bottom: 0;
+}
+
+@media (min-width: 35.625em) {
+  .main .wvu-featurettes--profiles .wvu-featurettes__featurettes--1 .wvu-featurettes__info, .main .wvu-featurettes--profiles .wvu-featurettes__featurettes--2 .wvu-featurettes__info, .main .wvu-featurettes--profiles .wvu-featurettes__featurettes--3 .wvu-featurettes__info {
+    font-size: 1em;
+  }
+}
+
+.wvu-featurettes__container {
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wvu-featurettes__container::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+@media (min-width: 48em) {
+  .wvu-featurettes__featurettes--1 .wvu-featurettes__photo, .wvu-featurettes__featurettes--2 .wvu-featurettes__photo {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+  }
+  .wvu-featurettes__featurettes--1 .wvu-featurettes__photo:last-child, .wvu-featurettes__featurettes--2 .wvu-featurettes__photo:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 48em) {
+  .wvu-featurettes__featurettes--1 .wvu-featurettes__info--hasphoto, .wvu-featurettes__featurettes--2 .wvu-featurettes__info--hasphoto {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+  }
+  .wvu-featurettes__featurettes--1 .wvu-featurettes__info--hasphoto:last-child, .wvu-featurettes__featurettes--2 .wvu-featurettes__info--hasphoto:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 48em) {
+  .wvu-featurettes--profiles .wvu-featurettes__featurettes--1 .wvu-featurettes__photo {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%;
+  }
+  .wvu-featurettes--profiles .wvu-featurettes__featurettes--1 .wvu-featurettes__photo:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 48em) {
+  .wvu-featurettes--profiles .wvu-featurettes__featurettes--1 .wvu-featurettes__info--hasphoto {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 74.41059%;
+  }
+  .wvu-featurettes--profiles .wvu-featurettes__featurettes--1 .wvu-featurettes__info--hasphoto:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 48em) {
+  .wvu-featurettes__featurette {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%;
+  }
+  .wvu-featurettes__featurette:last-child {
+    margin-right: 0;
+  }
+  .wvu-featurettes__featurette:nth-child(4n) {
+    margin-right: 0;
+  }
+  .wvu-featurettes__featurette:nth-child(4n+1) {
+    clear: left;
+  }
+}
+
+@media (min-width: 48em) {
+  .wvu-featurettes__featurettes--1 .wvu-featurettes__featurette {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  .wvu-featurettes__featurettes--1 .wvu-featurettes__featurette:last-child {
+    margin-right: 0;
+  }
+  .wvu-featurettes__featurettes--1 .wvu-featurettes__featurette:nth-child(4n) {
+    margin-right: 2.35765%;
+  }
+  .wvu-featurettes__featurettes--1 .wvu-featurettes__featurette:nth-child(4n+1) {
+    clear: none;
+  }
+}
+
+@media (min-width: 48em) {
+  .wvu-featurettes__featurettes--2 .wvu-featurettes__featurette {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+  }
+  .wvu-featurettes__featurettes--2 .wvu-featurettes__featurette:last-child {
+    margin-right: 0;
+  }
+  .wvu-featurettes__featurettes--2 .wvu-featurettes__featurette:nth-child(4n) {
+    margin-right: 2.35765%;
+  }
+  .wvu-featurettes__featurettes--2 .wvu-featurettes__featurette:nth-child(4n+1) {
+    clear: none;
+  }
+}
+
+@media (min-width: 48em) {
+  .wvu-featurettes__featurettes--3 .wvu-featurettes__featurette {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+  }
+  .wvu-featurettes__featurettes--3 .wvu-featurettes__featurette:last-child {
+    margin-right: 0;
+  }
+  .wvu-featurettes__featurettes--3 .wvu-featurettes__featurette:nth-child(4n) {
+    margin-right: 2.35765%;
+  }
+  .wvu-featurettes__featurettes--3 .wvu-featurettes__featurette:nth-child(4n+1) {
+    clear: none;
+  }
+}
+
+@media (min-width: 48em) {
+  .wvu-featurettes__featurettes--5 .wvu-featurettes__featurette {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 18.11388%;
+  }
+  .wvu-featurettes__featurettes--5 .wvu-featurettes__featurette:last-child {
+    margin-right: 0;
+  }
+  .wvu-featurettes__featurettes--5 .wvu-featurettes__featurette:nth-child(4n) {
+    margin-right: 2.35765%;
+  }
+  .wvu-featurettes__featurettes--5 .wvu-featurettes__featurette:nth-child(4n+1) {
+    clear: none;
+  }
+}
+
+@media (min-width: 48em) {
+  .wvu-sidebar .wvu-featurettes__featurette, .wvu-featurettes__featurette .wvu-featurettes__featurette, .wvu-polyptych__panel .wvu-featurettes__featurette {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  .wvu-sidebar .wvu-featurettes__featurette:last-child, .wvu-featurettes__featurette .wvu-featurettes__featurette:last-child, .wvu-polyptych__panel .wvu-featurettes__featurette:last-child {
+    margin-right: 0;
+  }
+  .wvu-sidebar .wvu-featurettes__featurette:nth-child(4n), .wvu-featurettes__featurette .wvu-featurettes__featurette:nth-child(4n), .wvu-polyptych__panel .wvu-featurettes__featurette:nth-child(4n) {
+    margin-right: 2.35765%;
+  }
+  .wvu-sidebar .wvu-featurettes__featurette:nth-child(4n+1), .wvu-featurettes__featurette .wvu-featurettes__featurette:nth-child(4n+1), .wvu-polyptych__panel .wvu-featurettes__featurette:nth-child(4n+1) {
+    clear: none;
+  }
+}
+
+@media (min-width: 48em) {
+  .wvu-sidebar .wvu-featurettes__featurette--1 .wvu-featurettes__featurette, .wvu-sidebar .wvu-featurettes__featurette--2 .wvu-featurettes__featurette, .wvu-sidebar .wvu-featurettes__featurette--3 .wvu-featurettes__featurette, .wvu-sidebar .wvu-featurettes__featurette--5 .wvu-featurettes__featurette, .wvu-featurettes__featurette .wvu-featurettes__featurette--1 .wvu-featurettes__featurette, .wvu-featurettes__featurette .wvu-featurettes__featurette--2 .wvu-featurettes__featurette, .wvu-featurettes__featurette .wvu-featurettes__featurette--3 .wvu-featurettes__featurette, .wvu-featurettes__featurette .wvu-featurettes__featurette--5 .wvu-featurettes__featurette, .wvu-polyptych__panel .wvu-featurettes__featurette--1 .wvu-featurettes__featurette, .wvu-polyptych__panel .wvu-featurettes__featurette--2 .wvu-featurettes__featurette, .wvu-polyptych__panel .wvu-featurettes__featurette--3 .wvu-featurettes__featurette, .wvu-polyptych__panel .wvu-featurettes__featurette--5 .wvu-featurettes__featurette {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  .wvu-sidebar .wvu-featurettes__featurette--1 .wvu-featurettes__featurette:last-child, .wvu-sidebar .wvu-featurettes__featurette--2 .wvu-featurettes__featurette:last-child, .wvu-sidebar .wvu-featurettes__featurette--3 .wvu-featurettes__featurette:last-child, .wvu-sidebar .wvu-featurettes__featurette--5 .wvu-featurettes__featurette:last-child, .wvu-featurettes__featurette .wvu-featurettes__featurette--1 .wvu-featurettes__featurette:last-child, .wvu-featurettes__featurette .wvu-featurettes__featurette--2 .wvu-featurettes__featurette:last-child, .wvu-featurettes__featurette .wvu-featurettes__featurette--3 .wvu-featurettes__featurette:last-child, .wvu-featurettes__featurette .wvu-featurettes__featurette--5 .wvu-featurettes__featurette:last-child, .wvu-polyptych__panel .wvu-featurettes__featurette--1 .wvu-featurettes__featurette:last-child, .wvu-polyptych__panel .wvu-featurettes__featurette--2 .wvu-featurettes__featurette:last-child, .wvu-polyptych__panel .wvu-featurettes__featurette--3 .wvu-featurettes__featurette:last-child, .wvu-polyptych__panel .wvu-featurettes__featurette--5 .wvu-featurettes__featurette:last-child {
+    margin-right: 0;
+  }
+  .wvu-sidebar .wvu-featurettes__featurette--1 .wvu-featurettes__featurette:nth-child(4n), .wvu-sidebar .wvu-featurettes__featurette--2 .wvu-featurettes__featurette:nth-child(4n), .wvu-sidebar .wvu-featurettes__featurette--3 .wvu-featurettes__featurette:nth-child(4n), .wvu-sidebar .wvu-featurettes__featurette--5 .wvu-featurettes__featurette:nth-child(4n), .wvu-featurettes__featurette .wvu-featurettes__featurette--1 .wvu-featurettes__featurette:nth-child(4n), .wvu-featurettes__featurette .wvu-featurettes__featurette--2 .wvu-featurettes__featurette:nth-child(4n), .wvu-featurettes__featurette .wvu-featurettes__featurette--3 .wvu-featurettes__featurette:nth-child(4n), .wvu-featurettes__featurette .wvu-featurettes__featurette--5 .wvu-featurettes__featurette:nth-child(4n), .wvu-polyptych__panel .wvu-featurettes__featurette--1 .wvu-featurettes__featurette:nth-child(4n), .wvu-polyptych__panel .wvu-featurettes__featurette--2 .wvu-featurettes__featurette:nth-child(4n), .wvu-polyptych__panel .wvu-featurettes__featurette--3 .wvu-featurettes__featurette:nth-child(4n), .wvu-polyptych__panel .wvu-featurettes__featurette--5 .wvu-featurettes__featurette:nth-child(4n) {
+    margin-right: 2.35765%;
+  }
+  .wvu-sidebar .wvu-featurettes__featurette--1 .wvu-featurettes__featurette:nth-child(4n+1), .wvu-sidebar .wvu-featurettes__featurette--2 .wvu-featurettes__featurette:nth-child(4n+1), .wvu-sidebar .wvu-featurettes__featurette--3 .wvu-featurettes__featurette:nth-child(4n+1), .wvu-sidebar .wvu-featurettes__featurette--5 .wvu-featurettes__featurette:nth-child(4n+1), .wvu-featurettes__featurette .wvu-featurettes__featurette--1 .wvu-featurettes__featurette:nth-child(4n+1), .wvu-featurettes__featurette .wvu-featurettes__featurette--2 .wvu-featurettes__featurette:nth-child(4n+1), .wvu-featurettes__featurette .wvu-featurettes__featurette--3 .wvu-featurettes__featurette:nth-child(4n+1), .wvu-featurettes__featurette .wvu-featurettes__featurette--5 .wvu-featurettes__featurette:nth-child(4n+1), .wvu-polyptych__panel .wvu-featurettes__featurette--1 .wvu-featurettes__featurette:nth-child(4n+1), .wvu-polyptych__panel .wvu-featurettes__featurette--2 .wvu-featurettes__featurette:nth-child(4n+1), .wvu-polyptych__panel .wvu-featurettes__featurette--3 .wvu-featurettes__featurette:nth-child(4n+1), .wvu-polyptych__panel .wvu-featurettes__featurette--5 .wvu-featurettes__featurette:nth-child(4n+1) {
+    clear: none;
+  }
+}
+
+@media (min-width: 48em) {
+  .wvu-sidebar .wvu-featurettes__featurette--1 .wvu-featurettes__photo, .wvu-sidebar .wvu-featurettes__featurette--2 .wvu-featurettes__photo, .wvu-sidebar .wvu-featurettes__featurette--3 .wvu-featurettes__photo, .wvu-sidebar .wvu-featurettes__featurette--5 .wvu-featurettes__photo, .wvu-featurettes__featurette .wvu-featurettes__featurette--1 .wvu-featurettes__photo, .wvu-featurettes__featurette .wvu-featurettes__featurette--2 .wvu-featurettes__photo, .wvu-featurettes__featurette .wvu-featurettes__featurette--3 .wvu-featurettes__photo, .wvu-featurettes__featurette .wvu-featurettes__featurette--5 .wvu-featurettes__photo, .wvu-polyptych__panel .wvu-featurettes__featurette--1 .wvu-featurettes__photo, .wvu-polyptych__panel .wvu-featurettes__featurette--2 .wvu-featurettes__photo, .wvu-polyptych__panel .wvu-featurettes__featurette--3 .wvu-featurettes__photo, .wvu-polyptych__panel .wvu-featurettes__featurette--5 .wvu-featurettes__photo {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  .wvu-sidebar .wvu-featurettes__featurette--1 .wvu-featurettes__photo:last-child, .wvu-sidebar .wvu-featurettes__featurette--2 .wvu-featurettes__photo:last-child, .wvu-sidebar .wvu-featurettes__featurette--3 .wvu-featurettes__photo:last-child, .wvu-sidebar .wvu-featurettes__featurette--5 .wvu-featurettes__photo:last-child, .wvu-featurettes__featurette .wvu-featurettes__featurette--1 .wvu-featurettes__photo:last-child, .wvu-featurettes__featurette .wvu-featurettes__featurette--2 .wvu-featurettes__photo:last-child, .wvu-featurettes__featurette .wvu-featurettes__featurette--3 .wvu-featurettes__photo:last-child, .wvu-featurettes__featurette .wvu-featurettes__featurette--5 .wvu-featurettes__photo:last-child, .wvu-polyptych__panel .wvu-featurettes__featurette--1 .wvu-featurettes__photo:last-child, .wvu-polyptych__panel .wvu-featurettes__featurette--2 .wvu-featurettes__photo:last-child, .wvu-polyptych__panel .wvu-featurettes__featurette--3 .wvu-featurettes__photo:last-child, .wvu-polyptych__panel .wvu-featurettes__featurette--5 .wvu-featurettes__photo:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 48em) {
+  .wvu-sidebar .wvu-featurettes__featurette--1 .wvu-featurettes__info, .wvu-sidebar .wvu-featurettes__featurette--2 .wvu-featurettes__info, .wvu-sidebar .wvu-featurettes__featurette--3 .wvu-featurettes__info, .wvu-sidebar .wvu-featurettes__featurette--5 .wvu-featurettes__info, .wvu-featurettes__featurette .wvu-featurettes__featurette--1 .wvu-featurettes__info, .wvu-featurettes__featurette .wvu-featurettes__featurette--2 .wvu-featurettes__info, .wvu-featurettes__featurette .wvu-featurettes__featurette--3 .wvu-featurettes__info, .wvu-featurettes__featurette .wvu-featurettes__featurette--5 .wvu-featurettes__info, .wvu-polyptych__panel .wvu-featurettes__featurette--1 .wvu-featurettes__info, .wvu-polyptych__panel .wvu-featurettes__featurette--2 .wvu-featurettes__info, .wvu-polyptych__panel .wvu-featurettes__featurette--3 .wvu-featurettes__info, .wvu-polyptych__panel .wvu-featurettes__featurette--5 .wvu-featurettes__info {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  .wvu-sidebar .wvu-featurettes__featurette--1 .wvu-featurettes__info:last-child, .wvu-sidebar .wvu-featurettes__featurette--2 .wvu-featurettes__info:last-child, .wvu-sidebar .wvu-featurettes__featurette--3 .wvu-featurettes__info:last-child, .wvu-sidebar .wvu-featurettes__featurette--5 .wvu-featurettes__info:last-child, .wvu-featurettes__featurette .wvu-featurettes__featurette--1 .wvu-featurettes__info:last-child, .wvu-featurettes__featurette .wvu-featurettes__featurette--2 .wvu-featurettes__info:last-child, .wvu-featurettes__featurette .wvu-featurettes__featurette--3 .wvu-featurettes__info:last-child, .wvu-featurettes__featurette .wvu-featurettes__featurette--5 .wvu-featurettes__info:last-child, .wvu-polyptych__panel .wvu-featurettes__featurette--1 .wvu-featurettes__info:last-child, .wvu-polyptych__panel .wvu-featurettes__featurette--2 .wvu-featurettes__info:last-child, .wvu-polyptych__panel .wvu-featurettes__featurette--3 .wvu-featurettes__info:last-child, .wvu-polyptych__panel .wvu-featurettes__featurette--5 .wvu-featurettes__info:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 48em) {
+  .wvu-sidebar .wvu-featurettes__featurette--1 .wvu-featurettes__info--hasphoto, .wvu-sidebar .wvu-featurettes__featurette--2 .wvu-featurettes__info--hasphoto, .wvu-sidebar .wvu-featurettes__featurette--3 .wvu-featurettes__info--hasphoto, .wvu-sidebar .wvu-featurettes__featurette--5 .wvu-featurettes__info--hasphoto, .wvu-featurettes__featurette .wvu-featurettes__featurette--1 .wvu-featurettes__info--hasphoto, .wvu-featurettes__featurette .wvu-featurettes__featurette--2 .wvu-featurettes__info--hasphoto, .wvu-featurettes__featurette .wvu-featurettes__featurette--3 .wvu-featurettes__info--hasphoto, .wvu-featurettes__featurette .wvu-featurettes__featurette--5 .wvu-featurettes__info--hasphoto, .wvu-polyptych__panel .wvu-featurettes__featurette--1 .wvu-featurettes__info--hasphoto, .wvu-polyptych__panel .wvu-featurettes__featurette--2 .wvu-featurettes__info--hasphoto, .wvu-polyptych__panel .wvu-featurettes__featurette--3 .wvu-featurettes__info--hasphoto, .wvu-polyptych__panel .wvu-featurettes__featurette--5 .wvu-featurettes__info--hasphoto {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  .wvu-sidebar .wvu-featurettes__featurette--1 .wvu-featurettes__info--hasphoto:last-child, .wvu-sidebar .wvu-featurettes__featurette--2 .wvu-featurettes__info--hasphoto:last-child, .wvu-sidebar .wvu-featurettes__featurette--3 .wvu-featurettes__info--hasphoto:last-child, .wvu-sidebar .wvu-featurettes__featurette--5 .wvu-featurettes__info--hasphoto:last-child, .wvu-featurettes__featurette .wvu-featurettes__featurette--1 .wvu-featurettes__info--hasphoto:last-child, .wvu-featurettes__featurette .wvu-featurettes__featurette--2 .wvu-featurettes__info--hasphoto:last-child, .wvu-featurettes__featurette .wvu-featurettes__featurette--3 .wvu-featurettes__info--hasphoto:last-child, .wvu-featurettes__featurette .wvu-featurettes__featurette--5 .wvu-featurettes__info--hasphoto:last-child, .wvu-polyptych__panel .wvu-featurettes__featurette--1 .wvu-featurettes__info--hasphoto:last-child, .wvu-polyptych__panel .wvu-featurettes__featurette--2 .wvu-featurettes__info--hasphoto:last-child, .wvu-polyptych__panel .wvu-featurettes__featurette--3 .wvu-featurettes__info--hasphoto:last-child, .wvu-polyptych__panel .wvu-featurettes__featurette--5 .wvu-featurettes__info--hasphoto:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 35.625em) {
+  .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__featurette, .wvu-sidebar .wvu-featurettes--quote .wvu-featurettes__featurettes .wvu-featurettes__featurette, .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__featurette, .wvu-featurettes__featurette .wvu-featurettes--quote .wvu-featurettes__featurettes .wvu-featurettes__featurette, .wvu-polyptych__panel .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__featurette, .wvu-polyptych__panel .wvu-featurettes--quote .wvu-featurettes__featurettes .wvu-featurettes__featurette {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__featurette:last-child, .wvu-sidebar .wvu-featurettes--quote .wvu-featurettes__featurettes .wvu-featurettes__featurette:last-child, .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__featurette:last-child, .wvu-featurettes__featurette .wvu-featurettes--quote .wvu-featurettes__featurettes .wvu-featurettes__featurette:last-child, .wvu-polyptych__panel .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__featurette:last-child, .wvu-polyptych__panel .wvu-featurettes--quote .wvu-featurettes__featurettes .wvu-featurettes__featurette:last-child {
+    margin-right: 0;
+  }
+  .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__featurette:nth-child(4n), .wvu-sidebar .wvu-featurettes--quote .wvu-featurettes__featurettes .wvu-featurettes__featurette:nth-child(4n), .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__featurette:nth-child(4n), .wvu-featurettes__featurette .wvu-featurettes--quote .wvu-featurettes__featurettes .wvu-featurettes__featurette:nth-child(4n), .wvu-polyptych__panel .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__featurette:nth-child(4n), .wvu-polyptych__panel .wvu-featurettes--quote .wvu-featurettes__featurettes .wvu-featurettes__featurette:nth-child(4n) {
+    margin-right: 2.35765%;
+  }
+  .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__featurette:nth-child(4n+1), .wvu-sidebar .wvu-featurettes--quote .wvu-featurettes__featurettes .wvu-featurettes__featurette:nth-child(4n+1), .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__featurette:nth-child(4n+1), .wvu-featurettes__featurette .wvu-featurettes--quote .wvu-featurettes__featurettes .wvu-featurettes__featurette:nth-child(4n+1), .wvu-polyptych__panel .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__featurette:nth-child(4n+1), .wvu-polyptych__panel .wvu-featurettes--quote .wvu-featurettes__featurettes .wvu-featurettes__featurette:nth-child(4n+1) {
+    clear: none;
+  }
+}
+
+@media (min-width: 35.625em) {
+  .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__photo, .wvu-sidebar .wvu-featurettes--quote .wvu-featurettes__featurettes .wvu-featurettes__photo, .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__photo, .wvu-featurettes__featurette .wvu-featurettes--quote .wvu-featurettes__featurettes .wvu-featurettes__photo, .wvu-polyptych__panel .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__photo, .wvu-polyptych__panel .wvu-featurettes--quote .wvu-featurettes__featurettes .wvu-featurettes__photo {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%;
+  }
+  .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__photo:last-child, .wvu-sidebar .wvu-featurettes--quote .wvu-featurettes__featurettes .wvu-featurettes__photo:last-child, .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__photo:last-child, .wvu-featurettes__featurette .wvu-featurettes--quote .wvu-featurettes__featurettes .wvu-featurettes__photo:last-child, .wvu-polyptych__panel .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__photo:last-child, .wvu-polyptych__panel .wvu-featurettes--quote .wvu-featurettes__featurettes .wvu-featurettes__photo:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 35.625em) {
+  .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__info, .wvu-sidebar .wvu-featurettes--quote .wvu-featurettes__featurettes .wvu-featurettes__info, .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__info, .wvu-featurettes__featurette .wvu-featurettes--quote .wvu-featurettes__featurettes .wvu-featurettes__info, .wvu-polyptych__panel .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__info, .wvu-polyptych__panel .wvu-featurettes--quote .wvu-featurettes__featurettes .wvu-featurettes__info {
+    font-size: .8em;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__info:last-child, .wvu-sidebar .wvu-featurettes--quote .wvu-featurettes__featurettes .wvu-featurettes__info:last-child, .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__info:last-child, .wvu-featurettes__featurette .wvu-featurettes--quote .wvu-featurettes__featurettes .wvu-featurettes__info:last-child, .wvu-polyptych__panel .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__info:last-child, .wvu-polyptych__panel .wvu-featurettes--quote .wvu-featurettes__featurettes .wvu-featurettes__info:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 35.625em) {
+  .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__info--hasphoto, .wvu-sidebar .wvu-featurettes--quote .wvu-featurettes__featurettes .wvu-featurettes__info--hasphoto, .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__info--hasphoto, .wvu-featurettes__featurette .wvu-featurettes--quote .wvu-featurettes__featurettes .wvu-featurettes__info--hasphoto, .wvu-polyptych__panel .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__info--hasphoto, .wvu-polyptych__panel .wvu-featurettes--quote .wvu-featurettes__featurettes .wvu-featurettes__info--hasphoto {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 74.41059%;
+  }
+  .wvu-sidebar .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__info--hasphoto:last-child, .wvu-sidebar .wvu-featurettes--quote .wvu-featurettes__featurettes .wvu-featurettes__info--hasphoto:last-child, .wvu-featurettes__featurette .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__info--hasphoto:last-child, .wvu-featurettes__featurette .wvu-featurettes--quote .wvu-featurettes__featurettes .wvu-featurettes__info--hasphoto:last-child, .wvu-polyptych__panel .wvu-featurettes--profiles .wvu-featurettes__featurettes .wvu-featurettes__info--hasphoto:last-child, .wvu-polyptych__panel .wvu-featurettes--quote .wvu-featurettes__featurettes .wvu-featurettes__info--hasphoto:last-child {
+    margin-right: 0;
+  }
+}
