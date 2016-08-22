@@ -2506,7 +2506,7 @@ h1, .wvu-h1 {
 }
 
 .wvu-shout {
-  font-size: 3em;
+  font-size: 4.5em;
   line-height: 0.80487em;
   font-family: Impact, Charcoal, "Arial Black", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
   text-transform: uppercase;
@@ -2519,7 +2519,7 @@ h1, .wvu-h1 {
 
 @media (min-width: 60em) {
   .wvu-shout {
-    font-size: 8.2em;
+    font-size: 6.2em;
   }
 }
 
@@ -7159,13 +7159,11 @@ img.mfp-img {
 }
 
 .wvu-hero--big-photo .wvu-hero__copy h1 {
-  font-size: 4.5em;
   margin-top: .8em;
 }
 
 @media (min-width: 60em) {
   .wvu-hero--big-photo .wvu-hero__copy h1 {
-    font-size: 6.2em;
     max-width: 6em;
   }
 }
@@ -7227,18 +7225,9 @@ img.mfp-img {
 }
 
 .wvu-hero__container {
-  max-width: 75em;
-  margin-left: auto;
-  margin-right: auto;
   padding: 4em 0 4.3em 0;
   padding-left: 1em;
   padding-right: 1em;
-}
-
-.wvu-hero__container::after {
-  clear: both;
-  content: "";
-  display: table;
 }
 
 @media (min-width: 75em) {

@@ -54,10 +54,8 @@
 .wvu-hero--big-photo {
   .wvu-hero__copy {
     h1 {
-      font-size: 4.5em;
       margin-top: .8em;
       @include mq($bp-large) {
-        font-size: 6.2em;
         max-width: 6em;
       }
       &:before {
@@ -105,7 +103,6 @@
 }
 
 .wvu-hero__container {
-  @include outer-container();
   @include u-wvu-container-padding();
   @include so-vignetting($wvu-hero-vignetting-opacity);
 }
