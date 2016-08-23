@@ -13,11 +13,11 @@
 <r:set_var name="pentaptychItems3" value="{$pentaptychItems3}" default="5" />
 <r:set_var name="pentaptych3" value="{$pentaptychScope3}" default="page" />
 
-<div class="wvu-polyptych <r:page:content name="so-background-color-class--pentaptych3" /> background wvu-polyptych--pentaptych">
-  <div class="wvu-polyptych__container">
+<div class="wvu-pentaptych <r:page:content name="so-background-color-class--pentaptych3" /> background wvu-pentaptych--pentaptych">
+  <div class="wvu-pentaptych__container">
 
     <r:page:if_has_content_for region="wvu-pentaptych__header3" always_show_in_edit_mode="true">
-      <div class="wvu-polyptych__header">
+      <div class="wvu-pentaptych__header">
         <r:editable_region name="wvu-pentaptych__header3" scope="{$pentaptychScope3}">
           <h2>Pentaptych Headline</h2>
           <p>Subhead goes here.</p>
@@ -25,26 +25,26 @@
       </div>
     </r:page:if_has_content_for>
 
-    <div class="wvu-polyptych__panels">
+    <div class="wvu-pentaptych__panels">
 
       <r:loop:each times="{$pentaptychItems3}">
 
         <r:set_var name="pentaptychCopy3"><r:var name="pentaptychCopy__base3" />--<r:item /></r:set_var>
 
         <r:page:if_has_content_for region="{$pentaptychCopy3}" always_show_in_edit_mode="true">
-          <div class="wvu-polyptych__panel">
+          <div class="wvu-pentaptych__panel">
 
             <r:set_var name="pentaptychPhoto3"><r:var name="pentaptychPhoto__base3" />--<r:item /></r:set_var>
 
             <r:page:if_has_content_for region="{$pentaptychPhoto3}" always_show_in_edit_mode="true">
-              <div class="wvu-polyptych__photo">
+              <div class="wvu-pentaptych__photo">
                 <r:editable_region name="{$pentaptychPhoto3}" scope="{$pentaptychScope3}">
                   <img src="http://placehold.it/960x640">
                 </r:editable_region>
               </div>
             </r:page:if_has_content_for>
 
-            <div class="wvu-polyptych__copy <r:page:unless_has_content_for region="{$pentaptychPhoto3}">wvu-polyptych__copy--wide</r:page:unless_has_content_for>">
+            <div class="wvu-pentaptych__copy <r:page:unless_has_content_for region="{$pentaptychPhoto3}">wvu-pentaptych__copy--wide</r:page:unless_has_content_for>">
 
               <r:editable_region name="{$pentaptychCopy3}" scope="{$pentaptychScope3}">
                 <h3>Headline Goes Here</h3>
@@ -61,7 +61,7 @@
     </div> <!-- end wvu-pentaptych__panels -->
 
     <r:page:if_has_content_for region="wvu-pentaptych__postscript3">
-      <div class="wvu-polyptych__postscript">
+      <div class="wvu-pentaptych__postscript">
         <r:editable_region name="wvu-pentaptych__postscript3" scope="{$pentaptychScope3}">
           Put any additional info or links here.
         </r:editable_region>
