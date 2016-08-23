@@ -5863,6 +5863,19 @@ h2 + .wvu-adverts__adverts {
   }
 }
 
+@media (min-width: 48em) {
+  .main .wvu-calendar.wvu-calendar--flex, .wvu-diptych__panel .wvu-calendar.wvu-calendar--flex, .wvu-triptych__panel .wvu-calendar.wvu-calendar--flex, .wvu-quadriptych__panel .wvu-calendar.wvu-calendar--flex, .wvu-pentaptych__panel .wvu-calendar.wvu-calendar--flex, .wvu-sidebar .wvu-calendar.wvu-calendar--flex {
+    display: block;
+  }
+  .main .wvu-calendar.wvu-calendar--flex li, .wvu-diptych__panel .wvu-calendar.wvu-calendar--flex li, .wvu-triptych__panel .wvu-calendar.wvu-calendar--flex li, .wvu-quadriptych__panel .wvu-calendar.wvu-calendar--flex li, .wvu-pentaptych__panel .wvu-calendar.wvu-calendar--flex li, .wvu-sidebar .wvu-calendar.wvu-calendar--flex li {
+    width: 100%;
+  }
+}
+
+.main .wvu-calendar-widget__container, .wvu-diptych__panel .wvu-calendar-widget__container, .wvu-triptych__panel .wvu-calendar-widget__container, .wvu-quadriptych__panel .wvu-calendar-widget__container, .wvu-pentaptych__panel .wvu-calendar-widget__container, .wvu-sidebar .wvu-calendar-widget__container {
+  padding: 0;
+}
+
 .wvu-calendar-widget__container {
   max-width: 75em;
   margin-left: auto;

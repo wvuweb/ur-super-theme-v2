@@ -133,6 +133,22 @@
   }
 }
 
+.main, .wvu-diptych__panel, .wvu-triptych__panel, .wvu-quadriptych__panel, .wvu-pentaptych__panel, .wvu-sidebar {
+  .wvu-calendar {
+    &.wvu-calendar--flex {
+      @include mq($bp-medium) {
+        display: block;
+        li {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .wvu-calendar-widget__container {
+    padding: 0;
+  }
+}
+
 // Layout
 // ==========================================
 
