@@ -8,14 +8,10 @@
   </r:set_var>
 </r:if>
 
-<div>
-  Hello!
-</div>
-
 <script type="text/javascript" src="https://calendar.wvu.edu/Scripts/core.js"></script>
 <script type="text/javascript">
   ActiveData.Events(
-      "<r:var name="cal_javascript_url" />",
-      function (response) {$("#cal").append(response.data);}
+    "<r:var name="cal_javascript_url" />",
+    function (response) {$("#cal").append(response.data);}
   );
 </script>
