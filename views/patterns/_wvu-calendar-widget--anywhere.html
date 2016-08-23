@@ -9,6 +9,5 @@
 </div>
 
 <r:content_for name="page_js">
-  <script type="text/javascript" src="https://calendar.wvu.edu/Scripts/core.js"></script>
-  <r:if expr="{{ NOT(BLANK(calendar_feed_page)) }}"><r:page:data name="calendar_feed_page" /></r:if><r:if expr="{{ BLANK(calendar_feed_page) }}"><r:site:data name="calendar_feed" /></r:if>
+  <r:partial name="patterns/wvu-calendar-javascript" />
 </r:content_for>
