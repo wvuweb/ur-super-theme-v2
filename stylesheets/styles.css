@@ -5315,6 +5315,18 @@ h2 + .wvu-adverts__adverts {
   text-shadow: 1px 1px 1px #000000;
 }
 
+.wvu-backpage-header--big-photo .wvu-backpage-header__container:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: radial-gradient(farthest-side at 90% 55%, transparent, #000 131%);
+  opacity: 0.85;
+  z-index: 1;
+}
+
 .wvu-backpage-header__badge {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.7+0,0.7+100 */
   background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
@@ -5358,18 +5370,6 @@ h2 + .wvu-adverts__adverts {
     padding-left: 0;
     padding-right: 0;
   }
-}
-
-.wvu-backpage-header--big-photo .wvu-backpage-header__container:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: radial-gradient(farthest-side at 90% 55%, transparent, #000 131%);
-  opacity: 0.85;
-  z-index: 1;
 }
 
 .wvu-backpage-header__container {

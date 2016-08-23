@@ -34,6 +34,12 @@
   }
 }
 
+.wvu-backpage-header--big-photo {
+  .wvu-backpage-header__container {
+    @include so-vignetting($wvu-hero-vignetting-opacity);
+  }
+}
+
 .wvu-backpage-header__badge {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.7+0,0.7+100 */
   background: -moz-linear-gradient(top,  rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 100%); /* FF3.6-15 */
@@ -58,12 +64,6 @@
   @include mq($bp-xlarge) {
     padding-left: 0;
     padding-right: 0;
-  }
-}
-
-.wvu-backpage-header--big-photo {
-  .wvu-backpage-header__container {
-    @include so-vignetting($wvu-hero-vignetting-opacity);
   }
 }
 
