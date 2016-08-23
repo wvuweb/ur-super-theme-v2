@@ -16,7 +16,7 @@ custom_site_attributes:
   - apply_link_3
   - apply_link_3_url
   - apply_url
-  - calendar_feed
+  - calendar_url
   - default_content_01
   - default_content_02
   - default_content_03
