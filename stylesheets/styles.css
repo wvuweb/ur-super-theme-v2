@@ -4836,19 +4836,6 @@ th {
   }
 }
 
-.wvu-adverts__container {
-  padding: 4em 0 4.3em 0;
-  padding-left: 1em;
-  padding-right: 1em;
-}
-
-@media (min-width: 75em) {
-  .wvu-adverts__container {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
 .wvu-adverts__advertisement {
   border: 1px solid #2C2A29;
   overflow: hidden;
@@ -4974,17 +4961,25 @@ h2 + .wvu-adverts__adverts {
   z-index: 3;
 }
 
-.wvu-adverts__links-list {
-  margin-top: 1em;
+.wvu-adverts__container {
+  padding: 4em 0 4.3em 0;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
-.wvu-adverts__links-list ul {
-  list-style-type: none;
-  padding-left: 0;
+@media (min-width: 75em) {
+  .wvu-adverts__container {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
-.wvu-adverts__links-list ul li a:hover {
-  color: white;
+.wvu-adverts__entries--edit-mode .wvu-adverts__image, .wvu-adverts__entries--edit-mode .wvu-adverts__copy {
+  color: #2C2A29;
+}
+
+.wvu-adverts__entries--edit-mode .wvu-adverts__image h2, .wvu-adverts__entries--edit-mode .wvu-adverts__copy h2 {
+  color: #2C2A29;
 }
 
 .wvu-adverts__header {
@@ -5020,6 +5015,19 @@ h2 + .wvu-adverts__adverts {
   margin: 1em auto 2em auto;
 }
 
+.wvu-adverts__links-list {
+  margin-top: 1em;
+}
+
+.wvu-adverts__links-list ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.wvu-adverts__links-list ul li a:hover {
+  color: white;
+}
+
 .wvu-adverts__postscript {
   clear: both;
   display: block;
@@ -5033,14 +5041,6 @@ h2 + .wvu-adverts__adverts {
 
 .wvu-sidebar .wvu-adverts__advertisement .wvu-adverts__headline, .wvu-sidebar .wvu-adverts__advertisement .wvu-adverts__lede, .wvu-sidebar .wvu-adverts__advertisement .wvu-adverts__postscript {
   text-align: left;
-}
-
-.wvu-adverts__entries--edit-mode .wvu-adverts__image, .wvu-adverts__entries--edit-mode .wvu-adverts__copy {
-  color: #2C2A29;
-}
-
-.wvu-adverts__entries--edit-mode .wvu-adverts__image h2, .wvu-adverts__entries--edit-mode .wvu-adverts__copy h2 {
-  color: #2C2A29;
 }
 
 .wvu-sidebar .wvu-adverts__adverts .wvu-adverts__advertisement, .wvu-sidebar .wvu-adverts__adverts--two .wvu-adverts__advertisement, .wvu-sidebar .wvu-adverts__adverts--three .wvu-adverts__advertisement, .wvu-sidebar .wvu-adverts__adverts--four .wvu-adverts__advertisement, .wvu-sidebar .wvu-adverts__adverts--five .wvu-adverts__advertisement {
@@ -5064,18 +5064,6 @@ h2 + .wvu-adverts__adverts {
 
 .main .wvu-adverts__header {
   display: none;
-}
-
-.wvu-adverts__container {
-  max-width: 75em;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.wvu-adverts__container::after {
-  clear: both;
-  content: "";
-  display: table;
 }
 
 .wvu-adverts__advertisement {
@@ -5195,6 +5183,18 @@ h2 + .wvu-adverts__adverts {
   .wvu-adverts__adverts--5 .wvu-adverts__advertisement:nth-child(5n+1), .wvu-adverts__adverts--9 .wvu-adverts__advertisement:nth-child(5n+1), .wvu-adverts__adverts--10 .wvu-adverts__advertisement:nth-child(5n+1) {
     clear: left;
   }
+}
+
+.wvu-adverts__container {
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wvu-adverts__container::after {
+  clear: both;
+  content: "";
+  display: table;
 }
 
 .wvu-adverts__links-list {
