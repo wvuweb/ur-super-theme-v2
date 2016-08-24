@@ -55,8 +55,11 @@ $wvu-candelight: $pms-115-c;
                              (pine-cone, $wvu-pine-cone),
                              (schooner, $wvu-schooner),
                              (smalt, $wvu-smalt),
-                             (morning-glory, $wvu-morning-glory),
-                             (candelight, $wvu-candelight)  {
+                             (endeavor, $wvu-endeavor),
+                             (eden, $wvu-eden),
+                             (xanadu, $wvu-xanadu),
+                             (well-read, $wvu-well-read),
+                             (trinidad, $wvu-trinidad) {
   .wvu-#{$color} {
     color: $text-color;
     border-color: $text-color;
@@ -86,15 +89,12 @@ $wvu-candelight: $pms-115-c;
 @each $color, $text-color in (gold, $wvu-gold),
                              (gray-chateau, $wvu-gray-chateau),
                              (tide, $wvu-tide),
-                             (endeavor, $wvu-endeavor),
                              (judge-gray, $wvu-judge-gray),
+                             (morning-glory, $wvu-morning-glory),
                              (reef-gold, $wvu-reef-gold),
                              (tangerine, $wvu-tangerine),
-                             (eden, $wvu-eden),
-                             (xanadu, $wvu-xanadu),
-                             (summer-green, $wvu-summer-green),
-                             (well-read, $wvu-well-read),
-                             (trinidad, $wvu-trinidad) {
+                             (candelight, $wvu-candelight),
+                             (summer-green, $wvu-summer-green) {
   .wvu-#{$color} {
     color: $text-color;
     border-color: $text-color;
