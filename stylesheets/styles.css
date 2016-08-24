@@ -9465,6 +9465,19 @@ h2 + .wvu-super-nav__panels {
   margin-top: 0;
 }
 
+.wvu-video__container {
+  padding: 4em 0 4.3em 0;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+@media (min-width: 75em) {
+  .wvu-video__container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 .wvu-video__header {
   font-size: 2.5em;
   font-family: "HelveticaNeueW01-45Ligh", "Helvetica Neue", Helvetica, "Helvetica LT Std", "Helvetica CY", Arial, "Lucida Grande", sans-serif;
