@@ -95,7 +95,7 @@
   }
 }
 
-.wvu-sidebar, .wvu-featurettes__featurette, .so-magic-anytych__panel, .main {
+.wvu-sidebar, .wvu-featurettes__featurette, .wvu-polyptych__panel, .main {
   .wvu-featurettes__container {
     padding: 1em 0;
   }
@@ -126,7 +126,7 @@
       }
       .wvu-featurettes__photo {
         @include mq($bp-small) {
-          padding: 0;
+          padding: 0 .5em 0 0;
         }
       }
       .wvu-featurettes__info {
