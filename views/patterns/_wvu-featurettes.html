@@ -16,7 +16,7 @@
 
     <!-- Check to see if page has a featurettes_id. If so, find page with that ID and its display children that are labeled 'feature'. -->
 
-    <r:if_not expr="{{ BLANK(featurettes_id) }}">
+    <r:if expr="{{ NOT(BLANK(featurettes_id)) }}">
       <r:get_page id="{$featurettes_id}">
         <r:children labels="feature" labels_match="any" by="title" order="asc">
           <div class="wvu-featurettes__featurettes wvu-featurettes__featurettes--<r:count />">
@@ -26,7 +26,7 @@
           </div>
         </r:children>
       </r:get_page>
-    </r:if_not>
+    </r:if>
 
     <!-- If no featurettes_id, find any pages labeled with 'featurette' and the page slug -->
 
