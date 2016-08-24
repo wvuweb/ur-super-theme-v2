@@ -6463,6 +6463,10 @@ h2 + .wvu-adverts__adverts {
   }
 }
 
+.main .wvu-event-agenda h1, .main .wvu-event-agenda h2, .main .wvu-event-agenda h3, .main .wvu-event-agenda h4, .main .wvu-event-agenda h5, .main .wvu-event-agenda h6 {
+  text-align: center;
+}
+
 .wvu-event-agenda__container {
   max-width: 75em;
   margin-left: auto;

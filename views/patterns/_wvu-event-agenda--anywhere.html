@@ -1,6 +1,6 @@
 <div class="wvu-event-agenda">
   <div class="wvu-event-agenda__container">
-    <h2><r:editable_region name="agenda-title" type="simple">Event Agenda Headline</r:editable_region></h2>
+    <h2><r:page:first_non_blank_attr names="alternate_name,name" /></h2>
 
     <r:get_page id="{$agenda_id}">
       <r:children:each>
