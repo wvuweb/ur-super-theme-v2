@@ -95,5 +95,9 @@
       <r:content />
     </r:yield>
 
+    <r:if expr="{{ NOT(BLANK(calendar_url, calendar_url_page)) }}">
+      <r:partial name="patterns/javascript-wvu-calendar-widget" />
+    </r:if>
+
   </body>
 </html>
