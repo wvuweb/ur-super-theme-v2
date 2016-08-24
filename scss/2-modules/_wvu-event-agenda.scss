@@ -12,6 +12,10 @@
   }
 }
 
+.wvu-event-agenda__container {
+  @include u-wvu-container-padding();
+}
+
 // Layout
 // ===============================
 
