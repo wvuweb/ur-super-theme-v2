@@ -18,7 +18,7 @@
 
     <r:if expr="{{ NOT(BLANK(featurettes_id)) }}">
       <r:get_page id="{$featurettes_id}">
-        <r:children labels="feature" labels_match="any" by="title" order="asc">
+        <r:children by="name" order="asc" labels="feature" labels_match="any">
           <div class="wvu-featurettes__featurettes wvu-featurettes__featurettes--<r:count />">
             <r:each>
               <r:partial name="patterns/wvu-featurettes__featurette" />
