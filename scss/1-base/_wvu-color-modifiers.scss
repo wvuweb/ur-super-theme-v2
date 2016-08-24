@@ -73,7 +73,7 @@ $wvu-candelight: $pms-115-c;
         border-color: white;
         &:hover {
           background-color: white;
-          color: $color;
+          color: $text-color;
         }
       }
     }
@@ -112,7 +112,7 @@ $wvu-candelight: $pms-115-c;
         border-color: $wvu-dune;
         &:hover {
           background-color: $wvu-dune;
-          color: $color;
+          color: $text-color;
         }
       }
     }
