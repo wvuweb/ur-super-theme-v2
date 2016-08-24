@@ -16,6 +16,10 @@
 
     <!-- Check to see if page has a featurettes_id. If so, find page with that ID and its display children that are labeled 'feature'. -->
 
+    <r:set_var name="featurettes_id">
+      <r:page:data name="featurettes_id" />
+    </r:set_var>
+
     <r:if expr="{{ NOT(BLANK(featurettes_id)) }}">
       <r:get_page id="{$featurettes_id}">
         <r:children by="name" order="asc" labels="feature" labels_match="any">
