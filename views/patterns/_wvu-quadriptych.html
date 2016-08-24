@@ -13,38 +13,38 @@
 <r:set_var name="quadriptychItems" value="{$quadriptychItems}" default="4" />
 <r:set_var name="quadriptych" value="{$quadriptychScope}" default="page" />
 
-<div class="wvu-quadriptych <r:page:content name="so-background-color-class--quadriptych" /> background wvu-quadriptych--quadriptych">
-  <div class="wvu-quadriptych__container">
+<div class="wvu-polyptych <r:page:content name="so-background-color-class--quadriptych" /> background wvu-polyptych--quadriptych">
+  <div class="wvu-polyptych__container">
 
-    <r:page:if_has_content_for region="wvu-quadriptych__header" always_show_in_edit_mode="true">
-      <div class="wvu-quadriptych__header">
-        <r:editable_region name="wvu-quadriptych__header" scope="{$quadriptychScope}">
+    <r:page:if_has_content_for region="wvu-polyptych__header" always_show_in_edit_mode="true">
+      <div class="wvu-polyptych__header">
+        <r:editable_region name="wvu-polyptych__header" scope="{$quadriptychScope}">
           <h2>Quadriptych Headline</h2>
           <p>Subhead goes here.</p>
         </r:editable_region>
       </div>
     </r:page:if_has_content_for>
 
-    <div class="wvu-quadriptych__panels">
+    <div class="wvu-polyptych__panels">
 
       <r:loop:each times="{$quadriptychItems}">
 
         <r:set_var name="quadriptychCopy"><r:var name="quadriptychCopy__base" />--<r:item /></r:set_var>
 
         <r:page:if_has_content_for region="{$quadriptychCopy}" always_show_in_edit_mode="true">
-          <div class="wvu-quadriptych__panel">
+          <div class="wvu-polyptych__panel">
 
             <r:set_var name="quadriptychPhoto"><r:var name="quadriptychPhoto__base" />--<r:item /></r:set_var>
 
             <r:page:if_has_content_for region="{$quadriptychPhoto}" always_show_in_edit_mode="true">
-              <div class="wvu-quadriptych__photo">
+              <div class="wvu-polyptych__photo">
                 <r:editable_region name="{$quadriptychPhoto}" scope="{$quadriptychScope}">
                   <img src="http://placehold.it/960x640">
                 </r:editable_region>
               </div>
             </r:page:if_has_content_for>
 
-            <div class="wvu-quadriptych__copy <r:page:unless_has_content_for region="{$quadriptychPhoto}">wvu-quadriptych__copy--wide</r:page:unless_has_content_for>">
+            <div class="wvu-polyptych__copy <r:page:unless_has_content_for region="{$quadriptychPhoto}">wvu-polyptych__copy--wide</r:page:unless_has_content_for>">
 
               <r:editable_region name="{$quadriptychCopy}" scope="{$quadriptychScope}">
                 <h3>Headline Goes Here</h3>
@@ -53,23 +53,23 @@
 
             </div>
 
-          </div> <!-- end wvu-quadriptych__panel -->
+          </div> <!-- end wvu-polyptych__panel -->
         </r:page:if_has_content_for>
 
       </r:loop:each>
 
-    </div> <!-- end wvu-quadriptych__panels -->
+    </div> <!-- end wvu-polyptych__panels -->
 
-    <r:page:if_has_content_for region="wvu-quadriptych__postscript">
-      <div class="wvu-quadriptych__postscript">
-        <r:editable_region name="wvu-quadriptych__postscript" scope="{$quadriptychScope}">
+    <r:page:if_has_content_for region="wvu-polyptych__postscript">
+      <div class="wvu-polyptych__postscript">
+        <r:editable_region name="wvu-polyptych__postscript" scope="{$quadriptychScope}">
           Put any additional info or links here.
         </r:editable_region>
       </div>
     </r:page:if_has_content_for>
 
-  </div> <!-- end wvu-quadriptych__container -->
-</div> <!-- end wvu-quadriptych -->
+  </div> <!-- end wvu-polyptych__container -->
+</div> <!-- end wvu-polyptych -->
 
 <r:edit_mode_only>
   <div class="wvu-instructions">

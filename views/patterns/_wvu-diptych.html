@@ -13,38 +13,38 @@
 <r:set_var name="diptychItems" value="{$diptychItems}" default="2" />
 <r:set_var name="diptych" value="{$diptychScope}" default="page" />
 
-<div class="wvu-diptych <r:page:content name="so-background-color-class--diptych" /> background wvu-diptych--diptych">
-  <div class="wvu-diptych__container">
+<div class="wvu-polyptych <r:page:content name="so-background-color-class--diptych" /> background wvu-polyptych--diptych">
+  <div class="wvu-polyptych__container">
 
-    <r:page:if_has_content_for region="wvu-diptych__header" always_show_in_edit_mode="true">
-      <div class="wvu-diptych__header">
-        <r:editable_region name="wvu-diptych__header" scope="{$diptychScope}">
+    <r:page:if_has_content_for region="wvu-polyptych__header" always_show_in_edit_mode="true">
+      <div class="wvu-polyptych__header">
+        <r:editable_region name="wvu-polyptych__header" scope="{$diptychScope}">
           <h2>Diptych Headline</h2>
           <p>Subhead goes here.</p>
         </r:editable_region>
       </div>
     </r:page:if_has_content_for>
 
-    <div class="wvu-diptych__panels">
+    <div class="wvu-polyptych__panels">
 
       <r:loop:each times="{$diptychItems}">
 
         <r:set_var name="diptychCopy"><r:var name="diptychCopy__base" />--<r:item /></r:set_var>
 
         <r:page:if_has_content_for region="{$diptychCopy}" always_show_in_edit_mode="true">
-          <div class="wvu-diptych__panel">
+          <div class="wvu-polyptych__panel">
 
             <r:set_var name="diptychPhoto"><r:var name="diptychPhoto__base" />--<r:item /></r:set_var>
 
             <r:page:if_has_content_for region="{$diptychPhoto}" always_show_in_edit_mode="true">
-              <div class="wvu-diptych__photo">
+              <div class="wvu-polyptych__photo">
                 <r:editable_region name="{$diptychPhoto}" scope="{$diptychScope}">
                   <img src="http://placehold.it/960x640">
                 </r:editable_region>
               </div>
             </r:page:if_has_content_for>
 
-            <div class="wvu-diptych__copy <r:page:unless_has_content_for region="{$diptychPhoto}">wvu-diptych__copy--wide</r:page:unless_has_content_for>">
+            <div class="wvu-polyptych__copy <r:page:unless_has_content_for region="{$diptychPhoto}">wvu-polyptych__copy--wide</r:page:unless_has_content_for>">
 
               <r:editable_region name="{$diptychCopy}" scope="{$diptychScope}">
                 <h3>Headline Goes Here</h3>
@@ -53,23 +53,23 @@
 
             </div>
 
-          </div> <!-- end wvu-diptych__panel -->
+          </div> <!-- end wvu-polyptych__panel -->
         </r:page:if_has_content_for>
 
       </r:loop:each>
 
-    </div> <!-- end wvu-diptych__panels -->
+    </div> <!-- end wvu-polyptych__panels -->
 
-    <r:page:if_has_content_for region="wvu-diptych__postscript">
-      <div class="wvu-diptych__postscript">
-        <r:editable_region name="wvu-diptych__postscript" scope="{$diptychScope}">
+    <r:page:if_has_content_for region="wvu-polyptych__postscript">
+      <div class="wvu-polyptych__postscript">
+        <r:editable_region name="wvu-polyptych__postscript" scope="{$diptychScope}">
           Put any additional info or links here.
         </r:editable_region>
       </div>
     </r:page:if_has_content_for>
 
-  </div> <!-- end wvu-diptych__container -->
-</div> <!-- end wvu-diptych -->
+  </div> <!-- end wvu-polyptych__container -->
+</div> <!-- end wvu-polyptych -->
 
 <r:edit_mode_only>
   <div class="wvu-instructions">
