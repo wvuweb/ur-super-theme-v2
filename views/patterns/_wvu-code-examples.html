@@ -10,7 +10,14 @@
   stylesheets/<r:page:slug />
 </r:set_var>
 
-<r:var name="pageDepth" />
+<r:if value1="{$pageDepth}" value2="3" op="=">
+  <r:set_var name="sassOutput">
+    stylesheets/scss/2-modules/<r:page:parent:slug />
+  </r:set_var>
+  <r:set_var name="cssOutput">
+    stylesheets/scss/2-modules/<r:page:parent:slug />
+  </r:set_var>
+</r:if>
 
 <div class="wvu-code-examples <r:page:if_has_content_for region="wvu-code-examples__javascript">wvu-code-examples--js</r:page:if_has_content_for> <r:edit_mode_only>wvu-code-examples__code-examples--edit-mode</r:edit_mode_only>">
   <div class="wvu-code-examples__container">
