@@ -54,6 +54,7 @@ $wvu-candelight: $pms-115-c;
                              (limed-spruce, $wvu-limed-spruce),
                              (pine-cone, $wvu-pine-cone),
                              (schooner, $wvu-schooner),
+                             (smalt, $wvu-smalt),
                              (morning-glory, $wvu-morning-glory),
                              (candelight, $wvu-candelight)  {
   .wvu-#{$color} {
@@ -85,7 +86,6 @@ $wvu-candelight: $pms-115-c;
 @each $color, $text-color in (gold, $wvu-gold),
                              (gray-chateau, $wvu-gray-chateau),
                              (tide, $wvu-tide),
-                             (smalt, $wvu-smalt),
                              (endeavor, $wvu-endeavor),
                              (judge-gray, $wvu-judge-gray),
                              (reef-gold, $wvu-reef-gold),
