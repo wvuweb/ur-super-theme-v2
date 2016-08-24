@@ -63,8 +63,11 @@ $wvu-candelight: $pms-115-c;
       color: white;
       background-color: $text-color;
       -webkit-font-smoothing: antialiased;
-      h1, h2, h3, h4, h5, h6, .button {
+      h1, h2, h3, h4, h5, h6, a, .button {
         color: white;
+        a {
+          color: white;
+        }
       }
       .button {
         border-color: white;
@@ -95,6 +98,15 @@ $wvu-candelight: $pms-115-c;
       color: $wvu-dune;
       background-color: $text-color;
       -webkit-font-smoothing: antialiased;
+      h1, h2, h3, h4, h5, h6, a, .button {
+        color: $wvu-dune;
+        a {
+          color: $wvu-dune;
+        }
+      }
+      .button {
+        border-color: $wvu-dune;
+      }
     }
   }
 }
