@@ -14,10 +14,16 @@
       </div>
     </r:page:if_has_content_for>
 
+    <r:comment>
+    <r:if expr="{{ NOT(BLANK(profiles_id)) }}">
+      <r:page:data name="profiles_id" />
+    </r:if>
+    </r:comment>
+
     <!-- Check to see if page has a featurettes_id. If so, find page with that ID and its display children that are labeled 'feature'. -->
 
-    <r:if_not expr="{{ BLANK(featurettes_id) }}">
-      <r:get_page id="{$featurettes_id}">
+    <r:if_not expr="{{ NOT(BLANK(profiles_id)) }}">
+      <r:get_page id="{$profiles_id}">
         <r:children by="name" order="asc" labels="feature" labels_match="any">
           <div class="wvu-featurettes__featurettes wvu-featurettes__featurettes--<r:count />">
             <r:each>
@@ -45,7 +51,7 @@
           </div>
         </r:children>
       </r:get_page>
-    </r:if_not>
+    </r:if>
 
     <!-- If no featurettes_id, find any pages labeled with 'featurette' and the page slug -->
 
