@@ -59,7 +59,8 @@ $wvu-candelight: $pms-115-c;
                              (eden, $wvu-eden),
                              (xanadu, $wvu-xanadu),
                              (well-read, $wvu-well-read),
-                             (trinidad, $wvu-trinidad) {
+                             (trinidad, $wvu-trinidad),
+                             (white, white) {
   .wvu-#{$color} {
     color: $text-color;
     border-color: $text-color;
