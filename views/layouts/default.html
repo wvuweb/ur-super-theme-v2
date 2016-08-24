@@ -58,22 +58,24 @@
 
     <r:partial name="patterns/wvu-slots--sitewide" />
 
-    <div class="wvu-footer <r:page:content name="so-background-color--footer" /> background">
-      <div class="wvu-footer__container">
-        <r:partial name="patterns/wvu-footer" />
-      </div>
-    </div>
+    <r:partial name="patterns/wvu-footer" />
 
     <r:edit_mode_only>
-      <div class="so-instructions">
+      <div class="wvu-instructions">
         <p><strong>Instructions for Footer:</strong> Put your organization&rsquo;s contact info here.</p>
-        <p><strong>Background Color:</strong> <r:editable_region name="so-background-color--footer" scope="site" /></p>
+        <p><strong>Background Color:</strong> <r:editable_region name="wvu-background-color--footer" scope="site" /></p>
       </div>
     </r:edit_mode_only>
 
     <r:set_var name="jqueryDefer">
       <r:site:data name="jquery_defer" />
     </r:set_var>
+
+    <r:if expr="{{ NOT(BLANK(jquery_defer_page)) }}">
+      <r:set_var name="jqueryDefer">
+        <r:page:data name="jquery_defer_page" />
+      </r:set_var>
+    </r:if>
 
     <r:if value1="{$jqueryDefer}" value2="false" operator="=">
       <script src="https://fast.fonts.net/jsapi/3f7b1335-4c99-4404-92cf-3ba0e32e8f17.js"></script> <r:comment><!-- Helvetica Neue Light & Bold Condensed web font, valid for *.wvu.edu, *.wvutech.edu, & localhost --></r:comment>

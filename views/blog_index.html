@@ -4,13 +4,7 @@ custom_data_attributes:
  - backpage_header_badge
 ---
 
-<r:set_var name="backpage_header" value="{$backpage_header}" default="true">
-  <r:page:data name="backpage_header" />
-</r:set_var>
-
-<r:if v1="{$backpage_header}" v2="true" op="=">
-  <r:partial name="custom-patterns/so-backpage-header" />
-</r:if>
+<r:partial name="patterns/wvu-backpage-partials--top" />
 
 <div class="wvu-container">
 
@@ -18,8 +12,6 @@ custom_data_attributes:
   <r:set_var name="limit" value="{$limit}" default="10"/>
 
   <main id="maincontent" class="main" role="main">
-
-    <r:partial name="custom-patterns/so-page-meta" />
 
     <r:blog:articles limit="{$limit}" page="{$page}" tags="{$tags}" tags_op="{$tags_op}" year="{$year}" month="{$month}" day="{$day}">
       <r:set_var name="article_count" value="{count}" />
