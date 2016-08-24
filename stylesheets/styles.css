@@ -6384,13 +6384,13 @@ h2 + .wvu-adverts__adverts {
   }
 }
 
-.wvu-code-example__container {
+.wvu-code-examples__container {
   max-width: 75em;
   margin-left: auto;
   margin-right: auto;
 }
 
-.wvu-code-example__container::after {
+.wvu-code-examples__container::after {
   clear: both;
   content: "";
   display: table;
