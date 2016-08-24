@@ -5028,6 +5028,10 @@ th {
   color: white;
 }
 
+.wvu-admin-hero a.button:hover {
+  color: #2C2A29;
+}
+
 .wvu-admin-hero h1, .wvu-admin-hero h2, .wvu-admin-hero h3, .wvu-admin-hero p, .wvu-admin-hero ul {
   color: white;
   position: relative;
@@ -5059,7 +5063,7 @@ th {
   z-index: -3;
 }
 
-.wvu-admin-hero h1, .wvu-admin-hero p, .wvu-admin-hero a {
+.wvu-admin-hero h1, .wvu-admin-hero p {
   text-shadow: 1px 1px 1px #000000;
 }
 

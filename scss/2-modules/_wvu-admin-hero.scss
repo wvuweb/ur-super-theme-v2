@@ -9,6 +9,9 @@
     z-index: 3;
     &.button {
       color: white;
+      &:hover {
+        color: $black;
+      }
     }
   }
   h1, h2, h3, p, ul {
@@ -26,7 +29,7 @@
       z-index: -3;
     }
   }
-  h1, p, a {
+  h1, p {
     text-shadow: 1px 1px 1px #000000;
   }
   ul {
