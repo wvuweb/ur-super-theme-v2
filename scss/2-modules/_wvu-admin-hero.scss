@@ -32,21 +32,6 @@
   ul {
     list-style-type: none;
     padding-left: 0;
-    li {
-      a {
-        color: white;
-        font-size: 1.5em;
-        font-weight: bold;
-        padding: 1em;
-        text-decoration: none;
-        &:hover {
-          color: $wvu-gold;
-        }
-        &:visited {
-          color: white;
-        }
-      }
-    }
   }
   p {
     font-size: 1.5em;
