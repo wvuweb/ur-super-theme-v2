@@ -232,7 +232,7 @@
   }
 }
 
-.wvu-sidebar, .wvu-featurettes__featurette, .wvu-polyptych__panel, .wvu-diptych__panel, .wvu_triptych__panel, .wvu-quadriptych__panel, .wvu-pentaptych__panel {
+.wvu-sidebar, .wvu-featurettes__featurette, .wvu-polyptych__panel {
   .wvu-featurettes__featurette {
     @include mq($bp-medium) {
       @include span-columns(12);
