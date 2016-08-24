@@ -1,0 +1,58 @@
+.wvu-code-examples {
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    border-top: 1px solid #eee;
+    margin-top: 3em;
+    padding-top: .5em;
+  }
+  pre {
+    box-sizing: border-box;
+    max-height: 500px;
+    overflow: scroll;
+    padding: 2em;
+  }
+}
+
+.wvu-code-examples__container {
+  @include u-wvu-container-padding();
+}
+
+.wvu-code-examples {
+  clear: both;
+  display: table;
+  width: 100%;
+}
+
+// Layout
+// =====================================
+
+.wvu-code-example {
+  @include mq($bp-medium) {
+    @include span-columns(4);
+    @include omega(3n);
+  }
+}
+
+.wvu-code-examples--js {
+  .wvu-code-examples__code-example {
+    @include mq($bp-medium) {
+      @include omega-reset(3n);
+      @include span-columns(3);
+    }
+  }
+  &.wvu-code-examples--edit-mode {
+    .wvu-code-example {
+      @include mq($bp-medium) {
+        @include omega-reset(3n);
+        @include span-columns(3);
+      }
+    }
+  }
+}
+
+.wvu-code-example__container {
+  @include outer-container();
+}

@@ -1,0 +1,49 @@
+<r:set_var name="pageDepth">
+  <r:page:depth />
+</r:set_var>
+
+<r:set_var name="sassOutput">
+  stylesheets/scss/2-modules/<r:page:slug />
+</r:set_var>
+
+<r:set_var name="cssOutput">
+  stylesheets/<r:page:slug />
+</r:set_var>
+
+<r:var name="pageDepth" />
+
+<div class="wvu-code-examples <r:page:if_has_content_for region="wvu-code-examples__javascript">wvu-code-examples--js</r:page:if_has_content_for> <r:edit_mode_only>wvu-code-examples__code-examples--edit-mode</r:edit_mode_only>">
+  <div class="wvu-code-examples__container">
+    <div class="wvu-code-examples__code-example wvu-code-examples__code-example--html">
+      <h2>HTML</h2>
+      <p>See prior versions on <a href="">Git</a>.</p>
+  <pre>
+  <r:editable_region name="wvu-code-examples__html" />
+  </pre>
+    </div>
+    <div class="wvu-code-examples__code-example wvu-code-examples__code-example--sass">
+      <h2>Sass</h2>
+      <p>See prior versions on <a href="">Git</a>.</p>
+      <p><strong>Dependencies:</strong> <a href="">brand_patterns</a></p>
+  <pre>
+  <r:partial name="{$sassOutput}" />
+  </pre>
+    </div>
+    <div class="wvu-code-examples__code-example wvu-code-examples__code-example--css">
+      <h2>CSS</h2>
+      <p>See prior versions on <a href="">Git</a>.</p>
+      <p><strong>Dependencies:</strong> <a href="">wvu_base.css</a></p>
+  <pre>
+  <r:partial name="{$cssOutput}" />
+  </pre>
+    </div>
+    <div class="wvu-code-examples__code-example wvu-code-examples__code-example--ja">
+      <r:page:if_has_content_for region="wvu-code-examples__javascript" always_show_in_edit_mode="true">
+        <h2>JS</h2>
+  <pre>
+  <r:editable_region name="wvu-code-examples__javascript" />
+  </pre>
+      </r:page:if_has_content_for>
+    </div> <!-- wvu-code-examples__code-example -->
+  </div>
+</div>
