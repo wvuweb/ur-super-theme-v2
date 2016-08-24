@@ -47,6 +47,8 @@ $wvu-well-read: $pms-180-c;
 $wvu-trinidad: $pms-166-c;
 $wvu-candelight: $pms-115-c;
 
+// Dark backgrounds
+
 @each $color, $text-color in (blue, $wvu-blue),
                              (dune, $wvu-dune),
                              (limed-spruce, $wvu-limed-spruce),
@@ -61,9 +63,17 @@ $wvu-candelight: $pms-115-c;
       color: white;
       background-color: $text-color;
       -webkit-font-smoothing: antialiased;
+      h1, h2, h3, h4, h5, h6, .button {
+        color: white;
+      }
+      .button {
+        border-color: white;
+      }
     }
   }
 }
+
+// Light backgrounds
 
 @each $color, $text-color in (gold, $wvu-gold),
                              (gray-chateau, $wvu-gray-chateau),
