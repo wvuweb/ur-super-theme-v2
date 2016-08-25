@@ -5,7 +5,6 @@
 
       <r:edit_mode_only>
         <h3>Sidebar Content:</h3>
-        <p>(If you do not want the sidebar to show up, set "backpage_has_sidebar" to "false" in the page properties)</p>
       </r:edit_mode_only>
 
       <div class="wvu-sub-nav">
@@ -17,7 +16,6 @@
     <r:if v1="{$backpage_has_subnav}" v2="false" op="!=">
       <r:edit_mode_only>
         <h3><r:editable_region name="wvu-sub-nav__label" type="simple">Sub-Nav</r:editable_region></h3>
-        <p>(If you do not want the sidebar to show up, set "backpage_has_subnav" to "false" in the page properties)</p>
       </r:edit_mode_only>
       <div class="wvu-sub-nav">
         <r:ancestor_menu start_depth="2" max_depth="3" ul_class="nav-secondary" active_class="nav-secondary--current-page" open_class="nav-secondary--open" />
