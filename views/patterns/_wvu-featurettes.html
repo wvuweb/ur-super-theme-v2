@@ -55,6 +55,7 @@
 
     <!-- If no featurettes_id, find any pages labeled with 'featurette' and the page slug -->
 
+    <r:comment>
     <r:if expr="{{ BLANK(featurettes_id) }}">
       <r:root>
         <r:descendants labels="{$featurettes_labels}" labels_match="all" by="title" order="asc">
@@ -85,6 +86,7 @@
         </r:descendants>
       </r:root>
     </r:if>
+  </r:comment>
 
   </div>
 </div>
