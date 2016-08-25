@@ -14,6 +14,7 @@ custom_site_attributes:
   - apply_url
   - bgcolor_gallery
   - bgcolor_adverts
+  - bgcolor_backpage
   - bgcolor_calendar_widget
   - bgcolor_diptych
   - bgcolor_diptych_2

@@ -1,7 +1,7 @@
 <r:page:if_has_content_for region="main" always_show_in_edit_mode="true">
   <div class="wvu-container">
 
-    <main id="maincontent" class="<r:page:content name="wvu-background-color-class--backpage" /> background main <r:if v1="{$backpage_has_sidebar}" v2="false" op="=">main--wide</r:if> <r:edit_mode_only>main--edit-mode</r:edit_mode_only>">
+    <main id="maincontent" class="<r:site:data name="bgcolor_backpage" /> background main <r:if v1="{$backpage_has_sidebar}" v2="false" op="=">main--wide</r:if> <r:edit_mode_only>main--edit-mode</r:edit_mode_only>">
 
       <r:edit_mode_only>
         <p><strong>Main body text:</strong></p>
@@ -19,7 +19,6 @@
 
 <r:edit_mode_only>
   <div class="wvu-instructions">
-    <p><strong>Instructions for Body:</strong> You can put whatever you want in this content region. The sidebar and sub-nav are optional. Just delete the content in the &ldquo;Sidebar&rdquo; and &ldquo;Sub-Nav&rdquo; regions to make them disappear.</p>
-    <p><strong>Background Color:</strong> <r:editable_region name="wvu-background-color-class--backpage" /></p>
+    <p><strong>Instructions for Backpage:</strong> You can put whatever you want in the main content region. The sidebar and sub-nav are optional. Just set either the <code>backpage_has_sidebar</code> or <code>backpage_has_subnav</code> attributes to <code>false</code> in Page Properties > Data.</p>
   </div>
 </r:edit_mode_only>

@@ -14,15 +14,15 @@
 
     </r:page:if_has_content_for>
 
-    <r:page:if_has_content_for region="wvu-sub-nav__label" always_show_in_edit_mode="true">
+    <r:if v1="{$backpage_has_subnav}" v2="false" op="!=">
       <r:edit_mode_only>
         <h3><r:editable_region name="wvu-sub-nav__label" type="simple">Sub-Nav</r:editable_region></h3>
-        <p>(If you do not want the subnav to show, delete the content in this region)</p>
+        <p>(If you do not want the sidebar to show up, set "backpage_has_subnav" to "false" in the page properties)</p>
       </r:edit_mode_only>
       <div class="wvu-sub-nav">
         <r:ancestor_menu start_depth="2" max_depth="3" ul_class="nav-secondary" active_class="nav-secondary--current-page" open_class="nav-secondary--open" />
       </div> <!-- /.wvu-sub-nav -->
-    </r:page:if_has_content_for>
+    </r:if>
 
     <r:page:if_has_content_for region="wvu-sidebar-content-2" always_show_in_edit_mode="true">
 
