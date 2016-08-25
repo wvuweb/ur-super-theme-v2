@@ -13,7 +13,7 @@
 <r:set_var name="diptychItems3" value="{$diptychItems3}" default="2" />
 <r:set_var name="diptych3" value="{$diptychScope3}" default="page" />
 
-<div class="wvu-polyptych <r:page:content name="wvu-background-color-class--diptych3" /> background wvu-polyptych--diptych">
+<div class="wvu-polyptych u-<r:site:content name="bgcolor_diptych_3" /> background wvu-polyptych--diptych">
   <div class="wvu-polyptych__container">
 
     <r:page:if_has_content_for region="wvu-polyptych__header3" always_show_in_edit_mode="true">
@@ -74,6 +74,5 @@
 <r:edit_mode_only>
   <div class="wvu-instructions">
     <p><strong>Instructions for Multiple Panels:</strong> These panels display sub-features or allow you to have multiple columns of content. Try to keep these consistent e.g. if you have a header in one column, use a header in all of them. You can have 1-4 columns. To omit columns, simply leave the description field in each column you wish to omit blank, from right to left.</p>
-    <p><strong>Background Color:</strong> <r:editable_region name="wvu-background-color-class--diptych3" scope="{$diptychScope}" /></p>
   </div>
 </r:edit_mode_only>

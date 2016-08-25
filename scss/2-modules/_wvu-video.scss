@@ -1,16 +1,10 @@
 .wvu-video {
-  background-color: $black;
-  color: white;
-  a {
-    color: white;
-  }
   h2 {
     font-size: $wvu-shout-font-size;
     margin: $wvu-shout-margin;
     text-align: center;
   }
   h2, h3, h4, h5, h6 {
-    color: white;
     margin-top: 0;
   }
 }

@@ -2,7 +2,7 @@
   <r:page:slug />,advert
 </r:set_var>
 
-<div class="wvu-adverts <r:page:content name="so-background-color-class--adverts" /> background">
+<div class="wvu-adverts u-<r:site:content name="bgcolor_adverts" /> background">
   <div class="wvu-adverts__container">
 
     <r:page:if_has_content_for region="wvu-adverts__header" always_show_in_edit_mode="true">
@@ -39,6 +39,5 @@
 <r:edit_mode_only>
   <div class="wvu-instructions">
     <p><strong>Instructions for Adverts:</strong> Show a list of advertisements. This grabs any page labeled <code>advert</code> and the page slug of the current page and displays its thumbnail image and page title.</p>
-    <p><strong>Background Color:</strong> <r:editable_region name="so-background-color-class--adverts" /></p>
   </div>
 </r:edit_mode_only>

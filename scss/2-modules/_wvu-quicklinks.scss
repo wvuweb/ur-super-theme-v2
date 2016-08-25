@@ -1,38 +1,8 @@
-.wvu-quicklinks__header {
-  text-align: center;
-  h2 {
-    @include wvu-secondary-pattern-heading();
-  }
-  h3 {
-    @include wvu-secondary-pattern-heading();
-    font-size: 2.4em;
-  }
-  p {
-    margin: 0 auto;
-  }
-}
-
-.wvu-quicklinks { width: 100%;
-  @include pms-432-c-background();
+.wvu-quicklinks { 
+  width: 100%;
   ul {
     list-style-type: none;
     padding-left: 0;
-  }
-  li {
-    padding-left: 1em;
-    background: url(https://patterns.wvu.edu/images/diagonal-gold.svg) no-repeat 0 0px;
-    background-size: 20px;
-    margin-left: 0;
-  }
-  a {
-    font-weight: bold;
-    text-decoration: none;
-  }
-}
-
-.wvu-quicklinks { width: 100%;
-  ul {
-    list-style-type: none;
     @include mq($bp-medium) {
       display: flex;
       align-items: stretch;
@@ -50,8 +20,27 @@
         width: 25%;
         float: left;
       }
-      a { color: white; display: block; }
+      a {
+        color: white;
+        display: block;
+        font-weight: bold;
+        text-decoration: none;
+      }
     }
+  }
+}
+
+.wvu-quicklinks__header {
+  text-align: center;
+  h2 {
+    @include wvu-secondary-pattern-heading();
+  }
+  h3 {
+    @include wvu-secondary-pattern-heading();
+    font-size: 2.4em;
+  }
+  p {
+    margin: 0 auto;
   }
 }
 

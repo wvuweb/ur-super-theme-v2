@@ -5,10 +5,6 @@ description: This is the WVU Brand Patterns theme built for CleanSlate. Original
 ## Attributes, Data and Variables
 custom_site_attributes:
   # For Google Search Console
-  - address_line_1
-  - address_line_2
-  - address_line_3
-  - address_line_4
   - apply_link_1
   - apply_link_1_url
   - apply_link_2
@@ -16,6 +12,33 @@ custom_site_attributes:
   - apply_link_3
   - apply_link_3_url
   - apply_url
+  - bgcolor_gallery
+  - bgcolor_adverts
+  - bgcolor_calendar_widget
+  - bgcolor_diptych
+  - bgcolor_diptych_2
+  - bgcolor_diptych_3
+  - bgcolor_featurettes
+  - bgcolor_featurettes_2
+  - bgcolor_gallery
+  - bgcolor_gallery_index
+  - bgcolor_lede_text
+  - bgcolor_pentaptych
+  - bgcolor_pentaptych_2
+  - bgcolor_pentaptych_3
+  - bgcolor_profiles
+  - bgcolor_profiles_index
+  - bgcolor_quadriptych
+  - bgcolor_quadriptych_2
+  - bgcolor_quadriptych_3
+  - bgcolor_social_media
+  - bgcolor_testimonials
+  - bgcolor_testimonials_index
+  - bgcolor_triptych
+  - bgcolor_triptych_2
+  - bgcolor_triptych_3
+  - bgcolor_twitter_widget
+  - bgcolor_video
   - calendar_url
   - default_content_01
   - default_content_02
@@ -37,7 +60,6 @@ custom_site_attributes:
   - nav_depth
   - org_name
   - org_url
-  - request_info_url
   - rss_url
   - search_action
   - show_apply_links
@@ -47,7 +69,6 @@ custom_site_attributes:
   - twitter_handle
   - twitter_url
   - twitter_widget_id
-  - visit_url
   - youtube_url
 
 ## Template Config
