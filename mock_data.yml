@@ -54,12 +54,6 @@ editable_region:
   wvu-hero__photo:
     <img src="https://patterns.wvu.edu/images/coopers-rock.jpg" />
 
-  wvu-hero__photo-2:
-    ""
-
-  wvu-hero__photo-3:
-    ""
-
   wvu-hero__text:
     "So let&rsquo;s go. Release the Mountaineer spirit inside of you. Reach the limits of what you can do and then keep on going."
 
@@ -218,6 +212,26 @@ editable_region:
     <p><strong>Phone:</strong> 304.293.5555 | <strong>Fax:</strong> 304.293.5555</p>
     <p><strong>Email:</strong> <a href="mailto:first.last@mail.wvu.edu">first.last@mail.wvu.edu</a></p>
 
+  wvu-profile__photo: |
+    <img src="<%= Faker::Avatar.image %>" alt=" " />
+
+  wvu-hero__header: |
+    It starts now.
+
+  wvu-hero__action-item-text: "More About Now"
+
+  wvu-hero__action-item-url: "#"
+
+  wvu-lede-text: "Lede text here."
+
+  wvu-polyptych__header: |
+    <h2>Polyptych Header</h2><p>Stuff.</p>
+
+  wvu-triptych__photo--1: "89"
+
+  wvu-triptych__copy--1: |
+    <p><%= Faker::Lorem.paragraph(1) %></p>
+
 site:
   name: "Brand Patterns"
   data:
@@ -225,6 +239,14 @@ site:
     org_name: "Your Org Name Here"
     masthead_title: "Your Site Title Here"
     masthead_college_link_title: "Your College Title Here"
+    slot_00_masthead: masthead
+    slot_00_nav: nav--buttons
+    apply_link_1: APPLY NOW
+    apply_link_1_url: #
+    apply_link_2: GIVE
+    apply_link_2_url: #
+    apply_link_3: VISIT
+    apply_link_3_url: #
 
 page:
   id: 1
@@ -242,10 +264,11 @@ page:
     wvu-profile__email: |
       <a href="mailto:<%= Faker::Internet.email %>"><%= Faker::Internet.email %></a>
     wvu-profile__short-description: "This is a short description for this profile. <%= Faker::Hacker.say_something_smart %>"
-    wvu-profile__photo: |
-      <img src="<%= Faker::Avatar.image %>" alt=" " />
   data:
-    slot_01: magic-anytych
+    slot_01: "hero"
+    slot_02: "lede-text"
+    slot_03: "triptych"
+    slot_04: "action-hero"
 
 pages:
   - id: 2
