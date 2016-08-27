@@ -10,6 +10,20 @@
   }
 }
 
+.wvu-pattern-instructions__color-swatches {
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+    li {
+      float: left;
+      height: 1em;
+      margin-right: 3px;
+      overflow: hidden;
+      width: 1em;
+    }
+  }
+}
+
 .wvu-pattern-instructions__container {
   @include u-wvu-container-padding();
 }
