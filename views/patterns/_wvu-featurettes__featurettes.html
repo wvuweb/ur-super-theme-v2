@@ -1,0 +1,24 @@
+<r:children by="name" order="asc" labels="feature" labels_match="any">
+  <div class="wvu-featurettes__featurettes wvu-featurettes__featurettes--<r:count />">
+    <r:each>
+      <div class="wvu-featurettes__featurette">
+        <r:set_var name="soFeaturettesInfoWide" default="nophoto" />
+        <r:if expr="{{ NOT(BLANK(thumbnail_url)) }}">
+          <div class="wvu-featurettes__photo">
+            <a href="<r:if expr="{{ NOT(BLANK(alternate_url)) }}"><r:page:data name="alternate_url" /></r:if><r:if expr="{{ BLANK(alternate_url) }}"><r:page:url /></r:if>"><img src="<r:page:data name="thumbnail_url" />/381x255.jpg" srcset="<r:page:data name="thumbnail_url" />/960x640.jpg, <r:page:data name="thumbnail_url" />/586x286.jpg, <r:page:data name="thumbnail_url" />/381x255.jpg, <r:page:data name="thumbnail_url" />/286x191.jpg, <r:page:data name="thumbnail_url" />/279x186.jpg, <r:page:data name="thumbnail_url" />/217x145.jpg" sizes="960px, (min-width: 768px) 586px" alt="<r:page:data name="thumbnail_alt" />"></a>
+          </div>
+          <r:set_var name="soFeaturettesInfoWide">
+            hasphoto
+          </r:set_var>
+        </r:if>
+        <div class="wvu-featurettes__info wvu-featurettes__info--<r:var name="soFeaturettesInfoWide" />">
+          <h3><a href="<r:if expr="{{ NOT(BLANK(alternate_url)) }}"><r:page:data name="alternate_url" /></r:if><r:if expr="{{ BLANK(alternate_url) }}"><r:page:url /></r:if>"><r:page:first_non_blank_attr names="alternate_name,name" /></a></h3>
+          <p>
+            <r:page:meta_description />
+          </p>
+          <a class="button" href="<r:if expr="{{ NOT(BLANK(alternate_url)) }}"><r:page:data name="alternate_url" /></r:if><r:if expr="{{ BLANK(alternate_url) }}"><r:page:url /></r:if>"><r:if expr="{{ NOT(BLANK(link_text)) }}"><r:page:data name="link_text" /></r:if><r:if expr="{{ BLANK(link_text) }}">More About <r:page:name /></r:if></a>
+        </div>
+      </div>
+    </r:each>
+  </div>
+</r:children>
