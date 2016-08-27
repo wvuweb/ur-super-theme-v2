@@ -3,11 +3,11 @@
     <div class="wvu-pattern-instructions__color-swatches">
       <h2>Colors</h2>
       <ul>
-        <li class="wvu-gold background">wvu-gold</li>
-        <li class="wvu-blue background">wvu-blue</li>
-        <li class="wvu-dune background">wvu-dune</li>
-        <li class="wvu-limed-spruce background">wvu-limed-spruce</li>
-        <li class="wvu-limed-spruce background">wvu-limed-spruce</li>
+        <li class="wvu-gold">wvu-gold</li>
+        <li class="wvu-blue">wvu-blue</li>
+        <li class="wvu-dune">wvu-dune</li>
+        <li class="wvu-limed-spruce">wvu-limed-spruce</li>
+        <li class="wvu-limed-spruce">wvu-limed-spruce</li>
       </ul>
     </div>
     <div class="wvu-pattern-instructions__intro">
@@ -50,18 +50,6 @@
 <r:content_for name="page_js">
   <script type="text/javascript">
 
-    $('.wvu-gold').click(function(){
-      $('.background').addClass('wvu-gold');
-    });
-    $('.wvu-blue').click(function(){
-      $('.background').addClass('wvu-blue');
-    });
-    $('.wvu-dune').click(function(){
-      $('.background').addClass('wvu-dune');
-    });
-    $('.wvu-limed-spruce').click(function(){
-      $('.background').addClass('wvu-limed-spruce');
-    });
     $('.wvu-gray-chateau').click(function(){
       $('.background').addClass('wvu-gray-chateau');
     });
@@ -109,6 +97,19 @@
     });
     $('.wvu-candelight').click(function(){
       $('.background').addClass('wvu-candelight');
+    });
+
+    $(".wvu-gold").removeClass (function (index, css) {
+      return (css.match (/(^|\s)wvu-background--\S+/g) || []).join('wvu-background--gold');
+    });
+    $(".wvu-blue").removeClass (function (index, css) {
+      return (css.match (/(^|\s)wvu-background--\S+/g) || []).join('wvu-background--blue');
+    });
+    $(".wvu-dune").removeClass (function (index, css) {
+      return (css.match (/(^|\s)wvu-background--\S+/g) || []).join('wvu-background--dune');
+    });
+    $(".wvu-limed-spruce").removeClass (function (index, css) {
+      return (css.match (/(^|\s)wvu-background--\S+/g) || []).join('wvu-background--limed-spruce');
     });
 
   </script>
