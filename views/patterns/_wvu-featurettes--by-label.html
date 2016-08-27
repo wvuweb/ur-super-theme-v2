@@ -1,3 +1,7 @@
+<r:set_var name="featurettes_labels">
+  <r:page:slug />,featurette
+</r:set_var>
+
 <div class="wvu-featurettes wvu-featurettes--1 <r:page:content name="wvu-background-color-class--featurettes" /> background">
   <div class="wvu-featurettes__container">
 
@@ -10,8 +14,8 @@
       </div>
     </r:page:if_has_content_for>
 
-    <r:get_page id="{$featurettes_id}">
-      <r:children by="name" order="asc" labels="feature" labels_match="any">
+    <r:root>
+      <r:descendants labels="{$featurettes_labels}" labels_match="all" by="title" order="asc">
         <div class="wvu-featurettes__featurettes wvu-featurettes__featurettes--<r:count />">
           <r:each>
             <div class="wvu-featurettes__featurette">
@@ -36,8 +40,8 @@
             </div>
           </r:each>
         </div>
-      </r:children>
-    </r:get_page>
+      </r:descendants>
+    </r:root>
 
   </div>
 </div>
