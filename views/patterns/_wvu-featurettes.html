@@ -16,7 +16,10 @@
 
     <!-- Check to see if page has a featurettes_id. If so, find page with that ID and its display children that are labeled 'feature'. -->
 
-    <r:if v1="{{BLANK(featurettes_id))}}" v2="false" op="=">
+    <r:set_var name="featurettesID">
+      <r:page:data name="featurettes_id" />
+    </r:set_var>
+    <r:if v1="{{BLANK(featurettesID))}}" v2="false" op="=">
       <r:get_page id="{$featurettes_id}">
         <r:children by="name" order="asc" labels="feature" labels_match="any">
           <div class="wvu-featurettes__featurettes wvu-featurettes__featurettes--<r:count />">
@@ -49,7 +52,7 @@
 
     <!-- If no featurettes_id, find any pages labeled with 'featurette' and the page slug -->
 
-    <r:if v1="{{NOT(BLANK(featurettes_id))}}" v2="true" op="=">
+    <r:if v1="{{NOT(BLANK(featurettesID))}}" v2="true" op="=">
       <r:root>
         <r:descendants labels="{$featurettes_labels}" labels_match="all" by="title" order="asc">
           <div class="wvu-featurettes__featurettes wvu-featurettes__featurettes--<r:count />">
