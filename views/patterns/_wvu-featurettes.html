@@ -1,4 +1,4 @@
-<div class="wvu-featurettes wvu-featurettes--1 <r:page:content name="wvu-background-color-class--featurettes" /> background">
+<div class="wvu-featurettes wvu-featurettes--1 u-<r:site:data name="bgcolor_featurettes" /> background">
   <div class="wvu-featurettes__container">
 
     <r:page:if_has_content_for region="wvu-featurettes__header" always_show_in_edit_mode="true">
@@ -38,6 +38,12 @@
         </div>
       </r:children>
     </r:get_page>
+
+    <r:page:if_has_content_for region="wvu-featurettes__postscript" always_show_in_edit_mode="true">
+      <div class="wvu-featurettes__postscript">
+        <p><r:editable_region name="wvu-featurettes__postscript">Put additional info or links here.</r:editable_region></p>
+      </div>
+    </r:page:if_has_content_for>
 
   </div>
 </div>
