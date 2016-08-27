@@ -20,6 +20,7 @@
     $('li.wvu-blue').click(switchBlue);
     $('li.wvu-dune').click(switchDune);
     $('li.wvu-limed-spruce').click(switchLimedSpruce);
+    $('li.wvu-gray-chateau').click(switchGrayChateau);
 
     function switchGold() {
       $('.<r:page:slug />').removeClass('background wvu-gold wvu-blue wvu-dune wvu-limed-spruce wvu-gray-chateau wvu-pine-cone wvu-schooner wvu-tide wvu-smalt wvu-endeavor wvu-morning-glory wvu-judge-gray wvu-reef-gold wvu-tangerine wvu-eden wvu-xanadu wvu-summer-green wvu-well-read wvu-trinidad wvu-candelight');
@@ -31,12 +32,17 @@
       $('.<r:page:slug />').addClass('wvu-blue background');
     }
 
-    function switchBlue() {
+    function switchDune() {
       $('.<r:page:slug />').removeClass('background wvu-gold wvu-blue wvu-dune wvu-limed-spruce wvu-gray-chateau wvu-pine-cone wvu-schooner wvu-tide wvu-smalt wvu-endeavor wvu-morning-glory wvu-judge-gray wvu-reef-gold wvu-tangerine wvu-eden wvu-xanadu wvu-summer-green wvu-well-read wvu-trinidad wvu-candelight');
       $('.<r:page:slug />').addClass('wvu-dune background');
     }
 
     function switchLimedSpruce() {
+      $('.<r:page:slug />').removeClass('background wvu-gold wvu-blue wvu-dune wvu-limed-spruce wvu-gray-chateau wvu-pine-cone wvu-schooner wvu-tide wvu-smalt wvu-endeavor wvu-morning-glory wvu-judge-gray wvu-reef-gold wvu-tangerine wvu-eden wvu-xanadu wvu-summer-green wvu-well-read wvu-trinidad wvu-candelight');
+      $('.<r:page:slug />').addClass('wvu-limed-spruce background');
+    }
+
+    function switchGrayChateau() {
       $('.<r:page:slug />').removeClass('background wvu-gold wvu-blue wvu-dune wvu-limed-spruce wvu-gray-chateau wvu-pine-cone wvu-schooner wvu-tide wvu-smalt wvu-endeavor wvu-morning-glory wvu-judge-gray wvu-reef-gold wvu-tangerine wvu-eden wvu-xanadu wvu-summer-green wvu-well-read wvu-trinidad wvu-candelight');
       $('.<r:page:slug />').addClass('wvu-limed-spruce background');
     }
