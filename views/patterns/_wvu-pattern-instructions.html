@@ -1,3 +1,9 @@
+<div class="wvu-color-toggle">
+  <div class="wvu-color-toggle__container">
+    <a class="button button--wvu-gold-fill">WVU Gold</a>
+  </div>
+</div>
+
 <div class="wvu-pattern-instructions">
   <div class="wvu-pattern-instructions__container">
     <div class="wvu-pattern-instructions__intro">
@@ -36,3 +42,15 @@
     </div>
   </div>
 </div>
+
+<r:content_for name="page_js">
+  <script type="text/javascript">
+
+  	$(document).ready(function() {
+      $('button--wvu-gold-fill').click(function(){
+        $('.background').toggleClass('u-wvu-gold');
+      });
+  	});
+
+  </script>
+</r:content_for>
