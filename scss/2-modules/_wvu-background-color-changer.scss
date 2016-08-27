@@ -1,0 +1,70 @@
+@each $color, $text-color in (blue, $wvu-blue),
+                             (dune, $wvu-dune),
+                             (limed-spruce, $wvu-limed-spruce),
+                             (pine-cone, $wvu-pine-cone),
+                             (schooner, $wvu-schooner),
+                             (smalt, $wvu-smalt),
+                             (endeavor, $wvu-endeavor),
+                             (eden, $wvu-eden),
+                             (xanadu, $wvu-xanadu),
+                             (well-read, $wvu-well-read),
+                             (trinidad, $wvu-trinidad),
+                             (white, white) {
+  .wvu-#{$color} {
+    color: $text-color;
+    border-color: $text-color;
+  }
+  .wvu-background--#{$color} {
+    color: white;
+    background-color: $text-color;
+    -webkit-font-smoothing: antialiased;
+    h1, h2, h3, h4, h5, h6, a, .button {
+      color: white;
+      a {
+        color: white;
+      }
+    }
+    .button {
+      border-color: white;
+      &:hover {
+        background-color: white;
+        color: $text-color;
+      }
+    }
+  }
+}
+
+// Light backgrounds
+
+@each $color, $text-color in (gold, $wvu-gold),
+                             (gray-chateau, $wvu-gray-chateau),
+                             (tide, $wvu-tide),
+                             (judge-gray, $wvu-judge-gray),
+                             (morning-glory, $wvu-morning-glory),
+                             (reef-gold, $wvu-reef-gold),
+                             (tangerine, $wvu-tangerine),
+                             (candelight, $wvu-candelight),
+                             (summer-green, $wvu-summer-green) {
+  .wvu-#{$color} {
+    color: $text-color;
+    border-color: $text-color;
+  }
+  .wvu-background--#{$color} {
+    color: $wvu-dune;
+    background-color: $text-color;
+    -webkit-font-smoothing: antialiased;
+    h1, h2, h3, h4, h5, h6, a, .button {
+      color: $wvu-dune;
+      a {
+        color: $wvu-dune;
+      }
+    }
+    .button {
+      border-color: $wvu-dune;
+      &:hover {
+        background-color: $wvu-dune;
+        color: $text-color;
+      }
+    }
+  }
+}

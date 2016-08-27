@@ -64,22 +64,22 @@ $wvu-candelight: $pms-115-c;
   .wvu-#{$color} {
     color: $text-color;
     border-color: $text-color;
-  }
-  .wvu-background--#{$color} {
-    color: white;
-    background-color: $text-color;
-    -webkit-font-smoothing: antialiased;
-    h1, h2, h3, h4, h5, h6, a, .button {
+    &.background {
       color: white;
-      a {
+      background-color: $text-color;
+      -webkit-font-smoothing: antialiased;
+      h1, h2, h3, h4, h5, h6, a, .button {
         color: white;
+        a {
+          color: white;
+        }
       }
-    }
-    .button {
-      border-color: white;
-      &:hover {
-        background-color: white;
-        color: $text-color;
+      .button {
+        border-color: white;
+        &:hover {
+          background-color: white;
+          color: $text-color;
+        }
       }
     }
   }
@@ -99,22 +99,22 @@ $wvu-candelight: $pms-115-c;
   .wvu-#{$color} {
     color: $text-color;
     border-color: $text-color;
-  }
-  .wvu-background--#{$color} {
-    color: $wvu-dune;
-    background-color: $text-color;
-    -webkit-font-smoothing: antialiased;
-    h1, h2, h3, h4, h5, h6, a, .button {
+    &.background {
       color: $wvu-dune;
-      a {
+      background-color: $text-color;
+      -webkit-font-smoothing: antialiased;
+      h1, h2, h3, h4, h5, h6, a, .button {
         color: $wvu-dune;
+        a {
+          color: $wvu-dune;
+        }
       }
-    }
-    .button {
-      border-color: $wvu-dune;
-      &:hover {
-        background-color: $wvu-dune;
-        color: $text-color;
+      .button {
+        border-color: $wvu-dune;
+        &:hover {
+          background-color: $wvu-dune;
+          color: $text-color;
+        }
       }
     }
   }

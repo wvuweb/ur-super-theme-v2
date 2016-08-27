@@ -1,0 +1,93 @@
+<div class="wvu-background-color-changer">
+  <div class="wvu-background-color-changer__container">
+
+    <h2>Colors</h2>
+    <ul>
+      <li class="wvu-gold background">wvu-gold</li>
+      <li class="wvu-blue background">wvu-blue</li>
+      <li class="wvu-dune background">wvu-dune</li>
+      <li class="wvu-limed-spruce background">wvu-limed-spruce</li>
+      <li class="wvu-limed-spruce background">wvu-limed-spruce</li>
+    </ul>
+
+  </div>
+</div>
+
+<r:content_for name="page_js">
+  <script type="text/javascript">
+
+    $('.wvu-gray-chateau').click(function(){
+      $('.background').addClass('wvu-gray-chateau');
+    });
+    $('.wvu-pine-cone').click(function(){
+      $('.background').addClass('wvu-pine-cone');
+    });
+    $('.wvu-schooner').click(function(){
+      $('.background').addClass('wvu-schooner');
+    });
+    $('.wvu-tide').click(function(){
+      $('.background').addClass('wvu-tide');
+    });
+    $('.wvu-smalt').click(function(){
+      $('.background').addClass('wvu-smalt');
+    });
+    $('.wvu-endeavor').click(function(){
+      $('.background').addClass('wvu-endeavor');
+    });
+    $('.wvu-morning-glory').click(function(){
+      $('.background').addClass('wvu-morning-glory');
+    });
+    $('.wvu-judge-gray').click(function(){
+      $('.background').addClass('wvu-judge-gray');
+    });
+    $('.wvu-reef-gold').click(function(){
+      $('.background').addClass('wvu-reef-gold');
+    });
+    $('.wvu-tangerine').click(function(){
+      $('.background').addClass('wvu-tangerine');
+    });
+    $('.wvu-eden').click(function(){
+      $('.background').addClass('wvu-eden');
+    });
+    $('.wvu-xanadu').click(function(){
+      $('.background').addClass('wvu-xanadu');
+    });
+    $('.wvu-summer-green').click(function(){
+      $('.background').addClass('wvu-summer-green');
+    });
+    $('.wvu-well-read').click(function(){
+      $('.background').addClass('wvu-well-read');
+    });
+    $('.wvu-trinidad').click(function(){
+      $('.background').addClass('wvu-trinidad');
+    });
+    $('.wvu-candelight').click(function(){
+      $('.background').addClass('wvu-candelight');
+    });
+
+    $('.wvu-gold').click(function(){
+      $(".background").removeClass (function (index, css) {
+        return (css.match (/(^|\s)background\S+/g) || []).join('wvu-background--gold');
+      });
+    });
+
+    $('.wvu-gold').click(function(){
+      $(".background").removeClass (function (index, css) {
+        return (css.match (/(^|\s)background\S+/g) || []).join('wvu-background--blue');
+      });
+    });
+
+    $('.wvu-dune').click(function(){
+      $(".background").removeClass (function (index, css) {
+        return (css.match (/(^|\s)background\S+/g) || []).join('wvu-background--dune');
+      });
+    });
+
+    $('.wvu-gold').click(function(){
+      $(".background").removeClass (function (index, css) {
+        return (css.match (/(^|\s)background\S+/g) || []).join('wvu-background--limed-spruce');
+      });
+    });
+
+  </script>
+</r:content_for>
