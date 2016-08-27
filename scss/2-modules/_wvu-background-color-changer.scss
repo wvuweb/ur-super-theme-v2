@@ -2,10 +2,14 @@
   @include outer-container();
   ul {
     list-style-type: none;
+    margin: 0 auto;
     padding-left: 0;
     li {
+      float: left;
+      font-size: .8em;
       height: 3em;
       margin-right: 3px;
+      padding: .5em;
       width: 3em;
     }
   }
