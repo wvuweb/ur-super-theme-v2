@@ -16,26 +16,30 @@
 <r:content_for name="page_js">
   <script type="text/javascript">
 
-  $('li.wvu-gold').click(switchGold);
-  $('li.wvu-blue').click(switchBlue);
-  $('#blueButton').click(switchBlue);
-  $('#yellowButton').click(switchYellow);
+    $('li.wvu-gold').click(switchGold);
+    $('li.wvu-blue').click(switchBlue);
+    $('li.wvu-dune').click(switchDune);
+    $('li.wvu-limed-spruce').click(switchLimedSpruce);
 
-  function switchGold() {
-  $('.<r:page:slug />').attr('class', 'wvu-gold background');
-  }
+    function switchGold() {
+      $('.<r:page:slug />').removeClass('background wvu-gold wvu-blue wvu-dune wvu-limed-spruce wvu-gray-chateau wvu-pine-cone wvu-schooner wvu-tide wvu-smalt wvu-endeavor wvu-morning-glory wvu-judge-gray wvu-reef-gold wvu-tangerine wvu-eden wvu-xanadu wvu-summer-green wvu-well-read wvu-trinidad wvu-candelight');
+      $('.<r:page:slug />').addClass('wvu-gold background');
+    }
 
-  function switchBlue() {
-  $('.<r:page:slug />').attr('class', 'wvu-blue background');
-  }
+    function switchBlue() {
+      $('.<r:page:slug />').removeClass('background wvu-gold wvu-blue wvu-dune wvu-limed-spruce wvu-gray-chateau wvu-pine-cone wvu-schooner wvu-tide wvu-smalt wvu-endeavor wvu-morning-glory wvu-judge-gray wvu-reef-gold wvu-tangerine wvu-eden wvu-xanadu wvu-summer-green wvu-well-read wvu-trinidad wvu-candelight');
+      $('.<r:page:slug />').addClass('wvu-blue background');
+    }
 
-  function switchBlue() {
-  $('body').attr('class', 'blue');
-  }
+    function switchBlue() {
+      $('.<r:page:slug />').removeClass('background wvu-gold wvu-blue wvu-dune wvu-limed-spruce wvu-gray-chateau wvu-pine-cone wvu-schooner wvu-tide wvu-smalt wvu-endeavor wvu-morning-glory wvu-judge-gray wvu-reef-gold wvu-tangerine wvu-eden wvu-xanadu wvu-summer-green wvu-well-read wvu-trinidad wvu-candelight');
+      $('.<r:page:slug />').addClass('wvu-dune background');
+    }
 
-  function switchYellow() {
-  $('body').attr('class', 'yellow');
-  }
+    function switchLimedSpruce() {
+      $('.<r:page:slug />').removeClass('background wvu-gold wvu-blue wvu-dune wvu-limed-spruce wvu-gray-chateau wvu-pine-cone wvu-schooner wvu-tide wvu-smalt wvu-endeavor wvu-morning-glory wvu-judge-gray wvu-reef-gold wvu-tangerine wvu-eden wvu-xanadu wvu-summer-green wvu-well-read wvu-trinidad wvu-candelight');
+      $('.<r:page:slug />').addClass('wvu-limed-spruce background');
+    }
 
   </script>
 </r:content_for>
