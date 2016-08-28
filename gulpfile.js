@@ -35,7 +35,7 @@ gulp.task('default',['sass'], function(){
 });
 
 gulp.task('scripts', function() {
-  return gulp.src(['./javascripts/vendor/responsive-nav.js', './javascripts/responsive-nav--custom.js', './javascripts/vendor/fontfaceobserver-1.5.1.js', './javascripts/fontfaceobserver__custom.js', './javascripts/vendor/wvu-nav-dropdowns.js', './javascripts/vendor/calendar-build.js'])
+  return gulp.src(['./javascripts/vendor/responsive-nav.js', './javascripts/responsive-nav--custom.js', './javascripts/vendor/fontfaceobserver-1.5.1.js', './javascripts/fontfaceobserver__custom.js', './javascripts/vendor/wvu-nav-dropdowns.js'])
     .pipe(concat('all.js'))
     .pipe(gulp.dest('./javascripts/'));
 });

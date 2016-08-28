@@ -1,5 +1,1 @@
-<r:set_var name="hasAlternateLogo">
-  <r:site:data name="has_alternate_logo" />
-</r:set_var>
-
-<a class="wvu-masthead__logo <r:if value1="{$hasAlternateLogo}" value2="true" operator="=">wvu-masthead__logo--alternate</r:if>" href="/" style="<r:files:each labels="masthead-logo" limit="1" types="image" random="true">background-image: url(<r:file:image_url />); background-size: contain;</r:files:each>"><r:if expr="{{ BLANK(masthead_title) }}"><span class="wvu-masthead__university-name"><r:site:name /></span></r:if><r:if expr="{{ NOT(BLANK(masthead_title)) }}"><span class="wvu-masthead__title"><r:site:data name="masthead_title" /></span></r:if></a>
+<a class="wvu-masthead__logo" href="/"><span class="wvu-masthead__title"><r:site:data name="masthead_title" /></span></a>
