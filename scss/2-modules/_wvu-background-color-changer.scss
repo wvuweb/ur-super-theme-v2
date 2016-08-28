@@ -21,10 +21,6 @@
         @include span-columns(1.2);
         @include omega(10n);
       }
-      @include mq($bp-xlarge) {
-        @include omega-reset(10n);
-        @include span-columns(.6);
-      }
     }
   }
 }

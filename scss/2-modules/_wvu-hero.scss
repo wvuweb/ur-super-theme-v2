@@ -138,6 +138,7 @@
 
 .wvu-hero__photo-container--has-video-true {
   @include u-wvu-embed-container();
+  z-index: 3;
 }
 
 .wvu-hero__photo--edit-mode {
@@ -165,11 +166,9 @@
       }
     }
   }
-  .wvu-hero--big-photo {
-    .wvu-hero__container {
-      &:before {
-        display: none;
-      }
+  .wvu-hero__container {
+    &:before {
+      display: none;
     }
   }
 }
