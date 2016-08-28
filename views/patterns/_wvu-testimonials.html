@@ -1,0 +1,30 @@
+<div class="wvu-featurettes wvu-featurettes--1 wvu-featurettes--testimonials <r:site:data name="bgcolor_testimonials" /> background">
+  <div class="wvu-featurettes__container">
+
+    <r:page:if_has_content_for region="wvu-testimonials__header" always_show_in_edit_mode="true">
+      <div class="wvu-featurettes__header">
+        <r:editable_region name="wvu-testimonials__header">
+          <h2>Featurettes Headline</h2>
+          <p>Subhead goes here.</p>
+        </r:editable_region>
+      </div>
+    </r:page:if_has_content_for>
+
+    <r:get_page id="{$testimonials_id}">
+      <r:partial name="patterns/wvu-featurettes__featurettes" />
+    </r:get_page>
+
+    <r:page:if_has_content_for region="wvu-testimonials__postscript" always_show_in_edit_mode="true">
+      <div class="wvu-featurettes__postscript">
+        <p><r:editable_region name="wvu-testimonials__postscript">Put additional info or links here.</r:editable_region></p>
+      </div>
+    </r:page:if_has_content_for>
+
+  </div>
+</div>
+
+<r:edit_mode_only>
+  <div class="wvu-instructions">
+    <strong>Instructions for Featurettes:</strong> This finds pages labeled with <code>featurette</code> and this page&rsquo;s slug, and pulls in content to create sub-features. Or list out sub-features based on page ID. Enter the parent page&rsquo;s ID in the <strong>featurettes_id</strong> field in Page Properties > Data. Each page you wish featured must be labelled <code>feature</code>.
+  </div>
+</r:edit_mode_only>
