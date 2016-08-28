@@ -254,12 +254,12 @@ $flying-wv-w-sub-brand: 'https://patterns.wvu.edu/images/flying-wv-w-signature.p
 .wvu-masthead__apply-links {
   font-size: .8em;
   margin-bottom: 1em;
-  text-align: left;
+  text-align: center;
   text-transform: uppercase;
   @include mq($bp-medium) {
     font-size: 1em;
     margin-bottom: 0;
-    padding-top: 3em;
+    padding-top: 2.7em;
     text-align: right;
   }
 }
@@ -298,6 +298,46 @@ $flying-wv-w-sub-brand: 'https://patterns.wvu.edu/images/flying-wv-w-signature.p
     }
     &:hover {
       text-decoration: underline;
+    }
+  }
+}
+
+.wvu-masthead--gold {
+  .wvu-masthead__apply-links--mini {
+    background-color: tint($wvu-gold, 10%);
+  }
+  .wvu-masthead__apply-links, .wvu-mastheaad__apply-links--mini {
+    a, .button {
+      &:first-child {
+        &:visited,
+        &:link {
+          border-color: $wvu-limed-spruce;
+          color: $wvu-limed-spruce;
+        }
+      }
+      &:nth-child(2) {
+        &:visited,
+        &:link {
+          border-color: $wvu-well-read;
+          color: $wvu-well-read;
+        }
+      }
+      &:nth-child(3) {
+        &:visited,
+        &:link {
+          border-color: $wvu-endeavor;
+          color: $wvu-endeavor;
+        }
+      }
+    }
+    a.button {
+      &:first-child, &:nth-child(2), &:nth-child(3) {
+        &:hover {
+          border-color: $wvu-blue;
+          background-color: $wvu-blue;
+          color: $wvu-gold;
+        }
+      }
     }
   }
 }
@@ -470,37 +510,6 @@ input[type="submit"] {
   	background: transparent;
   }
 }
-
-.wvu-nav__search-toggle {
-  &.inactive-search {
-  	float:right;
-  	position:relative;
-  	z-index:999;
-  	left:0;
-  	top:0;
-    color: #333;
-    height: 56px;
-    width:20%;
-    text-indent: -99999em;
-    background-color: #EAAA00;
-    background-image: url(https://patterns.wvu.edu/images/search-icon.png);
-    background-repeat: no-repeat;
-    background-size: 20px;
-    background-position: 50% 50%;
-    padding: 4px;
-    display: inline-block;
-    cursor: pointer;
-    border:0;
-    overflow:hidden;
-    box-sizing: border-box;
-    @include mq($bp-medium) {display:none;}
-  }
-  &.active-search {
-  	background-image: url(https://patterns.wvu.edu/images/hide-search-icon.png);
-  }
-}
-
-.nav-toggle { float: left; width: 80%;height: 56px; }
 
 // Layout
 // ==============================
