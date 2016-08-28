@@ -20,8 +20,8 @@
     </r:set_var>
   </r:if>
 
-  <script type="text/javascript" src="https://calendar.wvu.edu/Scripts/core.js"></script>
-  <script type="text/javascript">
+  <script type="text/javascript" src="https://calendar.wvu.edu/Scripts/core.js" defer></script>
+  <script type="text/javascript" defer>
     ActiveData.Events(
       "<r:var name="cal_javascript_url" />",
       function (response) {$("#cal").append(response.data);}
