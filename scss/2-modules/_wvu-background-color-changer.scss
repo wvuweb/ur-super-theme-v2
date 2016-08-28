@@ -1,5 +1,5 @@
 .wvu-background-color-changer {
-  @include outer-container();
+  @include u-wvu-container-padding();
   ul {
     list-style-type: none;
     margin: 0 auto;
@@ -23,4 +23,11 @@
       }
     }
   }
+}
+
+// Layout
+// ===================================
+
+.wvu-background-color-changer {
+  @include outer-container();
 }
