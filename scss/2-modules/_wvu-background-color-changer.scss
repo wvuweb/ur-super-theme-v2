@@ -5,9 +5,11 @@
     margin: 0 auto;
     padding-left: 0;
     li {
+      cursor: pointer;
       float: left;
       font-size: .8em;
       height: 3em;
+      line-height: 1em;
       margin-right: 3px;
       padding: .5em;
       width: 3em;
