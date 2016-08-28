@@ -251,6 +251,51 @@ $flying-wv-w-sub-brand: 'https://patterns.wvu.edu/images/flying-wv-w-signature.p
   }
 }
 
+.wvu-masthead__apply-links {
+  font-size: .8em;
+  margin-bottom: 1em;
+  text-align: center;
+  text-transform: uppercase;
+  @include mq($bp-medium) {
+    font-size: 1em;
+    margin-bottom: 0;
+    padding-top: 3em;
+    text-align: right;
+  }
+}
+
+.wvu-masthead__apply-links--mini {
+  background-color: shade($wvu-blue, 10%);
+  font-size: .8em;
+  padding: .5em;
+  a {
+    &:first-child {
+      &:visited,
+      &:hover,
+      &:link {
+        color: $wvu-gold;
+      }
+    }
+    &:nth-child(2) {
+      &:visited,
+      &:hover,
+      &:link {
+        color: $wvu-morning-glory;
+      }
+    }
+    &:nth-child(3) {
+      &:visited,
+      &:hover,
+      &:link {
+        color: $wvu-tangerine;
+      }
+    }
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
 .wvu-masthead__logo {
   &:hover { text-decoration: none; }
 }
@@ -338,18 +383,6 @@ input[type="submit"] {
   }
 }
 
-.wvu-masthead__apply-links {
-  font-size: .8em;
-  margin-bottom: 1em;
-  text-align: center;
-  @include mq($bp-medium) {
-    font-size: 1em;
-    margin-bottom: 0;
-    padding-top: 3em;
-    text-align: right;
-  }
-}
-
 .wvu-masthead__college-link {
   a {
     text-decoration: none;
@@ -418,7 +451,16 @@ input[type="submit"] {
   }
 }
 
-.wvu-masthead__search-bar {
+// .wvu-masthead__search-bar {
+//   @include mq($bp-medium) {
+//     @include span-columns(4.5);
+//   }
+//   @include mq($bp-large) {
+//     @include span-columns(3.5);
+//   }
+// }
+
+.wvu-masthead__utility-nav {
   @include mq($bp-medium) {
     @include span-columns(4.5);
   }

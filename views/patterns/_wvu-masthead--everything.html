@@ -1,0 +1,34 @@
+<div class="wvu-masthead wvu-masthead--<r:site:data name="masthead_color" /> <r:files:each labels="masthead-logo" limit="1" types="image" random="true">wvu-masthead--blue</r:files:each>">
+  <div class="wvu-masthead__container">
+    <r:partial name="patterns/wvu-masthead__logo" />
+
+    <div class="wvu-masthead__utility-nav">
+
+      <div class="wvu-masthead__apply-links wvu-masthead__apply-links--mini">
+        <r:if expr="{{ NOT(BLANK(apply_link_1)) }}">
+          <a href="<r:site:data name="apply_link_1_url" />"><r:site:data name="apply_link_1" /></a>
+        </r:if>
+        <r:if expr="{{ NOT(BLANK(apply_link_2)) }}">
+          <a href="<r:site:data name="apply_link_2_url" />"><r:site:data name="apply_link_2" /></a>
+        </r:if>
+        <r:if expr="{{ NOT(BLANK(apply_link_3)) }}">
+          <a href="<r:site:data name="apply_link_3_url" />"><r:site:data name="apply_link_3" /></a>
+        </r:if>
+      </div>
+
+      <div class="wvu-masthead__search-slider">
+        <div class="wvu-masthead__search-bar">
+          <div class="wvu-masthead__search-and-submit">
+            <r:partial name="patterns/wvu-masthead__links" />
+            <r:if expr="{{ NOT(BLANK(masthead_college_link_address)) }}">
+              | <a href="<r:site:data name="masthead_college_link_address" />" class="wvu-masthead__link"><r:site:data name="masthead_college_link_title" /></a>
+            </r:if>
+            <r:partial name="patterns/wvu-search" />
+          </div> <!-- /.wvu-masthead__search-and-submit -->
+        </div> <!-- /.wvu-masthead__search-bar -->
+      </div> <!-- /.wvu-masthead__search-slider -->
+
+    </div> <!-- /.wvu-masthead__utility-nav -->
+
+  </div> <!-- /.wvu-masthead-container -->
+</div> <!-- /.wvu-masthead -->
