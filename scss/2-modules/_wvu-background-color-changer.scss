@@ -6,7 +6,6 @@
     padding-left: 0;
     li {
       cursor: pointer;
-      float: left;
       font-size: .8em;
       height: 3em;
       line-height: 1em;
@@ -27,6 +26,11 @@
   ul {
     li {
       @include mq($bp-medium) {
+        @include span-columns(4);
+        @include omega(3n);
+      }
+      @include mq($bp-medium) {
+        @include omega-reset(3n);
         @include span-columns(2.4);
         @include omega(5n);
       }

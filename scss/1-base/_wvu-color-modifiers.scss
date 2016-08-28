@@ -70,7 +70,7 @@ $wvu-candelight: $pms-115-c;
       $text-color-gradient: shade($text-color, 2%);
       color: white;
       background-color: $text-color;
-      @include background-image(linear-gradient($text-color, $text-color-gradient));
+      @include background-image(linear-gradient($text-color-gradient, $text-color));
       -webkit-font-smoothing: antialiased;
       h1, h2, h3, h4, h5, h6, a, .button {
         color: white;
