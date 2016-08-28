@@ -16,13 +16,11 @@
         </r:if>
       </div>
 
+      <r:partial name="patterns/wvu-masthead__links" />
+
       <div class="wvu-masthead__search-slider">
         <div class="wvu-masthead__search-bar">
           <div class="wvu-masthead__search-and-submit">
-            <r:partial name="patterns/wvu-masthead__links" />
-            <r:if expr="{{ NOT(BLANK(masthead_college_link_address)) }}">
-              | <a href="<r:site:data name="masthead_college_link_address" />" class="wvu-masthead__link"><r:site:data name="masthead_college_link_title" /></a>
-            </r:if>
             <r:partial name="patterns/wvu-search" />
           </div> <!-- /.wvu-masthead__search-and-submit -->
         </div> <!-- /.wvu-masthead__search-bar -->

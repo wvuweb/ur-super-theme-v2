@@ -27,14 +27,16 @@ editable_region:
   long-paragraph:
     "<%= Faker::Lorem.paragraph(7) %>"
 
-  so-hero__header:
-    "It Starts Now."
+  wvu-action-hero__button-text:
+    "Action Item"
 
-  so-hero__action-item-text:
-    "More About This"
+  wvu-action-hero__header:
+    "<h2>Action Hero Header</h2><p><%= Faker::Lorem.paragraph(1) %></p>"
 
-  so-hero__text:
-    "So let&rsquo;s go. Release the Mountaineer spirit inside of you. Reach the limits of what you can do and then keep on going."
+  wvu-action-hero__postscript:
+    "<%= Faker::Lorem.paragraph(1) %>"
+
+  wvu-action-hero__url: "#"
 
   wvu-hero-title-top:
     "It Starts"
@@ -222,31 +224,48 @@ editable_region:
 
   wvu-hero__action-item-url: "#"
 
-  wvu-lede-text: "Lede text here."
+  wvu-lede-text: |
+    <%= Faker::Lorem.paragraph(3) %>
 
   wvu-polyptych__header: |
     <h2>Polyptych Header</h2><p>Stuff.</p>
 
-  wvu-triptych__photo--1: "89"
-
   wvu-triptych__copy--1: |
     <p><%= Faker::Lorem.paragraph(1) %></p>
+
+  wvu-triptych__copy--2: |
+    <p><%= Faker::Lorem.paragraph(1) %></p>
+
+  wvu-triptych__copy--3: |
+    <p><%= Faker::Lorem.paragraph(1) %></p>
+
+  wvu-triptych__photo--1: |
+    <img src="<%= Faker::Avatar.image %>" alt=" " />
+
+  wvu-triptych__photo--2: |
+    <img src="<%= Faker::Avatar.image %>" alt=" " />
+
+  wvu-triptych__photo--3: |
+    <img src="<%= Faker::Avatar.image %>" alt=" " />
 
 site:
   name: "Brand Patterns"
   data:
-    google_site_verification: "meta-tag-content-goes-here"
-    org_name: "Your Org Name Here"
-    masthead_title: "Your Site Title Here"
-    masthead_college_link_title: "Your College Title Here"
-    slot_00_masthead: masthead
-    slot_00_nav: nav--buttons
     apply_link_1: APPLY NOW
     apply_link_1_url: #
     apply_link_2: GIVE
     apply_link_2_url: #
     apply_link_3: VISIT
     apply_link_3_url: #
+    google_site_verification: "meta-tag-content-goes-here"
+    org_name: "Your Org Name Here"
+    masthead_college_link_title: "Your College Title Here"
+    masthead_link_2_address: #
+    masthead_link_2_title: "Eberly College of Arts & Sciences"
+    masthead_title: "Your Site Title Here"
+    hide_instructions: "true"
+    slot_00_masthead: masthead--everything
+    slot_00_nav: nav--social
 
 page:
   id: 1
@@ -269,6 +288,23 @@ page:
     slot_02: "lede-text"
     slot_03: "triptych"
     slot_04: "action-hero"
+    slot_05: "action-hero"
+    slot_06: "action-hero"
+    slot_07: "action-hero"
+    slot_08: "action-hero"
+    slot_09: "action-hero"
+    slot_10: "action-hero"
+    slot_11: "action-hero"
+    slot_12: "action-hero"
+    slot_13: "action-hero"
+    slot_14: "action-hero"
+    slot_15: "action-hero"
+    slot_16: "action-hero"
+    slot_17: "action-hero"
+    slot_18: "action-hero"
+    slot_19: "action-hero"
+    slot_20: "action-hero"
+    show_instructions: "false"
 
 pages:
   - id: 2

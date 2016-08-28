@@ -1,1 +1,6 @@
-<a href="http://wvu.edu" class="wvu-masthead__link">WVU Home</a>
+<div class="wvu-masthead__links">
+  <a href="http://wvu.edu" class="wvu-masthead__link">WVU Home</a>
+  <r:if expr="{{ NOT(BLANK(masthead_link_2_address)) }}">
+    | <a href="<r:site:data name="masthead_link_2_address" />" class="wvu-masthead__link"><r:site:data name="masthead_link_2_title" /></a>
+  </r:if>
+</div>

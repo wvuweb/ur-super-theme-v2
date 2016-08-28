@@ -19,12 +19,15 @@ custom_site_attributes:
   - github_url
   - google_site_verification
   - has_alternate_logo
+  - hide_instructions
   - instagram_url
   - jquery_defer
   - linkedin_url
   - masthead_college_link_address
   - masthead_college_link_title
   - masthead_color
+  - masthead_link_2_address
+  - masthead_link_2_title
   - masthead_logo_url
   - masthead_title
   - nav_depth
