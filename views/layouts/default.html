@@ -95,11 +95,9 @@
       <r:content />
     </r:yield>
 
-    <r:comment>
-      <r:if expr="{{ NOT(BLANK(has_calendar_anywhere)) }}">
-        <r:partial name="patterns/javascript-wvu-calendar-widget" />
-      </r:if>
-    </r:comment>
+    <r:if expr="{{ NOT(BLANK(has_calendar_anywhere)) }}">
+      <r:partial name="patterns/javascript-wvu-calendar-widget" />
+    </r:if>
 
   </body>
 </html>
