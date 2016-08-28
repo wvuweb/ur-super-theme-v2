@@ -33,7 +33,7 @@
       @include mq($bp-xlarge) {
         @include omega-reset(5n);
         @include span-columns(1.7142);
-        @include omega(10n);
+        @include omega(7n);
       }
     }
   }
