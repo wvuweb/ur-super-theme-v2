@@ -12,7 +12,19 @@
       line-height: 1em;
       margin-right: 3px;
       padding: .5em;
-      width: 3em;
+      @include mq($bp-medium) {
+        @include span-columns(2.4);
+        @include omega(5n);
+      }
+      @include mq($bp-medium) {
+        @include omega-reset(5n);
+        @include span-columns(1.2);
+        @include omega(10n);
+      }
+      @include mq($bp-xlarge) {
+        @include omega-reset(10n);
+        @include span-columns(.6);
+      }
     }
   }
 }
