@@ -22,13 +22,9 @@
     <meta name="twitter:title" content="<r:page:first_non_blank_attr names="alternate_name, name" />">
     <meta name="twitter:description" content="<r:page:meta_description />">
 
-    <link rel="stylesheet" type="text/css" href="stylesheets/styles.css">
+    <r:include_stylesheet name="styles" />
 
   </head>
-
-  <r:set_var name="showInstructions">
-    <r:site:data name="show_instructions" />
-  </r:set_var>
 
   <body class="<r:page:template:name /> page--<r:page:id /> page--<r:page:slug /> <r:edit_mode_only>page--edit-mode page--hide-instructions-<r:var name="showInstructions" /></r:edit_mode_only>">
 
