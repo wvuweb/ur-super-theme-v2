@@ -12,15 +12,6 @@
       line-height: 1em;
       margin-right: 3px;
       padding: .5em;
-      @include mq($bp-medium) {
-        @include span-columns(2.4);
-        @include omega(5n);
-      }
-      @include mq($bp-medium) {
-        @include omega-reset(5n);
-        @include span-columns(1.2);
-        @include omega(10n);
-      }
     }
   }
 }
@@ -30,4 +21,20 @@
 
 .wvu-background-color-changer {
   @include outer-container();
+}
+
+.wvu-background-color-changer {
+  ul {
+    li {
+      @include mq($bp-medium) {
+        @include span-columns(2.4);
+        @include omega(5n);
+      }
+      @include mq($bp-xlarge) {
+        @include omega-reset(5n);
+        @include span-columns(1.7142);
+        @include omega(10n);
+      }
+    }
+  }
 }

@@ -18,6 +18,7 @@
     <ul>
       <li class="wvu-gold background">wvu-gold</li>
       <li class="wvu-blue background">wvu-blue</li>
+      <li class="wvu-white background">wvu-white</li>
       <li class="wvu-dune background">wvu-dune</li>
       <li class="wvu-limed-spruce background">wvu-limed-spruce</li>
       <li class="wvu-gray-chateau background">wvu-gray-chateau</li>
@@ -47,6 +48,7 @@
     $('li.wvu-gold').click(switchGold);
     $('li.wvu-blue').click(switchBlue);
     $('li.wvu-dune').click(switchDune);
+    $('li.wvu-white').click(switchWhite);
     $('li.wvu-limed-spruce').click(switchLimedSpruce);
     $('li.wvu-gray-chateau').click(switchGrayChateau);
     $('li.wvu-pine-cone').click(switchPineCone);
@@ -78,6 +80,11 @@
     function switchDune() {
       $('.<r:var name="pageSlug" />').removeClass('background wvu-gold wvu-blue wvu-dune wvu-limed-spruce wvu-gray-chateau wvu-pine-cone wvu-schooner wvu-tide wvu-smalt wvu-endeavor wvu-morning-glory wvu-judge-gray wvu-reef-gold wvu-tangerine wvu-eden wvu-xanadu wvu-summer-green wvu-well-read wvu-trinidad wvu-candelight');
       $('.<r:var name="pageSlug" />').addClass('wvu-dune background');
+    }
+
+    function switchWhite() {
+      $('.<r:var name="pageSlug" />').removeClass('background wvu-gold wvu-blue wvu-dune wvu-limed-spruce wvu-gray-chateau wvu-pine-cone wvu-schooner wvu-tide wvu-smalt wvu-endeavor wvu-morning-glory wvu-judge-gray wvu-reef-gold wvu-tangerine wvu-eden wvu-xanadu wvu-summer-green wvu-well-read wvu-trinidad wvu-candelight');
+      $('.<r:var name="pageSlug" />').addClass('wvu-white background');
     }
 
     function switchLimedSpruce() {
