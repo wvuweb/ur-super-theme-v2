@@ -13,7 +13,7 @@
 <r:set_var name="pentaptychItems" value="{$pentaptychItems}" default="5" />
 <r:set_var name="pentaptych" value="{$pentaptychScope}" default="page" />
 
-<div class="wvu-polyptych <r:site:data name="bgcolor_pentaptych" /> background wvu-polyptych--pentaptych">
+<div class="wvu-polyptych <r:page:data name="bgcolor_pentaptych" /> background wvu-polyptych--pentaptych">
   <div class="wvu-polyptych__container">
 
     <r:page:if_has_content_for region="wvu-polyptych__header" always_show_in_edit_mode="true">

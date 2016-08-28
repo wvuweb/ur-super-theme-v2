@@ -1,7 +1,7 @@
 <r:page:if_has_content_for region="main" always_show_in_edit_mode="true">
   <div class="wvu-container">
 
-    <main id="maincontent" class="<r:site:data name="bgcolor_backpage" /> background main <r:if v1="{$backpage_has_sidebar}" v2="false" op="=">main--wide</r:if> <r:edit_mode_only>main--edit-mode</r:edit_mode_only>">
+    <main id="maincontent" class="<r:page:data name="bgcolor_backpage" /> background main <r:if v1="{$backpage_has_sidebar}" v2="false" op="=">main--wide</r:if> <r:edit_mode_only>main--edit-mode</r:edit_mode_only>">
 
       <r:edit_mode_only>
         <p><strong>Main body text:</strong></p>
