@@ -67,8 +67,10 @@ $wvu-candelight: $pms-115-c;
     color: $text-color;
     border-color: $text-color;
     &.background {
+      $text-color-gradient: shade($text-color, 2%);
       color: white;
       background-color: $text-color;
+      @include background-image(linear-gradient($text-color, $text-color-gradient));
       -webkit-font-smoothing: antialiased;
       h1, h2, h3, h4, h5, h6, a, .button {
         color: white;
@@ -90,6 +92,7 @@ $wvu-candelight: $pms-115-c;
 // Light backgrounds
 
 @each $color, $text-color in (gold, $wvu-gold),
+                             (white, white),
                              (gray-chateau, $wvu-gray-chateau),
                              (tide, $wvu-tide),
                              (morning-glory, $wvu-morning-glory),
@@ -100,8 +103,10 @@ $wvu-candelight: $pms-115-c;
     color: $text-color;
     border-color: $text-color;
     &.background {
+      $text-color-gradient: shade($text-color, 2%);
       color: $wvu-dune;
       background-color: $text-color;
+      @include background-image(linear-gradient($text-color, $text-color-gradient));
       -webkit-font-smoothing: antialiased;
       h1, h2, h3, h4, h5, h6, a, .button {
         color: $wvu-dune;
