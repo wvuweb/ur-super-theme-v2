@@ -149,6 +149,7 @@
   .wvu-polyptych__panel {
     @include mq($bp-medium) {
       @include span-columns(6);
+      @include omega(2n);
     }
   }
   .wvu-polyptych__photo {
