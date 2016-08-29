@@ -1581,6 +1581,7 @@ ul.show-menu ul {
   /* For Firefox 3.6 to 15 */
   background: linear-gradient(#e5a700, #EAAA00);
   /* Standard syntax */
+  background-color: #EAAA00;
   background-image: url(https://admissions.wvu.edu/images/wvu-pattern-background--gold.png);
   background-position: 50% 0;
   background-repeat: no-repeat;

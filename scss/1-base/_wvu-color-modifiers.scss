@@ -128,6 +128,7 @@ $wvu-candelight: $pms-115-c;
 .wvu-gold-pattern {
   &.background {
     @include wvu-gold-background();
+    background-color: $wvu-gold;
     background-image: url(https://admissions.wvu.edu/images/wvu-pattern-background--gold.png);
     background-position: 50% 0;
     background-repeat: no-repeat;
