@@ -1,0 +1,10 @@
+.wvu-big-search-index__container {
+  @include u-wvu-container-padding();
+}
+
+// Layout
+// ============================
+
+.wvu-big-search-index__container {
+  @include outer-container();
+}
