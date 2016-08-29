@@ -16,9 +16,9 @@
 <div class="wvu-polyptych <r:page:data name="bgcolor_quadriptych" /> background wvu-polyptych--quadriptych">
   <div class="wvu-polyptych__container">
 
-    <r:page:if_has_content_for region="wvu-polyptych__header" always_show_in_edit_mode="true">
+    <r:page:if_has_content_for region="wvu-quadriptych__header" always_show_in_edit_mode="true">
       <div class="wvu-polyptych__header">
-        <r:editable_region name="wvu-polyptych__header" scope="{$quadriptychScope}">
+        <r:editable_region name="wvu-quadriptych__header" scope="{$quadriptychScope}">
           <h2>Quadriptych Headline</h2>
           <p>Subhead goes here.</p>
         </r:editable_region>
@@ -60,9 +60,9 @@
 
     </div> <!-- end wvu-polyptych__panels -->
 
-    <r:page:if_has_content_for region="wvu-polyptych__postscript">
+    <r:page:if_has_content_for region="wvu-quadriptych__postscript">
       <div class="wvu-polyptych__postscript">
-        <r:editable_region name="wvu-polyptych__postscript" scope="{$quadriptychScope}">
+        <r:editable_region name="wvu-quadriptych__postscript" scope="{$quadriptychScope}">
           Put any additional info or links here.
         </r:editable_region>
       </div>
@@ -73,6 +73,6 @@
 
 <r:edit_mode_only>
   <div class="wvu-instructions">
-    <p><strong>Instructions for Multiple Panels:</strong> These panels display sub-features or allow you to have multiple columns of content. Try to keep these consistent e.g. if you have a header in one column, use a header in all of them. You can have 1-4 columns. To omit columns, simply leave the description field in each column you wish to omit blank, from right to left.</p>
+    <p><strong>Instructions for Quadriptych:</strong> These panels display sub-features or allow you to have multiple columns of content. Try to keep these consistent e.g. if you have a header in one column, use a header in all of them.</p>
   </div>
 </r:edit_mode_only>
