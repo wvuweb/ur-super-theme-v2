@@ -361,7 +361,7 @@
     &:visited { color: $wvu-blue; }
   }
   .wvu-masthead__link { color: white;
-    &:hover { color: $wvu-base-link-color; }
+    &:hover { color: shade(white, 10%); }
   }
   .wvu-masthead__college-link a { background: $wvu-gold; color: $wvu-blue; }
 }
