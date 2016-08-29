@@ -262,6 +262,29 @@ $flying-wv-w-sub-brand: 'https://patterns.wvu.edu/images/flying-wv-w-signature.p
     padding-top: 2.7em;
     text-align: right;
   }
+  a {
+    display: inline-block;
+    padding: .5em;
+    text-decoration: none;
+    &:first-child {
+      color: $wvu-gold; border: 2px solid $wvu-gold;
+      &:visited { color: $wvu-gold; }
+      &:hover { background: $wvu-gold; color: $black; border: 2px solid $wvu-gold}
+    }
+    &:nth-child(2) {
+      color: $pms-629-c; border: 2px solid $pms-629-c;
+      &:visited { color: $pms-629-c; }
+      &:hover { background: $pms-629-c; color: $black; }
+    }
+    &:nth-child(3) {
+      color: $pms-166-c; border: 2px solid $pms-166-c;
+      &:visited { color: $pms-166-c; }
+      &:hover { background: $pms-166-c; color: white; }
+    }
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 .wvu-masthead__apply-links--mini {
@@ -271,7 +294,7 @@ $flying-wv-w-sub-brand: 'https://patterns.wvu.edu/images/flying-wv-w-signature.p
   font-weight: bold;
   padding: 0 .75em;
   text-align: left;
-  a, .button {
+  a {
     display: inline-block;
     padding: .5em;
     text-decoration: none;
