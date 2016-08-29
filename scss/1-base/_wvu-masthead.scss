@@ -262,10 +262,7 @@ $flying-wv-w-sub-brand: 'https://patterns.wvu.edu/images/flying-wv-w-signature.p
     padding-top: 2.7em;
     text-align: right;
   }
-  a {
-    display: inline-block;
-    padding: .5em;
-    text-decoration: none;
+  .button {
     &:first-child {
       color: $wvu-gold; border: 2px solid $wvu-gold;
       &:visited { color: $wvu-gold; }
