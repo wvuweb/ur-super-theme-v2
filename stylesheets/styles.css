@@ -1358,15 +1358,15 @@ ul.show-menu ul {
 }
 
 .wvu-white {
-  color: #FFF;
-  border-color: #FFF;
+  color: #F9F9F9;
+  border-color: #F9F9F9;
 }
 
 .wvu-white.background {
   color: #2C2A29;
-  background-color: #FFF;
-  background-image: -webkit-linear-gradient(#f2f2f2, #FFF);
-  background-image: linear-gradient(#f2f2f2, #FFF);
+  background-color: #F9F9F9;
+  background-image: -webkit-linear-gradient(#ededed, #F9F9F9);
+  background-image: linear-gradient(#ededed, #F9F9F9);
   -webkit-font-smoothing: antialiased;
 }
 
@@ -1384,7 +1384,7 @@ ul.show-menu ul {
 
 .wvu-white.background .button:hover {
   background-color: #2C2A29;
-  color: #FFF;
+  color: #F9F9F9;
 }
 
 .wvu-gray-chateau {
@@ -3071,7 +3071,6 @@ p, li, blockquote, h1, h2, h3, h4, h5, h6, pre, a {
 
 blockquote, .wvu-blockquote {
   border-left: 2px solid #ccc;
-  color: #2C2A29;
   margin: 1.5em 0;
   padding-left: 0.75em;
 }
