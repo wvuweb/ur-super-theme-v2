@@ -32,5 +32,8 @@
       border-left: 1px solid #eee;
     }
   }
-
+  .nav-secondary--current-page {
+    margin: -.25em -1em;
+    padding: .25em 1em;
+  }
 }
