@@ -274,9 +274,9 @@ $flying-wv-w-sub-brand: 'https://patterns.wvu.edu/images/flying-wv-w-signature.p
       &:hover { background: $pms-629-c; color: $black; }
     }
     &:nth-child(3) {
-      color: $pms-166-c; border: 2px solid $pms-166-c;
-      &:visited { color: $pms-166-c; }
-      &:hover { background: $pms-166-c; color: white; }
+      color: $pms-144-c; border: 2px solid $pms-144-c;
+      &:visited { color: $pms-144-c; }
+      &:hover { background: $pms-144-c; color: $black; }
     }
     &:hover {
       text-decoration: underline;
