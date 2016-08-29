@@ -1,4 +1,5 @@
-<r:page:if_has_content_for region="main" always_show_in_edit_mode="true">
+<r:if v1="{$backpage_main}" v2="false" op="!=">
+
   <div class="wvu-container">
 
     <main id="maincontent" class="<r:page:data name="bgcolor_backpage" /> background main <r:if v1="{$backpage_has_sidebar}" v2="false" op="=">main--wide</r:if> <r:edit_mode_only>main--edit-mode</r:edit_mode_only>">
@@ -15,7 +16,8 @@
     <r:partial name="patterns/wvu-sidebar" />
 
   </div> <!-- /.wvu-container -->
-</r:page:if_has_content_for>
+
+</r:if>
 
 <r:edit_mode_only>
   <div class="wvu-instructions">
