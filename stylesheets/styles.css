@@ -1567,6 +1567,58 @@ ul.show-menu ul {
   color: #9ABEAA;
 }
 
+.wvu-gold-pattern.background {
+  background-color: #EAAA00;
+  color: #002855;
+  -webkit-font-smoothing: antialiased;
+  background: #e5a700;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#e5a700, #EAAA00);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#e5a700, #EAAA00);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#e5a700, #EAAA00);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#e5a700, #EAAA00);
+  /* Standard syntax */
+  background-image: url(https://admissions.wvu.edu/images/wvu-pattern-background--gold.png);
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wvu-gold-pattern.background h1, .wvu-gold-pattern.background h2, .wvu-gold-pattern.background h3, .wvu-gold-pattern.background h4, .wvu-gold-pattern.background h5, .wvu-gold-pattern.background h6 {
+  color: #002855;
+}
+
+.wvu-gold-pattern.background h1 a, .wvu-gold-pattern.background h2 a, .wvu-gold-pattern.background h3 a, .wvu-gold-pattern.background h4 a, .wvu-gold-pattern.background h5 a, .wvu-gold-pattern.background h6 a {
+  color: #002855;
+  text-decoration: none;
+}
+
+.wvu-gold-pattern.background h1 a:hover, .wvu-gold-pattern.background h2 a:hover, .wvu-gold-pattern.background h3 a:hover, .wvu-gold-pattern.background h4 a:hover, .wvu-gold-pattern.background h5 a:hover, .wvu-gold-pattern.background h6 a:hover {
+  color: #171100;
+}
+
+.wvu-gold-pattern.background a {
+  color: #002855;
+  text-decoration: underline;
+}
+
+.wvu-gold-pattern.background a:hover {
+  color: #171100;
+}
+
+.wvu-gold-pattern.background a.button {
+  border-color: #002855;
+  text-decoration: none;
+}
+
+.wvu-gold-pattern.background a.button:hover {
+  background-color: #002855;
+  color: #EAAA00;
+}
+
 .wvu-gray-chateau-tint-100 {
   color: white;
   border-color: white;

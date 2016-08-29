@@ -125,6 +125,16 @@ $wvu-candelight: $pms-115-c;
   }
 }
 
+.wvu-gold-pattern {
+  &.background {
+    @include wvu-gold-background();
+    background-image: url(https://admissions.wvu.edu/images/wvu-pattern-background--gold.png);
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
 $i: 100;
 @while $i > 0 {
   @each $color, $text-color in (gray-chateau, $wvu-gray-chateau),
