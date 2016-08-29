@@ -1,5 +1,8 @@
-// Styles for profile pages.
-.wvu-profile {
+.wvu-profiles-index__container {
+  @include u-wvu-container-padding();
+}
+
+.wvu-profiles-index__profiles {
   @include clearfix;
   width: 100%;
   margin-bottom: 2em;
@@ -7,7 +10,7 @@
   list-style-type: none;
 }
 
-.wvu-profile__individual {
+.wvu-profiles-index__individual {
   float: left;
   border-top: 1px solid #eaeaea;
   width: 100%;
@@ -17,32 +20,39 @@
   }
 }
 
-.wvu-profile__individual-photo {
+.wvu-profiles-index__individual-photo {
   margin-top: 38px;
   margin-bottom: 18px;
 }
 
-.wvu-profile__name {
+.wvu-profiles-index__name {
   margin-bottom: 18px;
 }
 
-.wvu-profile__job-title {
+.wvu-profiles-index__job-title {
   text-transform: uppercase;
 }
 
-.wvu-profile__phone {
+.wvu-profiles-index__phone {
   color: $base-font-color;
   text-decoration: none;
 }
 
 // Icons from the IcoMoon free icon library
 // https://icomoon.io
-.wvu-profile__phone-icon, .wvu-profile__email {
+.wvu-profiles-index__phone-icon, .wvu-profiles-index__email {
   background: url(https://patterns.wvu.edu/images/1444934192/icon-phone.svg) no-repeat left 3px;
   background-size: 18px;
   padding-left: 2em;
 }
 
-.wvu-profile__email {
+.wvu-profiles-index__email {
   background-image: url(https://patterns.wvu.edu/images/1444934192/icon-mail.svg);
+}
+
+// Layout
+// ================================
+
+.wvu-profiles-index__container {
+  @include outer-container();
 }

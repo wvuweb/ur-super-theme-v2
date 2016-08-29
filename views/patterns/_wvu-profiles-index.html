@@ -1,34 +1,34 @@
-<div class="wvu-profiles-index">
+<div class="wvu-profiles-index <r:page:data name="bgcolor_profiles_index" />">
   <div class="wvu-profiles-index__container">
-    <ul class="wvu-profile">
+    <ul class="wvu-profiles-index__profiles">
       <r:get_page id="{$profiles_id}">
         <r:children:each>
 
-          <li class="wvu-profile__individual">
+          <li class="wvu-profiles-index__individual">
 
-            <div class="wvu-profile__individual-photo">
+            <div class="wvu-profiles-index__individual-photo">
               <a href="<r:page:url />">
-                <r:page:content name="wvu-profile__photo" />
+                <r:page:content name="wvu-profiles-index__photo" />
               </a>
-            </div> <!-- /.wvu-profile__individual-photo -->
+            </div> <!-- /.wvu-profiles-index__individual-photo -->
 
-            <div class="wvu-profile__individual-info">
-              <h2 class="wvu-profile__name"><a class="wvu-profile__name-link" href="<r:page:url />"><r:page:first_non_blank_attr names="alternate_name,name" /></a></h2>
-              <h3 class="wvu-profile__job-title wvu-h5"><r:page:content name="wvu-profile__job-title" /></h3>
-              <p class="wvu-profile__phone-icon"><a class="wvu-profile__phone" href="tel:<r:page:content name="wvu-profile__phone" />"><r:page:content name="wvu-profile__phone" /></a></p>
-              <p class="wvu-profile__email"><r:page:content name="wvu-profile__email" /></p>
-              <p class="wvu-profile__short-description"><r:page:content name="wvu-profile__short-description" /></p>
-              <r:page:if_has_content_for region="wvu-profile__quote">
+            <div class="wvu-profiles-index__individual-info">
+              <h2 class="wvu-profiles-index__name"><a class="wvu-profiles-index__name-link" href="<r:page:url />"><r:page:first_non_blank_attr names="alternate_name,name" /></a></h2>
+              <h3 class="wvu-profiles-index__job-title wvu-h5"><r:page:content name="wvu-profiles-index__job-title" /></h3>
+              <p class="wvu-profiles-index__phone-icon"><a class="wvu-profiles-index__phone" href="tel:<r:page:content name="wvu-profiles-index__phone" />"><r:page:content name="wvu-profiles-index__phone" /></a></p>
+              <p class="wvu-profiles-index__email"><r:page:content name="wvu-profiles-index__email" /></p>
+              <p class="wvu-profiles-index__short-description"><r:page:content name="wvu-profiles-index__short-description" /></p>
+              <r:page:if_has_content_for region="wvu-profiles-index__quote">
                 <blockquote>
-                  <r:page:content name="wvu-profile__quote" />
+                  <r:page:content name="wvu-profiles-index__quote" />
                 </blockquote>
               </r:page:if_has_content_for>
-              <r:page:if_has_content_for region="wvu-profile__button-text">
-                <p class="wvu-profile__button"><a class="button" href="<r:page:url />"><r:page:content name="wvu-profile__button-text" /></a></p>
+              <r:page:if_has_content_for region="wvu-profiles-index__button-text">
+                <p class="wvu-profiles-index__button"><a class="button" href="<r:page:url />"><r:page:content name="wvu-profiles-index__button-text" /></a></p>
               </r:page:if_has_content_for>
-            </div> <!-- /.wvu-profile__individual-info -->
+            </div> <!-- /.wvu-profiles-index__individual-info -->
 
-          </li> <!-- /.wvu-profile__individual -->
+          </li> <!-- /.wvu-profiles-index__individual -->
         </r:children:each>
       </r:get_page>
     </ul>
@@ -38,6 +38,5 @@
 <r:edit_mode_only>
   <div class="wvu-instructions">
     <p><strong>Instructions for Profiles Index:</strong> These panels display sub-features or allow you to have multiple columns of content. Try to keep these consistent e.g. if you have a header in one column, use a header in all of them. You can have 1-4 columns. To omit columns, simply leave the description field in each column you wish to omit blank, from right to left.</p>
-    <p><strong>Background Color:</strong> <r:editable_region name="wvu-background-color-class--pentaptych" scope="{$pentaptychScope}" /></p>
   </div>
 </r:edit_mode_only>
