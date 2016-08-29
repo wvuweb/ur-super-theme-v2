@@ -1,0 +1,75 @@
+<div id="anchor-find-stuff">
+  <r:comment>
+    You can add an editable region here if you want. We do for admissions.
+    <r:editable_region name="academics-major-search-combo__text" scope="site" />
+  </r:comment>
+  <form action="/chapters/chapters-by-state#anchor-results" method="get" role="search">
+    <label for="q">
+      <span>Search</span>
+      <input id="q" name="cquery" maxlength="256" placeholder="Search..." type="search" />
+    </label>
+    <input name="submit" type="submit" value="Search"/>
+  </form>
+</div>
+
+<r:partial name="patterns/wvu-big-search" />
+
+<div class="wvu-big-search-index">
+  <div class="wvu-big-search-index__container">
+
+    <r:comment>If a search term WAS passed see if we have results for it</r:comment>
+    <r:if v1="{$cquery}" v2="" operator="!=">
+
+      <h2>Results</h2>
+
+      <div id="anchor-results">
+
+        <r:comment>Get a count of the things that match our search</r:comment>
+        <r:set_var name="thing_count"><r:descendants:count content="{$cquery}" content_keys="keywords" by="" limit="200" /></r:set_var>
+
+        <r:comment>If we HAVE things then write out the results</r:comment>
+        <r:if v1="{$thing_count}" v2="0" operator=">" type="number">
+
+          <r:comment>Set the copy for things based on how many chapters matched our search</r:comment>
+          <r:set_var name="thing_text">things</r:set_var>
+          <r:if v1="{$thing_count}" v2="1" operator="=" type="number">
+            <r:set_var name="thing_text">thing</r:set_var>
+          </r:if>
+
+          <p>The following <r:var name="thing_count" /> <r:var name="thing_text" /> matched your search:</p>
+
+          <r:comment>
+            search all of the descendants of this page for the search search term in the appropriate content keys
+          </r:comment>
+          <r:descendants:each content="{$cquery}" content_keys="keywords" by="" limit="200">
+            <!-- partial this? -->
+            <div class="wvu-big-search-index__result">
+              <h3 class="wvu-big-search-index__name"><r:page:first_non_blank_attr names="alternate_name,name" /></h3>
+              <p class="wvu-big-search-index__description"><r:page:meta_description /></p>
+            </div>
+          </r:descendants:each>
+
+        </r:if>
+
+        <r:comment>If we DON'T HAVE things then write out the error</r:comment>
+        <r:if v1="{$thing_count}" v2="0" operator="=" type="number">
+          <p>Sorry, we didn’t find any that matched your search. Please <a href="#anchor-find-a-chapter">try a new search</a>.</p>
+        </r:if>
+      </div> <!-- /.find-a-major__two-col -->
+
+    </r:if>
+
+    <r:comment>If a search term WASN'T passed then just write out the default listing</r:comment>
+    <r:if v1="{$cquery}" v2="" operator="==">
+
+      <r:children:each>
+        <div class="wvu-big-search-index__individual-info">
+          <h3 class="wvu-big-search-index__name"><r:page:first_non_blank_attr names="alternate_name,name" /></h3>
+          <p class="wvu-big-search-index__description"><r:page:meta_description /></p>
+        </div>
+      </r:children:each>
+
+    </r:if>
+
+  </div>
+</div>
