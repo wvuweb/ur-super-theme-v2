@@ -56,3 +56,15 @@
 .wvu-profiles-index__container {
   @include outer-container();
 }
+
+.wvu-profiles-index__individual-photo {
+  @include mq($bp-medium) {
+    @include span-columns(4);
+  }
+}
+
+.wvu-profiles-index__individual-info {
+  @include mq($bp-medium) {
+    @include span-columns(8);
+  }
+}

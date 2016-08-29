@@ -8870,6 +8870,30 @@ img.mfp-img {
   display: table;
 }
 
+@media (min-width: 48em) {
+  .wvu-profiles-index__individual-photo {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+  }
+  .wvu-profiles-index__individual-photo:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 48em) {
+  .wvu-profiles-index__individual-info {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%;
+  }
+  .wvu-profiles-index__individual-info:last-child {
+    margin-right: 0;
+  }
+}
+
 .wvu-quicklinks {
   width: 100%;
 }
