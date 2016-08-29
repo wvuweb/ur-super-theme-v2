@@ -25,7 +25,7 @@
       <div id="anchor-results">
 
         <r:comment>Get a count of the things that match our search</r:comment>
-        <r:set_var name="thing_count"><r:descendants:count content="{$cquery}" content_keys="keywords" by="" limit="200" /></r:set_var>
+        <r:set_var name="thing_count"><r:descendants:count content="{$cquery}" content_keys="main" by="" limit="200" /></r:set_var>
 
         <r:comment>If we HAVE things then write out the results</r:comment>
         <r:if v1="{$thing_count}" v2="0" operator=">" type="number">
@@ -41,7 +41,7 @@
           <r:comment>
             search all of the descendants of this page for the search search term in the appropriate content keys
           </r:comment>
-          <r:descendants:each content="{$cquery}" content_keys="keywords" by="" limit="200">
+          <r:descendants:each content="{$cquery}" content_keys="main" by="" limit="200">
             <!-- partial this? -->
             <div class="wvu-big-search-index__result">
               <h3 class="wvu-big-search-index__name"><r:page:first_non_blank_attr names="alternate_name,name" /></h3>
