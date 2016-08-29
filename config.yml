@@ -11,6 +11,7 @@ custom_site_attributes:
   - apply_link_2_url
   - apply_link_3
   - apply_link_3_url
+  - bgcolor_footer
   - calendar_url
   - default_content_01
   - default_content_02
