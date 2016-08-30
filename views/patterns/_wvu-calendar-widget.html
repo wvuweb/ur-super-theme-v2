@@ -10,9 +10,11 @@
       </div>
     </r:page:if_has_content_for>
 
-    <ul id="cal" class="wvu-calendar wvu-calendar--flex">
-
-    </ul>
+    <div class="wvu-calendar-widget__feed">
+      <r:editable_region name="wvu-calendar-widget__feed">
+        Drop a Calendar Event Feed snippet right here.
+      </r:editable_region>
+    </div>
 
     <div class="wvu-calendar-widget__postscript">
       <r:editable_region name="wvu-calendar-widget__postscript" scope="site">
@@ -25,10 +27,6 @@
 
 <r:edit_mode_only>
   <div class="wvu-instructions">
-    <p><strong>Instructions for Calendar Widget:</strong> In order to use this, you must submit events to the <a href="cal.wvu.edu">WVU Calendar</a>. Then contact <a href="mailto:jay.allen@mail.wvu.edu">Jay Allen</a> and let him know you need a calendar feed for your website. When he gives you the code, enter it into your site settings > custom data in the <strong>calendar_feed</strong> field.</p>
+    <p><strong>Instructions for Calendar Widget:</strong> Use the &rsquo;Calendar Event Feed&rdquo; snippet in the editor, drop in your calendar&rsquo;s XML feed.</p>
   </div>
 </r:edit_mode_only>
-
-<r:content_for name="page_js">
-  <r:partial name="patterns/javascript-wvu-calendar-widget" />
-</r:content_for>
