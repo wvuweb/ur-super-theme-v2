@@ -1,0 +1,46 @@
+<div class="wvu-profile">
+  <div class="wvu-profile__container">
+    <div class="wvu-profile__photo">
+      <img src="<r:page:data name="thumbnail_url_sq" />" />
+    </div>
+    <div class="wvu-profile__info <r:edit_mode_only>wvu-profile__info--edit-mode</r:edit_mode_only>">
+      <h1><r:page:first_non_blank_attr names="alternate_name, name" /></h1>
+      <r:if_page_has_content_for region="wvu-profile__job-title" always_show_in_edit_mode="true">
+        <div class="wvu-profile__job-title">
+          <r:editable_region name="wvu-profile__job-title" type="simple">
+           Enter the person&rsquo;s job title or whatever subhead should go under their name.
+          </r:editable_region>
+        </div>
+      </r:if>
+      <r:if_page_has_content_for region="wvu-profile__phone" always_show_in_edit_mode="true">
+        <div class="wvu-profile__phone-icon">
+          <r:editable_region name="wvu-profile__phone" type="simple">
+           Enter the person&rsquo;s phone number.
+          </r:editable_region>
+        </div>
+      </r:if>
+      <r:if_page_has_content_for region="" always_show_in_edit_mode="true">
+        <div class="wvu-profile__email">
+          <a href="mailto:<r:page:content name="wvu-profile__email" />">Website</a>
+          <r:editable_region name="wvu-profile__email" type="simple">
+            Enter the person&rsquo;s email address and link it via &ldquo;Standard Links&rdquo; option in the Insert Link modal.
+          </r:editable_region>
+        </div>
+      </r:if_page_has_content_for>
+      <r:if_page_has_content_for region="" always_show_in_edit_mode="true">
+        <div class="wvu-profile__website">
+          <a href="<r:page:content name="" />">Website</a>
+          <r:editable_region name="wvu-profile__website" type="simple">
+            Enter the person&rsquo;s website and link it via &ldquo;Standard Links&rdquo; option in the Insert Link modal.
+          </r:editable_region>
+        </div>
+      </r:if_page_has_content_for>
+    </div>
+  </div>
+</div>
+
+<r:edit_mode_only>
+  <div class="wvu-instructions">
+    <p><strong>Instructions for Profile:</strong> </p>
+  </div>
+</r:edit_mode_only>
