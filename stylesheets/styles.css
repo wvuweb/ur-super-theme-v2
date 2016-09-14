@@ -8891,6 +8891,10 @@ img.mfp-img {
   display: table;
 }
 
+.wvu-profile a.edit-mode {
+  display: none;
+}
+
 .wvu-profiles-index__container {
   padding: 4em 0 4.3em 0;
   padding-left: 1em;
