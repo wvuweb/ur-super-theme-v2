@@ -1,7 +1,6 @@
 
 <div class="wvu-directory">
   <div class="wvu-directory__container">
-    <p>test.</p>
     <r:get_page id="{$directory_id}">
       <r:children:each>
         <r:if_children>
@@ -53,9 +52,9 @@
                   </td>
                   <td class="wvu-directory__phone"><r:page:content name="wvu-profile__phone" /></td>
                   <td class="wvu-directory__email">
-                    <r:set_var name="email_address"><r:page:content name="wvu-profile__email" /></r:set_var>
+                    <r:set_var name="email_address"><r:page:content name="wvu-profile__email-3" /></r:set_var>
                     <r:if v1="{{BLANK(email_address)}}" v2="false" operator="=" type="boolean">
-                      <a href="mailto:<r:page:content name="wvu-profile__email" />"><img src="<r:image_url name="email.png" />" alt="Email Icon" /></a>
+                      <a class="wvu-directory__email-link" href="mailto:<r:page:content name="wvu-profile__email-3" />"><r:page:content name="wvu-profile__email-3" /></a>
                     </r:if>
                   </td>
                   <td class="wvu-directory__webpage"><r:page:content name="wvu-profile__phone" />
