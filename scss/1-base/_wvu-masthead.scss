@@ -443,15 +443,20 @@ input[type="submit"] {
   display: inline-block;
   font-weight: bold;
   margin-bottom: .5em;
-  @include mq($bp-medium) { margin-bottom: 3px; }
-  &:hover { color: white; text-decoration: underline; }
+  @include mq($bp-medium) {
+    margin-bottom: 0;
+  }
+  &:hover {
+    color: white;
+    text-decoration: underline;
+  }
 }
 
 .wvu-masthead__links {
   color: tint($wvu-blue, 20%);
   clear: both;
   font-size: .8em;
-  margin-top: 2.5em;
+  margin-top: 2.15em;
 }
 
 @include wvu-masthead-is-two-line-lockup();

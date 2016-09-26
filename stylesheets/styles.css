@@ -4700,7 +4700,7 @@ input[type="submit"].form-search__submit {
 
 @media (min-width: 48em) {
   .wvu-masthead__link {
-    margin-bottom: 3px;
+    margin-bottom: 0;
   }
 }
 
@@ -4713,7 +4713,7 @@ input[type="submit"].form-search__submit {
   color: #335377;
   clear: both;
   font-size: .8em;
-  margin-top: 2.5em;
+  margin-top: 2.15em;
 }
 
 .wvu-masthead {

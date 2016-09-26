@@ -54,7 +54,9 @@
 
     <r:partial name="patterns/wvu-slots--sitewide" />
 
-    <r:partial name="patterns/wvu-footer" />
+    <r:if v1={$has_standard_footer} v2="false" op="!=">
+      <r:partial name="patterns/wvu-footer" />
+    </r:if>
 
     <r:edit_mode_only>
       <div class="wvu-instructions">

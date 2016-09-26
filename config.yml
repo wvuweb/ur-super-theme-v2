@@ -20,6 +20,7 @@ custom_site_attributes:
   - github_url
   - google_site_verification
   - has_alternate_logo
+  - has_standard_footer
   - hide_instructions
   - instagram_url
   - jquery_defer
