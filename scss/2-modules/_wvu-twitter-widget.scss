@@ -41,7 +41,7 @@
 }
 
 .wvu-twitter-widget__postscript {
-  @include so-postscript();
+  @include wvu-postscript();
   font-size: 1.5em;
   margin-top: 2em;
   a {

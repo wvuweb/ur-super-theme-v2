@@ -36,7 +36,7 @@
 }
 
 .wvu-featurettes__postscript {
-  @include so-postscript();
+  @include wvu-postscript();
 }
 
 .wvu-featurettes__featurettes--1, .wvu-featurettes__featurettes--2 {

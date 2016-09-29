@@ -56,7 +56,7 @@
 }
 
 .wvu-quadriptych__postscript {
-  @include so-postscript();
+  @include wvu-postscript();
 }
 
 .wvu-quadriptych--2 {

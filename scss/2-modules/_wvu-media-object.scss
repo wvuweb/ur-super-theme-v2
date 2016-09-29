@@ -55,7 +55,7 @@
 }
 
 .wvu-media-object__postscript {
-  @include so-postscript();
+  @include wvu-postscript();
 }
 
 .wvu-media-object--2 {

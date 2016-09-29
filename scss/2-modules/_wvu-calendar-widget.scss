@@ -45,7 +45,7 @@
 }
 
 .wvu-calendar-widget__postscript {
-  @include so-postscript();
+  @include wvu-postscript();
   p {
     max-width: 99999em;
   }
