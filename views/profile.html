@@ -79,7 +79,7 @@ custom_data_attributes:
 
 <div class="wvu-container">
 
-  <main id="maincontent" class="main <r:page:unless_has_content_for region="wvu-sidebar">main--wide</r:page:unless_has_content_for> <r:edit_mode_only>main--edit-mode</r:edit_mode_only>">
+  <main id="maincontent" class="main <r:if v1="{$backpage_has_sidebar}" v2="false" op="=">main--wide</r:if> <r:edit_mode_only>main--edit-mode</r:edit_mode_only>">
 
     <div class="wvu-profile__contact-and-photo">
       <div class="wvu-profile__photo">
@@ -87,21 +87,6 @@ custom_data_attributes:
           Add a profile photo.
         </r:editable_region>
       </div> <!-- /.wvu-profile__photo -->
-      <div class="wvu-profile__meta-info">
-        <p class="wvu-profile__phone-icon">
-         <r:editable_region name="wvu-profile__phone" type="simple">
-           Enter the person&rsquo;s phone number.
-         </r:editable_region>
-        </p>
-        <p class="wvu-profile__email">
-          <r:edit_mode_only>
-             <r:editable_region name="wvu-profile__email-3" type="simple">
-               Enter the person&rsquo;s email address.
-             </r:editable_region>
-           </r:edit_mode_only>
-           <a class="edit-mode" href="mailto:<r:page:content name="wvu-profile__email-3" />"><r:page:content name="wvu-profile__email-3" /></a>
-        </p>
-      </div> <!-- /.wvu-profile__meta-info -->
     </div>
 
     <div class="wvu-profile__content">
@@ -115,24 +100,6 @@ custom_data_attributes:
           </r:edit_mode_only>
         </h2>
       </div> <!-- /.wvu-profile__meta-info -->
-
-      <p>
-        <r:editable_region name="wvu-profile__short-description" type="simple">
-          Enter a brief description of the person. This will be pulled into the profile index page(s). Only enter a sentence or two in this region.
-        </r:editable_region>
-      </p>
-
-      <r:edit_mode_only>
-        <p class="wvu-profile__button"><div class="button"><r:editable_region name="wvu-profile__button-text-2" type="simple" scope="site">Read Full Bio</r:editable_region></div></p>
-      </r:edit_mode_only>
-
-      <r:page:if_has_content_for region="wvu-profile__quote" always_show_in_edit_mode="true">
-        <p>
-          <r:editable_region name="wvu-profile__quote" type="simple">
-            Enter a quote for the person. This will be pulled into the profile index page(s). Only enter a sentence or two in this region.
-          </r:editable_region>
-        </p>
-      </r:page:if_has_content_for>
 
       <r:editable_region name="main">
         <p>Enter the extended description here.</p>
