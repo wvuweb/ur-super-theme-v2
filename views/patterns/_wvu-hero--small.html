@@ -1,5 +1,5 @@
 
-<div class="wvu-hero <r:if value1="{$hero_text_alignment}" value2="right" operator="=">wvu-hero--right</r:if>">
+<div class="wvu-hero wvu-hero--<r:site:id /> <r:if value1="{$hero_text_alignment}" value2="right" operator="=">wvu-hero--right</r:if>">
   <div class="wvu-hero__container wvu-hero__container--vignetting-<r:page:data name="hero_vignetting" />">
     <div class="wvu-hero__copy <r:edit_mode_only>wvu-hero__copy--edit-mode</r:edit_mode_only>">
       <h1><span><r:editable_region name="wvu-hero__header" type="simple">Header Goes Here</r:editable_region></span></h1>

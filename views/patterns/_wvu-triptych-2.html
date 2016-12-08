@@ -13,7 +13,7 @@
 <r:set_var name="triptychItems2" value="{$triptychItems2}" default="3" />
 <r:set_var name="triptych2" value="{$triptychScope2}" default="page" />
 
-<div class="wvu-polyptych <r:page:data name="bgcolor_triptych_2" /> background wvu-polyptych--triptych">
+<div class="wvu-polyptych wvu-polyptych--<r:site:id /> <r:page:data name="bgcolor_triptych_2" /> background wvu-polyptych--triptych">
   <div class="wvu-polyptych__container">
 
     <r:page:if_has_content_for region="wvu-triptych__header2" always_show_in_edit_mode="true">

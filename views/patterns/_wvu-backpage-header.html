@@ -2,7 +2,7 @@
   <r:page:slug />-header-background
 </r:set_var>
 
-<div class="wvu-backpage-header" style="<r:files:each labels="backpage-background" limit="1" types="image" random="true">background-image: url(<r:file:image_url size="1780x580" />);</r:files:each> <r:files:each labels="{$bgurl}" limit="1" types="image" random="true">background-image: url(<r:file:image_url size="1780x580" />);</r:files:each>">
+<div class="wvu-backpage-header wvu-backpage-header--<r:site:id />" style="<r:files:each labels="backpage-background" limit="1" types="image" random="true">background-image: url(<r:file:image_url size="1780x580" />);</r:files:each> <r:files:each labels="{$bgurl}" limit="1" types="image" random="true">background-image: url(<r:file:image_url size="1780x580" />);</r:files:each>">
   <r:partial name="patterns/wvu-breadcrumbs" />
   <div class="wvu-backpage-header__container">
     <r:if expr="{{ NOT(BLANK(backpage_header_badge)) }}">

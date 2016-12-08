@@ -1,0 +1,28 @@
+<r:set_var name="backpage_header" value="{$backpage_header}" default="true">
+  <r:page:data name="backpage_header" />
+</r:set_var>
+
+<r:if v1="{$backpage_header}" v2="true" op="=">
+  <r:partial name="patterns/wvu-backpage-header" />
+</r:if>
+
+<r:if expr="{{ NOT(BLANK(slot_01)) }}">
+  <r:set_var name="patternName1">
+    <r:page:data name="slot_01" />
+  </r:set_var>
+  <r:partial name="{$patternName1}" />
+</r:if>
+
+<r:if expr="{{ NOT(BLANK(slot_02)) }}">
+  <r:set_var name="patternName2">
+    <r:page:data name="slot_02" />
+  </r:set_var>
+  <r:partial name="{$patternName2}" />
+</r:if>
+
+<r:if expr="{{ NOT(BLANK(slot_03)) }}">
+  <r:set_var name="patternName3">
+    <r:page:data name="slot_03" />
+  </r:set_var>
+  <r:partial name="{$patternName3}" />
+</r:if>

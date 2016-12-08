@@ -2,7 +2,7 @@
   <r:page:slug />-hero-background
 </r:set_var>
 
-<div class="wvu-admin-hero" style="background-image: url(<r:files:each labels="{$bgurl}" limit="1" types="image" random="true"><r:file:image_url size="1780x580" /></r:files:each>);">
+<div class="wvu-admin-hero wvu-admin-hero--<r:site:id />" style="background-image: url(<r:files:each labels="{$bgurl}" limit="1" types="image" random="true"><r:file:image_url size="1780x580" /></r:files:each>);">
   <div class="wvu-admin-hero__container wvu-admin-hero__container--vignetting-<r:page:data name="hero_vignetting" />">
     <div class="wvu-admin-hero__copy <r:page:unless_has_content_for region="wvu-admin-hero__links">wvu-admin-hero__copy--wide</r:page:unless_has_content_for>">
       <h1><r:editable_region name="wvu-admin-hero__h1" type="simple">Header text goes here.</r:editable_region></h1>

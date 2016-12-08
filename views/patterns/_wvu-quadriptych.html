@@ -13,7 +13,7 @@
 <r:set_var name="quadriptychItems" value="{$quadriptychItems}" default="4" />
 <r:set_var name="quadriptych" value="{$quadriptychScope}" default="page" />
 
-<div class="wvu-polyptych <r:page:data name="bgcolor_quadriptych" /> background wvu-polyptych--quadriptych">
+<div class="wvu-polyptych wvu-polyptych--<r:site:id /> <r:page:data name="bgcolor_quadriptych" /> background wvu-polyptych--quadriptych">
   <div class="wvu-polyptych__container">
 
     <r:page:if_has_content_for region="wvu-quadriptych__header" always_show_in_edit_mode="true">

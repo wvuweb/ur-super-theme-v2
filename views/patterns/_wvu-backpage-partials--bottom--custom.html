@@ -1,0 +1,27 @@
+<r:if expr="{{ NOT(BLANK(slot_04)) }}">
+  <r:set_var name="patternName4">
+    <r:page:data name="slot_04" />
+  </r:set_var>
+  <r:partial name="{$patternName4}" />
+</r:if>
+
+<r:if expr="{{ NOT(BLANK(slot_05)) }}">
+  <r:set_var name="patternName5">
+    <r:page:data name="slot_05" />
+  </r:set_var>
+  <r:partial name="{$patternName5}" />
+</r:if>
+
+<r:if expr="{{ NOT(BLANK(slot_06)) }}">
+  <r:set_var name="patternName6">
+    <r:page:data name="slot_06" />
+  </r:set_var>
+  <r:partial name="{$patternName6}" />
+</r:if>
+
+<r:if expr="{{ NOT(BLANK(slot_07)) }}">
+  <r:set_var name="patternName7">
+    <r:page:data name="slot_07" />
+  </r:set_var>
+  <r:partial name="{$patternName7}" />
+</r:if>

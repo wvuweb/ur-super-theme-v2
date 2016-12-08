@@ -1,4 +1,4 @@
-<div class="wvu-nav wvu-nav--social">
+<div class="wvu-nav wvu-nav--<r:site:id /> wvu-nav--social">
   <div class="wvu-nav__container">
 
     <div class="wvu-nav__nav wvu-nav__nav--depth-<r:site:data name="nav_depth" />">
@@ -12,7 +12,7 @@
         <r:if expr="{{ NOT(BLANK(facebook_url)) }}">
           <a href="<r:site:data name="facebook_url" />"><img src="https://patterns.wvu.edu/images/social-media-icons/facebook.svg" alt="Facebook icon" /></a>
         </r:if>
-    
+
         <r:if expr="{{ NOT(BLANK(github_url)) }}">
           <a href="<r:site:data name="github_url" />"><img src="https://patterns.wvu.edu/images/social-media-icons/github.svg" alt="GitHub icon" /></a>
         </r:if>
