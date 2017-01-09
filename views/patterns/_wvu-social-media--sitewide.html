@@ -1,0 +1,87 @@
+<div class="wvu-social-media wvu-social-media--<r:site:id /> <r:page:data name="bgcolor_social_media" /> background">
+  <div class="wvu-social-media__container">
+
+    <r:page:if_has_content_for region="wvu-social-media__header" always_show_in_edit_mode="true">
+      <div class="wvu-social-media__header">
+        <r:editable_region name="wvu-social-media__header" scope="site">
+          <h2>Follow Us</h2>
+          <p>Subhead goes here.</p>
+        </r:editable_region>
+      </div>
+    </r:page:if_has_content_for>
+
+    <div class="wvu-social-media__icons">
+
+      <r:if expr="{{ NOT(BLANK(facebook_url)) }}">
+        <div class="wvu-social-media__icon">
+          <a href="<r:site:data name="facebook_url" />"><img src="https://patterns.wvu.edu/images/social-media-icons/facebook.svg" alt="Facebook icon" /></a>
+          <p>
+            <a href="<r:site:data name="facebook_url" />">Facebook</a>
+          </p>
+        </div>
+      </r:if>
+
+      <r:if expr="{{ NOT(BLANK(twitter_url)) }}">
+        <div class="wvu-social-media__icon">
+          <a href="<r:site:data name="twitter_url" />"><img src="https://patterns.wvu.edu/images/social-media-icons/twitter.svg" alt="Twitter icon" /></a>
+          <p>
+            <a href="<r:site:data name="twitter_url" />">Twitter</a>
+          </p>
+        </div>
+      </r:if>
+
+      <r:if expr="{{ NOT(BLANK(instagram_url)) }}">
+        <div class="wvu-social-media__icon">
+          <a href="<r:site:data name="instagram_url" />"><img src="https://patterns.wvu.edu/images/social-media-icons/instagram.svg" alt="Instagram icon" /></a>
+          <p>
+            <a href="<r:site:data name="instagram_url" />">Instagram</a>
+          </p>
+        </div>
+      </r:if>
+
+      <r:if expr="{{ NOT(BLANK(linkedin_url)) }}">
+        <div class="wvu-social-media__icon">
+          <a href="<r:site:data name="linkedin_url" />"><img src="https://patterns.wvu.edu/images/social-media-icons/linkedin.svg" alt="LinkedIn icon" /></a>
+          <p>
+            <a href="<r:site:data name="linkedin_url" />">LinkedIn</a>
+          </p>
+        </div>
+      </r:if>
+
+      <r:if expr="{{ NOT(BLANK(rss_url)) }}">
+        <div class="wvu-social-media__icon">
+          <a href="<r:site:data name="rss_url" />"><img src="https://patterns.wvu.edu/images/social-media-icons/rss.svg" alt="RSS icon" /></a>
+          <p>
+            <a href="<r:site:data name="rss_url" />">RSS</a>
+          </p>
+        </div>
+      </r:if>
+
+      <r:if expr="{{ NOT(BLANK(youtube_url)) }}">
+        <div class="wvu-social-media__icon">
+          <a href="<r:site:data name="youtube_url" />"><img src="https://patterns.wvu.edu/images/social-media-icons/youtube.svg" alt="YouTube icon" /></a>
+          <p>
+            <a href="<r:site:data name="youtube_url" />">YouTube</a>
+          </p>
+        </div>
+      </r:if>
+
+      <r:if expr="{{ NOT(BLANK(github_url)) }}">
+        <div class="wvu-social-media__icon">
+          <a href="<r:site:data name="github_url" />"><img src="https://patterns.wvu.edu/images/social-media-icons/github.svg" alt="YouTube icon" /></a>
+          <p>
+            <a href="<r:site:data name="github_url" />">GitHub</a>
+          </p>
+        </div>
+      </r:if>
+
+    </div>
+
+  </div>
+</div>
+
+<r:edit_mode_only>
+  <div class="wvu-instructions">
+    <p><strong>Instructions for Social Media Widget:</strong> Enter the URLs of each social media account you wish to link to. Delete the default content of those you do not wish to link to.</p>
+  </div>
+</r:edit_mode_only>
